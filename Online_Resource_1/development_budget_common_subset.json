@@ -1,0 +1,930 @@
+{
+  "timing": {
+    "b3_LRP": {
+      "median_wall_ms": 694.5,
+      "median_first_feasible_ms": 670.0605,
+      "median_improvements": 0.0,
+      "total_failed_decodes": 0
+    },
+    "b3_J_VND": {
+      "median_wall_ms": 3027.5,
+      "median_first_feasible_ms": 2229.663,
+      "median_improvements": 2.5,
+      "total_failed_decodes": 69
+    },
+    "b3_S_VND": {
+      "median_wall_ms": 3029.0,
+      "median_first_feasible_ms": 2172.5744999999997,
+      "median_improvements": 2.5,
+      "total_failed_decodes": 70
+    },
+    "b6_LRP": {
+      "median_wall_ms": 684.5,
+      "median_first_feasible_ms": 661.6395,
+      "median_improvements": 0.0,
+      "total_failed_decodes": 0
+    },
+    "b6_J_VND": {
+      "median_wall_ms": 6026.0,
+      "median_first_feasible_ms": 2184.9764999999998,
+      "median_improvements": 4.0,
+      "total_failed_decodes": 155
+    },
+    "b6_S_VND": {
+      "median_wall_ms": 6026.0,
+      "median_first_feasible_ms": 2182.5445,
+      "median_improvements": 4.0,
+      "total_failed_decodes": 157
+    },
+    "b12_LRP": {
+      "median_wall_ms": 696.0,
+      "median_first_feasible_ms": 673.028,
+      "median_improvements": 0.0,
+      "total_failed_decodes": 0
+    },
+    "b12_J_VND": {
+      "median_wall_ms": 10757.0,
+      "median_first_feasible_ms": 2243.249,
+      "median_improvements": 5.5,
+      "total_failed_decodes": 321
+    },
+    "b12_S_VND": {
+      "median_wall_ms": 10705.0,
+      "median_first_feasible_ms": 2239.429,
+      "median_improvements": 5.5,
+      "total_failed_decodes": 321
+    }
+  },
+  "comparison_counts": {
+    "b3_J_VND_vs_S_VND": {
+      "left_wins": 0,
+      "ties": 4,
+      "right_wins": 0,
+      "state_count": 4
+    },
+    "b3_J_VND_vs_LRP": {
+      "left_wins": 2,
+      "ties": 0,
+      "right_wins": 2,
+      "state_count": 4
+    },
+    "b3_S_VND_vs_LRP": {
+      "left_wins": 2,
+      "ties": 0,
+      "right_wins": 2,
+      "state_count": 4
+    },
+    "b6_J_VND_vs_S_VND": {
+      "left_wins": 0,
+      "ties": 4,
+      "right_wins": 0,
+      "state_count": 4
+    },
+    "b6_J_VND_vs_LRP": {
+      "left_wins": 4,
+      "ties": 0,
+      "right_wins": 0,
+      "state_count": 4
+    },
+    "b6_S_VND_vs_LRP": {
+      "left_wins": 4,
+      "ties": 0,
+      "right_wins": 0,
+      "state_count": 4
+    },
+    "b12_J_VND_vs_S_VND": {
+      "left_wins": 0,
+      "ties": 4,
+      "right_wins": 0,
+      "state_count": 4
+    },
+    "b12_J_VND_vs_LRP": {
+      "left_wins": 4,
+      "ties": 0,
+      "right_wins": 0,
+      "state_count": 4
+    },
+    "b12_S_VND_vs_LRP": {
+      "left_wins": 4,
+      "ties": 0,
+      "right_wins": 0,
+      "state_count": 4
+    }
+  },
+  "schema": "p3-development-budget-common-subset/1.0",
+  "state_count_by_cap_seconds": {
+    "3": 4,
+    "6": 4,
+    "12": 4
+  },
+  "state_ids_by_cap_seconds": {
+    "3": [
+      "b1-r007",
+      "b1-r012",
+      "b1-r026",
+      "b1-r030"
+    ],
+    "6": [
+      "b1-r007",
+      "b1-r012",
+      "b1-r026",
+      "b1-r030"
+    ],
+    "12": [
+      "b1-r007",
+      "b1-r012",
+      "b1-r026",
+      "b1-r030"
+    ]
+  },
+  "original_state_ids_by_cap_seconds": {
+    "3": [
+      "b1-r007",
+      "b1-r012",
+      "b1-r026",
+      "b1-r030"
+    ],
+    "6": [
+      "b1-r007",
+      "b1-r012",
+      "b1-r026",
+      "b1-r030"
+    ],
+    "12": [
+      "b1-r007",
+      "b1-r009",
+      "b1-r012",
+      "b1-r018",
+      "b1-r019",
+      "b1-r025",
+      "b1-r026",
+      "b1-r030"
+    ]
+  },
+  "original_all_state_aggregate": {
+    "timing": {
+      "b3_LRP": {
+        "median_wall_ms": 694.5,
+        "median_first_feasible_ms": 670.0605,
+        "median_improvements": 0.0,
+        "total_failed_decodes": 0
+      },
+      "b3_J_VND": {
+        "median_wall_ms": 3027.5,
+        "median_first_feasible_ms": 2229.663,
+        "median_improvements": 2.5,
+        "total_failed_decodes": 69
+      },
+      "b3_S_VND": {
+        "median_wall_ms": 3029.0,
+        "median_first_feasible_ms": 2172.5744999999997,
+        "median_improvements": 2.5,
+        "total_failed_decodes": 70
+      },
+      "b6_LRP": {
+        "median_wall_ms": 684.5,
+        "median_first_feasible_ms": 661.6395,
+        "median_improvements": 0.0,
+        "total_failed_decodes": 0
+      },
+      "b6_J_VND": {
+        "median_wall_ms": 6026.0,
+        "median_first_feasible_ms": 2184.9764999999998,
+        "median_improvements": 4.0,
+        "total_failed_decodes": 155
+      },
+      "b6_S_VND": {
+        "median_wall_ms": 6026.0,
+        "median_first_feasible_ms": 2182.5445,
+        "median_improvements": 4.0,
+        "total_failed_decodes": 157
+      },
+      "b12_LRP": {
+        "median_wall_ms": 569.0,
+        "median_first_feasible_ms": 546.2104999999999,
+        "median_improvements": 0.0,
+        "total_failed_decodes": 0
+      },
+      "b12_J_VND": {
+        "median_wall_ms": 9042.5,
+        "median_first_feasible_ms": 2243.249,
+        "median_improvements": 5.0,
+        "total_failed_decodes": 612
+      },
+      "b12_S_VND": {
+        "median_wall_ms": 8517.0,
+        "median_first_feasible_ms": 2239.429,
+        "median_improvements": 5.0,
+        "total_failed_decodes": 616
+      }
+    },
+    "comparison_counts": {
+      "b3_J_VND_vs_S_VND": {
+        "left_wins": 0,
+        "ties": 4,
+        "right_wins": 0,
+        "state_count": 4
+      },
+      "b3_J_VND_vs_LRP": {
+        "left_wins": 2,
+        "ties": 0,
+        "right_wins": 2,
+        "state_count": 4
+      },
+      "b3_S_VND_vs_LRP": {
+        "left_wins": 2,
+        "ties": 0,
+        "right_wins": 2,
+        "state_count": 4
+      },
+      "b6_J_VND_vs_S_VND": {
+        "left_wins": 0,
+        "ties": 4,
+        "right_wins": 0,
+        "state_count": 4
+      },
+      "b6_J_VND_vs_LRP": {
+        "left_wins": 4,
+        "ties": 0,
+        "right_wins": 0,
+        "state_count": 4
+      },
+      "b6_S_VND_vs_LRP": {
+        "left_wins": 4,
+        "ties": 0,
+        "right_wins": 0,
+        "state_count": 4
+      },
+      "b12_J_VND_vs_S_VND": {
+        "left_wins": 0,
+        "ties": 7,
+        "right_wins": 1,
+        "state_count": 8
+      },
+      "b12_J_VND_vs_LRP": {
+        "left_wins": 6,
+        "ties": 0,
+        "right_wins": 2,
+        "state_count": 8
+      },
+      "b12_S_VND_vs_LRP": {
+        "left_wins": 6,
+        "ties": 0,
+        "right_wins": 2,
+        "state_count": 8
+      }
+    }
+  },
+  "source_sha256": "ed3d5418015db4d21258957c44cd6ca36518fcbe6be0600346c726c0f17d9b36",
+  "scope_note": "Same four predetermined development states at each 3, 6, and 12 s invocation cap. Each budget was run separately; points are not truncated from the 12 s run. One retained run per state and cap, not an independent benchmark or an uncertainty estimate.",
+  "rows": [
+    {
+      "state_id": "b1-r007",
+      "budget_seconds": 12,
+      "method": "LRP",
+      "first_feasible_ms": 340.929,
+      "wall_ms": 360,
+      "accepted_improvements": 0,
+      "cost": {
+        "current_batch_makespan": 97437000000,
+        "current_batch_total_completion_time": 604241000000,
+        "projected_current_batch_completion": 4467837000000,
+        "valid": true,
+        "value": 97437000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "6461d1f05bad3f9574c7739129171d4586e99c9572f1bf844d0d8023f4c12600",
+      "initial_geometry_signature": "625d09f9029781c1b896f27aa89f3a8b8af8f5dcfbb7247b36941a0ac362f541"
+    },
+    {
+      "state_id": "b1-r007",
+      "budget_seconds": 12,
+      "method": "J_VND",
+      "first_feasible_ms": 311.844,
+      "wall_ms": 11138,
+      "accepted_improvements": 11,
+      "cost": {
+        "current_batch_makespan": 92436000000,
+        "current_batch_total_completion_time": 630960000000,
+        "projected_current_batch_completion": 4445067000000,
+        "valid": true,
+        "value": 92436000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "51aa7cbdcefc84f913064bf96bd09441249f7893a12b725e92ad567ed461d092",
+      "initial_geometry_signature": "625d09f9029781c1b896f27aa89f3a8b8af8f5dcfbb7247b36941a0ac362f541"
+    },
+    {
+      "state_id": "b1-r007",
+      "budget_seconds": 12,
+      "method": "S_VND",
+      "first_feasible_ms": 317.133,
+      "wall_ms": 11127,
+      "accepted_improvements": 11,
+      "cost": {
+        "current_batch_makespan": 92436000000,
+        "current_batch_total_completion_time": 630960000000,
+        "projected_current_batch_completion": 4445067000000,
+        "valid": true,
+        "value": 92436000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "51aa7cbdcefc84f913064bf96bd09441249f7893a12b725e92ad567ed461d092",
+      "initial_geometry_signature": "625d09f9029781c1b896f27aa89f3a8b8af8f5dcfbb7247b36941a0ac362f541"
+    },
+    {
+      "state_id": "b1-r012",
+      "budget_seconds": 12,
+      "method": "LRP",
+      "first_feasible_ms": 548.42,
+      "wall_ms": 569,
+      "accepted_improvements": 0,
+      "cost": {
+        "current_batch_makespan": 202517000000,
+        "current_batch_total_completion_time": 1413283000000,
+        "projected_current_batch_completion": 4476862000000,
+        "valid": true,
+        "value": 202517000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "2ed367a9cadbd3088a48c628799c7b33d22326f8b0ec5b96e901b40fb5f99c4b",
+      "initial_geometry_signature": "6dfdd8b31e30c1d445d0f39b7b0b8a0e15f3371f14d7825a50afbff5469f48df"
+    },
+    {
+      "state_id": "b1-r012",
+      "budget_seconds": 12,
+      "method": "J_VND",
+      "first_feasible_ms": 4464.458,
+      "wall_ms": 10376,
+      "accepted_improvements": 6,
+      "cost": {
+        "current_batch_makespan": 184030000000,
+        "current_batch_total_completion_time": 1328820000000,
+        "projected_current_batch_completion": 4476862000000,
+        "valid": true,
+        "value": 184030000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "f7d800ca3a386cb05c3b024f241c494f5d8b534920870c0d688221d466711f0f",
+      "initial_geometry_signature": "6dfdd8b31e30c1d445d0f39b7b0b8a0e15f3371f14d7825a50afbff5469f48df"
+    },
+    {
+      "state_id": "b1-r012",
+      "budget_seconds": 12,
+      "method": "S_VND",
+      "first_feasible_ms": 4470.31,
+      "wall_ms": 10283,
+      "accepted_improvements": 6,
+      "cost": {
+        "current_batch_makespan": 184030000000,
+        "current_batch_total_completion_time": 1328820000000,
+        "projected_current_batch_completion": 4476862000000,
+        "valid": true,
+        "value": 184030000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "f7d800ca3a386cb05c3b024f241c494f5d8b534920870c0d688221d466711f0f",
+      "initial_geometry_signature": "6dfdd8b31e30c1d445d0f39b7b0b8a0e15f3371f14d7825a50afbff5469f48df"
+    },
+    {
+      "state_id": "b1-r026",
+      "budget_seconds": 12,
+      "method": "LRP",
+      "first_feasible_ms": 797.636,
+      "wall_ms": 823,
+      "accepted_improvements": 0,
+      "cost": {
+        "current_batch_makespan": 342718000000,
+        "current_batch_total_completion_time": 2635147000000,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 342718000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "fb309816506b529c12f7ca476f876dfc06214e3ba955a3e65479e5f6f75bdd38",
+      "initial_geometry_signature": "4ce4978dcd22dedbf4749d890f4c366ccd2cf4d3030184a9eb7d62fff1f2863f"
+    },
+    {
+      "state_id": "b1-r026",
+      "budget_seconds": 12,
+      "method": "J_VND",
+      "first_feasible_ms": 2966.096,
+      "wall_ms": 11467,
+      "accepted_improvements": 5,
+      "cost": {
+        "current_batch_makespan": 342351000000,
+        "current_batch_total_completion_time": 2644615000000,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 342351000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "deed44ab7b902bcfcf361aa6513a7a903a7d87801b03e2d985fc75a9e0196bbf",
+      "initial_geometry_signature": "4ce4978dcd22dedbf4749d890f4c366ccd2cf4d3030184a9eb7d62fff1f2863f"
+    },
+    {
+      "state_id": "b1-r026",
+      "budget_seconds": 12,
+      "method": "S_VND",
+      "first_feasible_ms": 2962.69,
+      "wall_ms": 11301,
+      "accepted_improvements": 5,
+      "cost": {
+        "current_batch_makespan": 342351000000,
+        "current_batch_total_completion_time": 2644615000000,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 342351000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "deed44ab7b902bcfcf361aa6513a7a903a7d87801b03e2d985fc75a9e0196bbf",
+      "initial_geometry_signature": "4ce4978dcd22dedbf4749d890f4c366ccd2cf4d3030184a9eb7d62fff1f2863f"
+    },
+    {
+      "state_id": "b1-r030",
+      "budget_seconds": 12,
+      "method": "LRP",
+      "first_feasible_ms": 892.656,
+      "wall_ms": 920,
+      "accepted_improvements": 0,
+      "cost": {
+        "current_batch_makespan": 376612000000,
+        "current_batch_total_completion_time": 2946436000000,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 376612000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "0668fa385434193c916891ecb7e7cca866685c66187855c1f956c0281dd9ebe0",
+      "initial_geometry_signature": "1231aac31e5f94fccbadf6e239d0debbdb1a1cde47295111496876f360f271ef"
+    },
+    {
+      "state_id": "b1-r030",
+      "budget_seconds": 12,
+      "method": "J_VND",
+      "first_feasible_ms": 1520.402,
+      "wall_ms": 6248,
+      "accepted_improvements": 4,
+      "cost": {
+        "current_batch_makespan": 372385000000,
+        "current_batch_total_completion_time": 2926062229454,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 372385000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "fef639b003b1df17543ea391b3f5aabc095f6bb861ec90ac8a1143699459a129",
+      "initial_geometry_signature": "1231aac31e5f94fccbadf6e239d0debbdb1a1cde47295111496876f360f271ef"
+    },
+    {
+      "state_id": "b1-r030",
+      "budget_seconds": 12,
+      "method": "S_VND",
+      "first_feasible_ms": 1516.168,
+      "wall_ms": 6223,
+      "accepted_improvements": 4,
+      "cost": {
+        "current_batch_makespan": 372385000000,
+        "current_batch_total_completion_time": 2926062229454,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 372385000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "fef639b003b1df17543ea391b3f5aabc095f6bb861ec90ac8a1143699459a129",
+      "initial_geometry_signature": "1231aac31e5f94fccbadf6e239d0debbdb1a1cde47295111496876f360f271ef"
+    },
+    {
+      "state_id": "b1-r007",
+      "budget_seconds": 3,
+      "method": "LRP",
+      "first_feasible_ms": 343.449,
+      "wall_ms": 362,
+      "accepted_improvements": 0,
+      "cost": {
+        "current_batch_makespan": 97437000000,
+        "current_batch_total_completion_time": 604241000000,
+        "projected_current_batch_completion": 4467837000000,
+        "valid": true,
+        "value": 97437000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "6461d1f05bad3f9574c7739129171d4586e99c9572f1bf844d0d8023f4c12600",
+      "initial_geometry_signature": "625d09f9029781c1b896f27aa89f3a8b8af8f5dcfbb7247b36941a0ac362f541"
+    },
+    {
+      "state_id": "b1-r007",
+      "budget_seconds": 3,
+      "method": "J_VND",
+      "first_feasible_ms": 313.167,
+      "wall_ms": 3023,
+      "accepted_improvements": 1,
+      "cost": {
+        "current_batch_makespan": 101621000000,
+        "current_batch_total_completion_time": 616963000000,
+        "projected_current_batch_completion": 4454021000000,
+        "valid": true,
+        "value": 101621000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "51aa7cbdcefc84f913064bf96bd09441249f7893a12b725e92ad567ed461d092",
+      "initial_geometry_signature": "625d09f9029781c1b896f27aa89f3a8b8af8f5dcfbb7247b36941a0ac362f541"
+    },
+    {
+      "state_id": "b1-r007",
+      "budget_seconds": 3,
+      "method": "S_VND",
+      "first_feasible_ms": 311.087,
+      "wall_ms": 3021,
+      "accepted_improvements": 1,
+      "cost": {
+        "current_batch_makespan": 101621000000,
+        "current_batch_total_completion_time": 616963000000,
+        "projected_current_batch_completion": 4454021000000,
+        "valid": true,
+        "value": 101621000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "51aa7cbdcefc84f913064bf96bd09441249f7893a12b725e92ad567ed461d092",
+      "initial_geometry_signature": "625d09f9029781c1b896f27aa89f3a8b8af8f5dcfbb7247b36941a0ac362f541"
+    },
+    {
+      "state_id": "b1-r012",
+      "budget_seconds": 3,
+      "method": "LRP",
+      "first_feasible_ms": 557.643,
+      "wall_ms": 579,
+      "accepted_improvements": 0,
+      "cost": {
+        "current_batch_makespan": 202517000000,
+        "current_batch_total_completion_time": 1413283000000,
+        "projected_current_batch_completion": 4476862000000,
+        "valid": true,
+        "value": 202517000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "2ed367a9cadbd3088a48c628799c7b33d22326f8b0ec5b96e901b40fb5f99c4b",
+      "initial_geometry_signature": "6dfdd8b31e30c1d445d0f39b7b0b8a0e15f3371f14d7825a50afbff5469f48df"
+    },
+    {
+      "state_id": "b1-r012",
+      "budget_seconds": 3,
+      "method": "J_VND",
+      "first_feasible_ms": 3018.238,
+      "wall_ms": 6048,
+      "accepted_improvements": 22,
+      "cost": {
+        "current_batch_makespan": 219916000000,
+        "current_batch_total_completion_time": 1443717000000,
+        "projected_current_batch_completion": 4476862000000,
+        "valid": true,
+        "value": 219916000000
+      },
+      "solve_attempts": 2,
+      "initial_sequence_signature": "18f8fae45fc294ea21a49c9717187a38b20b03d7a38cc9b69ef912903a41ed26",
+      "initial_geometry_signature": "6dfdd8b31e30c1d445d0f39b7b0b8a0e15f3371f14d7825a50afbff5469f48df"
+    },
+    {
+      "state_id": "b1-r012",
+      "budget_seconds": 3,
+      "method": "S_VND",
+      "first_feasible_ms": 3018.588,
+      "wall_ms": 6048,
+      "accepted_improvements": 22,
+      "cost": {
+        "current_batch_makespan": 219916000000,
+        "current_batch_total_completion_time": 1443717000000,
+        "projected_current_batch_completion": 4476862000000,
+        "valid": true,
+        "value": 219916000000
+      },
+      "solve_attempts": 2,
+      "initial_sequence_signature": "18f8fae45fc294ea21a49c9717187a38b20b03d7a38cc9b69ef912903a41ed26",
+      "initial_geometry_signature": "6dfdd8b31e30c1d445d0f39b7b0b8a0e15f3371f14d7825a50afbff5469f48df"
+    },
+    {
+      "state_id": "b1-r026",
+      "budget_seconds": 3,
+      "method": "LRP",
+      "first_feasible_ms": 782.478,
+      "wall_ms": 810,
+      "accepted_improvements": 0,
+      "cost": {
+        "current_batch_makespan": 342718000000,
+        "current_batch_total_completion_time": 2635147000000,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 342718000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "fb309816506b529c12f7ca476f876dfc06214e3ba955a3e65479e5f6f75bdd38",
+      "initial_geometry_signature": "4ce4978dcd22dedbf4749d890f4c366ccd2cf4d3030184a9eb7d62fff1f2863f"
+    },
+    {
+      "state_id": "b1-r026",
+      "budget_seconds": 3,
+      "method": "J_VND",
+      "first_feasible_ms": 2939.243,
+      "wall_ms": 3028,
+      "accepted_improvements": 0,
+      "cost": {
+        "current_batch_makespan": 361329000000,
+        "current_batch_total_completion_time": 2638462000000,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 361329000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "deed44ab7b902bcfcf361aa6513a7a903a7d87801b03e2d985fc75a9e0196bbf",
+      "initial_geometry_signature": "4ce4978dcd22dedbf4749d890f4c366ccd2cf4d3030184a9eb7d62fff1f2863f"
+    },
+    {
+      "state_id": "b1-r026",
+      "budget_seconds": 3,
+      "method": "S_VND",
+      "first_feasible_ms": 2859.225,
+      "wall_ms": 3027,
+      "accepted_improvements": 0,
+      "cost": {
+        "current_batch_makespan": 361329000000,
+        "current_batch_total_completion_time": 2638462000000,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 361329000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "deed44ab7b902bcfcf361aa6513a7a903a7d87801b03e2d985fc75a9e0196bbf",
+      "initial_geometry_signature": "4ce4978dcd22dedbf4749d890f4c366ccd2cf4d3030184a9eb7d62fff1f2863f"
+    },
+    {
+      "state_id": "b1-r030",
+      "budget_seconds": 3,
+      "method": "LRP",
+      "first_feasible_ms": 867.712,
+      "wall_ms": 895,
+      "accepted_improvements": 0,
+      "cost": {
+        "current_batch_makespan": 376612000000,
+        "current_batch_total_completion_time": 2946436000000,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 376612000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "0668fa385434193c916891ecb7e7cca866685c66187855c1f956c0281dd9ebe0",
+      "initial_geometry_signature": "1231aac31e5f94fccbadf6e239d0debbdb1a1cde47295111496876f360f271ef"
+    },
+    {
+      "state_id": "b1-r030",
+      "budget_seconds": 3,
+      "method": "J_VND",
+      "first_feasible_ms": 1520.083,
+      "wall_ms": 3027,
+      "accepted_improvements": 4,
+      "cost": {
+        "current_batch_makespan": 372385000000,
+        "current_batch_total_completion_time": 2926062229454,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 372385000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "fef639b003b1df17543ea391b3f5aabc095f6bb861ec90ac8a1143699459a129",
+      "initial_geometry_signature": "1231aac31e5f94fccbadf6e239d0debbdb1a1cde47295111496876f360f271ef"
+    },
+    {
+      "state_id": "b1-r030",
+      "budget_seconds": 3,
+      "method": "S_VND",
+      "first_feasible_ms": 1485.924,
+      "wall_ms": 3031,
+      "accepted_improvements": 4,
+      "cost": {
+        "current_batch_makespan": 372385000000,
+        "current_batch_total_completion_time": 2926062229454,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 372385000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "fef639b003b1df17543ea391b3f5aabc095f6bb861ec90ac8a1143699459a129",
+      "initial_geometry_signature": "1231aac31e5f94fccbadf6e239d0debbdb1a1cde47295111496876f360f271ef"
+    },
+    {
+      "state_id": "b1-r007",
+      "budget_seconds": 6,
+      "method": "LRP",
+      "first_feasible_ms": 341.929,
+      "wall_ms": 361,
+      "accepted_improvements": 0,
+      "cost": {
+        "current_batch_makespan": 97437000000,
+        "current_batch_total_completion_time": 604241000000,
+        "projected_current_batch_completion": 4467837000000,
+        "valid": true,
+        "value": 97437000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "6461d1f05bad3f9574c7739129171d4586e99c9572f1bf844d0d8023f4c12600",
+      "initial_geometry_signature": "625d09f9029781c1b896f27aa89f3a8b8af8f5dcfbb7247b36941a0ac362f541"
+    },
+    {
+      "state_id": "b1-r007",
+      "budget_seconds": 6,
+      "method": "J_VND",
+      "first_feasible_ms": 311.457,
+      "wall_ms": 6023,
+      "accepted_improvements": 7,
+      "cost": {
+        "current_batch_makespan": 102537000000,
+        "current_batch_total_completion_time": 620072000000,
+        "projected_current_batch_completion": 4450720000000,
+        "valid": true,
+        "value": 102537000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "51aa7cbdcefc84f913064bf96bd09441249f7893a12b725e92ad567ed461d092",
+      "initial_geometry_signature": "625d09f9029781c1b896f27aa89f3a8b8af8f5dcfbb7247b36941a0ac362f541"
+    },
+    {
+      "state_id": "b1-r007",
+      "budget_seconds": 6,
+      "method": "S_VND",
+      "first_feasible_ms": 310.062,
+      "wall_ms": 6024,
+      "accepted_improvements": 7,
+      "cost": {
+        "current_batch_makespan": 102537000000,
+        "current_batch_total_completion_time": 620072000000,
+        "projected_current_batch_completion": 4450720000000,
+        "valid": true,
+        "value": 102537000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "51aa7cbdcefc84f913064bf96bd09441249f7893a12b725e92ad567ed461d092",
+      "initial_geometry_signature": "625d09f9029781c1b896f27aa89f3a8b8af8f5dcfbb7247b36941a0ac362f541"
+    },
+    {
+      "state_id": "b1-r012",
+      "budget_seconds": 6,
+      "method": "LRP",
+      "first_feasible_ms": 552.67,
+      "wall_ms": 573,
+      "accepted_improvements": 0,
+      "cost": {
+        "current_batch_makespan": 202517000000,
+        "current_batch_total_completion_time": 1413283000000,
+        "projected_current_batch_completion": 4476862000000,
+        "valid": true,
+        "value": 202517000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "2ed367a9cadbd3088a48c628799c7b33d22326f8b0ec5b96e901b40fb5f99c4b",
+      "initial_geometry_signature": "6dfdd8b31e30c1d445d0f39b7b0b8a0e15f3371f14d7825a50afbff5469f48df"
+    },
+    {
+      "state_id": "b1-r012",
+      "budget_seconds": 6,
+      "method": "J_VND",
+      "first_feasible_ms": 4511.338,
+      "wall_ms": 6024,
+      "accepted_improvements": 1,
+      "cost": {
+        "current_batch_makespan": 184309000000,
+        "current_batch_total_completion_time": 1342333000000,
+        "projected_current_batch_completion": 4476862000000,
+        "valid": true,
+        "value": 184309000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "f7d800ca3a386cb05c3b024f241c494f5d8b534920870c0d688221d466711f0f",
+      "initial_geometry_signature": "6dfdd8b31e30c1d445d0f39b7b0b8a0e15f3371f14d7825a50afbff5469f48df"
+    },
+    {
+      "state_id": "b1-r012",
+      "budget_seconds": 6,
+      "method": "S_VND",
+      "first_feasible_ms": 4478.687,
+      "wall_ms": 6024,
+      "accepted_improvements": 1,
+      "cost": {
+        "current_batch_makespan": 184309000000,
+        "current_batch_total_completion_time": 1342333000000,
+        "projected_current_batch_completion": 4476862000000,
+        "valid": true,
+        "value": 184309000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "f7d800ca3a386cb05c3b024f241c494f5d8b534920870c0d688221d466711f0f",
+      "initial_geometry_signature": "6dfdd8b31e30c1d445d0f39b7b0b8a0e15f3371f14d7825a50afbff5469f48df"
+    },
+    {
+      "state_id": "b1-r026",
+      "budget_seconds": 6,
+      "method": "LRP",
+      "first_feasible_ms": 770.609,
+      "wall_ms": 796,
+      "accepted_improvements": 0,
+      "cost": {
+        "current_batch_makespan": 342718000000,
+        "current_batch_total_completion_time": 2635147000000,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 342718000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "fb309816506b529c12f7ca476f876dfc06214e3ba955a3e65479e5f6f75bdd38",
+      "initial_geometry_signature": "4ce4978dcd22dedbf4749d890f4c366ccd2cf4d3030184a9eb7d62fff1f2863f"
+    },
+    {
+      "state_id": "b1-r026",
+      "budget_seconds": 6,
+      "method": "J_VND",
+      "first_feasible_ms": 2850.672,
+      "wall_ms": 6028,
+      "accepted_improvements": 4,
+      "cost": {
+        "current_batch_makespan": 342470000000,
+        "current_batch_total_completion_time": 2643797000000,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 342470000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "deed44ab7b902bcfcf361aa6513a7a903a7d87801b03e2d985fc75a9e0196bbf",
+      "initial_geometry_signature": "4ce4978dcd22dedbf4749d890f4c366ccd2cf4d3030184a9eb7d62fff1f2863f"
+    },
+    {
+      "state_id": "b1-r026",
+      "budget_seconds": 6,
+      "method": "S_VND",
+      "first_feasible_ms": 2909.353,
+      "wall_ms": 6028,
+      "accepted_improvements": 4,
+      "cost": {
+        "current_batch_makespan": 342470000000,
+        "current_batch_total_completion_time": 2643797000000,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 342470000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "deed44ab7b902bcfcf361aa6513a7a903a7d87801b03e2d985fc75a9e0196bbf",
+      "initial_geometry_signature": "4ce4978dcd22dedbf4749d890f4c366ccd2cf4d3030184a9eb7d62fff1f2863f"
+    },
+    {
+      "state_id": "b1-r030",
+      "budget_seconds": 6,
+      "method": "LRP",
+      "first_feasible_ms": 891.001,
+      "wall_ms": 918,
+      "accepted_improvements": 0,
+      "cost": {
+        "current_batch_makespan": 376612000000,
+        "current_batch_total_completion_time": 2946436000000,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 376612000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "0668fa385434193c916891ecb7e7cca866685c66187855c1f956c0281dd9ebe0",
+      "initial_geometry_signature": "1231aac31e5f94fccbadf6e239d0debbdb1a1cde47295111496876f360f271ef"
+    },
+    {
+      "state_id": "b1-r030",
+      "budget_seconds": 6,
+      "method": "J_VND",
+      "first_feasible_ms": 1519.281,
+      "wall_ms": 6031,
+      "accepted_improvements": 4,
+      "cost": {
+        "current_batch_makespan": 372385000000,
+        "current_batch_total_completion_time": 2926062229454,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 372385000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "fef639b003b1df17543ea391b3f5aabc095f6bb861ec90ac8a1143699459a129",
+      "initial_geometry_signature": "1231aac31e5f94fccbadf6e239d0debbdb1a1cde47295111496876f360f271ef"
+    },
+    {
+      "state_id": "b1-r030",
+      "budget_seconds": 6,
+      "method": "S_VND",
+      "first_feasible_ms": 1455.736,
+      "wall_ms": 6030,
+      "accepted_improvements": 4,
+      "cost": {
+        "current_batch_makespan": 372385000000,
+        "current_batch_total_completion_time": 2926062229454,
+        "projected_current_batch_completion": 4504528000000,
+        "valid": true,
+        "value": 372385000000
+      },
+      "solve_attempts": 1,
+      "initial_sequence_signature": "fef639b003b1df17543ea391b3f5aabc095f6bb861ec90ac8a1143699459a129",
+      "initial_geometry_signature": "1231aac31e5f94fccbadf6e239d0debbdb1a1cde47295111496876f360f271ef"
+    }
+  ]
+}

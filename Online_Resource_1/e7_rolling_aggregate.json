@@ -1,0 +1,62 @@
+{
+  "scope": [
+    "Each method rolls independently from the same initial state. Trajectories diverge after the first commitment, so later per-round costs are not paired.",
+    "One complete batch does not generalize to other batches or field operation.",
+    "Completion offsets are model-internal rolling outcomes, not observed customer-site performance.",
+    "The independent audits do not call the runtime C++ validator and do not prove the absence of errors outside their declared scopes."
+  ],
+  "methods": {
+    "LRP": {
+      "completion_offset_seconds": 5614730.0,
+      "milestone_completion_offsets_seconds": [
+        5544052.0,
+        5614730.0
+      ],
+      "solver_wall_time_milliseconds": {
+        "total": 492252,
+        "median": 286.0,
+        "p95": 4547,
+        "maximum": 60392
+      },
+      "round_count": 384,
+      "trace_feasible_count": 384,
+      "trace_failed_count": 585,
+      "final_geometry_changed_count": 0
+    },
+    "J_VND": {
+      "completion_offset_seconds": 5448089.0,
+      "milestone_completion_offsets_seconds": [
+        5415603.0,
+        5448089.0
+      ],
+      "solver_wall_time_milliseconds": {
+        "total": 2534236,
+        "median": 1895,
+        "p95": 24250,
+        "maximum": 60559
+      },
+      "round_count": 349,
+      "trace_feasible_count": 349,
+      "trace_failed_count": 627,
+      "final_geometry_changed_count": 41
+    },
+    "S_VND": {
+      "completion_offset_seconds": 5530327.0,
+      "milestone_completion_offsets_seconds": [
+        5425127.0,
+        5530327.0
+      ],
+      "solver_wall_time_milliseconds": {
+        "total": 2341922,
+        "median": 317.0,
+        "p95": 24171,
+        "maximum": 60756
+      },
+      "round_count": 394,
+      "trace_feasible_count": 394,
+      "trace_failed_count": 385,
+      "final_geometry_changed_count": 0
+    }
+  },
+  "source_sha256": "50c06aa7524f7165686357ab6b84c55da4b737c9c04d02a715ee792e90b542b0"
+}

@@ -1,0 +1,121 @@
+{
+  "timing": {
+    "b3_LRP": {
+      "median_wall_ms": 694.5,
+      "median_first_feasible_ms": 670.0605,
+      "median_improvements": 0.0,
+      "total_failed_decodes": 0
+    },
+    "b3_J_VND": {
+      "median_wall_ms": 3027.5,
+      "median_first_feasible_ms": 2229.663,
+      "median_improvements": 2.5,
+      "total_failed_decodes": 69
+    },
+    "b3_S_VND": {
+      "median_wall_ms": 3029.0,
+      "median_first_feasible_ms": 2172.5744999999997,
+      "median_improvements": 2.5,
+      "total_failed_decodes": 70
+    },
+    "b6_LRP": {
+      "median_wall_ms": 684.5,
+      "median_first_feasible_ms": 661.6395,
+      "median_improvements": 0.0,
+      "total_failed_decodes": 0
+    },
+    "b6_J_VND": {
+      "median_wall_ms": 6026.0,
+      "median_first_feasible_ms": 2184.9764999999998,
+      "median_improvements": 4.0,
+      "total_failed_decodes": 155
+    },
+    "b6_S_VND": {
+      "median_wall_ms": 6026.0,
+      "median_first_feasible_ms": 2182.5445,
+      "median_improvements": 4.0,
+      "total_failed_decodes": 157
+    },
+    "b12_LRP": {
+      "median_wall_ms": 569.0,
+      "median_first_feasible_ms": 546.2104999999999,
+      "median_improvements": 0.0,
+      "total_failed_decodes": 0
+    },
+    "b12_J_VND": {
+      "median_wall_ms": 9042.5,
+      "median_first_feasible_ms": 2243.249,
+      "median_improvements": 5.0,
+      "total_failed_decodes": 612
+    },
+    "b12_S_VND": {
+      "median_wall_ms": 8517.0,
+      "median_first_feasible_ms": 2239.429,
+      "median_improvements": 5.0,
+      "total_failed_decodes": 616
+    }
+  },
+  "state_count_by_cap_seconds": {
+    "3": 4,
+    "6": 4,
+    "12": 8
+  },
+  "comparison_counts": {
+    "b3_J_VND_vs_S_VND": {
+      "left_wins": 0,
+      "ties": 4,
+      "right_wins": 0,
+      "state_count": 4
+    },
+    "b3_J_VND_vs_LRP": {
+      "left_wins": 2,
+      "ties": 0,
+      "right_wins": 2,
+      "state_count": 4
+    },
+    "b3_S_VND_vs_LRP": {
+      "left_wins": 2,
+      "ties": 0,
+      "right_wins": 2,
+      "state_count": 4
+    },
+    "b6_J_VND_vs_S_VND": {
+      "left_wins": 0,
+      "ties": 4,
+      "right_wins": 0,
+      "state_count": 4
+    },
+    "b6_J_VND_vs_LRP": {
+      "left_wins": 4,
+      "ties": 0,
+      "right_wins": 0,
+      "state_count": 4
+    },
+    "b6_S_VND_vs_LRP": {
+      "left_wins": 4,
+      "ties": 0,
+      "right_wins": 0,
+      "state_count": 4
+    },
+    "b12_J_VND_vs_S_VND": {
+      "left_wins": 0,
+      "ties": 7,
+      "right_wins": 1,
+      "state_count": 8
+    },
+    "b12_J_VND_vs_LRP": {
+      "left_wins": 6,
+      "ties": 0,
+      "right_wins": 2,
+      "state_count": 8
+    },
+    "b12_S_VND_vs_LRP": {
+      "left_wins": 6,
+      "ties": 0,
+      "right_wins": 2,
+      "state_count": 8
+    }
+  },
+  "source_sha256": "c0eb8b724526bc64fbbeebb76dd98238ec76e90fdaa5b2a99c2a02d280835ef3",
+  "scope_note": "Predetermined development states under research per-invocation caps of 3, 6, and 12 seconds; not a holdout benchmark."
+}

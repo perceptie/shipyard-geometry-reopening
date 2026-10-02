@@ -1,0 +1,4613 @@
+{
+  "schema": "p3-terminal-case-evidence/1.0.0",
+  "scope": "Two retrospective terminal-plan examples from existing E10 runs; case-local aliases and relative plan times; previously released Cost offsets are retained for comparison with the public CSV.",
+  "new_solver_executions": 0,
+  "initial_plan_separately_stored": false,
+  "source_evidence_seal_sha256": "2b96cfcb709b74abeec5f20da0e210b162f0b6a008b5f448b7bddad7fea1bee5",
+  "anonymization": [
+    "Case-local task, block, crane and region aliases.",
+    "No coordinates, customer identifiers, host names, absolute source paths or calendar dates.",
+    "Plan times are model seconds relative to the common decision epoch of each case."
+  ],
+  "limits": [
+    "The original traces retained an initial sequence digest and untimed geometry signature, but no independent initial task timings, motions, occupancy times or Cost vector.",
+    "The gate is recomputed from content fingerprints and compared with the released CSV; the public package cannot independently regenerate restricted raw inputs or the initial plan.",
+    "A trace hash binds this extraction to the retained record; it does not make the restricted record publicly reproducible.",
+    "Terminal-plan decompositions are descriptive and do not identify the causal contribution of geometry, search order or computation time.",
+    "Gaps between named task intervals can contain non-task crane motions and are not necessarily idle time.",
+    "A decoder locked flag under S-VND can express temporary geometry freezing; committed_at_input identifies prior commitments.",
+    "Case-local aliases must not be joined across the two states."
+  ],
+  "cases": [
+    {
+      "state": "b3-r006",
+      "scope": "case-local aliases; times relative to retained decision epoch; no coordinates or client identifiers",
+      "task_count": 8,
+      "locked_occupancy_count": 43,
+      "repeats": [
+        {
+          "repeat": 1,
+          "initial_sequence_signature_equal": true,
+          "initial_geometry_signature_equal": true,
+          "initial_plan_storage": "only initial sequence digest and full untimed geometry signature; no initial decoded task/motion/occupancy-time/Cost record",
+          "accepted_mode_equal": true,
+          "accepted_budget_equal": true,
+          "final_geometry_changed_blocks_J_minus_S": [
+            "B2",
+            "B4",
+            "B6"
+          ],
+          "input_field_equality": {
+            "available": true,
+            "blocks": true,
+            "cranes": true,
+            "dependencies": true,
+            "dwell": true,
+            "external": true,
+            "initial_available": true,
+            "locked": true,
+            "minimum_separation_x": true,
+            "minimum_start": true,
+            "projection_context": true,
+            "rail_order": true,
+            "regions": true,
+            "speeds": true,
+            "tasks": true,
+            "unavailable": true
+          },
+          "methods": {
+            "J_VND": {
+              "trace_sha256": "af8617df860f445dfa5c97980d088dd8d35cc1ba69daf60ab96a3b2d2f22061e",
+              "initial_sequence_signature_sha256": "36a5c9a3d47c73cd6618ee31b849ede56d32c421925edfd78aa72ad772e76b2a",
+              "initial_geometry_signature_sha256": "0f3458a2b61611f30f84190524994ada42a9dd3e0ff4242afabe3df23293aedb",
+              "mode": "ready_work_primary",
+              "budget_seconds": 12,
+              "first_feasible_seconds": 4.527039,
+              "cost_integer_microseconds": {
+                "current_batch_makespan": 10875933509685,
+                "current_batch_total_completion_time": 86881815077480,
+                "projected_current_batch_completion": 15155034509685,
+                "valid": true,
+                "value": 10875933509685
+              },
+              "cost_relative_seconds": {
+                "projected_current_batch_completion": 4334667.0,
+                "current_batch_makespan": 55566.0,
+                "current_batch_total_completion_time": 318875.0,
+                "value": 55566.0
+              },
+              "candidate_decode_requests": 172,
+              "candidate_decode_executions": 156,
+              "field_decode_calls": 10926,
+              "rail_redecode_calls": 10690,
+              "tracked_feasible_decodes": 42,
+              "tracked_failed_decodes": 34,
+              "tracked_geometry_changes": 36,
+              "accepted_improvement_count": 7,
+              "final_changed_blocks_from_initial": [
+                "B2",
+                "B4",
+                "B6"
+              ],
+              "final_sequences": {
+                "C1": [
+                  "T8",
+                  "T1"
+                ],
+                "C2": [
+                  "T6",
+                  "T5",
+                  "T7",
+                  "T2",
+                  "T4",
+                  "T3"
+                ],
+                "C3": []
+              },
+              "final_tasks": [
+                {
+                  "task": "T1",
+                  "block": "B2",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 46436.0,
+                  "end_seconds": 50354.0,
+                  "empty_seconds": 223.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 95.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T2",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 27733.0,
+                  "end_seconds": 46436.0,
+                  "empty_seconds": 332.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 371.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T3",
+                  "block": "B6",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 50835.0,
+                  "end_seconds": 55566.0,
+                  "empty_seconds": 346.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 785.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T4",
+                  "block": "B4",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 46436.0,
+                  "end_seconds": 50835.0,
+                  "empty_seconds": 223.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 576.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T5",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 18267.0,
+                  "end_seconds": 23248.0,
+                  "empty_seconds": 828.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 553.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T6",
+                  "block": "B1",
+                  "kind": 3,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 0.0,
+                  "end_seconds": 18267.0,
+                  "empty_seconds": 89.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 178.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T7",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 23248.0,
+                  "end_seconds": 27733.0,
+                  "empty_seconds": 332.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 553.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T8",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 26737.0,
+                  "end_seconds": 46436.0,
+                  "empty_seconds": 1328.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 371.0,
+                  "dependency_predecessors_in_pool": []
+                }
+              ],
+              "active_occupancies": [
+                {
+                  "block": "B1",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -1954799.054858,
+                  "end_seconds": 18089.0,
+                  "carry_task": "T6",
+                  "entry_tasks": []
+                },
+                {
+                  "block": "B2",
+                  "region": "R4",
+                  "initial_region": "R1",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": false,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 46436.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T1"
+                  ]
+                },
+                {
+                  "block": "B3",
+                  "region": "R1",
+                  "initial_region": "R1",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -38805.507739,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T2",
+                    "T8"
+                  ]
+                },
+                {
+                  "block": "B4",
+                  "region": "R1",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": false,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 46436.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T4"
+                  ]
+                },
+                {
+                  "block": "B5",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -100949.507739,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T5",
+                    "T7"
+                  ]
+                },
+                {
+                  "block": "B6",
+                  "region": "R1",
+                  "initial_region": "R1",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": false,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 50835.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T3"
+                  ]
+                }
+              ],
+              "motion_kind_totals": {
+                "0": {
+                  "count": 10,
+                  "duration_seconds": 3840.0,
+                  "nonzero_displacement_count": 10,
+                  "empty_task_id_count": 2
+                },
+                "2": {
+                  "count": 8,
+                  "duration_seconds": 72000.0,
+                  "nonzero_displacement_count": 0,
+                  "empty_task_id_count": 0
+                },
+                "3": {
+                  "count": 8,
+                  "duration_seconds": 3482.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                }
+              },
+              "improvement_timeline": [
+                {
+                  "elapsed_seconds": 4.634805,
+                  "projected_completion_seconds": 4344469.0,
+                  "current_batch_makespan_seconds": 47268.0,
+                  "current_batch_total_completion_time_seconds": 169055.0,
+                  "pool_cost_seconds": 47268.0
+                },
+                {
+                  "elapsed_seconds": 4.738458,
+                  "projected_completion_seconds": 4344469.0,
+                  "current_batch_makespan_seconds": 47268.0,
+                  "current_batch_total_completion_time_seconds": 169018.0,
+                  "pool_cost_seconds": 47268.0
+                },
+                {
+                  "elapsed_seconds": 5.083109,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 74791.190801,
+                  "current_batch_total_completion_time_seconds": 296238.035112,
+                  "pool_cost_seconds": 74791.190801
+                },
+                {
+                  "elapsed_seconds": 6.672381,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 55618.0,
+                  "current_batch_total_completion_time_seconds": 343111.0,
+                  "pool_cost_seconds": 55618.0
+                },
+                {
+                  "elapsed_seconds": 7.813074,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 55566.326755,
+                  "current_batch_total_completion_time_seconds": 329154.96053,
+                  "pool_cost_seconds": 55566.326755
+                },
+                {
+                  "elapsed_seconds": 9.165197,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 55566.0,
+                  "current_batch_total_completion_time_seconds": 324014.0,
+                  "pool_cost_seconds": 55566.0
+                },
+                {
+                  "elapsed_seconds": 10.508118,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 55566.0,
+                  "current_batch_total_completion_time_seconds": 318875.0,
+                  "pool_cost_seconds": 55566.0
+                }
+              ],
+              "non_task_motions": [
+                {
+                  "crane": "C1",
+                  "kind": 0,
+                  "start_seconds": 50354.0,
+                  "end_seconds": 50411.0,
+                  "duration_seconds": 57.0
+                },
+                {
+                  "crane": "C3",
+                  "kind": 0,
+                  "start_seconds": -10820367.509685,
+                  "end_seconds": -10820285.509685,
+                  "duration_seconds": 82.0
+                }
+              ],
+              "crane_task_spans": {
+                "C1": {
+                  "first_start_seconds": 26737.0,
+                  "last_end_seconds": 50354.0,
+                  "task_processing_seconds": 23617.0,
+                  "between_task_gaps_seconds": 0.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                },
+                "C2": {
+                  "first_start_seconds": 0.0,
+                  "last_end_seconds": 55566.0,
+                  "task_processing_seconds": 55566.0,
+                  "between_task_gaps_seconds": 0.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                }
+              },
+              "final_plan_sha256": "35dd6c18b9647b94acd794d4861b2dc4332b236db1d4a11be4aa36ba606b9a9d",
+              "source_trace_label": "E10/b3-r006/repeat-1/J_VND",
+              "gate_fingerprints": {
+                "source_state_fingerprints": {
+                  "source_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "source_checkpoint_journal": "224a80681452b19472839c03e2e811cc78d609ffbcd1a0277123c0cf0bec08be",
+                  "source_trace": "35bcd56c46cc02f994b490c35f0fc188b1bc0579a253e8d5e4187d09c8764ed7",
+                  "prefix_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "prefix_checkpoint_journal": "63e4b7849f534c21e71201bb2db8352aed15429c3d6b0f8e161c9f180dd4863e",
+                  "source_warm_sidecar": "5e7a737c5c4ffa57f3f4939f278f42beef5ad4bd33b1add5cfd606b574fa8c90",
+                  "warm_input": "5e7a737c5c4ffa57f3f4939f278f42beef5ad4bd33b1add5cfd606b574fa8c90"
+                },
+                "warm_start_mode": "restored_sidecar",
+                "common_configuration_sha256": "f293fb1237d58dab176967c34225dadc4f177e28bfe1e23a64877cb16d53b6bf",
+                "binary_sha256": "207bfdd67b65e816d022c14534a51f5c93fad016a05392a78a12f2df8286fc77",
+                "provenance_sha256": "7fb68329e7830385bc07fb8769f459d9975eb55d3b56793c6045691396d6630f"
+              }
+            },
+            "S_VND": {
+              "trace_sha256": "fb442a452d5b306d3e09a4fd16e7807ebda5b92086b4e29488bc03769db24380",
+              "initial_sequence_signature_sha256": "36a5c9a3d47c73cd6618ee31b849ede56d32c421925edfd78aa72ad772e76b2a",
+              "initial_geometry_signature_sha256": "0f3458a2b61611f30f84190524994ada42a9dd3e0ff4242afabe3df23293aedb",
+              "mode": "ready_work_primary",
+              "budget_seconds": 12,
+              "first_feasible_seconds": 4.566351,
+              "cost_integer_microseconds": {
+                "current_batch_makespan": 10876166836440,
+                "current_batch_total_completion_time": 86893000038010,
+                "projected_current_batch_completion": 15155034509685,
+                "valid": true,
+                "value": 10876166836440
+              },
+              "cost_relative_seconds": {
+                "projected_current_batch_completion": 4334667.0,
+                "current_batch_makespan": 55799.326755,
+                "current_batch_total_completion_time": 330059.96053,
+                "value": 55799.326755
+              },
+              "candidate_decode_requests": 159,
+              "candidate_decode_executions": 136,
+              "field_decode_calls": 11070,
+              "rail_redecode_calls": 10856,
+              "tracked_feasible_decodes": 40,
+              "tracked_failed_decodes": 16,
+              "tracked_geometry_changes": 0,
+              "accepted_improvement_count": 9,
+              "final_changed_blocks_from_initial": [],
+              "final_sequences": {
+                "C1": [
+                  "T8",
+                  "T1"
+                ],
+                "C2": [
+                  "T6",
+                  "T2",
+                  "T4",
+                  "T5",
+                  "T7",
+                  "T3"
+                ],
+                "C3": []
+              },
+              "final_tasks": [
+                {
+                  "task": "T1",
+                  "block": "B2",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 37466.326755,
+                  "end_seconds": 41838.326755,
+                  "empty_seconds": 223.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 549.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T2",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 18267.0,
+                  "end_seconds": 37466.0,
+                  "empty_seconds": 828.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 371.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T3",
+                  "block": "B6",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 51136.326755,
+                  "end_seconds": 55799.326755,
+                  "empty_seconds": 332.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 731.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T4",
+                  "block": "B4",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 37466.326755,
+                  "end_seconds": 41435.326755,
+                  "empty_seconds": 223.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 146.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T5",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 42168.326755,
+                  "end_seconds": 46651.326755,
+                  "empty_seconds": 330.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 553.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T6",
+                  "block": "B1",
+                  "kind": 3,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 0.0,
+                  "end_seconds": 18267.0,
+                  "empty_seconds": 89.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 178.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T7",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 46651.326755,
+                  "end_seconds": 51136.326755,
+                  "empty_seconds": 332.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 553.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T8",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 17767.326755,
+                  "end_seconds": 37466.326755,
+                  "empty_seconds": 1328.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 371.0,
+                  "dependency_predecessors_in_pool": []
+                }
+              ],
+              "active_occupancies": [
+                {
+                  "block": "B1",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -1954799.054858,
+                  "end_seconds": 18089.0,
+                  "carry_task": "T6",
+                  "entry_tasks": []
+                },
+                {
+                  "block": "B2",
+                  "region": "R1",
+                  "initial_region": "R1",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 37466.326755,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T1"
+                  ]
+                },
+                {
+                  "block": "B3",
+                  "region": "R1",
+                  "initial_region": "R1",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -38805.507739,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T2",
+                    "T8"
+                  ]
+                },
+                {
+                  "block": "B4",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 37466.326755,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T4"
+                  ]
+                },
+                {
+                  "block": "B5",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -100949.507739,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T5",
+                    "T7"
+                  ]
+                },
+                {
+                  "block": "B6",
+                  "region": "R1",
+                  "initial_region": "R1",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 51136.326755,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T3"
+                  ]
+                }
+              ],
+              "motion_kind_totals": {
+                "0": {
+                  "count": 11,
+                  "duration_seconds": 4306.0,
+                  "nonzero_displacement_count": 11,
+                  "empty_task_id_count": 3
+                },
+                "2": {
+                  "count": 8,
+                  "duration_seconds": 72000.0,
+                  "nonzero_displacement_count": 0,
+                  "empty_task_id_count": 0
+                },
+                "3": {
+                  "count": 8,
+                  "duration_seconds": 3452.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                }
+              },
+              "improvement_timeline": [
+                {
+                  "elapsed_seconds": 4.584305,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 60558.0,
+                  "current_batch_total_completion_time_seconds": 203352.492261,
+                  "pool_cost_seconds": 60558.0
+                },
+                {
+                  "elapsed_seconds": 4.62836,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 46106.376315,
+                  "current_batch_total_completion_time_seconds": 231251.244891,
+                  "pool_cost_seconds": 46106.376315
+                },
+                {
+                  "elapsed_seconds": 4.693285,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 46106.376315,
+                  "current_batch_total_completion_time_seconds": 216491.244891,
+                  "pool_cost_seconds": 46106.376315
+                },
+                {
+                  "elapsed_seconds": 4.813117,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 43083.492261,
+                  "current_batch_total_completion_time_seconds": 224774.476783,
+                  "pool_cost_seconds": 43083.492261
+                },
+                {
+                  "elapsed_seconds": 5.331748,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 43083.492261,
+                  "current_batch_total_completion_time_seconds": 210665.476783,
+                  "pool_cost_seconds": 43083.492261
+                },
+                {
+                  "elapsed_seconds": 5.855972,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 43083.492261,
+                  "current_batch_total_completion_time_seconds": 196556.476783,
+                  "pool_cost_seconds": 43083.492261
+                },
+                {
+                  "elapsed_seconds": 6.397137,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 43083.492261,
+                  "current_batch_total_completion_time_seconds": 182732.476783,
+                  "pool_cost_seconds": 43083.492261
+                },
+                {
+                  "elapsed_seconds": 7.204005,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 73931.269867,
+                  "current_batch_total_completion_time_seconds": 308114.193244,
+                  "pool_cost_seconds": 73931.269867
+                },
+                {
+                  "elapsed_seconds": 9.255141,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 55799.326755,
+                  "current_batch_total_completion_time_seconds": 330059.96053,
+                  "pool_cost_seconds": 55799.326755
+                }
+              ],
+              "non_task_motions": [
+                {
+                  "crane": "C1",
+                  "kind": 0,
+                  "start_seconds": 41838.326755,
+                  "end_seconds": 42168.326755,
+                  "duration_seconds": 330.0
+                },
+                {
+                  "crane": "C2",
+                  "kind": 0,
+                  "start_seconds": 41435.326755,
+                  "end_seconds": 41677.326755,
+                  "duration_seconds": 242.0
+                },
+                {
+                  "crane": "C3",
+                  "kind": 0,
+                  "start_seconds": -10820367.509685,
+                  "end_seconds": -10820318.509685,
+                  "duration_seconds": 49.0
+                }
+              ],
+              "crane_task_spans": {
+                "C1": {
+                  "first_start_seconds": 17767.326755,
+                  "last_end_seconds": 41838.326755,
+                  "task_processing_seconds": 24071.0,
+                  "between_task_gaps_seconds": 0.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                },
+                "C2": {
+                  "first_start_seconds": 0.0,
+                  "last_end_seconds": 55799.326755,
+                  "task_processing_seconds": 55066.0,
+                  "between_task_gaps_seconds": 733.326755,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                }
+              },
+              "final_plan_sha256": "d627e4fef1602dae657086303df59d53c70834db8bd772eef112b242e548ea26",
+              "source_trace_label": "E10/b3-r006/repeat-1/S_VND",
+              "gate_fingerprints": {
+                "source_state_fingerprints": {
+                  "source_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "source_checkpoint_journal": "224a80681452b19472839c03e2e811cc78d609ffbcd1a0277123c0cf0bec08be",
+                  "source_trace": "35bcd56c46cc02f994b490c35f0fc188b1bc0579a253e8d5e4187d09c8764ed7",
+                  "prefix_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "prefix_checkpoint_journal": "63e4b7849f534c21e71201bb2db8352aed15429c3d6b0f8e161c9f180dd4863e",
+                  "source_warm_sidecar": "5e7a737c5c4ffa57f3f4939f278f42beef5ad4bd33b1add5cfd606b574fa8c90",
+                  "warm_input": "5e7a737c5c4ffa57f3f4939f278f42beef5ad4bd33b1add5cfd606b574fa8c90"
+                },
+                "warm_start_mode": "restored_sidecar",
+                "common_configuration_sha256": "f293fb1237d58dab176967c34225dadc4f177e28bfe1e23a64877cb16d53b6bf",
+                "binary_sha256": "207bfdd67b65e816d022c14534a51f5c93fad016a05392a78a12f2df8286fc77",
+                "provenance_sha256": "a01e0a89dae736d5cc512c8debfbe17975db7b5cba2a6ce5acf30ef93c02e3ea"
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "initial_sequence_signature_equal": true,
+          "initial_geometry_signature_equal": true,
+          "initial_plan_storage": "only initial sequence digest and full untimed geometry signature; no initial decoded task/motion/occupancy-time/Cost record",
+          "accepted_mode_equal": true,
+          "accepted_budget_equal": true,
+          "final_geometry_changed_blocks_J_minus_S": [
+            "B2",
+            "B4",
+            "B6"
+          ],
+          "input_field_equality": {
+            "available": true,
+            "blocks": true,
+            "cranes": true,
+            "dependencies": true,
+            "dwell": true,
+            "external": true,
+            "initial_available": true,
+            "locked": true,
+            "minimum_separation_x": true,
+            "minimum_start": true,
+            "projection_context": true,
+            "rail_order": true,
+            "regions": true,
+            "speeds": true,
+            "tasks": true,
+            "unavailable": true
+          },
+          "methods": {
+            "J_VND": {
+              "trace_sha256": "a08111cac90918e5f212c281f760313b08031b140956f2d958f44fa2fca6ea94",
+              "initial_sequence_signature_sha256": "36a5c9a3d47c73cd6618ee31b849ede56d32c421925edfd78aa72ad772e76b2a",
+              "initial_geometry_signature_sha256": "0f3458a2b61611f30f84190524994ada42a9dd3e0ff4242afabe3df23293aedb",
+              "mode": "ready_work_primary",
+              "budget_seconds": 12,
+              "first_feasible_seconds": 4.394569,
+              "cost_integer_microseconds": {
+                "current_batch_makespan": 10875933509685,
+                "current_batch_total_completion_time": 86881815077480,
+                "projected_current_batch_completion": 15155034509685,
+                "valid": true,
+                "value": 10875933509685
+              },
+              "cost_relative_seconds": {
+                "projected_current_batch_completion": 4334667.0,
+                "current_batch_makespan": 55566.0,
+                "current_batch_total_completion_time": 318875.0,
+                "value": 55566.0
+              },
+              "candidate_decode_requests": 172,
+              "candidate_decode_executions": 156,
+              "field_decode_calls": 10992,
+              "rail_redecode_calls": 10756,
+              "tracked_feasible_decodes": 42,
+              "tracked_failed_decodes": 34,
+              "tracked_geometry_changes": 36,
+              "accepted_improvement_count": 7,
+              "final_changed_blocks_from_initial": [
+                "B2",
+                "B4",
+                "B6"
+              ],
+              "final_sequences": {
+                "C1": [
+                  "T8",
+                  "T1"
+                ],
+                "C2": [
+                  "T6",
+                  "T5",
+                  "T7",
+                  "T2",
+                  "T4",
+                  "T3"
+                ],
+                "C3": []
+              },
+              "final_tasks": [
+                {
+                  "task": "T1",
+                  "block": "B2",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 46436.0,
+                  "end_seconds": 50354.0,
+                  "empty_seconds": 223.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 95.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T2",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 27733.0,
+                  "end_seconds": 46436.0,
+                  "empty_seconds": 332.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 371.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T3",
+                  "block": "B6",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 50835.0,
+                  "end_seconds": 55566.0,
+                  "empty_seconds": 346.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 785.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T4",
+                  "block": "B4",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 46436.0,
+                  "end_seconds": 50835.0,
+                  "empty_seconds": 223.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 576.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T5",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 18267.0,
+                  "end_seconds": 23248.0,
+                  "empty_seconds": 828.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 553.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T6",
+                  "block": "B1",
+                  "kind": 3,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 0.0,
+                  "end_seconds": 18267.0,
+                  "empty_seconds": 89.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 178.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T7",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 23248.0,
+                  "end_seconds": 27733.0,
+                  "empty_seconds": 332.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 553.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T8",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 26737.0,
+                  "end_seconds": 46436.0,
+                  "empty_seconds": 1328.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 371.0,
+                  "dependency_predecessors_in_pool": []
+                }
+              ],
+              "active_occupancies": [
+                {
+                  "block": "B1",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -1954799.054858,
+                  "end_seconds": 18089.0,
+                  "carry_task": "T6",
+                  "entry_tasks": []
+                },
+                {
+                  "block": "B2",
+                  "region": "R4",
+                  "initial_region": "R1",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": false,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 46436.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T1"
+                  ]
+                },
+                {
+                  "block": "B3",
+                  "region": "R1",
+                  "initial_region": "R1",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -38805.507739,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T2",
+                    "T8"
+                  ]
+                },
+                {
+                  "block": "B4",
+                  "region": "R1",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": false,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 46436.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T4"
+                  ]
+                },
+                {
+                  "block": "B5",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -100949.507739,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T5",
+                    "T7"
+                  ]
+                },
+                {
+                  "block": "B6",
+                  "region": "R1",
+                  "initial_region": "R1",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": false,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 50835.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T3"
+                  ]
+                }
+              ],
+              "motion_kind_totals": {
+                "0": {
+                  "count": 10,
+                  "duration_seconds": 3840.0,
+                  "nonzero_displacement_count": 10,
+                  "empty_task_id_count": 2
+                },
+                "2": {
+                  "count": 8,
+                  "duration_seconds": 72000.0,
+                  "nonzero_displacement_count": 0,
+                  "empty_task_id_count": 0
+                },
+                "3": {
+                  "count": 8,
+                  "duration_seconds": 3482.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                }
+              },
+              "improvement_timeline": [
+                {
+                  "elapsed_seconds": 4.501476,
+                  "projected_completion_seconds": 4344469.0,
+                  "current_batch_makespan_seconds": 47268.0,
+                  "current_batch_total_completion_time_seconds": 169055.0,
+                  "pool_cost_seconds": 47268.0
+                },
+                {
+                  "elapsed_seconds": 4.603591,
+                  "projected_completion_seconds": 4344469.0,
+                  "current_batch_makespan_seconds": 47268.0,
+                  "current_batch_total_completion_time_seconds": 169018.0,
+                  "pool_cost_seconds": 47268.0
+                },
+                {
+                  "elapsed_seconds": 4.949188,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 74791.190801,
+                  "current_batch_total_completion_time_seconds": 296238.035112,
+                  "pool_cost_seconds": 74791.190801
+                },
+                {
+                  "elapsed_seconds": 6.566644,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 55618.0,
+                  "current_batch_total_completion_time_seconds": 343111.0,
+                  "pool_cost_seconds": 55618.0
+                },
+                {
+                  "elapsed_seconds": 7.707739,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 55566.326755,
+                  "current_batch_total_completion_time_seconds": 329154.96053,
+                  "pool_cost_seconds": 55566.326755
+                },
+                {
+                  "elapsed_seconds": 9.048183,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 55566.0,
+                  "current_batch_total_completion_time_seconds": 324014.0,
+                  "pool_cost_seconds": 55566.0
+                },
+                {
+                  "elapsed_seconds": 10.398104,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 55566.0,
+                  "current_batch_total_completion_time_seconds": 318875.0,
+                  "pool_cost_seconds": 55566.0
+                }
+              ],
+              "non_task_motions": [
+                {
+                  "crane": "C1",
+                  "kind": 0,
+                  "start_seconds": 50354.0,
+                  "end_seconds": 50411.0,
+                  "duration_seconds": 57.0
+                },
+                {
+                  "crane": "C3",
+                  "kind": 0,
+                  "start_seconds": -10820367.509685,
+                  "end_seconds": -10820285.509685,
+                  "duration_seconds": 82.0
+                }
+              ],
+              "crane_task_spans": {
+                "C1": {
+                  "first_start_seconds": 26737.0,
+                  "last_end_seconds": 50354.0,
+                  "task_processing_seconds": 23617.0,
+                  "between_task_gaps_seconds": 0.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                },
+                "C2": {
+                  "first_start_seconds": 0.0,
+                  "last_end_seconds": 55566.0,
+                  "task_processing_seconds": 55566.0,
+                  "between_task_gaps_seconds": 0.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                }
+              },
+              "final_plan_sha256": "35dd6c18b9647b94acd794d4861b2dc4332b236db1d4a11be4aa36ba606b9a9d",
+              "source_trace_label": "E10/b3-r006/repeat-2/J_VND",
+              "gate_fingerprints": {
+                "source_state_fingerprints": {
+                  "source_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "source_checkpoint_journal": "224a80681452b19472839c03e2e811cc78d609ffbcd1a0277123c0cf0bec08be",
+                  "source_trace": "35bcd56c46cc02f994b490c35f0fc188b1bc0579a253e8d5e4187d09c8764ed7",
+                  "prefix_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "prefix_checkpoint_journal": "63e4b7849f534c21e71201bb2db8352aed15429c3d6b0f8e161c9f180dd4863e",
+                  "source_warm_sidecar": "5e7a737c5c4ffa57f3f4939f278f42beef5ad4bd33b1add5cfd606b574fa8c90",
+                  "warm_input": "5e7a737c5c4ffa57f3f4939f278f42beef5ad4bd33b1add5cfd606b574fa8c90"
+                },
+                "warm_start_mode": "restored_sidecar",
+                "common_configuration_sha256": "f293fb1237d58dab176967c34225dadc4f177e28bfe1e23a64877cb16d53b6bf",
+                "binary_sha256": "207bfdd67b65e816d022c14534a51f5c93fad016a05392a78a12f2df8286fc77",
+                "provenance_sha256": "f324ef42d2f26db4ddf9253f8169e501783cc9f37fddc0c617742931b69fbf5e"
+              }
+            },
+            "S_VND": {
+              "trace_sha256": "b2acf02523e75516a94eb5dad34eb07b28379700a7eaf8c93f102c66c8a98c95",
+              "initial_sequence_signature_sha256": "36a5c9a3d47c73cd6618ee31b849ede56d32c421925edfd78aa72ad772e76b2a",
+              "initial_geometry_signature_sha256": "0f3458a2b61611f30f84190524994ada42a9dd3e0ff4242afabe3df23293aedb",
+              "mode": "ready_work_primary",
+              "budget_seconds": 12,
+              "first_feasible_seconds": 5.191338,
+              "cost_integer_microseconds": {
+                "current_batch_makespan": 10876166836440,
+                "current_batch_total_completion_time": 86893000038010,
+                "projected_current_batch_completion": 15155034509685,
+                "valid": true,
+                "value": 10876166836440
+              },
+              "cost_relative_seconds": {
+                "projected_current_batch_completion": 4334667.0,
+                "current_batch_makespan": 55799.326755,
+                "current_batch_total_completion_time": 330059.96053,
+                "value": 55799.326755
+              },
+              "candidate_decode_requests": 156,
+              "candidate_decode_executions": 133,
+              "field_decode_calls": 9615,
+              "rail_redecode_calls": 9404,
+              "tracked_feasible_decodes": 40,
+              "tracked_failed_decodes": 13,
+              "tracked_geometry_changes": 0,
+              "accepted_improvement_count": 9,
+              "final_changed_blocks_from_initial": [],
+              "final_sequences": {
+                "C1": [
+                  "T8",
+                  "T1"
+                ],
+                "C2": [
+                  "T6",
+                  "T2",
+                  "T4",
+                  "T5",
+                  "T7",
+                  "T3"
+                ],
+                "C3": []
+              },
+              "final_tasks": [
+                {
+                  "task": "T1",
+                  "block": "B2",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 37466.326755,
+                  "end_seconds": 41838.326755,
+                  "empty_seconds": 223.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 549.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T2",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 18267.0,
+                  "end_seconds": 37466.0,
+                  "empty_seconds": 828.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 371.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T3",
+                  "block": "B6",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 51136.326755,
+                  "end_seconds": 55799.326755,
+                  "empty_seconds": 332.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 731.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T4",
+                  "block": "B4",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 37466.326755,
+                  "end_seconds": 41435.326755,
+                  "empty_seconds": 223.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 146.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T5",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 42168.326755,
+                  "end_seconds": 46651.326755,
+                  "empty_seconds": 330.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 553.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T6",
+                  "block": "B1",
+                  "kind": 3,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 0.0,
+                  "end_seconds": 18267.0,
+                  "empty_seconds": 89.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 178.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T7",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 46651.326755,
+                  "end_seconds": 51136.326755,
+                  "empty_seconds": 332.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 553.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T8",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 17767.326755,
+                  "end_seconds": 37466.326755,
+                  "empty_seconds": 1328.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 371.0,
+                  "dependency_predecessors_in_pool": []
+                }
+              ],
+              "active_occupancies": [
+                {
+                  "block": "B1",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -1954799.054858,
+                  "end_seconds": 18089.0,
+                  "carry_task": "T6",
+                  "entry_tasks": []
+                },
+                {
+                  "block": "B2",
+                  "region": "R1",
+                  "initial_region": "R1",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 37466.326755,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T1"
+                  ]
+                },
+                {
+                  "block": "B3",
+                  "region": "R1",
+                  "initial_region": "R1",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -38805.507739,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T2",
+                    "T8"
+                  ]
+                },
+                {
+                  "block": "B4",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 37466.326755,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T4"
+                  ]
+                },
+                {
+                  "block": "B5",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -100949.507739,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T5",
+                    "T7"
+                  ]
+                },
+                {
+                  "block": "B6",
+                  "region": "R1",
+                  "initial_region": "R1",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 51136.326755,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T3"
+                  ]
+                }
+              ],
+              "motion_kind_totals": {
+                "0": {
+                  "count": 11,
+                  "duration_seconds": 4306.0,
+                  "nonzero_displacement_count": 11,
+                  "empty_task_id_count": 3
+                },
+                "2": {
+                  "count": 8,
+                  "duration_seconds": 72000.0,
+                  "nonzero_displacement_count": 0,
+                  "empty_task_id_count": 0
+                },
+                "3": {
+                  "count": 8,
+                  "duration_seconds": 3452.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                }
+              },
+              "improvement_timeline": [
+                {
+                  "elapsed_seconds": 5.211065,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 60558.0,
+                  "current_batch_total_completion_time_seconds": 203352.492261,
+                  "pool_cost_seconds": 60558.0
+                },
+                {
+                  "elapsed_seconds": 5.260799,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 46106.376315,
+                  "current_batch_total_completion_time_seconds": 231251.244891,
+                  "pool_cost_seconds": 46106.376315
+                },
+                {
+                  "elapsed_seconds": 5.336265,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 46106.376315,
+                  "current_batch_total_completion_time_seconds": 216491.244891,
+                  "pool_cost_seconds": 46106.376315
+                },
+                {
+                  "elapsed_seconds": 5.475863,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 43083.492261,
+                  "current_batch_total_completion_time_seconds": 224774.476783,
+                  "pool_cost_seconds": 43083.492261
+                },
+                {
+                  "elapsed_seconds": 6.065513,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 43083.492261,
+                  "current_batch_total_completion_time_seconds": 210665.476783,
+                  "pool_cost_seconds": 43083.492261
+                },
+                {
+                  "elapsed_seconds": 6.671483,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 43083.492261,
+                  "current_batch_total_completion_time_seconds": 196556.476783,
+                  "pool_cost_seconds": 43083.492261
+                },
+                {
+                  "elapsed_seconds": 7.275155,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 43083.492261,
+                  "current_batch_total_completion_time_seconds": 182732.476783,
+                  "pool_cost_seconds": 43083.492261
+                },
+                {
+                  "elapsed_seconds": 8.187705,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 73931.269867,
+                  "current_batch_total_completion_time_seconds": 308114.193244,
+                  "pool_cost_seconds": 73931.269867
+                },
+                {
+                  "elapsed_seconds": 10.6202,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 55799.326755,
+                  "current_batch_total_completion_time_seconds": 330059.96053,
+                  "pool_cost_seconds": 55799.326755
+                }
+              ],
+              "non_task_motions": [
+                {
+                  "crane": "C1",
+                  "kind": 0,
+                  "start_seconds": 41838.326755,
+                  "end_seconds": 42168.326755,
+                  "duration_seconds": 330.0
+                },
+                {
+                  "crane": "C2",
+                  "kind": 0,
+                  "start_seconds": 41435.326755,
+                  "end_seconds": 41677.326755,
+                  "duration_seconds": 242.0
+                },
+                {
+                  "crane": "C3",
+                  "kind": 0,
+                  "start_seconds": -10820367.509685,
+                  "end_seconds": -10820318.509685,
+                  "duration_seconds": 49.0
+                }
+              ],
+              "crane_task_spans": {
+                "C1": {
+                  "first_start_seconds": 17767.326755,
+                  "last_end_seconds": 41838.326755,
+                  "task_processing_seconds": 24071.0,
+                  "between_task_gaps_seconds": 0.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                },
+                "C2": {
+                  "first_start_seconds": 0.0,
+                  "last_end_seconds": 55799.326755,
+                  "task_processing_seconds": 55066.0,
+                  "between_task_gaps_seconds": 733.326755,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                }
+              },
+              "final_plan_sha256": "d627e4fef1602dae657086303df59d53c70834db8bd772eef112b242e548ea26",
+              "source_trace_label": "E10/b3-r006/repeat-2/S_VND",
+              "gate_fingerprints": {
+                "source_state_fingerprints": {
+                  "source_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "source_checkpoint_journal": "224a80681452b19472839c03e2e811cc78d609ffbcd1a0277123c0cf0bec08be",
+                  "source_trace": "35bcd56c46cc02f994b490c35f0fc188b1bc0579a253e8d5e4187d09c8764ed7",
+                  "prefix_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "prefix_checkpoint_journal": "63e4b7849f534c21e71201bb2db8352aed15429c3d6b0f8e161c9f180dd4863e",
+                  "source_warm_sidecar": "5e7a737c5c4ffa57f3f4939f278f42beef5ad4bd33b1add5cfd606b574fa8c90",
+                  "warm_input": "5e7a737c5c4ffa57f3f4939f278f42beef5ad4bd33b1add5cfd606b574fa8c90"
+                },
+                "warm_start_mode": "restored_sidecar",
+                "common_configuration_sha256": "f293fb1237d58dab176967c34225dadc4f177e28bfe1e23a64877cb16d53b6bf",
+                "binary_sha256": "207bfdd67b65e816d022c14534a51f5c93fad016a05392a78a12f2df8286fc77",
+                "provenance_sha256": "3d87c322e8ed2670b2cbb18352aa2d9a2283368d94e79df8c66aa03e78a8783d"
+              }
+            }
+          }
+        },
+        {
+          "repeat": 3,
+          "initial_sequence_signature_equal": true,
+          "initial_geometry_signature_equal": true,
+          "initial_plan_storage": "only initial sequence digest and full untimed geometry signature; no initial decoded task/motion/occupancy-time/Cost record",
+          "accepted_mode_equal": true,
+          "accepted_budget_equal": true,
+          "final_geometry_changed_blocks_J_minus_S": [
+            "B2",
+            "B4",
+            "B6"
+          ],
+          "input_field_equality": {
+            "available": true,
+            "blocks": true,
+            "cranes": true,
+            "dependencies": true,
+            "dwell": true,
+            "external": true,
+            "initial_available": true,
+            "locked": true,
+            "minimum_separation_x": true,
+            "minimum_start": true,
+            "projection_context": true,
+            "rail_order": true,
+            "regions": true,
+            "speeds": true,
+            "tasks": true,
+            "unavailable": true
+          },
+          "methods": {
+            "J_VND": {
+              "trace_sha256": "0fb54c204b7487dcf43ce60ebd0bfd79eaa57c56fcbac63e276d654d50440a52",
+              "initial_sequence_signature_sha256": "36a5c9a3d47c73cd6618ee31b849ede56d32c421925edfd78aa72ad772e76b2a",
+              "initial_geometry_signature_sha256": "0f3458a2b61611f30f84190524994ada42a9dd3e0ff4242afabe3df23293aedb",
+              "mode": "ready_work_primary",
+              "budget_seconds": 12,
+              "first_feasible_seconds": 4.571341,
+              "cost_integer_microseconds": {
+                "current_batch_makespan": 10875933509685,
+                "current_batch_total_completion_time": 86881815077480,
+                "projected_current_batch_completion": 15155034509685,
+                "valid": true,
+                "value": 10875933509685
+              },
+              "cost_relative_seconds": {
+                "projected_current_batch_completion": 4334667.0,
+                "current_batch_makespan": 55566.0,
+                "current_batch_total_completion_time": 318875.0,
+                "value": 55566.0
+              },
+              "candidate_decode_requests": 168,
+              "candidate_decode_executions": 155,
+              "field_decode_calls": 10678,
+              "rail_redecode_calls": 10443,
+              "tracked_feasible_decodes": 42,
+              "tracked_failed_decodes": 33,
+              "tracked_geometry_changes": 36,
+              "accepted_improvement_count": 7,
+              "final_changed_blocks_from_initial": [
+                "B2",
+                "B4",
+                "B6"
+              ],
+              "final_sequences": {
+                "C1": [
+                  "T8",
+                  "T1"
+                ],
+                "C2": [
+                  "T6",
+                  "T5",
+                  "T7",
+                  "T2",
+                  "T4",
+                  "T3"
+                ],
+                "C3": []
+              },
+              "final_tasks": [
+                {
+                  "task": "T1",
+                  "block": "B2",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 46436.0,
+                  "end_seconds": 50354.0,
+                  "empty_seconds": 223.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 95.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T2",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 27733.0,
+                  "end_seconds": 46436.0,
+                  "empty_seconds": 332.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 371.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T3",
+                  "block": "B6",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 50835.0,
+                  "end_seconds": 55566.0,
+                  "empty_seconds": 346.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 785.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T4",
+                  "block": "B4",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 46436.0,
+                  "end_seconds": 50835.0,
+                  "empty_seconds": 223.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 576.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T5",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 18267.0,
+                  "end_seconds": 23248.0,
+                  "empty_seconds": 828.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 553.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T6",
+                  "block": "B1",
+                  "kind": 3,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 0.0,
+                  "end_seconds": 18267.0,
+                  "empty_seconds": 89.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 178.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T7",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 23248.0,
+                  "end_seconds": 27733.0,
+                  "empty_seconds": 332.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 553.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T8",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 26737.0,
+                  "end_seconds": 46436.0,
+                  "empty_seconds": 1328.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 371.0,
+                  "dependency_predecessors_in_pool": []
+                }
+              ],
+              "active_occupancies": [
+                {
+                  "block": "B1",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -1954799.054858,
+                  "end_seconds": 18089.0,
+                  "carry_task": "T6",
+                  "entry_tasks": []
+                },
+                {
+                  "block": "B2",
+                  "region": "R4",
+                  "initial_region": "R1",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": false,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 46436.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T1"
+                  ]
+                },
+                {
+                  "block": "B3",
+                  "region": "R1",
+                  "initial_region": "R1",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -38805.507739,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T2",
+                    "T8"
+                  ]
+                },
+                {
+                  "block": "B4",
+                  "region": "R1",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": false,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 46436.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T4"
+                  ]
+                },
+                {
+                  "block": "B5",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -100949.507739,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T5",
+                    "T7"
+                  ]
+                },
+                {
+                  "block": "B6",
+                  "region": "R1",
+                  "initial_region": "R1",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": false,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 50835.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T3"
+                  ]
+                }
+              ],
+              "motion_kind_totals": {
+                "0": {
+                  "count": 10,
+                  "duration_seconds": 3840.0,
+                  "nonzero_displacement_count": 10,
+                  "empty_task_id_count": 2
+                },
+                "2": {
+                  "count": 8,
+                  "duration_seconds": 72000.0,
+                  "nonzero_displacement_count": 0,
+                  "empty_task_id_count": 0
+                },
+                "3": {
+                  "count": 8,
+                  "duration_seconds": 3482.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                }
+              },
+              "improvement_timeline": [
+                {
+                  "elapsed_seconds": 4.684741,
+                  "projected_completion_seconds": 4344469.0,
+                  "current_batch_makespan_seconds": 47268.0,
+                  "current_batch_total_completion_time_seconds": 169055.0,
+                  "pool_cost_seconds": 47268.0
+                },
+                {
+                  "elapsed_seconds": 4.790657,
+                  "projected_completion_seconds": 4344469.0,
+                  "current_batch_makespan_seconds": 47268.0,
+                  "current_batch_total_completion_time_seconds": 169018.0,
+                  "pool_cost_seconds": 47268.0
+                },
+                {
+                  "elapsed_seconds": 5.14566,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 74791.190801,
+                  "current_batch_total_completion_time_seconds": 296238.035112,
+                  "pool_cost_seconds": 74791.190801
+                },
+                {
+                  "elapsed_seconds": 6.808388,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 55618.0,
+                  "current_batch_total_completion_time_seconds": 343111.0,
+                  "pool_cost_seconds": 55618.0
+                },
+                {
+                  "elapsed_seconds": 7.994135,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 55566.326755,
+                  "current_batch_total_completion_time_seconds": 329154.96053,
+                  "pool_cost_seconds": 55566.326755
+                },
+                {
+                  "elapsed_seconds": 9.378629,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 55566.0,
+                  "current_batch_total_completion_time_seconds": 324014.0,
+                  "pool_cost_seconds": 55566.0
+                },
+                {
+                  "elapsed_seconds": 10.785782,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 55566.0,
+                  "current_batch_total_completion_time_seconds": 318875.0,
+                  "pool_cost_seconds": 55566.0
+                }
+              ],
+              "non_task_motions": [
+                {
+                  "crane": "C1",
+                  "kind": 0,
+                  "start_seconds": 50354.0,
+                  "end_seconds": 50411.0,
+                  "duration_seconds": 57.0
+                },
+                {
+                  "crane": "C3",
+                  "kind": 0,
+                  "start_seconds": -10820367.509685,
+                  "end_seconds": -10820285.509685,
+                  "duration_seconds": 82.0
+                }
+              ],
+              "crane_task_spans": {
+                "C1": {
+                  "first_start_seconds": 26737.0,
+                  "last_end_seconds": 50354.0,
+                  "task_processing_seconds": 23617.0,
+                  "between_task_gaps_seconds": 0.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                },
+                "C2": {
+                  "first_start_seconds": 0.0,
+                  "last_end_seconds": 55566.0,
+                  "task_processing_seconds": 55566.0,
+                  "between_task_gaps_seconds": 0.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                }
+              },
+              "final_plan_sha256": "35dd6c18b9647b94acd794d4861b2dc4332b236db1d4a11be4aa36ba606b9a9d",
+              "source_trace_label": "E10/b3-r006/repeat-3/J_VND",
+              "gate_fingerprints": {
+                "source_state_fingerprints": {
+                  "source_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "source_checkpoint_journal": "224a80681452b19472839c03e2e811cc78d609ffbcd1a0277123c0cf0bec08be",
+                  "source_trace": "35bcd56c46cc02f994b490c35f0fc188b1bc0579a253e8d5e4187d09c8764ed7",
+                  "prefix_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "prefix_checkpoint_journal": "63e4b7849f534c21e71201bb2db8352aed15429c3d6b0f8e161c9f180dd4863e",
+                  "source_warm_sidecar": "5e7a737c5c4ffa57f3f4939f278f42beef5ad4bd33b1add5cfd606b574fa8c90",
+                  "warm_input": "5e7a737c5c4ffa57f3f4939f278f42beef5ad4bd33b1add5cfd606b574fa8c90"
+                },
+                "warm_start_mode": "restored_sidecar",
+                "common_configuration_sha256": "f293fb1237d58dab176967c34225dadc4f177e28bfe1e23a64877cb16d53b6bf",
+                "binary_sha256": "207bfdd67b65e816d022c14534a51f5c93fad016a05392a78a12f2df8286fc77",
+                "provenance_sha256": "571bd0ac4a9dc0596b6051f3e56f221809f5b527a88fed21d7a6431516006ee5"
+              }
+            },
+            "S_VND": {
+              "trace_sha256": "062d7836a8bc9c8dde0090492f3805d9018fad03afaa9df17c27f6c0d0221eef",
+              "initial_sequence_signature_sha256": "36a5c9a3d47c73cd6618ee31b849ede56d32c421925edfd78aa72ad772e76b2a",
+              "initial_geometry_signature_sha256": "0f3458a2b61611f30f84190524994ada42a9dd3e0ff4242afabe3df23293aedb",
+              "mode": "ready_work_primary",
+              "budget_seconds": 12,
+              "first_feasible_seconds": 4.3472,
+              "cost_integer_microseconds": {
+                "current_batch_makespan": 10876166836440,
+                "current_batch_total_completion_time": 86893000038010,
+                "projected_current_batch_completion": 15155034509685,
+                "valid": true,
+                "value": 10876166836440
+              },
+              "cost_relative_seconds": {
+                "projected_current_batch_completion": 4334667.0,
+                "current_batch_makespan": 55799.326755,
+                "current_batch_total_completion_time": 330059.96053,
+                "value": 55799.326755
+              },
+              "candidate_decode_requests": 163,
+              "candidate_decode_executions": 139,
+              "field_decode_calls": 11792,
+              "rail_redecode_calls": 11574,
+              "tracked_feasible_decodes": 41,
+              "tracked_failed_decodes": 18,
+              "tracked_geometry_changes": 0,
+              "accepted_improvement_count": 9,
+              "final_changed_blocks_from_initial": [],
+              "final_sequences": {
+                "C1": [
+                  "T8",
+                  "T1"
+                ],
+                "C2": [
+                  "T6",
+                  "T2",
+                  "T4",
+                  "T5",
+                  "T7",
+                  "T3"
+                ],
+                "C3": []
+              },
+              "final_tasks": [
+                {
+                  "task": "T1",
+                  "block": "B2",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 37466.326755,
+                  "end_seconds": 41838.326755,
+                  "empty_seconds": 223.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 549.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T2",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 18267.0,
+                  "end_seconds": 37466.0,
+                  "empty_seconds": 828.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 371.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T3",
+                  "block": "B6",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 51136.326755,
+                  "end_seconds": 55799.326755,
+                  "empty_seconds": 332.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 731.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T4",
+                  "block": "B4",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 37466.326755,
+                  "end_seconds": 41435.326755,
+                  "empty_seconds": 223.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 146.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T5",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 42168.326755,
+                  "end_seconds": 46651.326755,
+                  "empty_seconds": 330.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 553.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T6",
+                  "block": "B1",
+                  "kind": 3,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 0.0,
+                  "end_seconds": 18267.0,
+                  "empty_seconds": 89.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 178.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T7",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 46651.326755,
+                  "end_seconds": 51136.326755,
+                  "empty_seconds": 332.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 553.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T8",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 17767.326755,
+                  "end_seconds": 37466.326755,
+                  "empty_seconds": 1328.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 371.0,
+                  "dependency_predecessors_in_pool": []
+                }
+              ],
+              "active_occupancies": [
+                {
+                  "block": "B1",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -1954799.054858,
+                  "end_seconds": 18089.0,
+                  "carry_task": "T6",
+                  "entry_tasks": []
+                },
+                {
+                  "block": "B2",
+                  "region": "R1",
+                  "initial_region": "R1",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 37466.326755,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T1"
+                  ]
+                },
+                {
+                  "block": "B3",
+                  "region": "R1",
+                  "initial_region": "R1",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -38805.507739,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T2",
+                    "T8"
+                  ]
+                },
+                {
+                  "block": "B4",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 37466.326755,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T4"
+                  ]
+                },
+                {
+                  "block": "B5",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -100949.507739,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T5",
+                    "T7"
+                  ]
+                },
+                {
+                  "block": "B6",
+                  "region": "R1",
+                  "initial_region": "R1",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": false,
+                  "start_seconds": 51136.326755,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T3"
+                  ]
+                }
+              ],
+              "motion_kind_totals": {
+                "0": {
+                  "count": 11,
+                  "duration_seconds": 4306.0,
+                  "nonzero_displacement_count": 11,
+                  "empty_task_id_count": 3
+                },
+                "2": {
+                  "count": 8,
+                  "duration_seconds": 72000.0,
+                  "nonzero_displacement_count": 0,
+                  "empty_task_id_count": 0
+                },
+                "3": {
+                  "count": 8,
+                  "duration_seconds": 3452.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                }
+              },
+              "improvement_timeline": [
+                {
+                  "elapsed_seconds": 4.365039,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 60558.0,
+                  "current_batch_total_completion_time_seconds": 203352.492261,
+                  "pool_cost_seconds": 60558.0
+                },
+                {
+                  "elapsed_seconds": 4.408068,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 46106.376315,
+                  "current_batch_total_completion_time_seconds": 231251.244891,
+                  "pool_cost_seconds": 46106.376315
+                },
+                {
+                  "elapsed_seconds": 4.46908,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 46106.376315,
+                  "current_batch_total_completion_time_seconds": 216491.244891,
+                  "pool_cost_seconds": 46106.376315
+                },
+                {
+                  "elapsed_seconds": 4.58519,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 43083.492261,
+                  "current_batch_total_completion_time_seconds": 224774.476783,
+                  "pool_cost_seconds": 43083.492261
+                },
+                {
+                  "elapsed_seconds": 5.086919,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 43083.492261,
+                  "current_batch_total_completion_time_seconds": 210665.476783,
+                  "pool_cost_seconds": 43083.492261
+                },
+                {
+                  "elapsed_seconds": 5.598444,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 43083.492261,
+                  "current_batch_total_completion_time_seconds": 196556.476783,
+                  "pool_cost_seconds": 43083.492261
+                },
+                {
+                  "elapsed_seconds": 6.119182,
+                  "projected_completion_seconds": 4335912.492261,
+                  "current_batch_makespan_seconds": 43083.492261,
+                  "current_batch_total_completion_time_seconds": 182732.476783,
+                  "pool_cost_seconds": 43083.492261
+                },
+                {
+                  "elapsed_seconds": 6.898446,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 73931.269867,
+                  "current_batch_total_completion_time_seconds": 308114.193244,
+                  "pool_cost_seconds": 73931.269867
+                },
+                {
+                  "elapsed_seconds": 8.839523,
+                  "projected_completion_seconds": 4334667.0,
+                  "current_batch_makespan_seconds": 55799.326755,
+                  "current_batch_total_completion_time_seconds": 330059.96053,
+                  "pool_cost_seconds": 55799.326755
+                }
+              ],
+              "non_task_motions": [
+                {
+                  "crane": "C1",
+                  "kind": 0,
+                  "start_seconds": 41838.326755,
+                  "end_seconds": 42168.326755,
+                  "duration_seconds": 330.0
+                },
+                {
+                  "crane": "C2",
+                  "kind": 0,
+                  "start_seconds": 41435.326755,
+                  "end_seconds": 41677.326755,
+                  "duration_seconds": 242.0
+                },
+                {
+                  "crane": "C3",
+                  "kind": 0,
+                  "start_seconds": -10820367.509685,
+                  "end_seconds": -10820318.509685,
+                  "duration_seconds": 49.0
+                }
+              ],
+              "crane_task_spans": {
+                "C1": {
+                  "first_start_seconds": 17767.326755,
+                  "last_end_seconds": 41838.326755,
+                  "task_processing_seconds": 24071.0,
+                  "between_task_gaps_seconds": 0.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                },
+                "C2": {
+                  "first_start_seconds": 0.0,
+                  "last_end_seconds": 55799.326755,
+                  "task_processing_seconds": 55066.0,
+                  "between_task_gaps_seconds": 733.326755,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                }
+              },
+              "final_plan_sha256": "d627e4fef1602dae657086303df59d53c70834db8bd772eef112b242e548ea26",
+              "source_trace_label": "E10/b3-r006/repeat-3/S_VND",
+              "gate_fingerprints": {
+                "source_state_fingerprints": {
+                  "source_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "source_checkpoint_journal": "224a80681452b19472839c03e2e811cc78d609ffbcd1a0277123c0cf0bec08be",
+                  "source_trace": "35bcd56c46cc02f994b490c35f0fc188b1bc0579a253e8d5e4187d09c8764ed7",
+                  "prefix_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "prefix_checkpoint_journal": "63e4b7849f534c21e71201bb2db8352aed15429c3d6b0f8e161c9f180dd4863e",
+                  "source_warm_sidecar": "5e7a737c5c4ffa57f3f4939f278f42beef5ad4bd33b1add5cfd606b574fa8c90",
+                  "warm_input": "5e7a737c5c4ffa57f3f4939f278f42beef5ad4bd33b1add5cfd606b574fa8c90"
+                },
+                "warm_start_mode": "restored_sidecar",
+                "common_configuration_sha256": "f293fb1237d58dab176967c34225dadc4f177e28bfe1e23a64877cb16d53b6bf",
+                "binary_sha256": "207bfdd67b65e816d022c14534a51f5c93fad016a05392a78a12f2df8286fc77",
+                "provenance_sha256": "15859de6f202f51814832a55ea9cf243a20cae934090235ddc59ef80f4cc5e95"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "state": "b3-r071",
+      "scope": "case-local aliases; times relative to retained decision epoch; no coordinates or client identifiers",
+      "task_count": 8,
+      "locked_occupancy_count": 38,
+      "repeats": [
+        {
+          "repeat": 1,
+          "initial_sequence_signature_equal": true,
+          "initial_geometry_signature_equal": true,
+          "initial_plan_storage": "only initial sequence digest and full untimed geometry signature; no initial decoded task/motion/occupancy-time/Cost record",
+          "accepted_mode_equal": true,
+          "accepted_budget_equal": true,
+          "final_geometry_changed_blocks_J_minus_S": [],
+          "input_field_equality": {
+            "available": true,
+            "blocks": true,
+            "cranes": true,
+            "dependencies": true,
+            "dwell": true,
+            "external": true,
+            "initial_available": true,
+            "locked": true,
+            "minimum_separation_x": true,
+            "minimum_start": true,
+            "projection_context": true,
+            "rail_order": true,
+            "regions": true,
+            "speeds": true,
+            "tasks": true,
+            "unavailable": true
+          },
+          "methods": {
+            "J_VND": {
+              "trace_sha256": "de5aea6a38a0d9fee2c6d68545b20cf1b97c58885e96fd281f6f5e907813a5a4",
+              "initial_sequence_signature_sha256": "9a382d23e4fa4bca14d4cf1a5c87e33b018d3803925728012026290272572162",
+              "initial_geometry_signature_sha256": "d4f89ed778d09c8e1afdefce5cfba13d1a581c9972275dbdafbe0cf26d4fd8c0",
+              "mode": "ready_work_primary",
+              "budget_seconds": 12,
+              "first_feasible_seconds": 3.821217,
+              "cost_integer_microseconds": {
+                "current_batch_makespan": 11667610001946,
+                "current_batch_total_completion_time": 93196751015568,
+                "projected_current_batch_completion": 15278636001946,
+                "valid": true,
+                "value": 11667610001946
+              },
+              "cost_relative_seconds": {
+                "projected_current_batch_completion": 3673102.0,
+                "current_batch_makespan": 62076.0,
+                "current_batch_total_completion_time": 352479.0,
+                "value": 62076.0
+              },
+              "candidate_decode_requests": 58,
+              "candidate_decode_executions": 51,
+              "field_decode_calls": 9207,
+              "rail_redecode_calls": 9127,
+              "tracked_feasible_decodes": 17,
+              "tracked_failed_decodes": 13,
+              "tracked_geometry_changes": 10,
+              "accepted_improvement_count": 0,
+              "final_changed_blocks_from_initial": [],
+              "final_sequences": {
+                "C1": [
+                  "T1",
+                  "T7",
+                  "T6",
+                  "T8"
+                ],
+                "C2": [
+                  "T2",
+                  "T4",
+                  "T3",
+                  "T5"
+                ],
+                "C3": []
+              },
+              "final_tasks": [
+                {
+                  "task": "T1",
+                  "block": "B2",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 20637.0,
+                  "end_seconds": 27549.0,
+                  "empty_seconds": 158.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 3154.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T2",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 20468.0,
+                  "end_seconds": 24269.0,
+                  "empty_seconds": 57.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 144.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T3",
+                  "block": "B1",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 53062.0,
+                  "end_seconds": 57540.0,
+                  "empty_seconds": 293.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 585.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T4",
+                  "block": "B4",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 24269.0,
+                  "end_seconds": 42844.0,
+                  "empty_seconds": 87.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 488.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T5",
+                  "block": "B1",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 57540.0,
+                  "end_seconds": 62076.0,
+                  "empty_seconds": 351.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 585.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T6",
+                  "block": "B7",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 36996.0,
+                  "end_seconds": 42480.0,
+                  "empty_seconds": 1760.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 124.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T7",
+                  "block": "B6",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 27549.0,
+                  "end_seconds": 35976.0,
+                  "empty_seconds": 1893.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 2934.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T8",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 42480.0,
+                  "end_seconds": 59745.0,
+                  "empty_seconds": 75.0,
+                  "base_seconds": 14400.0,
+                  "loaded_seconds": 2790.0,
+                  "dependency_predecessors_in_pool": []
+                }
+              ],
+              "active_occupancies": [
+                {
+                  "block": "B1",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -1536217.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T3",
+                    "T5"
+                  ]
+                },
+                {
+                  "block": "B2",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 20637.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T1"
+                  ]
+                },
+                {
+                  "block": "B3",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 20468.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T2"
+                  ]
+                },
+                {
+                  "block": "B4",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 24269.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T4"
+                  ]
+                },
+                {
+                  "block": "B5",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 42480.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T8"
+                  ]
+                },
+                {
+                  "block": "B6",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 27549.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T7"
+                  ]
+                },
+                {
+                  "block": "B7",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 36996.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T6"
+                  ]
+                }
+              ],
+              "motion_kind_totals": {
+                "0": {
+                  "count": 8,
+                  "duration_seconds": 4674.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                },
+                "2": {
+                  "count": 8,
+                  "duration_seconds": 54000.0,
+                  "nonzero_displacement_count": 0,
+                  "empty_task_id_count": 0
+                },
+                "3": {
+                  "count": 8,
+                  "duration_seconds": 10804.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                }
+              },
+              "improvement_timeline": [],
+              "non_task_motions": [],
+              "crane_task_spans": {
+                "C1": {
+                  "first_start_seconds": 20637.0,
+                  "last_end_seconds": 59745.0,
+                  "task_processing_seconds": 38088.0,
+                  "between_task_gaps_seconds": 1020.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                },
+                "C2": {
+                  "first_start_seconds": 20468.0,
+                  "last_end_seconds": 62076.0,
+                  "task_processing_seconds": 31390.0,
+                  "between_task_gaps_seconds": 10218.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                }
+              },
+              "final_plan_sha256": "e3d9a1f50f174f345dd890bebf7a7af8fd38ff47561cab4f0d9c826370285f3c",
+              "source_trace_label": "E10/b3-r071/repeat-1/J_VND",
+              "gate_fingerprints": {
+                "source_state_fingerprints": {
+                  "source_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "source_checkpoint_journal": "224a80681452b19472839c03e2e811cc78d609ffbcd1a0277123c0cf0bec08be",
+                  "source_trace": "35bcd56c46cc02f994b490c35f0fc188b1bc0579a253e8d5e4187d09c8764ed7",
+                  "prefix_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "prefix_checkpoint_journal": "6afa82528d36036c7d8a7157a26e5815a9fbcd406f23e591513981070730afcc",
+                  "source_warm_sidecar": "93666f06dd7506c5e369d378c31b9aff51e5f9646029257ba9e1a7f66a4f8fb9",
+                  "warm_input": "93666f06dd7506c5e369d378c31b9aff51e5f9646029257ba9e1a7f66a4f8fb9"
+                },
+                "warm_start_mode": "restored_sidecar",
+                "common_configuration_sha256": "6f5f8f46ddeeb9f1e6d2c3378fdebd1cd1e07470564c536c274f587d83ea5080",
+                "binary_sha256": "207bfdd67b65e816d022c14534a51f5c93fad016a05392a78a12f2df8286fc77",
+                "provenance_sha256": "988adc639bbaa814f509421d380703f7941bb015e47ebf76345ed18f13a345f2"
+              }
+            },
+            "S_VND": {
+              "trace_sha256": "2cd7d5bca377cddc6bd3ca48138cead8ff6b199b6c6c21beb0cedbb2bc8f3525",
+              "initial_sequence_signature_sha256": "9a382d23e4fa4bca14d4cf1a5c87e33b018d3803925728012026290272572162",
+              "initial_geometry_signature_sha256": "d4f89ed778d09c8e1afdefce5cfba13d1a581c9972275dbdafbe0cf26d4fd8c0",
+              "mode": "ready_work_primary",
+              "budget_seconds": 12,
+              "first_feasible_seconds": 3.848969,
+              "cost_integer_microseconds": {
+                "current_batch_makespan": 11666254001946,
+                "current_batch_total_completion_time": 93186789015568,
+                "projected_current_batch_completion": 15278636001946,
+                "valid": true,
+                "value": 11666254001946
+              },
+              "cost_relative_seconds": {
+                "projected_current_batch_completion": 3673102.0,
+                "current_batch_makespan": 60720.0,
+                "current_batch_total_completion_time": 342517.0,
+                "value": 60720.0
+              },
+              "candidate_decode_requests": 92,
+              "candidate_decode_executions": 74,
+              "field_decode_calls": 9592,
+              "rail_redecode_calls": 9469,
+              "tracked_feasible_decodes": 37,
+              "tracked_failed_decodes": 16,
+              "tracked_geometry_changes": 0,
+              "accepted_improvement_count": 2,
+              "final_changed_blocks_from_initial": [],
+              "final_sequences": {
+                "C1": [
+                  "T7",
+                  "T1",
+                  "T6",
+                  "T8"
+                ],
+                "C2": [
+                  "T3",
+                  "T4",
+                  "T2",
+                  "T5"
+                ],
+                "C3": []
+              },
+              "final_tasks": [
+                {
+                  "task": "T1",
+                  "block": "B2",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 27329.0,
+                  "end_seconds": 35843.0,
+                  "empty_seconds": 1760.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 3154.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T2",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 43819.0,
+                  "end_seconds": 47856.0,
+                  "empty_seconds": 293.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 144.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T3",
+                  "block": "B1",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 20738.0,
+                  "end_seconds": 24980.0,
+                  "empty_seconds": 57.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 585.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T4",
+                  "block": "B4",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 24980.0,
+                  "end_seconds": 43819.0,
+                  "empty_seconds": 351.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 488.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T5",
+                  "block": "B1",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 54243.0,
+                  "end_seconds": 58515.0,
+                  "empty_seconds": 87.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 585.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T6",
+                  "block": "B7",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 37838.0,
+                  "end_seconds": 43455.0,
+                  "empty_seconds": 1893.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 124.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T7",
+                  "block": "B6",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 20637.0,
+                  "end_seconds": 27329.0,
+                  "empty_seconds": 158.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 2934.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T8",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 43455.0,
+                  "end_seconds": 60720.0,
+                  "empty_seconds": 75.0,
+                  "base_seconds": 14400.0,
+                  "loaded_seconds": 2790.0,
+                  "dependency_predecessors_in_pool": []
+                }
+              ],
+              "active_occupancies": [
+                {
+                  "block": "B1",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -1536217.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T3",
+                    "T5"
+                  ]
+                },
+                {
+                  "block": "B2",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 27329.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T1"
+                  ]
+                },
+                {
+                  "block": "B3",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 43819.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T2"
+                  ]
+                },
+                {
+                  "block": "B4",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 24980.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T4"
+                  ]
+                },
+                {
+                  "block": "B5",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 43455.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T8"
+                  ]
+                },
+                {
+                  "block": "B6",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 20637.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T7"
+                  ]
+                },
+                {
+                  "block": "B7",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 37838.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T6"
+                  ]
+                }
+              ],
+              "motion_kind_totals": {
+                "0": {
+                  "count": 8,
+                  "duration_seconds": 4674.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                },
+                "2": {
+                  "count": 8,
+                  "duration_seconds": 54000.0,
+                  "nonzero_displacement_count": 0,
+                  "empty_task_id_count": 0
+                },
+                "3": {
+                  "count": 8,
+                  "duration_seconds": 10804.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                }
+              },
+              "improvement_timeline": [
+                {
+                  "elapsed_seconds": 3.863986,
+                  "projected_completion_seconds": 3673102.0,
+                  "current_batch_makespan_seconds": 62076.0,
+                  "current_batch_total_completion_time_seconds": 352126.0,
+                  "pool_cost_seconds": 62076.0
+                },
+                {
+                  "elapsed_seconds": 7.632113,
+                  "projected_completion_seconds": 3673102.0,
+                  "current_batch_makespan_seconds": 60720.0,
+                  "current_batch_total_completion_time_seconds": 342517.0,
+                  "pool_cost_seconds": 60720.0
+                }
+              ],
+              "non_task_motions": [],
+              "crane_task_spans": {
+                "C1": {
+                  "first_start_seconds": 20637.0,
+                  "last_end_seconds": 60720.0,
+                  "task_processing_seconds": 38088.0,
+                  "between_task_gaps_seconds": 1995.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                },
+                "C2": {
+                  "first_start_seconds": 20738.0,
+                  "last_end_seconds": 58515.0,
+                  "task_processing_seconds": 31390.0,
+                  "between_task_gaps_seconds": 6387.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                }
+              },
+              "final_plan_sha256": "2ba70f462061289091bc2d74ccee2c831bc78af70806cc3056697ebb5196c0a0",
+              "source_trace_label": "E10/b3-r071/repeat-1/S_VND",
+              "gate_fingerprints": {
+                "source_state_fingerprints": {
+                  "source_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "source_checkpoint_journal": "224a80681452b19472839c03e2e811cc78d609ffbcd1a0277123c0cf0bec08be",
+                  "source_trace": "35bcd56c46cc02f994b490c35f0fc188b1bc0579a253e8d5e4187d09c8764ed7",
+                  "prefix_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "prefix_checkpoint_journal": "6afa82528d36036c7d8a7157a26e5815a9fbcd406f23e591513981070730afcc",
+                  "source_warm_sidecar": "93666f06dd7506c5e369d378c31b9aff51e5f9646029257ba9e1a7f66a4f8fb9",
+                  "warm_input": "93666f06dd7506c5e369d378c31b9aff51e5f9646029257ba9e1a7f66a4f8fb9"
+                },
+                "warm_start_mode": "restored_sidecar",
+                "common_configuration_sha256": "6f5f8f46ddeeb9f1e6d2c3378fdebd1cd1e07470564c536c274f587d83ea5080",
+                "binary_sha256": "207bfdd67b65e816d022c14534a51f5c93fad016a05392a78a12f2df8286fc77",
+                "provenance_sha256": "41b197979b4c995ed91d3780315889d56325f81aefd90653a9caeea4868b6c8f"
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "initial_sequence_signature_equal": true,
+          "initial_geometry_signature_equal": true,
+          "initial_plan_storage": "only initial sequence digest and full untimed geometry signature; no initial decoded task/motion/occupancy-time/Cost record",
+          "accepted_mode_equal": true,
+          "accepted_budget_equal": true,
+          "final_geometry_changed_blocks_J_minus_S": [],
+          "input_field_equality": {
+            "available": true,
+            "blocks": true,
+            "cranes": true,
+            "dependencies": true,
+            "dwell": true,
+            "external": true,
+            "initial_available": true,
+            "locked": true,
+            "minimum_separation_x": true,
+            "minimum_start": true,
+            "projection_context": true,
+            "rail_order": true,
+            "regions": true,
+            "speeds": true,
+            "tasks": true,
+            "unavailable": true
+          },
+          "methods": {
+            "J_VND": {
+              "trace_sha256": "13d5df9fefbab0346245d1c8515e0eebfb907af2ac3f2a9878fdf1578f73e723",
+              "initial_sequence_signature_sha256": "9a382d23e4fa4bca14d4cf1a5c87e33b018d3803925728012026290272572162",
+              "initial_geometry_signature_sha256": "d4f89ed778d09c8e1afdefce5cfba13d1a581c9972275dbdafbe0cf26d4fd8c0",
+              "mode": "ready_work_primary",
+              "budget_seconds": 12,
+              "first_feasible_seconds": 3.373232,
+              "cost_integer_microseconds": {
+                "current_batch_makespan": 11667610001946,
+                "current_batch_total_completion_time": 93196751015568,
+                "projected_current_batch_completion": 15278636001946,
+                "valid": true,
+                "value": 11667610001946
+              },
+              "cost_relative_seconds": {
+                "projected_current_batch_completion": 3673102.0,
+                "current_batch_makespan": 62076.0,
+                "current_batch_total_completion_time": 352479.0,
+                "value": 62076.0
+              },
+              "candidate_decode_requests": 60,
+              "candidate_decode_executions": 53,
+              "field_decode_calls": 10219,
+              "rail_redecode_calls": 10137,
+              "tracked_feasible_decodes": 17,
+              "tracked_failed_decodes": 15,
+              "tracked_geometry_changes": 10,
+              "accepted_improvement_count": 0,
+              "final_changed_blocks_from_initial": [],
+              "final_sequences": {
+                "C1": [
+                  "T1",
+                  "T7",
+                  "T6",
+                  "T8"
+                ],
+                "C2": [
+                  "T2",
+                  "T4",
+                  "T3",
+                  "T5"
+                ],
+                "C3": []
+              },
+              "final_tasks": [
+                {
+                  "task": "T1",
+                  "block": "B2",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 20637.0,
+                  "end_seconds": 27549.0,
+                  "empty_seconds": 158.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 3154.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T2",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 20468.0,
+                  "end_seconds": 24269.0,
+                  "empty_seconds": 57.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 144.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T3",
+                  "block": "B1",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 53062.0,
+                  "end_seconds": 57540.0,
+                  "empty_seconds": 293.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 585.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T4",
+                  "block": "B4",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 24269.0,
+                  "end_seconds": 42844.0,
+                  "empty_seconds": 87.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 488.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T5",
+                  "block": "B1",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 57540.0,
+                  "end_seconds": 62076.0,
+                  "empty_seconds": 351.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 585.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T6",
+                  "block": "B7",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 36996.0,
+                  "end_seconds": 42480.0,
+                  "empty_seconds": 1760.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 124.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T7",
+                  "block": "B6",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 27549.0,
+                  "end_seconds": 35976.0,
+                  "empty_seconds": 1893.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 2934.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T8",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 42480.0,
+                  "end_seconds": 59745.0,
+                  "empty_seconds": 75.0,
+                  "base_seconds": 14400.0,
+                  "loaded_seconds": 2790.0,
+                  "dependency_predecessors_in_pool": []
+                }
+              ],
+              "active_occupancies": [
+                {
+                  "block": "B1",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -1536217.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T3",
+                    "T5"
+                  ]
+                },
+                {
+                  "block": "B2",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 20637.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T1"
+                  ]
+                },
+                {
+                  "block": "B3",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 20468.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T2"
+                  ]
+                },
+                {
+                  "block": "B4",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 24269.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T4"
+                  ]
+                },
+                {
+                  "block": "B5",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 42480.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T8"
+                  ]
+                },
+                {
+                  "block": "B6",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 27549.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T7"
+                  ]
+                },
+                {
+                  "block": "B7",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 36996.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T6"
+                  ]
+                }
+              ],
+              "motion_kind_totals": {
+                "0": {
+                  "count": 8,
+                  "duration_seconds": 4674.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                },
+                "2": {
+                  "count": 8,
+                  "duration_seconds": 54000.0,
+                  "nonzero_displacement_count": 0,
+                  "empty_task_id_count": 0
+                },
+                "3": {
+                  "count": 8,
+                  "duration_seconds": 10804.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                }
+              },
+              "improvement_timeline": [],
+              "non_task_motions": [],
+              "crane_task_spans": {
+                "C1": {
+                  "first_start_seconds": 20637.0,
+                  "last_end_seconds": 59745.0,
+                  "task_processing_seconds": 38088.0,
+                  "between_task_gaps_seconds": 1020.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                },
+                "C2": {
+                  "first_start_seconds": 20468.0,
+                  "last_end_seconds": 62076.0,
+                  "task_processing_seconds": 31390.0,
+                  "between_task_gaps_seconds": 10218.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                }
+              },
+              "final_plan_sha256": "e3d9a1f50f174f345dd890bebf7a7af8fd38ff47561cab4f0d9c826370285f3c",
+              "source_trace_label": "E10/b3-r071/repeat-2/J_VND",
+              "gate_fingerprints": {
+                "source_state_fingerprints": {
+                  "source_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "source_checkpoint_journal": "224a80681452b19472839c03e2e811cc78d609ffbcd1a0277123c0cf0bec08be",
+                  "source_trace": "35bcd56c46cc02f994b490c35f0fc188b1bc0579a253e8d5e4187d09c8764ed7",
+                  "prefix_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "prefix_checkpoint_journal": "6afa82528d36036c7d8a7157a26e5815a9fbcd406f23e591513981070730afcc",
+                  "source_warm_sidecar": "93666f06dd7506c5e369d378c31b9aff51e5f9646029257ba9e1a7f66a4f8fb9",
+                  "warm_input": "93666f06dd7506c5e369d378c31b9aff51e5f9646029257ba9e1a7f66a4f8fb9"
+                },
+                "warm_start_mode": "restored_sidecar",
+                "common_configuration_sha256": "6f5f8f46ddeeb9f1e6d2c3378fdebd1cd1e07470564c536c274f587d83ea5080",
+                "binary_sha256": "207bfdd67b65e816d022c14534a51f5c93fad016a05392a78a12f2df8286fc77",
+                "provenance_sha256": "92d1c624a8600bb7cbfb676ee5754cfcfea496379e08a32effea73a9de042332"
+              }
+            },
+            "S_VND": {
+              "trace_sha256": "06a058fd41f652215613a4d21d8fc1832643ba0606b7e891e80ba295e1690f66",
+              "initial_sequence_signature_sha256": "9a382d23e4fa4bca14d4cf1a5c87e33b018d3803925728012026290272572162",
+              "initial_geometry_signature_sha256": "d4f89ed778d09c8e1afdefce5cfba13d1a581c9972275dbdafbe0cf26d4fd8c0",
+              "mode": "ready_work_primary",
+              "budget_seconds": 12,
+              "first_feasible_seconds": 3.430587,
+              "cost_integer_microseconds": {
+                "current_batch_makespan": 11666254001946,
+                "current_batch_total_completion_time": 93186789015568,
+                "projected_current_batch_completion": 15278636001946,
+                "valid": true,
+                "value": 11666254001946
+              },
+              "cost_relative_seconds": {
+                "projected_current_batch_completion": 3673102.0,
+                "current_batch_makespan": 60720.0,
+                "current_batch_total_completion_time": 342517.0,
+                "value": 60720.0
+              },
+              "candidate_decode_requests": 101,
+              "candidate_decode_executions": 83,
+              "field_decode_calls": 11730,
+              "rail_redecode_calls": 11596,
+              "tracked_feasible_decodes": 39,
+              "tracked_failed_decodes": 23,
+              "tracked_geometry_changes": 0,
+              "accepted_improvement_count": 2,
+              "final_changed_blocks_from_initial": [],
+              "final_sequences": {
+                "C1": [
+                  "T7",
+                  "T1",
+                  "T6",
+                  "T8"
+                ],
+                "C2": [
+                  "T3",
+                  "T4",
+                  "T2",
+                  "T5"
+                ],
+                "C3": []
+              },
+              "final_tasks": [
+                {
+                  "task": "T1",
+                  "block": "B2",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 27329.0,
+                  "end_seconds": 35843.0,
+                  "empty_seconds": 1760.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 3154.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T2",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 43819.0,
+                  "end_seconds": 47856.0,
+                  "empty_seconds": 293.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 144.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T3",
+                  "block": "B1",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 20738.0,
+                  "end_seconds": 24980.0,
+                  "empty_seconds": 57.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 585.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T4",
+                  "block": "B4",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 24980.0,
+                  "end_seconds": 43819.0,
+                  "empty_seconds": 351.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 488.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T5",
+                  "block": "B1",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 54243.0,
+                  "end_seconds": 58515.0,
+                  "empty_seconds": 87.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 585.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T6",
+                  "block": "B7",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 37838.0,
+                  "end_seconds": 43455.0,
+                  "empty_seconds": 1893.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 124.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T7",
+                  "block": "B6",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 20637.0,
+                  "end_seconds": 27329.0,
+                  "empty_seconds": 158.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 2934.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T8",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 43455.0,
+                  "end_seconds": 60720.0,
+                  "empty_seconds": 75.0,
+                  "base_seconds": 14400.0,
+                  "loaded_seconds": 2790.0,
+                  "dependency_predecessors_in_pool": []
+                }
+              ],
+              "active_occupancies": [
+                {
+                  "block": "B1",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -1536217.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T3",
+                    "T5"
+                  ]
+                },
+                {
+                  "block": "B2",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 27329.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T1"
+                  ]
+                },
+                {
+                  "block": "B3",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 43819.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T2"
+                  ]
+                },
+                {
+                  "block": "B4",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 24980.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T4"
+                  ]
+                },
+                {
+                  "block": "B5",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 43455.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T8"
+                  ]
+                },
+                {
+                  "block": "B6",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 20637.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T7"
+                  ]
+                },
+                {
+                  "block": "B7",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 37838.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T6"
+                  ]
+                }
+              ],
+              "motion_kind_totals": {
+                "0": {
+                  "count": 8,
+                  "duration_seconds": 4674.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                },
+                "2": {
+                  "count": 8,
+                  "duration_seconds": 54000.0,
+                  "nonzero_displacement_count": 0,
+                  "empty_task_id_count": 0
+                },
+                "3": {
+                  "count": 8,
+                  "duration_seconds": 10804.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                }
+              },
+              "improvement_timeline": [
+                {
+                  "elapsed_seconds": 3.444047,
+                  "projected_completion_seconds": 3673102.0,
+                  "current_batch_makespan_seconds": 62076.0,
+                  "current_batch_total_completion_time_seconds": 352126.0,
+                  "pool_cost_seconds": 62076.0
+                },
+                {
+                  "elapsed_seconds": 6.619929,
+                  "projected_completion_seconds": 3673102.0,
+                  "current_batch_makespan_seconds": 60720.0,
+                  "current_batch_total_completion_time_seconds": 342517.0,
+                  "pool_cost_seconds": 60720.0
+                }
+              ],
+              "non_task_motions": [],
+              "crane_task_spans": {
+                "C1": {
+                  "first_start_seconds": 20637.0,
+                  "last_end_seconds": 60720.0,
+                  "task_processing_seconds": 38088.0,
+                  "between_task_gaps_seconds": 1995.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                },
+                "C2": {
+                  "first_start_seconds": 20738.0,
+                  "last_end_seconds": 58515.0,
+                  "task_processing_seconds": 31390.0,
+                  "between_task_gaps_seconds": 6387.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                }
+              },
+              "final_plan_sha256": "2ba70f462061289091bc2d74ccee2c831bc78af70806cc3056697ebb5196c0a0",
+              "source_trace_label": "E10/b3-r071/repeat-2/S_VND",
+              "gate_fingerprints": {
+                "source_state_fingerprints": {
+                  "source_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "source_checkpoint_journal": "224a80681452b19472839c03e2e811cc78d609ffbcd1a0277123c0cf0bec08be",
+                  "source_trace": "35bcd56c46cc02f994b490c35f0fc188b1bc0579a253e8d5e4187d09c8764ed7",
+                  "prefix_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "prefix_checkpoint_journal": "6afa82528d36036c7d8a7157a26e5815a9fbcd406f23e591513981070730afcc",
+                  "source_warm_sidecar": "93666f06dd7506c5e369d378c31b9aff51e5f9646029257ba9e1a7f66a4f8fb9",
+                  "warm_input": "93666f06dd7506c5e369d378c31b9aff51e5f9646029257ba9e1a7f66a4f8fb9"
+                },
+                "warm_start_mode": "restored_sidecar",
+                "common_configuration_sha256": "6f5f8f46ddeeb9f1e6d2c3378fdebd1cd1e07470564c536c274f587d83ea5080",
+                "binary_sha256": "207bfdd67b65e816d022c14534a51f5c93fad016a05392a78a12f2df8286fc77",
+                "provenance_sha256": "d1319a868413423ba3999df4c87ecfa6f1e08b41ab173d8f22ac0d14582a9a72"
+              }
+            }
+          }
+        },
+        {
+          "repeat": 3,
+          "initial_sequence_signature_equal": true,
+          "initial_geometry_signature_equal": true,
+          "initial_plan_storage": "only initial sequence digest and full untimed geometry signature; no initial decoded task/motion/occupancy-time/Cost record",
+          "accepted_mode_equal": true,
+          "accepted_budget_equal": true,
+          "final_geometry_changed_blocks_J_minus_S": [],
+          "input_field_equality": {
+            "available": true,
+            "blocks": true,
+            "cranes": true,
+            "dependencies": true,
+            "dwell": true,
+            "external": true,
+            "initial_available": true,
+            "locked": true,
+            "minimum_separation_x": true,
+            "minimum_start": true,
+            "projection_context": true,
+            "rail_order": true,
+            "regions": true,
+            "speeds": true,
+            "tasks": true,
+            "unavailable": true
+          },
+          "methods": {
+            "J_VND": {
+              "trace_sha256": "5f8ac0877d007c5209e68081a10ccf4b66ab91d1445dc7aafb93495ca77cd232",
+              "initial_sequence_signature_sha256": "9a382d23e4fa4bca14d4cf1a5c87e33b018d3803925728012026290272572162",
+              "initial_geometry_signature_sha256": "d4f89ed778d09c8e1afdefce5cfba13d1a581c9972275dbdafbe0cf26d4fd8c0",
+              "mode": "ready_work_primary",
+              "budget_seconds": 12,
+              "first_feasible_seconds": 3.007995,
+              "cost_integer_microseconds": {
+                "current_batch_makespan": 11667610001946,
+                "current_batch_total_completion_time": 93196751015568,
+                "projected_current_batch_completion": 15278636001946,
+                "valid": true,
+                "value": 11667610001946
+              },
+              "cost_relative_seconds": {
+                "projected_current_batch_completion": 3673102.0,
+                "current_batch_makespan": 62076.0,
+                "current_batch_total_completion_time": 352479.0,
+                "value": 62076.0
+              },
+              "candidate_decode_requests": 64,
+              "candidate_decode_executions": 57,
+              "field_decode_calls": 11587,
+              "rail_redecode_calls": 11501,
+              "tracked_feasible_decodes": 17,
+              "tracked_failed_decodes": 19,
+              "tracked_geometry_changes": 10,
+              "accepted_improvement_count": 0,
+              "final_changed_blocks_from_initial": [],
+              "final_sequences": {
+                "C1": [
+                  "T1",
+                  "T7",
+                  "T6",
+                  "T8"
+                ],
+                "C2": [
+                  "T2",
+                  "T4",
+                  "T3",
+                  "T5"
+                ],
+                "C3": []
+              },
+              "final_tasks": [
+                {
+                  "task": "T1",
+                  "block": "B2",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 20637.0,
+                  "end_seconds": 27549.0,
+                  "empty_seconds": 158.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 3154.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T2",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 20468.0,
+                  "end_seconds": 24269.0,
+                  "empty_seconds": 57.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 144.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T3",
+                  "block": "B1",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 53062.0,
+                  "end_seconds": 57540.0,
+                  "empty_seconds": 293.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 585.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T4",
+                  "block": "B4",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 24269.0,
+                  "end_seconds": 42844.0,
+                  "empty_seconds": 87.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 488.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T5",
+                  "block": "B1",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 57540.0,
+                  "end_seconds": 62076.0,
+                  "empty_seconds": 351.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 585.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T6",
+                  "block": "B7",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 36996.0,
+                  "end_seconds": 42480.0,
+                  "empty_seconds": 1760.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 124.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T7",
+                  "block": "B6",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 27549.0,
+                  "end_seconds": 35976.0,
+                  "empty_seconds": 1893.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 2934.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T8",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 42480.0,
+                  "end_seconds": 59745.0,
+                  "empty_seconds": 75.0,
+                  "base_seconds": 14400.0,
+                  "loaded_seconds": 2790.0,
+                  "dependency_predecessors_in_pool": []
+                }
+              ],
+              "active_occupancies": [
+                {
+                  "block": "B1",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -1536217.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T3",
+                    "T5"
+                  ]
+                },
+                {
+                  "block": "B2",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 20637.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T1"
+                  ]
+                },
+                {
+                  "block": "B3",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 20468.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T2"
+                  ]
+                },
+                {
+                  "block": "B4",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 24269.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T4"
+                  ]
+                },
+                {
+                  "block": "B5",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 42480.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T8"
+                  ]
+                },
+                {
+                  "block": "B6",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 27549.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T7"
+                  ]
+                },
+                {
+                  "block": "B7",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": false,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 36996.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T6"
+                  ]
+                }
+              ],
+              "motion_kind_totals": {
+                "0": {
+                  "count": 8,
+                  "duration_seconds": 4674.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                },
+                "2": {
+                  "count": 8,
+                  "duration_seconds": 54000.0,
+                  "nonzero_displacement_count": 0,
+                  "empty_task_id_count": 0
+                },
+                "3": {
+                  "count": 8,
+                  "duration_seconds": 10804.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                }
+              },
+              "improvement_timeline": [],
+              "non_task_motions": [],
+              "crane_task_spans": {
+                "C1": {
+                  "first_start_seconds": 20637.0,
+                  "last_end_seconds": 59745.0,
+                  "task_processing_seconds": 38088.0,
+                  "between_task_gaps_seconds": 1020.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                },
+                "C2": {
+                  "first_start_seconds": 20468.0,
+                  "last_end_seconds": 62076.0,
+                  "task_processing_seconds": 31390.0,
+                  "between_task_gaps_seconds": 10218.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                }
+              },
+              "final_plan_sha256": "e3d9a1f50f174f345dd890bebf7a7af8fd38ff47561cab4f0d9c826370285f3c",
+              "source_trace_label": "E10/b3-r071/repeat-3/J_VND",
+              "gate_fingerprints": {
+                "source_state_fingerprints": {
+                  "source_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "source_checkpoint_journal": "224a80681452b19472839c03e2e811cc78d609ffbcd1a0277123c0cf0bec08be",
+                  "source_trace": "35bcd56c46cc02f994b490c35f0fc188b1bc0579a253e8d5e4187d09c8764ed7",
+                  "prefix_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "prefix_checkpoint_journal": "6afa82528d36036c7d8a7157a26e5815a9fbcd406f23e591513981070730afcc",
+                  "source_warm_sidecar": "93666f06dd7506c5e369d378c31b9aff51e5f9646029257ba9e1a7f66a4f8fb9",
+                  "warm_input": "93666f06dd7506c5e369d378c31b9aff51e5f9646029257ba9e1a7f66a4f8fb9"
+                },
+                "warm_start_mode": "restored_sidecar",
+                "common_configuration_sha256": "6f5f8f46ddeeb9f1e6d2c3378fdebd1cd1e07470564c536c274f587d83ea5080",
+                "binary_sha256": "207bfdd67b65e816d022c14534a51f5c93fad016a05392a78a12f2df8286fc77",
+                "provenance_sha256": "dcc9a56191544f196b098fb52b6acae2f252fd54a8a8dece8f580335204b9409"
+              }
+            },
+            "S_VND": {
+              "trace_sha256": "7c77b9db47489a4d25d9cc836301525703c8de530a9a5691205850c5ba00729a",
+              "initial_sequence_signature_sha256": "9a382d23e4fa4bca14d4cf1a5c87e33b018d3803925728012026290272572162",
+              "initial_geometry_signature_sha256": "d4f89ed778d09c8e1afdefce5cfba13d1a581c9972275dbdafbe0cf26d4fd8c0",
+              "mode": "ready_work_primary",
+              "budget_seconds": 12,
+              "first_feasible_seconds": 3.001443,
+              "cost_integer_microseconds": {
+                "current_batch_makespan": 11661191001946,
+                "current_batch_total_completion_time": 93154568015568,
+                "projected_current_batch_completion": 15278636001946,
+                "valid": true,
+                "value": 11661191001946
+              },
+              "cost_relative_seconds": {
+                "projected_current_batch_completion": 3673102.0,
+                "current_batch_makespan": 55657.0,
+                "current_batch_total_completion_time": 310296.0,
+                "value": 55657.0
+              },
+              "candidate_decode_requests": 144,
+              "candidate_decode_executions": 117,
+              "field_decode_calls": 12742,
+              "rail_redecode_calls": 12552,
+              "tracked_feasible_decodes": 71,
+              "tracked_failed_decodes": 25,
+              "tracked_geometry_changes": 0,
+              "accepted_improvement_count": 4,
+              "final_changed_blocks_from_initial": [],
+              "final_sequences": {
+                "C1": [
+                  "T7",
+                  "T1",
+                  "T8"
+                ],
+                "C2": [
+                  "T6",
+                  "T3",
+                  "T2",
+                  "T4",
+                  "T5"
+                ],
+                "C3": []
+              },
+              "final_tasks": [
+                {
+                  "task": "T1",
+                  "block": "B2",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 27329.0,
+                  "end_seconds": 35843.0,
+                  "empty_seconds": 1760.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 3154.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T2",
+                  "block": "B3",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 28509.0,
+                  "end_seconds": 32604.0,
+                  "empty_seconds": 351.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 144.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T3",
+                  "block": "B1",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 24249.0,
+                  "end_seconds": 28509.0,
+                  "empty_seconds": 75.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 585.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T4",
+                  "block": "B4",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 32604.0,
+                  "end_seconds": 51179.0,
+                  "empty_seconds": 87.0,
+                  "base_seconds": 18000.0,
+                  "loaded_seconds": 488.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T5",
+                  "block": "B1",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 51179.0,
+                  "end_seconds": 55657.0,
+                  "empty_seconds": 293.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 585.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T6",
+                  "block": "B7",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C2"
+                  ],
+                  "start_seconds": 20468.0,
+                  "end_seconds": 24249.0,
+                  "empty_seconds": 57.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 124.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T7",
+                  "block": "B6",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 20637.0,
+                  "end_seconds": 27329.0,
+                  "empty_seconds": 158.0,
+                  "base_seconds": 3600.0,
+                  "loaded_seconds": 2934.0,
+                  "dependency_predecessors_in_pool": []
+                },
+                {
+                  "task": "T8",
+                  "block": "B5",
+                  "kind": 2,
+                  "tandem": false,
+                  "cranes": [
+                    "C1"
+                  ],
+                  "start_seconds": 35843.0,
+                  "end_seconds": 54926.0,
+                  "empty_seconds": 1893.0,
+                  "base_seconds": 14400.0,
+                  "loaded_seconds": 2790.0,
+                  "dependency_predecessors_in_pool": []
+                }
+              ],
+              "active_occupancies": [
+                {
+                  "block": "B1",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": true,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": -1536217.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T3",
+                    "T5"
+                  ]
+                },
+                {
+                  "block": "B2",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 27329.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T1"
+                  ]
+                },
+                {
+                  "block": "B3",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 28509.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T2"
+                  ]
+                },
+                {
+                  "block": "B4",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 32604.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T4"
+                  ]
+                },
+                {
+                  "block": "B5",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 35843.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T8"
+                  ]
+                },
+                {
+                  "block": "B6",
+                  "region": "R2",
+                  "initial_region": "R2",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 20637.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T7"
+                  ]
+                },
+                {
+                  "block": "B7",
+                  "region": "R4",
+                  "initial_region": "R4",
+                  "committed_at_input": false,
+                  "decoder_locked_flag": true,
+                  "geometry_equals_initial": true,
+                  "geometry_equals_other_method": true,
+                  "start_seconds": 20468.0,
+                  "end_seconds": null,
+                  "carry_task": null,
+                  "entry_tasks": [
+                    "T6"
+                  ]
+                }
+              ],
+              "motion_kind_totals": {
+                "0": {
+                  "count": 8,
+                  "duration_seconds": 4674.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                },
+                "2": {
+                  "count": 8,
+                  "duration_seconds": 54000.0,
+                  "nonzero_displacement_count": 0,
+                  "empty_task_id_count": 0
+                },
+                "3": {
+                  "count": 8,
+                  "duration_seconds": 10804.0,
+                  "nonzero_displacement_count": 8,
+                  "empty_task_id_count": 0
+                }
+              },
+              "improvement_timeline": [
+                {
+                  "elapsed_seconds": 3.013508,
+                  "projected_completion_seconds": 3673102.0,
+                  "current_batch_makespan_seconds": 62076.0,
+                  "current_batch_total_completion_time_seconds": 352126.0,
+                  "pool_cost_seconds": 62076.0
+                },
+                {
+                  "elapsed_seconds": 5.939625,
+                  "projected_completion_seconds": 3673102.0,
+                  "current_batch_makespan_seconds": 60720.0,
+                  "current_batch_total_completion_time_seconds": 342517.0,
+                  "pool_cost_seconds": 60720.0
+                },
+                {
+                  "elapsed_seconds": 10.87281,
+                  "projected_completion_seconds": 3673102.0,
+                  "current_batch_makespan_seconds": 55657.0,
+                  "current_batch_total_completion_time_seconds": 325246.0,
+                  "pool_cost_seconds": 55657.0
+                },
+                {
+                  "elapsed_seconds": 10.923803,
+                  "projected_completion_seconds": 3673102.0,
+                  "current_batch_makespan_seconds": 55657.0,
+                  "current_batch_total_completion_time_seconds": 310296.0,
+                  "pool_cost_seconds": 55657.0
+                }
+              ],
+              "non_task_motions": [],
+              "crane_task_spans": {
+                "C1": {
+                  "first_start_seconds": 20637.0,
+                  "last_end_seconds": 54926.0,
+                  "task_processing_seconds": 34289.0,
+                  "between_task_gaps_seconds": 0.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                },
+                "C2": {
+                  "first_start_seconds": 20468.0,
+                  "last_end_seconds": 55657.0,
+                  "task_processing_seconds": 35189.0,
+                  "between_task_gaps_seconds": 0.0,
+                  "gap_definition": "outside named task intervals, may include non-task rail-yield moves; not necessarily idle time"
+                }
+              },
+              "final_plan_sha256": "760ae434449d10d19f30ccb457a23e9e05e642298d6315f5a07bd3e4cdf1eb20",
+              "source_trace_label": "E10/b3-r071/repeat-3/S_VND",
+              "gate_fingerprints": {
+                "source_state_fingerprints": {
+                  "source_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "source_checkpoint_journal": "224a80681452b19472839c03e2e811cc78d609ffbcd1a0277123c0cf0bec08be",
+                  "source_trace": "35bcd56c46cc02f994b490c35f0fc188b1bc0579a253e8d5e4187d09c8764ed7",
+                  "prefix_checkpoint": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+                  "prefix_checkpoint_journal": "6afa82528d36036c7d8a7157a26e5815a9fbcd406f23e591513981070730afcc",
+                  "source_warm_sidecar": "93666f06dd7506c5e369d378c31b9aff51e5f9646029257ba9e1a7f66a4f8fb9",
+                  "warm_input": "93666f06dd7506c5e369d378c31b9aff51e5f9646029257ba9e1a7f66a4f8fb9"
+                },
+                "warm_start_mode": "restored_sidecar",
+                "common_configuration_sha256": "6f5f8f46ddeeb9f1e6d2c3378fdebd1cd1e07470564c536c274f587d83ea5080",
+                "binary_sha256": "207bfdd67b65e816d022c14534a51f5c93fad016a05392a78a12f2df8286fc77",
+                "provenance_sha256": "c9311692dd495f185fa93aa21eddcc2dc40e77985e3c8cee1b033d92eb7ef968"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

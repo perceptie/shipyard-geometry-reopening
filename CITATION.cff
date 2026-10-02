@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite this reproduction package when reusing its data or code."
+type: software
+title: "Geometry Reopening in Time-Limited Rolling Shipyard Scheduling: Reproduction Package"
+authors:
+  - family-names: Wang
+    given-names: Zixi
+    email: zixi.wang@zju.edu.cn
+    affiliation: "Zhejiang University"
+  - family-names: Wu
+    given-names: Weimin
+    email: wmwu@iipc.zju.edu.cn
+    affiliation: "Zhejiang University"
+repository-code: "https://github.com/perceptie/shipyard-geometry-reopening"
+url: "https://github.com/perceptie/shipyard-geometry-reopening"
+license: MIT
+keywords:
+  - shipyard scheduling
+  - rolling horizon
+  - geometry reopening
+  - variable neighbourhood descent

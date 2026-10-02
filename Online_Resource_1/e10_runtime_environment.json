@@ -1,0 +1,87 @@
+{
+  "environment": {
+    "operating_system": "Linux-6.11.0-26-generic-x86_64-with-glibc2.39",
+    "operating_system_distribution": "Ubuntu 24.04.2 LTS",
+    "cpu_model": "Intel(R) Xeon(R) Platinum 8280L CPU @ 2.60GHz",
+    "logical_cpu_count": 112,
+    "physical_cpu_socket_count": 2,
+    "physical_core_count": 56,
+    "physical_memory_bytes": 100942061568,
+    "cxx_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "cmake": "cmake version 3.28.3",
+    "cmake_build_type": "Release",
+    "release_flags": "-O3 -DNDEBUG",
+    "solver_threads": 1,
+    "runner_order": "sequential in the preregistered balanced order",
+    "cpu_affinity_control": "not applied",
+    "frequency_control": "not applied",
+    "historical_background_load": "not recorded; runs were sequential",
+    "timer": "std::chrono::steady_clock"
+  },
+  "runtime_aggregate": {
+    "method_run_count": 288,
+    "invocation_count": 352,
+    "failed_invocation_count": 64,
+    "invocation_budget_counts": {
+      "12": 352
+    },
+    "controller_invocation_count_distribution": {
+      "1": 261,
+      "2": 8,
+      "3": 7,
+      "4": 6,
+      "5": 6
+    },
+    "solver_wall_seconds": {
+      "minimum": 0.045,
+      "median": 0.2835,
+      "p95": 24.142249999999997,
+      "maximum": 48.284,
+      "mean": 7.410159722222222
+    },
+    "by_accepted_solve_mode": {
+      "ready_work_primary": {
+        "count": 117,
+        "minimum_wall_seconds": 9.033,
+        "median_wall_seconds": 12.08,
+        "maximum_wall_seconds": 12.1
+      },
+      "single_crane_seed_retry": {
+        "count": 7,
+        "minimum_wall_seconds": 36.156,
+        "median_wall_seconds": 36.189,
+        "maximum_wall_seconds": 36.223
+      },
+      "singleton_ready_dispatch": {
+        "count": 157,
+        "minimum_wall_seconds": 0.045,
+        "median_wall_seconds": 0.064,
+        "maximum_wall_seconds": 48.284
+      },
+      "spatial_rail_seed_retry": {
+        "count": 7,
+        "minimum_wall_seconds": 24.119,
+        "median_wall_seconds": 24.137,
+        "maximum_wall_seconds": 24.152
+      }
+    },
+    "all_run_audits_pass": true
+  },
+  "budget_semantics": {
+    "controller_outer_time_limit_parameter_seconds": 30,
+    "controller_compatible_warm_or_retry_factor": 0.4,
+    "resulting_controller_cap_seconds": 12,
+    "research_overlay_cap_seconds": 12,
+    "observed_invocation_budget_counts": {
+      "12": 352
+    },
+    "unit_of_cap": "one solver invocation",
+    "controller_run_can_contain_multiple_invocations": true
+  },
+  "initial_plan_equivalence_basis": "The gate compares recorded source/configuration, mode, cap, sequence and geometry components. Initial task times, motion, repair state and Cost were not separately signed or replayed. Their equality is inferred from the fixed single-thread decoder, shared effective input and inspected cache/stop rules; see INITIALIZATION_AND_DECODER_AUDIT.md. This source-inspection argument is not independent full-initial-plan validation.",
+  "source_hashes": {
+    "repeat_summary": "ba51ee46f4fdae045acf503a59949b4c2b121b4db2332a239e39208e6a59a920",
+    "evidence_seal": "2b96cfcb709b74abeec5f20da0e210b162f0b6a008b5f448b7bddad7fea1bee5",
+    "exporter": "9c41a11d4ce32d2d63a5d35ffb9257d73b6e6f3b565fa13b27d6456f73810400"
+  }
+}

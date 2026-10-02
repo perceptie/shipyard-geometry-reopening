@@ -1,0 +1,42 @@
+{
+  "run_count": 288,
+  "runtime_cpp_validator": {
+    "role": "part of the accepted-plan path",
+    "public_boundary": "The public supplement does not redistribute the proprietary validator implementation or restricted task-level inputs."
+  },
+  "separate_declared_scope_checker": {
+    "pass_count": 288,
+    "does_not_call_runtime_cpp_validator": true,
+    "declared_coverage": [
+      "precedence",
+      "resource capacities",
+      "positive calendars",
+      "ordinary assignment and tandem consistency",
+      "field intervals",
+      "shared-rail X-order",
+      "task-motion coverage",
+      "motion endpoints and phase durations reconstructed from final physical rectangles"
+    ],
+    "synthetic_controls": "checker_controls.json"
+  },
+  "independent_cost_recomputation": {
+    "pass_count": 288,
+    "declared_coverage": "reconstructs all four formal objective levels from the restricted de-identified task and graph records"
+  },
+  "motion_audit": {
+    "pass_count": 288,
+    "declared_coverage": [
+      "X endpoint continuity",
+      "temporal non-overlap",
+      "zero-duration X segments",
+      "non-terminal Y endpoint continuity"
+    ],
+    "excluded_checks": [
+      "initial-to-first motion",
+      "last-to-checkpoint motion",
+      "terminal shared-rail-yield Y projections"
+    ],
+    "excluded_terminal_y_projection_count": 51
+  },
+  "interpretation_limit": "The three independent audit results have different declared scopes. Together they are neither an optimality certificate nor a complete continuous-safety or field-feasibility proof."
+}

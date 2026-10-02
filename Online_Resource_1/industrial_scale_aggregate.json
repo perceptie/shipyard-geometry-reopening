@@ -1,0 +1,69 @@
+{
+  "scope": "Distributions are over 288 method runs on 48 correlated states.",
+  "fixed_model_dimensions": {
+    "crane_count": [
+      3
+    ],
+    "region_count": [
+      6
+    ],
+    "graph_node_count": [
+      5474
+    ],
+    "graph_edge_count": [
+      9629
+    ],
+    "mandatory_milestone_count": [
+      4
+    ]
+  },
+  "run_level_distributions": {
+    "pool_task_count": {
+      "minimum": 1,
+      "median": 1.0,
+      "p95": 8.0,
+      "maximum": 8
+    },
+    "current_batch_pool_task_count": {
+      "minimum": 1,
+      "median": 1.0,
+      "p95": 8.0,
+      "maximum": 8
+    },
+    "scheduled_block_count": {
+      "minimum": 1,
+      "median": 1.0,
+      "p95": 8.0,
+      "maximum": 8
+    },
+    "locked_occupancy_count": {
+      "minimum": 31,
+      "median": 39.0,
+      "p95": 53.0,
+      "maximum": 59
+    },
+    "tandem_task_count": {
+      "minimum": 0,
+      "median": 0.0,
+      "p95": 4.0,
+      "maximum": 5
+    },
+    "unavailable_interval_count": {
+      "minimum": 18,
+      "median": 18.0,
+      "p95": 18.0,
+      "maximum": 18
+    },
+    "available_interval_count": {
+      "minimum": 0,
+      "median": 0.0,
+      "p95": 0.0,
+      "maximum": 0
+    }
+  },
+  "interpretation_limits": [
+    "scheduled_block_count is the number of mutable block records in the accepted invocation input",
+    "locked_occupancy_count measures carried persistent occupancies, not geometric area utilization",
+    "interval counts describe encoded calendars and do not estimate labour or field congestion"
+  ]
+}

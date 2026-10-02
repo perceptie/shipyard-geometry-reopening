@@ -1,0 +1,297 @@
+{
+  "schema": "p3-e7-protocol-evidence/1.1",
+  "verification_date": "2026-10-01",
+  "scope": "Read-only inspection of retained artifacts; no solver rerun.",
+  "versions": {
+    "E7": {
+      "binary_sha256": "15dccc04733c738f478cb07291774b1d8154b1de4c57f9156bdfc8a1fa73e973",
+      "source_sha256": {
+        "formal_solver_engine.cpp": "88cac275f3148440fef2e529d06a09587b24ec246da5ec2ff4d69795bd6842e9",
+        "rolling_main.cpp": "e2acd16c6a8ebc3c36cddf24b41047af8ca4978582766c9a35b04a8741cf2a1c",
+        "research_method.hpp": "7f6c9e0212dfb8f88b46cd30d06c90df07ecce3faa6bd9f1e12221ed172a5602",
+        "research_metrics.hpp": "0ef8880257880e5750832881a8e49271470e0ea4931334a14b87604c6083b338",
+        "research_trace.hpp": "aa4fd3609b15ffa796c54d8a9e7aa28b472a558f75a57d8fd619c0dfcb310c5d",
+        "research_warm_start_state.hpp": "5ca9a41c4c7fed8ac8a45f9e436935ecb6035050d9aff6494840ca2bdd4ffd10",
+        "CMakeLists.txt": "d19be00c7c3d77c482fef923de4387532880119482712c33d73fb71c2a0042d7"
+      },
+      "formal_source_commit_current": "5ecc07be32a2358e96748939f5083f614d0c0c96",
+      "formal_source_tracked_clean_current": true,
+      "formal_main_sha256_current": "6f3caf7413e7c8723e182d511983f935e89a27f61fa14347505737a110ec0023",
+      "build_type": "Release",
+      "release_flags": "-O3 -DNDEBUG",
+      "compiler_basename": "c++"
+    },
+    "E10": {
+      "binary_sha256": "207bfdd67b65e816d022c14534a51f5c93fad016a05392a78a12f2df8286fc77",
+      "source_sha256": {
+        "formal_solver_engine.cpp": "88cac275f3148440fef2e529d06a09587b24ec246da5ec2ff4d69795bd6842e9",
+        "rolling_main.cpp": "e2acd16c6a8ebc3c36cddf24b41047af8ca4978582766c9a35b04a8741cf2a1c",
+        "research_method.hpp": "7f6c9e0212dfb8f88b46cd30d06c90df07ecce3faa6bd9f1e12221ed172a5602",
+        "research_metrics.hpp": "0ef8880257880e5750832881a8e49271470e0ea4931334a14b87604c6083b338",
+        "research_trace.hpp": "a2a5bf4b953583de56ec97776da0f4c570c9364edcc70e45e6c82f4352ea256a",
+        "research_warm_start_state.hpp": "5ca9a41c4c7fed8ac8a45f9e436935ecb6035050d9aff6494840ca2bdd4ffd10",
+        "CMakeLists.txt": "2b7b9185b631a40936dfa7a04e8b16ea77f1dc1c3f04a4f7e4db698dbf16a143"
+      },
+      "formal_source_commit_current": "5ecc07be32a2358e96748939f5083f614d0c0c96",
+      "formal_source_tracked_clean_current": true,
+      "formal_main_sha256_current": "6f3caf7413e7c8723e182d511983f935e89a27f61fa14347505737a110ec0023",
+      "build_type": "Release",
+      "release_flags": "-O3 -DNDEBUG",
+      "compiler_basename": "c++"
+    }
+  },
+  "e7_methods": {
+    "LRP": {
+      "report_parameters": {
+        "cold_ready_backfill_limit": 24,
+        "early_task_bias_days": 70,
+        "experimental_overrides": true,
+        "initial_beam_width": 8,
+        "max_rail_repair_iterations": 256,
+        "max_restart_attempts": 3,
+        "rolling_completion_ratio": 0.5,
+        "solve_seed": 42,
+        "solver_threads": 1,
+        "time_limit_seconds": 30,
+        "top_k": 8,
+        "top_k_prime": 24,
+        "warm_ready_backfill_limit": 8,
+        "warm_start_time_limit_seconds": 12
+      },
+      "solved_round_count": 384,
+      "invocation_count": 969,
+      "report_attempt_count": 902,
+      "failed_invocation_count": 585,
+      "research_invocation_cap_counts": {
+        "12": 969
+      },
+      "controller_attempt_groups": [
+        {
+          "mode": "all_ready_singleton_dispatch",
+          "controller_cap_seconds": 12,
+          "warm_start_available": false,
+          "count": 170
+        },
+        {
+          "mode": "ready_work_primary",
+          "controller_cap_seconds": 12,
+          "warm_start_available": true,
+          "count": 135
+        },
+        {
+          "mode": "ready_work_primary",
+          "controller_cap_seconds": 30,
+          "warm_start_available": false,
+          "count": 40
+        },
+        {
+          "mode": "single_crane_seed_retry",
+          "controller_cap_seconds": 12,
+          "warm_start_available": true,
+          "count": 109
+        },
+        {
+          "mode": "singleton_candidate",
+          "controller_cap_seconds": 12,
+          "warm_start_available": false,
+          "count": 411
+        },
+        {
+          "mode": "spatial_rail_seed_retry",
+          "controller_cap_seconds": 12,
+          "warm_start_available": true,
+          "count": 37
+        }
+      ],
+      "invocations_per_round_distribution": {
+        "1": 327,
+        "2": 9,
+        "3": 9,
+        "5": 2,
+        "6": 27,
+        "7": 1,
+        "18": 1,
+        "26": 2,
+        "27": 1,
+        "31": 1,
+        "35": 1,
+        "62": 2,
+        "64": 1
+      },
+      "solver_wall_total_milliseconds": 492252,
+      "solver_wall_maximum_milliseconds": 60392,
+      "artifact_sha256": {
+        "report": "aeef6789e06a448bff2247d2f7d3f602e4aa0dee87af046c1b07e985c88fab5d",
+        "trace": "741e753cf61a6c7efdbd460f2ef98a6ecc47a21e33a37ee0c8b5338e4dd490d6",
+        "audit": "04bc38bcbed028cc9a5ddc0c98982e4633b41259d7ae48b7984c94dfd2eef4e8"
+      }
+    },
+    "J_VND": {
+      "report_parameters": {
+        "cold_ready_backfill_limit": 24,
+        "early_task_bias_days": 70,
+        "experimental_overrides": true,
+        "initial_beam_width": 8,
+        "max_rail_repair_iterations": 256,
+        "max_restart_attempts": 3,
+        "rolling_completion_ratio": 0.5,
+        "solve_seed": 42,
+        "solver_threads": 1,
+        "time_limit_seconds": 30,
+        "top_k": 8,
+        "top_k_prime": 24,
+        "warm_ready_backfill_limit": 8,
+        "warm_start_time_limit_seconds": 12
+      },
+      "solved_round_count": 349,
+      "invocation_count": 976,
+      "report_attempt_count": 909,
+      "failed_invocation_count": 627,
+      "research_invocation_cap_counts": {
+        "12": 976
+      },
+      "controller_attempt_groups": [
+        {
+          "mode": "all_ready_singleton_dispatch",
+          "controller_cap_seconds": 12,
+          "warm_start_available": false,
+          "count": 206
+        },
+        {
+          "mode": "ready_work_primary",
+          "controller_cap_seconds": 12,
+          "warm_start_available": true,
+          "count": 162
+        },
+        {
+          "mode": "ready_work_primary",
+          "controller_cap_seconds": 30,
+          "warm_start_available": false,
+          "count": 34
+        },
+        {
+          "mode": "single_crane_seed_retry",
+          "controller_cap_seconds": 12,
+          "warm_start_available": true,
+          "count": 106
+        },
+        {
+          "mode": "singleton_candidate",
+          "controller_cap_seconds": 12,
+          "warm_start_available": false,
+          "count": 354
+        },
+        {
+          "mode": "spatial_rail_seed_retry",
+          "controller_cap_seconds": 12,
+          "warm_start_available": true,
+          "count": 47
+        }
+      ],
+      "invocations_per_round_distribution": {
+        "1": 287,
+        "2": 20,
+        "3": 3,
+        "4": 12,
+        "6": 16,
+        "28": 4,
+        "32": 2,
+        "35": 1,
+        "37": 1,
+        "53": 1,
+        "64": 2
+      },
+      "solver_wall_total_milliseconds": 2534236,
+      "solver_wall_maximum_milliseconds": 60559,
+      "artifact_sha256": {
+        "report": "1830aa86236f5c7f264a534d601e9ec000aa86070c32093042425a7e30222e7a",
+        "trace": "cb30014fc6fe46ced96f2b9c85914ea7243532b124ccd38ed18b53b4db19b31e",
+        "audit": "c3575ccc12337cdb6e225f636fd2104c2f2d5b3ac35ea8ff550647abc03026d5"
+      }
+    },
+    "S_VND": {
+      "report_parameters": {
+        "cold_ready_backfill_limit": 24,
+        "early_task_bias_days": 70,
+        "experimental_overrides": true,
+        "initial_beam_width": 8,
+        "max_rail_repair_iterations": 256,
+        "max_restart_attempts": 3,
+        "rolling_completion_ratio": 0.5,
+        "solve_seed": 42,
+        "solver_threads": 1,
+        "time_limit_seconds": 30,
+        "top_k": 8,
+        "top_k_prime": 24,
+        "warm_ready_backfill_limit": 8,
+        "warm_start_time_limit_seconds": 12
+      },
+      "solved_round_count": 394,
+      "invocation_count": 779,
+      "report_attempt_count": 779,
+      "failed_invocation_count": 385,
+      "research_invocation_cap_counts": {
+        "12": 779
+      },
+      "controller_attempt_groups": [
+        {
+          "mode": "all_ready_singleton_dispatch",
+          "controller_cap_seconds": 12,
+          "warm_start_available": false,
+          "count": 92
+        },
+        {
+          "mode": "ready_work_primary",
+          "controller_cap_seconds": 12,
+          "warm_start_available": true,
+          "count": 128
+        },
+        {
+          "mode": "ready_work_primary",
+          "controller_cap_seconds": 30,
+          "warm_start_available": false,
+          "count": 38
+        },
+        {
+          "mode": "single_crane_seed_retry",
+          "controller_cap_seconds": 12,
+          "warm_start_available": true,
+          "count": 94
+        },
+        {
+          "mode": "singleton_candidate",
+          "controller_cap_seconds": 12,
+          "warm_start_available": false,
+          "count": 378
+        },
+        {
+          "mode": "spatial_rail_seed_retry",
+          "controller_cap_seconds": 12,
+          "warm_start_available": true,
+          "count": 49
+        }
+      ],
+      "invocations_per_round_distribution": {
+        "1": 324,
+        "2": 28,
+        "3": 4,
+        "4": 8,
+        "5": 2,
+        "6": 20,
+        "7": 1,
+        "8": 1,
+        "25": 1,
+        "28": 3,
+        "33": 1,
+        "68": 1
+      },
+      "solver_wall_total_milliseconds": 2341922,
+      "solver_wall_maximum_milliseconds": 60756,
+      "artifact_sha256": {
+        "report": "d9822eab50d6e22828b1e1b8fdb797aafe081e40616b3e706fc2afe07fd108ab",
+        "trace": "e31c97e6afd26d76ce113a0c2dee2f3d3c407bebbe6568695ccb4ce4b14983bd",
+        "audit": "f22b25ad1e54c4568a8748eddb0872bf8afb8a5213e32236b240ae279e347e47"
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "aggregate": {
+    "state_count": 48,
+    "repeat_count": 3,
+    "paired_observation_count": 144,
+    "eligible_paired_observation_count": 142,
+    "ineligible_paired_observation_count": 2,
+    "ineligible_pairs": [
+      {
+        "repeat": 1,
+        "state": "b2-r101",
+        "reason": "accepted_initialization_mismatch_after_runtime_retry_divergence"
+      },
+      {
+        "repeat": 1,
+        "state": "b2-r111",
+        "reason": "accepted_initialization_mismatch_after_runtime_retry_divergence"
+      }
+    ],
+    "method_run_count": 288,
+    "declared_scope_checker_pass_count": 288,
+    "motion_audit_pass_count": 288,
+    "full_cost_audit_pass_count": 288,
+    "matched_initialization_count": 142,
+    "overall_outcomes": {
+      "paired_observation_count": 142,
+      "J_wins": 11,
+      "ties": 126,
+      "S_wins": 5
+    },
+    "outcomes_by_repeat": {
+      "1": {
+        "paired_observation_count": 46,
+        "J_wins": 4,
+        "ties": 41,
+        "S_wins": 1
+      },
+      "2": {
+        "paired_observation_count": 48,
+        "J_wins": 4,
+        "ties": 42,
+        "S_wins": 2
+      },
+      "3": {
+        "paired_observation_count": 48,
+        "J_wins": 3,
+        "ties": 43,
+        "S_wins": 2
+      }
+    },
+    "outcomes_by_first_method": {
+      "J_VND": {
+        "paired_observation_count": 72,
+        "J_wins": 6,
+        "ties": 64,
+        "S_wins": 2
+      },
+      "S_VND": {
+        "paired_observation_count": 70,
+        "J_wins": 5,
+        "ties": 62,
+        "S_wins": 3
+      }
+    },
+    "states_with_all_three_pairs_eligible": 46,
+    "three_of_three_outcome_stable_states": 43,
+    "outcome_pattern_counts": {
+      "J_win/J_win/J_win": 2,
+      "J_win/J_win/S_win": 1,
+      "J_win/tie/tie": 1,
+      "S_win/S_win/S_win": 1,
+      "ineligible/J_win/J_win": 1,
+      "ineligible/tie/tie": 1,
+      "tie/S_win/tie": 1,
+      "tie/tie/tie": 40
+    },
+    "non_tie_first_differing_levels": {
+      "current_batch_makespan": 16
+    },
+    "J_candidate_geometry_active_observations": 36,
+    "J_final_geometry_changed_observations": 14,
+    "eligible_J_candidate_geometry_active_observations": 35,
+    "eligible_J_final_geometry_changed_observations": 14,
+    "states_with_J_candidate_geometry_activity_in_all_three_repeats": 11,
+    "states_with_J_final_geometry_change_in_all_three_repeats": 4,
+    "solver_wall_totals_milliseconds": {
+      "J_VND": 1073556,
+      "S_VND": 1060570
+    },
+    "solver_wall_medians_milliseconds": {
+      "J_VND": 284.0,
+      "S_VND": 282.5
+    },
+    "eligible_solver_wall_totals_milliseconds": {
+      "J_VND": 1025273,
+      "S_VND": 1024379
+    },
+    "eligible_solver_wall_medians_milliseconds": {
+      "J_VND": 273.5,
+      "S_VND": 270.0
+    },
+    "trace_failures": {
+      "J_VND": 33,
+      "S_VND": 31
+    },
+    "eligible_trace_failures": {
+      "J_VND": 30,
+      "S_VND": 30
+    },
+    "terminal_y_projection_count": 51
+  },
+  "source_sha256": "ba51ee46f4fdae045acf503a59949b4c2b121b4db2332a239e39208e6a59a920",
+  "scope_note": "The 48 states come from one source trajectory. Three repeats are correlated within-state observations, not independent industrial instances."
+}

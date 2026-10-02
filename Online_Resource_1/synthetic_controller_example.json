@@ -1,0 +1,93 @@
+{
+  "schema_version": "synthetic-controller-checker/1.0",
+  "provenance": "Hand-constructed minimal example; all names, coordinates and times are synthetic.",
+  "purpose": "Editable inputs and plan outputs for the explicitly implemented checker. This example illustrates shared model semantics; it is not a Beam/VND implementation, an industrial solver output or an optimization benchmark.",
+  "units": {"time": "seconds", "length": "metres"},
+  "input": {
+    "horizon": [0, 26],
+    "rail_order": ["C1", "C2", "C3"],
+    "minimum_x_separation": 0,
+    "cranes": {
+      "C1": {"initial_position": [0, 0], "speed_x": 1, "speed_y": 1},
+      "C2": {"initial_position": [6, 0], "speed_x": 1, "speed_y": 1},
+      "C3": {"initial_position": [9, 0], "speed_x": 1, "speed_y": 1}
+    },
+    "yard": {"rectangle": [0, -1, 6, 2]},
+    "blocks": {
+      "B_A": {"entry_tasks": ["E_A"], "erection_task": "A", "dwell": 5, "footprint": [2, 2]},
+      "B_B": {"entry_tasks": ["E_B"], "erection_task": null, "dwell": 0, "footprint": [2, 2]}
+    },
+    "tasks": {
+      "E_A": {"kind": "entry", "allowed_cranes": ["C1"], "hold": 1, "pickup": {"C1": [1, 0]}, "drop": {"C1": [3, 0]}, "predecessors": []},
+      "A": {"kind": "erection", "allowed_cranes": ["C1"], "hold": 5, "pickup": {"C1": [3, 0]}, "drop": {"C1": [1, 4]}, "predecessors": [{"task": "E_A", "lag": 2}]},
+      "E_B": {"kind": "entry", "allowed_cranes": ["C2"], "hold": 1, "pickup": {"C2": [5, 0]}, "drop": {"C2": [3, 0]}, "predecessors": []},
+      "T": {"kind": "tandem", "allowed_pairs": [["C2", "C3"]], "hold": 2, "pickup": {"C2": [4, 0], "C3": [7, 0]}, "drop": {"C2": [5, 2], "C3": [8, 2]}, "predecessors": [{"task": "A", "lag": 0}, {"task": "E_B", "lag": 0}]}
+    }
+  },
+  "plan": {
+    "construction": "Manually assigned synthetic sequence, geometry, timing and complete piecewise-linear crane trajectories.",
+    "sequences": {"C1": ["E_A", "A"], "C2": ["E_B", "T"], "C3": ["T"]},
+    "tasks": {
+      "E_A": {"cranes": ["C1"], "start": 0, "empty": 1, "hold": 1, "loaded": 2, "end": 4},
+      "A": {"cranes": ["C1"], "start": 10, "empty": 0, "hold": 5, "loaded": 4, "end": 19},
+      "E_B": {"cranes": ["C2"], "start": 15, "empty": 1, "hold": 1, "loaded": 2, "end": 19},
+      "T": {"cranes": ["C2", "C3"], "start": 20, "empty": 2, "hold": 2, "loaded": 2, "end": 26}
+    },
+    "occupancies": {
+      "B_A": {"rectangle": [2, -1, 2, 2], "start": 0, "end": 15},
+      "B_B": {"rectangle": [2, -1, 2, 2], "start": 15, "end": null}
+    },
+    "motions": {
+      "C1": [
+        {"start": 0, "end": 1, "from": [0, 0], "to": [1, 0], "phase": "empty", "task": "E_A"},
+        {"start": 1, "end": 2, "from": [1, 0], "to": [1, 0], "phase": "hold", "task": "E_A"},
+        {"start": 2, "end": 4, "from": [1, 0], "to": [3, 0], "phase": "loaded", "task": "E_A"},
+        {"start": 4, "end": 10, "from": [3, 0], "to": [3, 0], "phase": "idle", "task": null},
+        {"start": 10, "end": 15, "from": [3, 0], "to": [3, 0], "phase": "hold", "task": "A"},
+        {"start": 15, "end": 19, "from": [3, 0], "to": [1, 4], "phase": "loaded", "task": "A"},
+        {"start": 19, "end": 26, "from": [1, 4], "to": [1, 4], "phase": "idle", "task": null}
+      ],
+      "C2": [
+        {"start": 0, "end": 15, "from": [6, 0], "to": [6, 0], "phase": "idle", "task": null},
+        {"start": 15, "end": 16, "from": [6, 0], "to": [5, 0], "phase": "empty", "task": "E_B"},
+        {"start": 16, "end": 17, "from": [5, 0], "to": [5, 0], "phase": "hold", "task": "E_B"},
+        {"start": 17, "end": 19, "from": [5, 0], "to": [3, 0], "phase": "loaded", "task": "E_B"},
+        {"start": 19, "end": 20, "from": [3, 0], "to": [3, 0], "phase": "idle", "task": null},
+        {"start": 20, "end": 22, "from": [3, 0], "to": [4, 0], "phase": "empty", "task": "T"},
+        {"start": 22, "end": 24, "from": [4, 0], "to": [4, 0], "phase": "hold", "task": "T"},
+        {"start": 24, "end": 26, "from": [4, 0], "to": [5, 2], "phase": "loaded", "task": "T"}
+      ],
+      "C3": [
+        {"start": 0, "end": 20, "from": [9, 0], "to": [9, 0], "phase": "idle", "task": null},
+        {"start": 20, "end": 22, "from": [9, 0], "to": [7, 0], "phase": "empty", "task": "T"},
+        {"start": 22, "end": 24, "from": [7, 0], "to": [7, 0], "phase": "hold", "task": "T"},
+        {"start": 24, "end": 26, "from": [7, 0], "to": [8, 2], "phase": "loaded", "task": "T"}
+      ]
+    }
+  },
+  "worked_observations": [
+    "The final rectangles have centre (3,0). Ordinary block-entry drops and erection pickups use this centre, and retained motion endpoints are checked against it.",
+    "B_A occupies [0,15), although erection A completes at 19. Release is A.start + A.empty + A.hold = 15, the loaded-movement start.",
+    "B_B enters at 15 and reuses exactly the same rectangle; the half-open intervals do not overlap. Its erection is outside the pool, so its occupancy end is null (open).",
+    "T binds adjacent cranes C2 and C3. Its empty duration is max(1,2)=2 seconds, and its loaded duration is max(2,2)=2 seconds under parallel X/Y motion.",
+    "At each motion breakpoint, C1.x <= C2.x <= C3.x. Piecewise-linear interpolation preserves those inequalities between breakpoints."
+  ],
+  "invalid_controls": [
+    {"name": "layout_motion_attachment_mismatch", "expected_issues": ["layout_attachment"], "mutations": [{"op": "set", "path": ["plan", "occupancies", "B_A", "rectangle"], "value": [2.5, -1, 2, 2]}]},
+    {"name": "early_occupancy_release", "expected_issues": ["occupancy_release"], "mutations": [{"op": "set", "path": ["plan", "occupancies", "B_A", "end"], "value": 14}]},
+    {"name": "spatiotemporal_overlap", "expected_issues": ["yard_overlap"], "mutations": [{"op": "set", "path": ["plan", "occupancies", "B_B", "start"], "value": 14}]},
+    {"name": "precedence_violation", "expected_issues": ["precedence"], "mutations": [{"op": "set", "path": ["plan", "tasks", "A", "start"], "value": 5}]},
+    {"name": "unqualified_crane", "expected_issues": ["assignment"], "mutations": [{"op": "set", "path": ["plan", "tasks", "E_A", "cranes"], "value": ["C3"]}]},
+    {"name": "nonadjacent_tandem", "expected_issues": ["tandem_binding"], "mutations": [{"op": "set", "path": ["plan", "tasks", "T", "cranes"], "value": ["C1", "C3"]}]},
+    {"name": "asynchronous_tandem_hold", "expected_issues": ["phase_binding"], "mutations": [{"op": "set", "path": ["plan", "motions", "C3", 2, "end"], "value": 23}]},
+    {"name": "rail_crossing", "expected_issues": ["rail_order"], "mutations": [{"op": "set", "path": ["plan", "motions", "C3"], "value": [
+      {"start": 0, "end": 5, "from": [9, 0], "to": [4, 0], "phase": "idle", "task": null},
+      {"start": 5, "end": 10, "from": [4, 0], "to": [9, 0], "phase": "idle", "task": null},
+      {"start": 10, "end": 20, "from": [9, 0], "to": [9, 0], "phase": "idle", "task": null},
+      {"start": 20, "end": 22, "from": [9, 0], "to": [7, 0], "phase": "empty", "task": "T"},
+      {"start": 22, "end": 24, "from": [7, 0], "to": [7, 0], "phase": "hold", "task": "T"},
+      {"start": 24, "end": 26, "from": [7, 0], "to": [8, 2], "phase": "loaded", "task": "T"}
+    ]}]},
+    {"name": "deleted_loaded_motion", "expected_issues": ["phase_binding"], "mutations": [{"op": "remove", "path": ["plan", "motions", "C1", 5]}]}
+  ]
+}

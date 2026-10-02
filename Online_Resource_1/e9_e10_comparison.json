@@ -1,0 +1,645 @@
+{
+  "document_version": "e9-e10-auxiliary-comparison/1.2.0",
+  "state_count": 48,
+  "e9_matches_e10_modal_count": 48,
+  "all_four_observations_same_count": 43,
+  "states_with_all_three_e10_pairs_eligible": 46,
+  "rows": [
+    {
+      "state": "b2-r006",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r011",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r016",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r021",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r026",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r031",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r036",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r041",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r046",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r051",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "S_win",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": false
+    },
+    {
+      "state": "b2-r056",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r061",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r066",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r071",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r076",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r081",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r086",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r091",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r096",
+      "e9_outcome": "J_win",
+      "e10_repeat_outcomes": [
+        "J_win",
+        "J_win",
+        "J_win"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "J_win",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r101",
+      "e9_outcome": "J_win",
+      "e10_repeat_outcomes": [
+        null,
+        "J_win",
+        "J_win"
+      ],
+      "eligible_e10_repeat_count": 2,
+      "e10_modal_outcome": "J_win",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": false
+    },
+    {
+      "state": "b2-r106",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r111",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        null,
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 2,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": false
+    },
+    {
+      "state": "b2-r116",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b2-r121",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r006",
+      "e9_outcome": "J_win",
+      "e10_repeat_outcomes": [
+        "J_win",
+        "J_win",
+        "J_win"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "J_win",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r011",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r016",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r021",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r026",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r031",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r036",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r041",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r046",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r051",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r056",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r061",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r066",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r071",
+      "e9_outcome": "S_win",
+      "e10_repeat_outcomes": [
+        "S_win",
+        "S_win",
+        "S_win"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "S_win",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r076",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r081",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "J_win",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": false
+    },
+    {
+      "state": "b3-r086",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r091",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r096",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r101",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r106",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r111",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r116",
+      "e9_outcome": "tie",
+      "e10_repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "tie",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": true
+    },
+    {
+      "state": "b3-r121",
+      "e9_outcome": "J_win",
+      "e10_repeat_outcomes": [
+        "J_win",
+        "J_win",
+        "S_win"
+      ],
+      "eligible_e10_repeat_count": 3,
+      "e10_modal_outcome": "J_win",
+      "e9_matches_e10_mode": true,
+      "all_four_observations_same": false
+    }
+  ],
+  "scope": "auxiliary comparison only; E9 was not part of the predeclared E10 three-repeat block and uses an earlier trace-only research binary",
+  "limits": [
+    "does not convert four observations into independent instances or a population-level stability estimate",
+    "E9 and E10 share source states but have different research-binary hashes because E10 serializes projection context",
+    "E10 repeats with unmatched accepted initializations are represented as null and are not ranked"
+  ],
+  "provenance": {
+    "e9_sha256": "439160a7ff1e540f271e99dfd34c8388a87e17692fce5da433d941e9011f96c9",
+    "e10_sha256": "ba51ee46f4fdae045acf503a59949b4c2b121b4db2332a239e39208e6a59a920",
+    "comparator_sha256": "d1616df810bc856b9570f62764201d5632ea4001c9d9485d9c60f15ef490c7c7",
+    "added_post_run": true
+  }
+}

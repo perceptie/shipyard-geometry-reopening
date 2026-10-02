@@ -1,0 +1,2477 @@
+{
+  "document_version": "p3-e12-complete-rolling-repeat-summary/1.0.0",
+  "scope": "Complete batch-1 rollouts; fresh runtime-repeat block with frozen E7 binary, input, seed and configuration",
+  "batch_order": 1,
+  "repetitions": {
+    "repeat-2": {
+      "methods": {
+        "J_VND": {
+          "batch_order": 1,
+          "complete": true,
+          "exit_code": 0,
+          "snapshot_content_sha256": "74f0e946d8abc9379ab3348475cf116112ce1dc974c288077dd6e06622e85004",
+          "parameters": {
+            "cold_ready_backfill_limit": 24,
+            "early_task_bias_days": 70,
+            "experimental_overrides": true,
+            "initial_beam_width": 8,
+            "max_rail_repair_iterations": 256,
+            "max_restart_attempts": 3,
+            "rolling_completion_ratio": 0.5,
+            "solve_seed": 42,
+            "solver_threads": 1,
+            "time_limit_seconds": 30,
+            "top_k": 8,
+            "top_k_prime": 24,
+            "warm_ready_backfill_limit": 8,
+            "warm_start_time_limit_seconds": 12
+          },
+          "completion_offset_seconds": 5446758.0,
+          "milestone_completion_offsets_seconds": [
+            5410927.0,
+            5446758.0
+          ],
+          "round_count": 358,
+          "event_record_count": 381,
+          "accepted_solve_rounds": 358,
+          "attempt_count": 899,
+          "feasible_attempt_count": 358,
+          "trace_call_count": 964,
+          "trace_feasible_count": 358,
+          "trace_failed_count": 606,
+          "solver_wall_seconds": 1653.361,
+          "candidate_decode_executions": 31189,
+          "field_decode_calls": 2594904,
+          "rail_redecode_calls": 2544095,
+          "tracked_feasible_decodes": 15381,
+          "tracked_failed_decodes": 5657,
+          "tracked_geometry_changes": 5782,
+          "geometry_adoption_rounds": 31,
+          "task_count_all_reported_batches": 604,
+          "field_validation_accepted": true,
+          "avoidable_global_idle_count": 1,
+          "first_feasible_input_sha256": "5d4add6586e5e21362f3e5b0577d49958ce38f7bc3e8468342f4f0e67626d52b",
+          "initial_sequence_signature": "d52f9ed691ff47a496b2da409ff75eb61056aed3ce78b15d0ba81aa84838088d",
+          "initial_geometry_signature": "f1dab34bcadbbf3894403a315932418ae7531e84322666bfb1d5c2b9409d3be8",
+          "workload_profile": {
+            "pool_task_count": {
+              "minimum": 1,
+              "median": 1.0,
+              "maximum": 24
+            },
+            "locked_block_count": {
+              "minimum": 0,
+              "median": 44.0,
+              "maximum": 62
+            },
+            "singleton_pool_calls": 222,
+            "multiple_task_pool_calls": 136,
+            "tandem_positive_calls": 51
+          },
+          "audit": {
+            "accepted": 358,
+            "decoder_failures": 606,
+            "invalid_feasible_outputs": 0,
+            "document_version": "e7-declared-scope-audit/1.1.0"
+          },
+          "artifact_sha256": {
+            "report.json": "4a383e47817b94fbc9a51826886a178995875f3437d6dfb90a22b9b1b0bc5242",
+            "trace.jsonl": "b093085bd4725faaccfd8fe13a384238e357e145a7d008f3a99eda7de8728bdd",
+            "audit.json": "c37467bb3c22be25ce2eac0d5ce61a01d726eef86ead0448c9ff4696b36e3c99",
+            "checkpoint.json": "c7d16205f9f094c29458dbdcc607ed02f0891c3c1ac12e6425b7cc49d3f28f51"
+          },
+          "execution": {
+            "repeat": 2,
+            "method": "J_VND",
+            "cpu_affinity": [
+              4
+            ],
+            "started_at_utc": "2026-10-02T08:28:59.497730+00:00",
+            "ended_at_utc": "2026-10-02T08:58:42.498725+00:00",
+            "process_elapsed_seconds": 1782.9993780516088,
+            "provenance": {
+              "binary_sha256": "15dccc04733c738f478cb07291774b1d8154b1de4c57f9156bdfc8a1fa73e973",
+              "formal_commit": "5ecc07be32a2358e96748939f5083f614d0c0c96",
+              "formal_main_sha256": "6f3caf7413e7c8723e182d511983f935e89a27f61fa14347505737a110ec0023",
+              "input_sha256": {
+                "formal_data": "8f78c8c3afbeb9682446ab1f3d6c5a0aba0d4681cbc04745b9f4a4d79a681e7c",
+                "field_layout": "9e1d925bec09919b4898d9e6ec0a39d2dd3ab0002ebc0accf040a30a533e2249",
+                "dock_layout": "4b217e30ad7aa44fb5f2417297f84d95033f17789a699369a5791d01ff12d3e6",
+                "scheduling_policy": "5c3bff00d454e904351f22203cbdf9002f4081dc8c754bb88d5870015d606171",
+                "formal_schema": "6645d1f8da33ca5aebd3f3c78cbd92facaee02364edc718b44682f8766023a48",
+                "field_layout_schema": "51af84bf5c9ad0cdf474f37dbde4c307b0136f4316477a175f87610dbd804ecc",
+                "dock_layout_schema": "1f3120bc3e8eb93d6f0863047e8c6eaecca9c67b1480702adc7e88ed5ee44908",
+                "scheduling_policy_schema": "1db6f6affcd38b8f77db627872a5234b2c8ab2a8408a0c9465db7f8f859020bb"
+              },
+              "audit_sha256": "5967b4c5be3170db50933e35b2f972c7d0aa9098a2b171fcbb0b09d3b9f283ff",
+              "runner_sha256": "f85e9fb4b6a2c4b23e03f49bdfe57d1a3647c0c42abea61b5e494dcecaf337a1",
+              "host_platform": "Linux-6.11.0-26-generic-x86_64-with-glibc2.39",
+              "python_version": "3.12.3",
+              "cpu_inventory": "{\n   \"lscpu\": [\n      {\n         \"field\": \"Architecture:\",\n         \"data\": \"x86_64\"\n      },{\n         \"field\": \"CPU op-mode(s):\",\n         \"data\": \"32-bit, 64-bit\"\n      },{\n         \"field\": \"Address sizes:\",\n         \"data\": \"46 bits physical, 48 bits virtual\"\n      },{\n         \"field\": \"Byte Order:\",\n         \"data\": \"Little Endian\"\n      },{\n         \"field\": \"CPU(s):\",\n         \"data\": \"112\"\n      },{\n         \"field\": \"On-line CPU(s) list:\",\n         \"data\": \"0-111\"\n      },{\n         \"field\": \"Vendor ID:\",\n         \"data\": \"GenuineIntel\"\n      },{\n         \"field\": \"Model name:\",\n         \"data\": \"Intel(R) Xeon(R) Platinum 8280L CPU @ 2.60GHz\"\n      },{\n         \"field\": \"CPU family:\",\n         \"data\": \"6\"\n      },{\n         \"field\": \"Model:\",\n         \"data\": \"85\"\n      },{\n         \"field\": \"Thread(s) per core:\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"Core(s) per socket:\",\n         \"data\": \"28\"\n      },{\n         \"field\": \"Socket(s):\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"Stepping:\",\n         \"data\": \"5\"\n      },{\n         \"field\": \"CPU(s) scaling MHz:\",\n         \"data\": \"33%\"\n      },{\n         \"field\": \"CPU max MHz:\",\n         \"data\": \"3900.0000\"\n      },{\n         \"field\": \"CPU min MHz:\",\n         \"data\": \"1000.0000\"\n      },{\n         \"field\": \"BogoMIPS:\",\n         \"data\": \"5200.00\"\n      },{\n         \"field\": \"Flags:\",\n         \"data\": \"fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts vnmi pku ospke md_clear flush_l1d arch_capabilities\"\n      },{\n         \"field\": \"Virtualization:\",\n         \"data\": \"VT-x\"\n      },{\n         \"field\": \"L1d cache:\",\n         \"data\": \"1.8 MiB (56 instances)\"\n      },{\n         \"field\": \"L1i cache:\",\n         \"data\": \"1.8 MiB (56 instances)\"\n      },{\n         \"field\": \"L2 cache:\",\n         \"data\": \"56 MiB (56 instances)\"\n      },{\n         \"field\": \"L3 cache:\",\n         \"data\": \"77 MiB (2 instances)\"\n      },{\n         \"field\": \"NUMA node(s):\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"NUMA node0 CPU(s):\",\n         \"data\": \"0-27,56-83\"\n      },{\n         \"field\": \"NUMA node1 CPU(s):\",\n         \"data\": \"28-55,84-111\"\n      },{\n         \"field\": \"Vulnerability Gather data sampling:\",\n         \"data\": \"Vulnerable: No microcode\"\n      },{\n         \"field\": \"Vulnerability Itlb multihit:\",\n         \"data\": \"KVM: Mitigation: VMX disabled\"\n      },{\n         \"field\": \"Vulnerability L1tf:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mds:\",\n         \"data\": \"Mitigation; Clear CPU buffers; SMT vulnerable\"\n      },{\n         \"field\": \"Vulnerability Meltdown:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mmio stale data:\",\n         \"data\": \"Mitigation; Clear CPU buffers; SMT vulnerable\"\n      },{\n         \"field\": \"Vulnerability Reg file data sampling:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Retbleed:\",\n         \"data\": \"Mitigation; IBRS\"\n      },{\n         \"field\": \"Vulnerability Spec rstack overflow:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Spec store bypass:\",\n         \"data\": \"Mitigation; Speculative Store Bypass disabled via prctl\"\n      },{\n         \"field\": \"Vulnerability Spectre v1:\",\n         \"data\": \"Mitigation; usercopy/swapgs barriers and __user pointer sanitization\"\n      },{\n         \"field\": \"Vulnerability Spectre v2:\",\n         \"data\": \"Mitigation; IBRS; IBPB conditional; STIBP conditional; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\"\n      },{\n         \"field\": \"Vulnerability Srbds:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Tsx async abort:\",\n         \"data\": \"Mitigation; Clear CPU buffers; SMT vulnerable\"\n      }\n   ]\n}\n",
+              "cpu_topology": {
+                "0": [
+                  "0",
+                  "0"
+                ],
+                "1": [
+                  "1",
+                  "0"
+                ],
+                "2": [
+                  "2",
+                  "0"
+                ],
+                "3": [
+                  "3",
+                  "0"
+                ],
+                "4": [
+                  "4",
+                  "0"
+                ],
+                "5": [
+                  "5",
+                  "0"
+                ],
+                "6": [
+                  "6",
+                  "0"
+                ],
+                "7": [
+                  "7",
+                  "0"
+                ],
+                "8": [
+                  "8",
+                  "0"
+                ],
+                "9": [
+                  "9",
+                  "0"
+                ],
+                "10": [
+                  "10",
+                  "0"
+                ],
+                "11": [
+                  "11",
+                  "0"
+                ],
+                "12": [
+                  "12",
+                  "0"
+                ],
+                "13": [
+                  "13",
+                  "0"
+                ],
+                "14": [
+                  "14",
+                  "0"
+                ],
+                "15": [
+                  "15",
+                  "0"
+                ],
+                "16": [
+                  "16",
+                  "0"
+                ],
+                "17": [
+                  "17",
+                  "0"
+                ],
+                "18": [
+                  "18",
+                  "0"
+                ],
+                "19": [
+                  "19",
+                  "0"
+                ],
+                "20": [
+                  "20",
+                  "0"
+                ],
+                "21": [
+                  "21",
+                  "0"
+                ],
+                "22": [
+                  "22",
+                  "0"
+                ],
+                "23": [
+                  "23",
+                  "0"
+                ],
+                "24": [
+                  "24",
+                  "0"
+                ],
+                "25": [
+                  "25",
+                  "0"
+                ],
+                "26": [
+                  "26",
+                  "0"
+                ],
+                "27": [
+                  "27",
+                  "0"
+                ],
+                "28": [
+                  "28",
+                  "1"
+                ],
+                "29": [
+                  "29",
+                  "1"
+                ],
+                "30": [
+                  "30",
+                  "1"
+                ],
+                "31": [
+                  "31",
+                  "1"
+                ],
+                "32": [
+                  "32",
+                  "1"
+                ],
+                "33": [
+                  "33",
+                  "1"
+                ],
+                "34": [
+                  "34",
+                  "1"
+                ],
+                "35": [
+                  "35",
+                  "1"
+                ],
+                "36": [
+                  "36",
+                  "1"
+                ],
+                "37": [
+                  "37",
+                  "1"
+                ],
+                "38": [
+                  "38",
+                  "1"
+                ],
+                "39": [
+                  "39",
+                  "1"
+                ],
+                "40": [
+                  "40",
+                  "1"
+                ],
+                "41": [
+                  "41",
+                  "1"
+                ],
+                "42": [
+                  "42",
+                  "1"
+                ],
+                "43": [
+                  "43",
+                  "1"
+                ],
+                "44": [
+                  "44",
+                  "1"
+                ],
+                "45": [
+                  "45",
+                  "1"
+                ],
+                "46": [
+                  "46",
+                  "1"
+                ],
+                "47": [
+                  "47",
+                  "1"
+                ],
+                "48": [
+                  "48",
+                  "1"
+                ],
+                "49": [
+                  "49",
+                  "1"
+                ],
+                "50": [
+                  "50",
+                  "1"
+                ],
+                "51": [
+                  "51",
+                  "1"
+                ],
+                "52": [
+                  "52",
+                  "1"
+                ],
+                "53": [
+                  "53",
+                  "1"
+                ],
+                "54": [
+                  "54",
+                  "1"
+                ],
+                "55": [
+                  "55",
+                  "1"
+                ],
+                "56": [
+                  "0",
+                  "0"
+                ],
+                "57": [
+                  "1",
+                  "0"
+                ],
+                "58": [
+                  "2",
+                  "0"
+                ],
+                "59": [
+                  "3",
+                  "0"
+                ],
+                "60": [
+                  "4",
+                  "0"
+                ],
+                "61": [
+                  "5",
+                  "0"
+                ],
+                "62": [
+                  "6",
+                  "0"
+                ],
+                "63": [
+                  "7",
+                  "0"
+                ],
+                "64": [
+                  "8",
+                  "0"
+                ],
+                "65": [
+                  "9",
+                  "0"
+                ],
+                "66": [
+                  "10",
+                  "0"
+                ],
+                "67": [
+                  "11",
+                  "0"
+                ],
+                "68": [
+                  "12",
+                  "0"
+                ],
+                "69": [
+                  "13",
+                  "0"
+                ],
+                "70": [
+                  "14",
+                  "0"
+                ],
+                "71": [
+                  "15",
+                  "0"
+                ],
+                "72": [
+                  "16",
+                  "0"
+                ],
+                "73": [
+                  "17",
+                  "0"
+                ],
+                "74": [
+                  "18",
+                  "0"
+                ],
+                "75": [
+                  "19",
+                  "0"
+                ],
+                "76": [
+                  "20",
+                  "0"
+                ],
+                "77": [
+                  "21",
+                  "0"
+                ],
+                "78": [
+                  "22",
+                  "0"
+                ],
+                "79": [
+                  "23",
+                  "0"
+                ],
+                "80": [
+                  "24",
+                  "0"
+                ],
+                "81": [
+                  "25",
+                  "0"
+                ],
+                "82": [
+                  "26",
+                  "0"
+                ],
+                "83": [
+                  "27",
+                  "0"
+                ],
+                "84": [
+                  "28",
+                  "1"
+                ],
+                "85": [
+                  "29",
+                  "1"
+                ],
+                "86": [
+                  "30",
+                  "1"
+                ],
+                "87": [
+                  "31",
+                  "1"
+                ],
+                "88": [
+                  "32",
+                  "1"
+                ],
+                "89": [
+                  "33",
+                  "1"
+                ],
+                "90": [
+                  "34",
+                  "1"
+                ],
+                "91": [
+                  "35",
+                  "1"
+                ],
+                "92": [
+                  "36",
+                  "1"
+                ],
+                "93": [
+                  "37",
+                  "1"
+                ],
+                "94": [
+                  "38",
+                  "1"
+                ],
+                "95": [
+                  "39",
+                  "1"
+                ],
+                "96": [
+                  "40",
+                  "1"
+                ],
+                "97": [
+                  "41",
+                  "1"
+                ],
+                "98": [
+                  "42",
+                  "1"
+                ],
+                "99": [
+                  "43",
+                  "1"
+                ],
+                "100": [
+                  "44",
+                  "1"
+                ],
+                "101": [
+                  "45",
+                  "1"
+                ],
+                "102": [
+                  "46",
+                  "1"
+                ],
+                "103": [
+                  "47",
+                  "1"
+                ],
+                "104": [
+                  "48",
+                  "1"
+                ],
+                "105": [
+                  "49",
+                  "1"
+                ],
+                "106": [
+                  "50",
+                  "1"
+                ],
+                "107": [
+                  "51",
+                  "1"
+                ],
+                "108": [
+                  "52",
+                  "1"
+                ],
+                "109": [
+                  "53",
+                  "1"
+                ],
+                "110": [
+                  "54",
+                  "1"
+                ],
+                "111": [
+                  "55",
+                  "1"
+                ]
+              },
+              "loadavg": "1.13 0.73 0.52 2/2180 3049655",
+              "affinity_design": "Four concurrent single-thread runs on distinct physical cores; two J/S pairs",
+              "historical_block": "E7 single historical run is retained separately from this contemporaneous repeat block"
+            },
+            "loadavg_before": "1.13 0.73 0.52 3/2183 3049658",
+            "loadavg_after": "4.93 5.82 5.25 4/2180 3077857"
+          },
+          "time_reference": {
+            "origin": "Original E7 planning origin",
+            "completion_source": "Exported report timestamp"
+          }
+        },
+        "S_VND": {
+          "batch_order": 1,
+          "complete": true,
+          "exit_code": 0,
+          "snapshot_content_sha256": "74f0e946d8abc9379ab3348475cf116112ce1dc974c288077dd6e06622e85004",
+          "parameters": {
+            "cold_ready_backfill_limit": 24,
+            "early_task_bias_days": 70,
+            "experimental_overrides": true,
+            "initial_beam_width": 8,
+            "max_rail_repair_iterations": 256,
+            "max_restart_attempts": 3,
+            "rolling_completion_ratio": 0.5,
+            "solve_seed": 42,
+            "solver_threads": 1,
+            "time_limit_seconds": 30,
+            "top_k": 8,
+            "top_k_prime": 24,
+            "warm_ready_backfill_limit": 8,
+            "warm_start_time_limit_seconds": 12
+          },
+          "completion_offset_seconds": 5404003.0,
+          "milestone_completion_offsets_seconds": [
+            5383357.0,
+            5404003.0
+          ],
+          "round_count": 365,
+          "event_record_count": 379,
+          "accepted_solve_rounds": 365,
+          "attempt_count": 1151,
+          "feasible_attempt_count": 365,
+          "trace_call_count": 1151,
+          "trace_feasible_count": 365,
+          "trace_failed_count": 786,
+          "solver_wall_seconds": 1594.592,
+          "candidate_decode_executions": 33860,
+          "field_decode_calls": 2681779,
+          "rail_redecode_calls": 2627026,
+          "tracked_feasible_decodes": 17061,
+          "tracked_failed_decodes": 6027,
+          "tracked_geometry_changes": 0,
+          "geometry_adoption_rounds": 0,
+          "task_count_all_reported_batches": 594,
+          "field_validation_accepted": true,
+          "avoidable_global_idle_count": 1,
+          "first_feasible_input_sha256": "8ebc727e9521e983975605ae4537e0e5ff3fbce8f9451da0b1f8e98a15831ee7",
+          "initial_sequence_signature": "d52f9ed691ff47a496b2da409ff75eb61056aed3ce78b15d0ba81aa84838088d",
+          "initial_geometry_signature": "f1dab34bcadbbf3894403a315932418ae7531e84322666bfb1d5c2b9409d3be8",
+          "workload_profile": {
+            "pool_task_count": {
+              "minimum": 1,
+              "median": 1,
+              "maximum": 24
+            },
+            "locked_block_count": {
+              "minimum": 0,
+              "median": 46,
+              "maximum": 63
+            },
+            "singleton_pool_calls": 231,
+            "multiple_task_pool_calls": 134,
+            "tandem_positive_calls": 53
+          },
+          "audit": {
+            "accepted": 365,
+            "decoder_failures": 786,
+            "invalid_feasible_outputs": 0,
+            "document_version": "e7-declared-scope-audit/1.1.0"
+          },
+          "artifact_sha256": {
+            "report.json": "114a4c32aea33ceb14b06b6291b0525213405300d3f0d7092505c2911ae45b67",
+            "trace.jsonl": "cfcffdb0164a975d653adbd2f5e044ec8f4975c5ccb42a11394b2cba2c90010f",
+            "audit.json": "438f04044171a24aca11aa03c3d0e2512bfec5638de8c3db07e08c088fbfb718",
+            "checkpoint.json": "5a2eaa6d231667350b98ba024111ef4691d48b54571b5cf2bbf9e1295e7848af"
+          },
+          "execution": {
+            "repeat": 2,
+            "method": "S_VND",
+            "cpu_affinity": [
+              6
+            ],
+            "started_at_utc": "2026-10-02T08:28:59.497941+00:00",
+            "ended_at_utc": "2026-10-02T08:57:48.552204+00:00",
+            "process_elapsed_seconds": 1729.0527779087424,
+            "provenance": {
+              "binary_sha256": "15dccc04733c738f478cb07291774b1d8154b1de4c57f9156bdfc8a1fa73e973",
+              "formal_commit": "5ecc07be32a2358e96748939f5083f614d0c0c96",
+              "formal_main_sha256": "6f3caf7413e7c8723e182d511983f935e89a27f61fa14347505737a110ec0023",
+              "input_sha256": {
+                "formal_data": "8f78c8c3afbeb9682446ab1f3d6c5a0aba0d4681cbc04745b9f4a4d79a681e7c",
+                "field_layout": "9e1d925bec09919b4898d9e6ec0a39d2dd3ab0002ebc0accf040a30a533e2249",
+                "dock_layout": "4b217e30ad7aa44fb5f2417297f84d95033f17789a699369a5791d01ff12d3e6",
+                "scheduling_policy": "5c3bff00d454e904351f22203cbdf9002f4081dc8c754bb88d5870015d606171",
+                "formal_schema": "6645d1f8da33ca5aebd3f3c78cbd92facaee02364edc718b44682f8766023a48",
+                "field_layout_schema": "51af84bf5c9ad0cdf474f37dbde4c307b0136f4316477a175f87610dbd804ecc",
+                "dock_layout_schema": "1f3120bc3e8eb93d6f0863047e8c6eaecca9c67b1480702adc7e88ed5ee44908",
+                "scheduling_policy_schema": "1db6f6affcd38b8f77db627872a5234b2c8ab2a8408a0c9465db7f8f859020bb"
+              },
+              "audit_sha256": "5967b4c5be3170db50933e35b2f972c7d0aa9098a2b171fcbb0b09d3b9f283ff",
+              "runner_sha256": "f85e9fb4b6a2c4b23e03f49bdfe57d1a3647c0c42abea61b5e494dcecaf337a1",
+              "host_platform": "Linux-6.11.0-26-generic-x86_64-with-glibc2.39",
+              "python_version": "3.12.3",
+              "cpu_inventory": "{\n   \"lscpu\": [\n      {\n         \"field\": \"Architecture:\",\n         \"data\": \"x86_64\"\n      },{\n         \"field\": \"CPU op-mode(s):\",\n         \"data\": \"32-bit, 64-bit\"\n      },{\n         \"field\": \"Address sizes:\",\n         \"data\": \"46 bits physical, 48 bits virtual\"\n      },{\n         \"field\": \"Byte Order:\",\n         \"data\": \"Little Endian\"\n      },{\n         \"field\": \"CPU(s):\",\n         \"data\": \"112\"\n      },{\n         \"field\": \"On-line CPU(s) list:\",\n         \"data\": \"0-111\"\n      },{\n         \"field\": \"Vendor ID:\",\n         \"data\": \"GenuineIntel\"\n      },{\n         \"field\": \"Model name:\",\n         \"data\": \"Intel(R) Xeon(R) Platinum 8280L CPU @ 2.60GHz\"\n      },{\n         \"field\": \"CPU family:\",\n         \"data\": \"6\"\n      },{\n         \"field\": \"Model:\",\n         \"data\": \"85\"\n      },{\n         \"field\": \"Thread(s) per core:\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"Core(s) per socket:\",\n         \"data\": \"28\"\n      },{\n         \"field\": \"Socket(s):\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"Stepping:\",\n         \"data\": \"5\"\n      },{\n         \"field\": \"CPU(s) scaling MHz:\",\n         \"data\": \"33%\"\n      },{\n         \"field\": \"CPU max MHz:\",\n         \"data\": \"3900.0000\"\n      },{\n         \"field\": \"CPU min MHz:\",\n         \"data\": \"1000.0000\"\n      },{\n         \"field\": \"BogoMIPS:\",\n         \"data\": \"5200.00\"\n      },{\n         \"field\": \"Flags:\",\n         \"data\": \"fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts vnmi pku ospke md_clear flush_l1d arch_capabilities\"\n      },{\n         \"field\": \"Virtualization:\",\n         \"data\": \"VT-x\"\n      },{\n         \"field\": \"L1d cache:\",\n         \"data\": \"1.8 MiB (56 instances)\"\n      },{\n         \"field\": \"L1i cache:\",\n         \"data\": \"1.8 MiB (56 instances)\"\n      },{\n         \"field\": \"L2 cache:\",\n         \"data\": \"56 MiB (56 instances)\"\n      },{\n         \"field\": \"L3 cache:\",\n         \"data\": \"77 MiB (2 instances)\"\n      },{\n         \"field\": \"NUMA node(s):\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"NUMA node0 CPU(s):\",\n         \"data\": \"0-27,56-83\"\n      },{\n         \"field\": \"NUMA node1 CPU(s):\",\n         \"data\": \"28-55,84-111\"\n      },{\n         \"field\": \"Vulnerability Gather data sampling:\",\n         \"data\": \"Vulnerable: No microcode\"\n      },{\n         \"field\": \"Vulnerability Itlb multihit:\",\n         \"data\": \"KVM: Mitigation: VMX disabled\"\n      },{\n         \"field\": \"Vulnerability L1tf:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mds:\",\n         \"data\": \"Mitigation; Clear CPU buffers; SMT vulnerable\"\n      },{\n         \"field\": \"Vulnerability Meltdown:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mmio stale data:\",\n         \"data\": \"Mitigation; Clear CPU buffers; SMT vulnerable\"\n      },{\n         \"field\": \"Vulnerability Reg file data sampling:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Retbleed:\",\n         \"data\": \"Mitigation; IBRS\"\n      },{\n         \"field\": \"Vulnerability Spec rstack overflow:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Spec store bypass:\",\n         \"data\": \"Mitigation; Speculative Store Bypass disabled via prctl\"\n      },{\n         \"field\": \"Vulnerability Spectre v1:\",\n         \"data\": \"Mitigation; usercopy/swapgs barriers and __user pointer sanitization\"\n      },{\n         \"field\": \"Vulnerability Spectre v2:\",\n         \"data\": \"Mitigation; IBRS; IBPB conditional; STIBP conditional; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\"\n      },{\n         \"field\": \"Vulnerability Srbds:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Tsx async abort:\",\n         \"data\": \"Mitigation; Clear CPU buffers; SMT vulnerable\"\n      }\n   ]\n}\n",
+              "cpu_topology": {
+                "0": [
+                  "0",
+                  "0"
+                ],
+                "1": [
+                  "1",
+                  "0"
+                ],
+                "2": [
+                  "2",
+                  "0"
+                ],
+                "3": [
+                  "3",
+                  "0"
+                ],
+                "4": [
+                  "4",
+                  "0"
+                ],
+                "5": [
+                  "5",
+                  "0"
+                ],
+                "6": [
+                  "6",
+                  "0"
+                ],
+                "7": [
+                  "7",
+                  "0"
+                ],
+                "8": [
+                  "8",
+                  "0"
+                ],
+                "9": [
+                  "9",
+                  "0"
+                ],
+                "10": [
+                  "10",
+                  "0"
+                ],
+                "11": [
+                  "11",
+                  "0"
+                ],
+                "12": [
+                  "12",
+                  "0"
+                ],
+                "13": [
+                  "13",
+                  "0"
+                ],
+                "14": [
+                  "14",
+                  "0"
+                ],
+                "15": [
+                  "15",
+                  "0"
+                ],
+                "16": [
+                  "16",
+                  "0"
+                ],
+                "17": [
+                  "17",
+                  "0"
+                ],
+                "18": [
+                  "18",
+                  "0"
+                ],
+                "19": [
+                  "19",
+                  "0"
+                ],
+                "20": [
+                  "20",
+                  "0"
+                ],
+                "21": [
+                  "21",
+                  "0"
+                ],
+                "22": [
+                  "22",
+                  "0"
+                ],
+                "23": [
+                  "23",
+                  "0"
+                ],
+                "24": [
+                  "24",
+                  "0"
+                ],
+                "25": [
+                  "25",
+                  "0"
+                ],
+                "26": [
+                  "26",
+                  "0"
+                ],
+                "27": [
+                  "27",
+                  "0"
+                ],
+                "28": [
+                  "28",
+                  "1"
+                ],
+                "29": [
+                  "29",
+                  "1"
+                ],
+                "30": [
+                  "30",
+                  "1"
+                ],
+                "31": [
+                  "31",
+                  "1"
+                ],
+                "32": [
+                  "32",
+                  "1"
+                ],
+                "33": [
+                  "33",
+                  "1"
+                ],
+                "34": [
+                  "34",
+                  "1"
+                ],
+                "35": [
+                  "35",
+                  "1"
+                ],
+                "36": [
+                  "36",
+                  "1"
+                ],
+                "37": [
+                  "37",
+                  "1"
+                ],
+                "38": [
+                  "38",
+                  "1"
+                ],
+                "39": [
+                  "39",
+                  "1"
+                ],
+                "40": [
+                  "40",
+                  "1"
+                ],
+                "41": [
+                  "41",
+                  "1"
+                ],
+                "42": [
+                  "42",
+                  "1"
+                ],
+                "43": [
+                  "43",
+                  "1"
+                ],
+                "44": [
+                  "44",
+                  "1"
+                ],
+                "45": [
+                  "45",
+                  "1"
+                ],
+                "46": [
+                  "46",
+                  "1"
+                ],
+                "47": [
+                  "47",
+                  "1"
+                ],
+                "48": [
+                  "48",
+                  "1"
+                ],
+                "49": [
+                  "49",
+                  "1"
+                ],
+                "50": [
+                  "50",
+                  "1"
+                ],
+                "51": [
+                  "51",
+                  "1"
+                ],
+                "52": [
+                  "52",
+                  "1"
+                ],
+                "53": [
+                  "53",
+                  "1"
+                ],
+                "54": [
+                  "54",
+                  "1"
+                ],
+                "55": [
+                  "55",
+                  "1"
+                ],
+                "56": [
+                  "0",
+                  "0"
+                ],
+                "57": [
+                  "1",
+                  "0"
+                ],
+                "58": [
+                  "2",
+                  "0"
+                ],
+                "59": [
+                  "3",
+                  "0"
+                ],
+                "60": [
+                  "4",
+                  "0"
+                ],
+                "61": [
+                  "5",
+                  "0"
+                ],
+                "62": [
+                  "6",
+                  "0"
+                ],
+                "63": [
+                  "7",
+                  "0"
+                ],
+                "64": [
+                  "8",
+                  "0"
+                ],
+                "65": [
+                  "9",
+                  "0"
+                ],
+                "66": [
+                  "10",
+                  "0"
+                ],
+                "67": [
+                  "11",
+                  "0"
+                ],
+                "68": [
+                  "12",
+                  "0"
+                ],
+                "69": [
+                  "13",
+                  "0"
+                ],
+                "70": [
+                  "14",
+                  "0"
+                ],
+                "71": [
+                  "15",
+                  "0"
+                ],
+                "72": [
+                  "16",
+                  "0"
+                ],
+                "73": [
+                  "17",
+                  "0"
+                ],
+                "74": [
+                  "18",
+                  "0"
+                ],
+                "75": [
+                  "19",
+                  "0"
+                ],
+                "76": [
+                  "20",
+                  "0"
+                ],
+                "77": [
+                  "21",
+                  "0"
+                ],
+                "78": [
+                  "22",
+                  "0"
+                ],
+                "79": [
+                  "23",
+                  "0"
+                ],
+                "80": [
+                  "24",
+                  "0"
+                ],
+                "81": [
+                  "25",
+                  "0"
+                ],
+                "82": [
+                  "26",
+                  "0"
+                ],
+                "83": [
+                  "27",
+                  "0"
+                ],
+                "84": [
+                  "28",
+                  "1"
+                ],
+                "85": [
+                  "29",
+                  "1"
+                ],
+                "86": [
+                  "30",
+                  "1"
+                ],
+                "87": [
+                  "31",
+                  "1"
+                ],
+                "88": [
+                  "32",
+                  "1"
+                ],
+                "89": [
+                  "33",
+                  "1"
+                ],
+                "90": [
+                  "34",
+                  "1"
+                ],
+                "91": [
+                  "35",
+                  "1"
+                ],
+                "92": [
+                  "36",
+                  "1"
+                ],
+                "93": [
+                  "37",
+                  "1"
+                ],
+                "94": [
+                  "38",
+                  "1"
+                ],
+                "95": [
+                  "39",
+                  "1"
+                ],
+                "96": [
+                  "40",
+                  "1"
+                ],
+                "97": [
+                  "41",
+                  "1"
+                ],
+                "98": [
+                  "42",
+                  "1"
+                ],
+                "99": [
+                  "43",
+                  "1"
+                ],
+                "100": [
+                  "44",
+                  "1"
+                ],
+                "101": [
+                  "45",
+                  "1"
+                ],
+                "102": [
+                  "46",
+                  "1"
+                ],
+                "103": [
+                  "47",
+                  "1"
+                ],
+                "104": [
+                  "48",
+                  "1"
+                ],
+                "105": [
+                  "49",
+                  "1"
+                ],
+                "106": [
+                  "50",
+                  "1"
+                ],
+                "107": [
+                  "51",
+                  "1"
+                ],
+                "108": [
+                  "52",
+                  "1"
+                ],
+                "109": [
+                  "53",
+                  "1"
+                ],
+                "110": [
+                  "54",
+                  "1"
+                ],
+                "111": [
+                  "55",
+                  "1"
+                ]
+              },
+              "loadavg": "1.13 0.73 0.52 2/2180 3049655",
+              "affinity_design": "Four concurrent single-thread runs on distinct physical cores; two J/S pairs",
+              "historical_block": "E7 single historical run is retained separately from this contemporaneous repeat block"
+            },
+            "loadavg_before": "1.13 0.73 0.52 3/2183 3049658",
+            "loadavg_after": "5.74 6.11 5.30 5/2179 3077050"
+          },
+          "time_reference": {
+            "origin": "Original E7 planning origin",
+            "completion_source": "Exported report timestamp"
+          }
+        }
+      },
+      "comparison": {
+        "S_minus_J_completion_seconds": -42755.0,
+        "J_reduction_vs_S_percent": -0.7911727658182277,
+        "J_minus_S_solver_wall_seconds": 58.769000000000005,
+        "same_snapshot": true,
+        "same_parameters": true,
+        "same_initial_sequence_signature": true,
+        "same_initial_geometry_signature": true
+      }
+    },
+    "repeat-3": {
+      "methods": {
+        "J_VND": {
+          "batch_order": 1,
+          "complete": true,
+          "exit_code": 0,
+          "snapshot_content_sha256": "74f0e946d8abc9379ab3348475cf116112ce1dc974c288077dd6e06622e85004",
+          "parameters": {
+            "cold_ready_backfill_limit": 24,
+            "early_task_bias_days": 70,
+            "experimental_overrides": true,
+            "initial_beam_width": 8,
+            "max_rail_repair_iterations": 256,
+            "max_restart_attempts": 3,
+            "rolling_completion_ratio": 0.5,
+            "solve_seed": 42,
+            "solver_threads": 1,
+            "time_limit_seconds": 30,
+            "top_k": 8,
+            "top_k_prime": 24,
+            "warm_ready_backfill_limit": 8,
+            "warm_start_time_limit_seconds": 12
+          },
+          "completion_offset_seconds": 5455756.0,
+          "milestone_completion_offsets_seconds": [
+            5406350.0,
+            5455756.0
+          ],
+          "round_count": 357,
+          "event_record_count": 380,
+          "accepted_solve_rounds": 357,
+          "attempt_count": 879,
+          "feasible_attempt_count": 357,
+          "trace_call_count": 879,
+          "trace_feasible_count": 357,
+          "trace_failed_count": 522,
+          "solver_wall_seconds": 1667.595,
+          "candidate_decode_executions": 31241,
+          "field_decode_calls": 2602818,
+          "rail_redecode_calls": 2552208,
+          "tracked_feasible_decodes": 15064,
+          "tracked_failed_decodes": 5851,
+          "tracked_geometry_changes": 5525,
+          "geometry_adoption_rounds": 32,
+          "task_count_all_reported_batches": 608,
+          "field_validation_accepted": true,
+          "avoidable_global_idle_count": 1,
+          "first_feasible_input_sha256": "5d4add6586e5e21362f3e5b0577d49958ce38f7bc3e8468342f4f0e67626d52b",
+          "initial_sequence_signature": "d52f9ed691ff47a496b2da409ff75eb61056aed3ce78b15d0ba81aa84838088d",
+          "initial_geometry_signature": "f1dab34bcadbbf3894403a315932418ae7531e84322666bfb1d5c2b9409d3be8",
+          "workload_profile": {
+            "pool_task_count": {
+              "minimum": 1,
+              "median": 1,
+              "maximum": 24
+            },
+            "locked_block_count": {
+              "minimum": 0,
+              "median": 44,
+              "maximum": 62
+            },
+            "singleton_pool_calls": 220,
+            "multiple_task_pool_calls": 137,
+            "tandem_positive_calls": 51
+          },
+          "audit": {
+            "accepted": 357,
+            "decoder_failures": 522,
+            "invalid_feasible_outputs": 0,
+            "document_version": "e7-declared-scope-audit/1.1.0"
+          },
+          "artifact_sha256": {
+            "report.json": "551a08bcb5418cc5f3074a97baf87a50711fd08ba34b12eff9fc662a55e3e00d",
+            "trace.jsonl": "14ca0dfd590f24c24f840937bdcc151035a37fbc79de504236da45f5e0ec5f8a",
+            "audit.json": "79903a89f4338699333a2337a89fe4548f89dd13d8437cff6c007d1676a29cf9",
+            "checkpoint.json": "3e014d7a29f183f88bb4b18b556fe5dfa093d241b4d9bdc09dd446f5daa104b3"
+          },
+          "execution": {
+            "repeat": 3,
+            "method": "J_VND",
+            "cpu_affinity": [
+              10
+            ],
+            "started_at_utc": "2026-10-02T08:28:59.500190+00:00",
+            "ended_at_utc": "2026-10-02T08:58:54.932566+00:00",
+            "process_elapsed_seconds": 1795.4305982999504,
+            "provenance": {
+              "binary_sha256": "15dccc04733c738f478cb07291774b1d8154b1de4c57f9156bdfc8a1fa73e973",
+              "formal_commit": "5ecc07be32a2358e96748939f5083f614d0c0c96",
+              "formal_main_sha256": "6f3caf7413e7c8723e182d511983f935e89a27f61fa14347505737a110ec0023",
+              "input_sha256": {
+                "formal_data": "8f78c8c3afbeb9682446ab1f3d6c5a0aba0d4681cbc04745b9f4a4d79a681e7c",
+                "field_layout": "9e1d925bec09919b4898d9e6ec0a39d2dd3ab0002ebc0accf040a30a533e2249",
+                "dock_layout": "4b217e30ad7aa44fb5f2417297f84d95033f17789a699369a5791d01ff12d3e6",
+                "scheduling_policy": "5c3bff00d454e904351f22203cbdf9002f4081dc8c754bb88d5870015d606171",
+                "formal_schema": "6645d1f8da33ca5aebd3f3c78cbd92facaee02364edc718b44682f8766023a48",
+                "field_layout_schema": "51af84bf5c9ad0cdf474f37dbde4c307b0136f4316477a175f87610dbd804ecc",
+                "dock_layout_schema": "1f3120bc3e8eb93d6f0863047e8c6eaecca9c67b1480702adc7e88ed5ee44908",
+                "scheduling_policy_schema": "1db6f6affcd38b8f77db627872a5234b2c8ab2a8408a0c9465db7f8f859020bb"
+              },
+              "audit_sha256": "5967b4c5be3170db50933e35b2f972c7d0aa9098a2b171fcbb0b09d3b9f283ff",
+              "runner_sha256": "f85e9fb4b6a2c4b23e03f49bdfe57d1a3647c0c42abea61b5e494dcecaf337a1",
+              "host_platform": "Linux-6.11.0-26-generic-x86_64-with-glibc2.39",
+              "python_version": "3.12.3",
+              "cpu_inventory": "{\n   \"lscpu\": [\n      {\n         \"field\": \"Architecture:\",\n         \"data\": \"x86_64\"\n      },{\n         \"field\": \"CPU op-mode(s):\",\n         \"data\": \"32-bit, 64-bit\"\n      },{\n         \"field\": \"Address sizes:\",\n         \"data\": \"46 bits physical, 48 bits virtual\"\n      },{\n         \"field\": \"Byte Order:\",\n         \"data\": \"Little Endian\"\n      },{\n         \"field\": \"CPU(s):\",\n         \"data\": \"112\"\n      },{\n         \"field\": \"On-line CPU(s) list:\",\n         \"data\": \"0-111\"\n      },{\n         \"field\": \"Vendor ID:\",\n         \"data\": \"GenuineIntel\"\n      },{\n         \"field\": \"Model name:\",\n         \"data\": \"Intel(R) Xeon(R) Platinum 8280L CPU @ 2.60GHz\"\n      },{\n         \"field\": \"CPU family:\",\n         \"data\": \"6\"\n      },{\n         \"field\": \"Model:\",\n         \"data\": \"85\"\n      },{\n         \"field\": \"Thread(s) per core:\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"Core(s) per socket:\",\n         \"data\": \"28\"\n      },{\n         \"field\": \"Socket(s):\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"Stepping:\",\n         \"data\": \"5\"\n      },{\n         \"field\": \"CPU(s) scaling MHz:\",\n         \"data\": \"33%\"\n      },{\n         \"field\": \"CPU max MHz:\",\n         \"data\": \"3900.0000\"\n      },{\n         \"field\": \"CPU min MHz:\",\n         \"data\": \"1000.0000\"\n      },{\n         \"field\": \"BogoMIPS:\",\n         \"data\": \"5200.00\"\n      },{\n         \"field\": \"Flags:\",\n         \"data\": \"fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts vnmi pku ospke md_clear flush_l1d arch_capabilities\"\n      },{\n         \"field\": \"Virtualization:\",\n         \"data\": \"VT-x\"\n      },{\n         \"field\": \"L1d cache:\",\n         \"data\": \"1.8 MiB (56 instances)\"\n      },{\n         \"field\": \"L1i cache:\",\n         \"data\": \"1.8 MiB (56 instances)\"\n      },{\n         \"field\": \"L2 cache:\",\n         \"data\": \"56 MiB (56 instances)\"\n      },{\n         \"field\": \"L3 cache:\",\n         \"data\": \"77 MiB (2 instances)\"\n      },{\n         \"field\": \"NUMA node(s):\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"NUMA node0 CPU(s):\",\n         \"data\": \"0-27,56-83\"\n      },{\n         \"field\": \"NUMA node1 CPU(s):\",\n         \"data\": \"28-55,84-111\"\n      },{\n         \"field\": \"Vulnerability Gather data sampling:\",\n         \"data\": \"Vulnerable: No microcode\"\n      },{\n         \"field\": \"Vulnerability Itlb multihit:\",\n         \"data\": \"KVM: Mitigation: VMX disabled\"\n      },{\n         \"field\": \"Vulnerability L1tf:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mds:\",\n         \"data\": \"Mitigation; Clear CPU buffers; SMT vulnerable\"\n      },{\n         \"field\": \"Vulnerability Meltdown:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mmio stale data:\",\n         \"data\": \"Mitigation; Clear CPU buffers; SMT vulnerable\"\n      },{\n         \"field\": \"Vulnerability Reg file data sampling:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Retbleed:\",\n         \"data\": \"Mitigation; IBRS\"\n      },{\n         \"field\": \"Vulnerability Spec rstack overflow:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Spec store bypass:\",\n         \"data\": \"Mitigation; Speculative Store Bypass disabled via prctl\"\n      },{\n         \"field\": \"Vulnerability Spectre v1:\",\n         \"data\": \"Mitigation; usercopy/swapgs barriers and __user pointer sanitization\"\n      },{\n         \"field\": \"Vulnerability Spectre v2:\",\n         \"data\": \"Mitigation; IBRS; IBPB conditional; STIBP conditional; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\"\n      },{\n         \"field\": \"Vulnerability Srbds:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Tsx async abort:\",\n         \"data\": \"Mitigation; Clear CPU buffers; SMT vulnerable\"\n      }\n   ]\n}\n",
+              "cpu_topology": {
+                "0": [
+                  "0",
+                  "0"
+                ],
+                "1": [
+                  "1",
+                  "0"
+                ],
+                "2": [
+                  "2",
+                  "0"
+                ],
+                "3": [
+                  "3",
+                  "0"
+                ],
+                "4": [
+                  "4",
+                  "0"
+                ],
+                "5": [
+                  "5",
+                  "0"
+                ],
+                "6": [
+                  "6",
+                  "0"
+                ],
+                "7": [
+                  "7",
+                  "0"
+                ],
+                "8": [
+                  "8",
+                  "0"
+                ],
+                "9": [
+                  "9",
+                  "0"
+                ],
+                "10": [
+                  "10",
+                  "0"
+                ],
+                "11": [
+                  "11",
+                  "0"
+                ],
+                "12": [
+                  "12",
+                  "0"
+                ],
+                "13": [
+                  "13",
+                  "0"
+                ],
+                "14": [
+                  "14",
+                  "0"
+                ],
+                "15": [
+                  "15",
+                  "0"
+                ],
+                "16": [
+                  "16",
+                  "0"
+                ],
+                "17": [
+                  "17",
+                  "0"
+                ],
+                "18": [
+                  "18",
+                  "0"
+                ],
+                "19": [
+                  "19",
+                  "0"
+                ],
+                "20": [
+                  "20",
+                  "0"
+                ],
+                "21": [
+                  "21",
+                  "0"
+                ],
+                "22": [
+                  "22",
+                  "0"
+                ],
+                "23": [
+                  "23",
+                  "0"
+                ],
+                "24": [
+                  "24",
+                  "0"
+                ],
+                "25": [
+                  "25",
+                  "0"
+                ],
+                "26": [
+                  "26",
+                  "0"
+                ],
+                "27": [
+                  "27",
+                  "0"
+                ],
+                "28": [
+                  "28",
+                  "1"
+                ],
+                "29": [
+                  "29",
+                  "1"
+                ],
+                "30": [
+                  "30",
+                  "1"
+                ],
+                "31": [
+                  "31",
+                  "1"
+                ],
+                "32": [
+                  "32",
+                  "1"
+                ],
+                "33": [
+                  "33",
+                  "1"
+                ],
+                "34": [
+                  "34",
+                  "1"
+                ],
+                "35": [
+                  "35",
+                  "1"
+                ],
+                "36": [
+                  "36",
+                  "1"
+                ],
+                "37": [
+                  "37",
+                  "1"
+                ],
+                "38": [
+                  "38",
+                  "1"
+                ],
+                "39": [
+                  "39",
+                  "1"
+                ],
+                "40": [
+                  "40",
+                  "1"
+                ],
+                "41": [
+                  "41",
+                  "1"
+                ],
+                "42": [
+                  "42",
+                  "1"
+                ],
+                "43": [
+                  "43",
+                  "1"
+                ],
+                "44": [
+                  "44",
+                  "1"
+                ],
+                "45": [
+                  "45",
+                  "1"
+                ],
+                "46": [
+                  "46",
+                  "1"
+                ],
+                "47": [
+                  "47",
+                  "1"
+                ],
+                "48": [
+                  "48",
+                  "1"
+                ],
+                "49": [
+                  "49",
+                  "1"
+                ],
+                "50": [
+                  "50",
+                  "1"
+                ],
+                "51": [
+                  "51",
+                  "1"
+                ],
+                "52": [
+                  "52",
+                  "1"
+                ],
+                "53": [
+                  "53",
+                  "1"
+                ],
+                "54": [
+                  "54",
+                  "1"
+                ],
+                "55": [
+                  "55",
+                  "1"
+                ],
+                "56": [
+                  "0",
+                  "0"
+                ],
+                "57": [
+                  "1",
+                  "0"
+                ],
+                "58": [
+                  "2",
+                  "0"
+                ],
+                "59": [
+                  "3",
+                  "0"
+                ],
+                "60": [
+                  "4",
+                  "0"
+                ],
+                "61": [
+                  "5",
+                  "0"
+                ],
+                "62": [
+                  "6",
+                  "0"
+                ],
+                "63": [
+                  "7",
+                  "0"
+                ],
+                "64": [
+                  "8",
+                  "0"
+                ],
+                "65": [
+                  "9",
+                  "0"
+                ],
+                "66": [
+                  "10",
+                  "0"
+                ],
+                "67": [
+                  "11",
+                  "0"
+                ],
+                "68": [
+                  "12",
+                  "0"
+                ],
+                "69": [
+                  "13",
+                  "0"
+                ],
+                "70": [
+                  "14",
+                  "0"
+                ],
+                "71": [
+                  "15",
+                  "0"
+                ],
+                "72": [
+                  "16",
+                  "0"
+                ],
+                "73": [
+                  "17",
+                  "0"
+                ],
+                "74": [
+                  "18",
+                  "0"
+                ],
+                "75": [
+                  "19",
+                  "0"
+                ],
+                "76": [
+                  "20",
+                  "0"
+                ],
+                "77": [
+                  "21",
+                  "0"
+                ],
+                "78": [
+                  "22",
+                  "0"
+                ],
+                "79": [
+                  "23",
+                  "0"
+                ],
+                "80": [
+                  "24",
+                  "0"
+                ],
+                "81": [
+                  "25",
+                  "0"
+                ],
+                "82": [
+                  "26",
+                  "0"
+                ],
+                "83": [
+                  "27",
+                  "0"
+                ],
+                "84": [
+                  "28",
+                  "1"
+                ],
+                "85": [
+                  "29",
+                  "1"
+                ],
+                "86": [
+                  "30",
+                  "1"
+                ],
+                "87": [
+                  "31",
+                  "1"
+                ],
+                "88": [
+                  "32",
+                  "1"
+                ],
+                "89": [
+                  "33",
+                  "1"
+                ],
+                "90": [
+                  "34",
+                  "1"
+                ],
+                "91": [
+                  "35",
+                  "1"
+                ],
+                "92": [
+                  "36",
+                  "1"
+                ],
+                "93": [
+                  "37",
+                  "1"
+                ],
+                "94": [
+                  "38",
+                  "1"
+                ],
+                "95": [
+                  "39",
+                  "1"
+                ],
+                "96": [
+                  "40",
+                  "1"
+                ],
+                "97": [
+                  "41",
+                  "1"
+                ],
+                "98": [
+                  "42",
+                  "1"
+                ],
+                "99": [
+                  "43",
+                  "1"
+                ],
+                "100": [
+                  "44",
+                  "1"
+                ],
+                "101": [
+                  "45",
+                  "1"
+                ],
+                "102": [
+                  "46",
+                  "1"
+                ],
+                "103": [
+                  "47",
+                  "1"
+                ],
+                "104": [
+                  "48",
+                  "1"
+                ],
+                "105": [
+                  "49",
+                  "1"
+                ],
+                "106": [
+                  "50",
+                  "1"
+                ],
+                "107": [
+                  "51",
+                  "1"
+                ],
+                "108": [
+                  "52",
+                  "1"
+                ],
+                "109": [
+                  "53",
+                  "1"
+                ],
+                "110": [
+                  "54",
+                  "1"
+                ],
+                "111": [
+                  "55",
+                  "1"
+                ]
+              },
+              "loadavg": "1.13 0.73 0.52 2/2180 3049655",
+              "affinity_design": "Four concurrent single-thread runs on distinct physical cores; two J/S pairs",
+              "historical_block": "E7 single historical run is retained separately from this contemporaneous repeat block"
+            },
+            "loadavg_before": "1.13 0.73 0.52 3/2184 3049659",
+            "loadavg_after": "4.71 5.74 5.23 3/2179 3078022"
+          },
+          "time_reference": {
+            "origin": "Original E7 planning origin",
+            "completion_source": "Exported report timestamp"
+          }
+        },
+        "S_VND": {
+          "batch_order": 1,
+          "complete": true,
+          "exit_code": 0,
+          "snapshot_content_sha256": "74f0e946d8abc9379ab3348475cf116112ce1dc974c288077dd6e06622e85004",
+          "parameters": {
+            "cold_ready_backfill_limit": 24,
+            "early_task_bias_days": 70,
+            "experimental_overrides": true,
+            "initial_beam_width": 8,
+            "max_rail_repair_iterations": 256,
+            "max_restart_attempts": 3,
+            "rolling_completion_ratio": 0.5,
+            "solve_seed": 42,
+            "solver_threads": 1,
+            "time_limit_seconds": 30,
+            "top_k": 8,
+            "top_k_prime": 24,
+            "warm_ready_backfill_limit": 8,
+            "warm_start_time_limit_seconds": 12
+          },
+          "completion_offset_seconds": 5401166.0,
+          "milestone_completion_offsets_seconds": [
+            5390202.0,
+            5401166.0
+          ],
+          "round_count": 357,
+          "event_record_count": 373,
+          "accepted_solve_rounds": 357,
+          "attempt_count": 1070,
+          "feasible_attempt_count": 357,
+          "trace_call_count": 1138,
+          "trace_feasible_count": 357,
+          "trace_failed_count": 781,
+          "solver_wall_seconds": 1570.844,
+          "candidate_decode_executions": 34798,
+          "field_decode_calls": 2810981,
+          "rail_redecode_calls": 2754895,
+          "tracked_feasible_decodes": 17016,
+          "tracked_failed_decodes": 6467,
+          "tracked_geometry_changes": 0,
+          "geometry_adoption_rounds": 0,
+          "task_count_all_reported_batches": 584,
+          "field_validation_accepted": true,
+          "avoidable_global_idle_count": 0,
+          "first_feasible_input_sha256": "8ebc727e9521e983975605ae4537e0e5ff3fbce8f9451da0b1f8e98a15831ee7",
+          "initial_sequence_signature": "d52f9ed691ff47a496b2da409ff75eb61056aed3ce78b15d0ba81aa84838088d",
+          "initial_geometry_signature": "f1dab34bcadbbf3894403a315932418ae7531e84322666bfb1d5c2b9409d3be8",
+          "workload_profile": {
+            "pool_task_count": {
+              "minimum": 1,
+              "median": 1,
+              "maximum": 24
+            },
+            "locked_block_count": {
+              "minimum": 0,
+              "median": 46,
+              "maximum": 63
+            },
+            "singleton_pool_calls": 221,
+            "multiple_task_pool_calls": 136,
+            "tandem_positive_calls": 53
+          },
+          "audit": {
+            "accepted": 357,
+            "decoder_failures": 781,
+            "invalid_feasible_outputs": 0,
+            "document_version": "e7-declared-scope-audit/1.1.0"
+          },
+          "artifact_sha256": {
+            "report.json": "ec738f66ef02ed9a896aebeb980393bc1572ffef409e9f967592c827fd2f2a96",
+            "trace.jsonl": "2d83f271afbbd38f713bc336c8b20458215d0be5891b0bf4d14f812aaf359b0e",
+            "audit.json": "d0b71a10d52d888bcc7afe8dba93dcc3e69162d91e2d654ac6d77dc4a7a0cd3e",
+            "checkpoint.json": "bcfa184c81f4b5750e80d96f9e249e86de576b3d836dfac1f43c083ed315371f"
+          },
+          "execution": {
+            "repeat": 3,
+            "method": "S_VND",
+            "cpu_affinity": [
+              8
+            ],
+            "started_at_utc": "2026-10-02T08:28:59.499961+00:00",
+            "ended_at_utc": "2026-10-02T08:57:12.460715+00:00",
+            "process_elapsed_seconds": 1692.9588132295758,
+            "provenance": {
+              "binary_sha256": "15dccc04733c738f478cb07291774b1d8154b1de4c57f9156bdfc8a1fa73e973",
+              "formal_commit": "5ecc07be32a2358e96748939f5083f614d0c0c96",
+              "formal_main_sha256": "6f3caf7413e7c8723e182d511983f935e89a27f61fa14347505737a110ec0023",
+              "input_sha256": {
+                "formal_data": "8f78c8c3afbeb9682446ab1f3d6c5a0aba0d4681cbc04745b9f4a4d79a681e7c",
+                "field_layout": "9e1d925bec09919b4898d9e6ec0a39d2dd3ab0002ebc0accf040a30a533e2249",
+                "dock_layout": "4b217e30ad7aa44fb5f2417297f84d95033f17789a699369a5791d01ff12d3e6",
+                "scheduling_policy": "5c3bff00d454e904351f22203cbdf9002f4081dc8c754bb88d5870015d606171",
+                "formal_schema": "6645d1f8da33ca5aebd3f3c78cbd92facaee02364edc718b44682f8766023a48",
+                "field_layout_schema": "51af84bf5c9ad0cdf474f37dbde4c307b0136f4316477a175f87610dbd804ecc",
+                "dock_layout_schema": "1f3120bc3e8eb93d6f0863047e8c6eaecca9c67b1480702adc7e88ed5ee44908",
+                "scheduling_policy_schema": "1db6f6affcd38b8f77db627872a5234b2c8ab2a8408a0c9465db7f8f859020bb"
+              },
+              "audit_sha256": "5967b4c5be3170db50933e35b2f972c7d0aa9098a2b171fcbb0b09d3b9f283ff",
+              "runner_sha256": "f85e9fb4b6a2c4b23e03f49bdfe57d1a3647c0c42abea61b5e494dcecaf337a1",
+              "host_platform": "Linux-6.11.0-26-generic-x86_64-with-glibc2.39",
+              "python_version": "3.12.3",
+              "cpu_inventory": "{\n   \"lscpu\": [\n      {\n         \"field\": \"Architecture:\",\n         \"data\": \"x86_64\"\n      },{\n         \"field\": \"CPU op-mode(s):\",\n         \"data\": \"32-bit, 64-bit\"\n      },{\n         \"field\": \"Address sizes:\",\n         \"data\": \"46 bits physical, 48 bits virtual\"\n      },{\n         \"field\": \"Byte Order:\",\n         \"data\": \"Little Endian\"\n      },{\n         \"field\": \"CPU(s):\",\n         \"data\": \"112\"\n      },{\n         \"field\": \"On-line CPU(s) list:\",\n         \"data\": \"0-111\"\n      },{\n         \"field\": \"Vendor ID:\",\n         \"data\": \"GenuineIntel\"\n      },{\n         \"field\": \"Model name:\",\n         \"data\": \"Intel(R) Xeon(R) Platinum 8280L CPU @ 2.60GHz\"\n      },{\n         \"field\": \"CPU family:\",\n         \"data\": \"6\"\n      },{\n         \"field\": \"Model:\",\n         \"data\": \"85\"\n      },{\n         \"field\": \"Thread(s) per core:\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"Core(s) per socket:\",\n         \"data\": \"28\"\n      },{\n         \"field\": \"Socket(s):\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"Stepping:\",\n         \"data\": \"5\"\n      },{\n         \"field\": \"CPU(s) scaling MHz:\",\n         \"data\": \"33%\"\n      },{\n         \"field\": \"CPU max MHz:\",\n         \"data\": \"3900.0000\"\n      },{\n         \"field\": \"CPU min MHz:\",\n         \"data\": \"1000.0000\"\n      },{\n         \"field\": \"BogoMIPS:\",\n         \"data\": \"5200.00\"\n      },{\n         \"field\": \"Flags:\",\n         \"data\": \"fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts vnmi pku ospke md_clear flush_l1d arch_capabilities\"\n      },{\n         \"field\": \"Virtualization:\",\n         \"data\": \"VT-x\"\n      },{\n         \"field\": \"L1d cache:\",\n         \"data\": \"1.8 MiB (56 instances)\"\n      },{\n         \"field\": \"L1i cache:\",\n         \"data\": \"1.8 MiB (56 instances)\"\n      },{\n         \"field\": \"L2 cache:\",\n         \"data\": \"56 MiB (56 instances)\"\n      },{\n         \"field\": \"L3 cache:\",\n         \"data\": \"77 MiB (2 instances)\"\n      },{\n         \"field\": \"NUMA node(s):\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"NUMA node0 CPU(s):\",\n         \"data\": \"0-27,56-83\"\n      },{\n         \"field\": \"NUMA node1 CPU(s):\",\n         \"data\": \"28-55,84-111\"\n      },{\n         \"field\": \"Vulnerability Gather data sampling:\",\n         \"data\": \"Vulnerable: No microcode\"\n      },{\n         \"field\": \"Vulnerability Itlb multihit:\",\n         \"data\": \"KVM: Mitigation: VMX disabled\"\n      },{\n         \"field\": \"Vulnerability L1tf:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mds:\",\n         \"data\": \"Mitigation; Clear CPU buffers; SMT vulnerable\"\n      },{\n         \"field\": \"Vulnerability Meltdown:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mmio stale data:\",\n         \"data\": \"Mitigation; Clear CPU buffers; SMT vulnerable\"\n      },{\n         \"field\": \"Vulnerability Reg file data sampling:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Retbleed:\",\n         \"data\": \"Mitigation; IBRS\"\n      },{\n         \"field\": \"Vulnerability Spec rstack overflow:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Spec store bypass:\",\n         \"data\": \"Mitigation; Speculative Store Bypass disabled via prctl\"\n      },{\n         \"field\": \"Vulnerability Spectre v1:\",\n         \"data\": \"Mitigation; usercopy/swapgs barriers and __user pointer sanitization\"\n      },{\n         \"field\": \"Vulnerability Spectre v2:\",\n         \"data\": \"Mitigation; IBRS; IBPB conditional; STIBP conditional; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\"\n      },{\n         \"field\": \"Vulnerability Srbds:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Tsx async abort:\",\n         \"data\": \"Mitigation; Clear CPU buffers; SMT vulnerable\"\n      }\n   ]\n}\n",
+              "cpu_topology": {
+                "0": [
+                  "0",
+                  "0"
+                ],
+                "1": [
+                  "1",
+                  "0"
+                ],
+                "2": [
+                  "2",
+                  "0"
+                ],
+                "3": [
+                  "3",
+                  "0"
+                ],
+                "4": [
+                  "4",
+                  "0"
+                ],
+                "5": [
+                  "5",
+                  "0"
+                ],
+                "6": [
+                  "6",
+                  "0"
+                ],
+                "7": [
+                  "7",
+                  "0"
+                ],
+                "8": [
+                  "8",
+                  "0"
+                ],
+                "9": [
+                  "9",
+                  "0"
+                ],
+                "10": [
+                  "10",
+                  "0"
+                ],
+                "11": [
+                  "11",
+                  "0"
+                ],
+                "12": [
+                  "12",
+                  "0"
+                ],
+                "13": [
+                  "13",
+                  "0"
+                ],
+                "14": [
+                  "14",
+                  "0"
+                ],
+                "15": [
+                  "15",
+                  "0"
+                ],
+                "16": [
+                  "16",
+                  "0"
+                ],
+                "17": [
+                  "17",
+                  "0"
+                ],
+                "18": [
+                  "18",
+                  "0"
+                ],
+                "19": [
+                  "19",
+                  "0"
+                ],
+                "20": [
+                  "20",
+                  "0"
+                ],
+                "21": [
+                  "21",
+                  "0"
+                ],
+                "22": [
+                  "22",
+                  "0"
+                ],
+                "23": [
+                  "23",
+                  "0"
+                ],
+                "24": [
+                  "24",
+                  "0"
+                ],
+                "25": [
+                  "25",
+                  "0"
+                ],
+                "26": [
+                  "26",
+                  "0"
+                ],
+                "27": [
+                  "27",
+                  "0"
+                ],
+                "28": [
+                  "28",
+                  "1"
+                ],
+                "29": [
+                  "29",
+                  "1"
+                ],
+                "30": [
+                  "30",
+                  "1"
+                ],
+                "31": [
+                  "31",
+                  "1"
+                ],
+                "32": [
+                  "32",
+                  "1"
+                ],
+                "33": [
+                  "33",
+                  "1"
+                ],
+                "34": [
+                  "34",
+                  "1"
+                ],
+                "35": [
+                  "35",
+                  "1"
+                ],
+                "36": [
+                  "36",
+                  "1"
+                ],
+                "37": [
+                  "37",
+                  "1"
+                ],
+                "38": [
+                  "38",
+                  "1"
+                ],
+                "39": [
+                  "39",
+                  "1"
+                ],
+                "40": [
+                  "40",
+                  "1"
+                ],
+                "41": [
+                  "41",
+                  "1"
+                ],
+                "42": [
+                  "42",
+                  "1"
+                ],
+                "43": [
+                  "43",
+                  "1"
+                ],
+                "44": [
+                  "44",
+                  "1"
+                ],
+                "45": [
+                  "45",
+                  "1"
+                ],
+                "46": [
+                  "46",
+                  "1"
+                ],
+                "47": [
+                  "47",
+                  "1"
+                ],
+                "48": [
+                  "48",
+                  "1"
+                ],
+                "49": [
+                  "49",
+                  "1"
+                ],
+                "50": [
+                  "50",
+                  "1"
+                ],
+                "51": [
+                  "51",
+                  "1"
+                ],
+                "52": [
+                  "52",
+                  "1"
+                ],
+                "53": [
+                  "53",
+                  "1"
+                ],
+                "54": [
+                  "54",
+                  "1"
+                ],
+                "55": [
+                  "55",
+                  "1"
+                ],
+                "56": [
+                  "0",
+                  "0"
+                ],
+                "57": [
+                  "1",
+                  "0"
+                ],
+                "58": [
+                  "2",
+                  "0"
+                ],
+                "59": [
+                  "3",
+                  "0"
+                ],
+                "60": [
+                  "4",
+                  "0"
+                ],
+                "61": [
+                  "5",
+                  "0"
+                ],
+                "62": [
+                  "6",
+                  "0"
+                ],
+                "63": [
+                  "7",
+                  "0"
+                ],
+                "64": [
+                  "8",
+                  "0"
+                ],
+                "65": [
+                  "9",
+                  "0"
+                ],
+                "66": [
+                  "10",
+                  "0"
+                ],
+                "67": [
+                  "11",
+                  "0"
+                ],
+                "68": [
+                  "12",
+                  "0"
+                ],
+                "69": [
+                  "13",
+                  "0"
+                ],
+                "70": [
+                  "14",
+                  "0"
+                ],
+                "71": [
+                  "15",
+                  "0"
+                ],
+                "72": [
+                  "16",
+                  "0"
+                ],
+                "73": [
+                  "17",
+                  "0"
+                ],
+                "74": [
+                  "18",
+                  "0"
+                ],
+                "75": [
+                  "19",
+                  "0"
+                ],
+                "76": [
+                  "20",
+                  "0"
+                ],
+                "77": [
+                  "21",
+                  "0"
+                ],
+                "78": [
+                  "22",
+                  "0"
+                ],
+                "79": [
+                  "23",
+                  "0"
+                ],
+                "80": [
+                  "24",
+                  "0"
+                ],
+                "81": [
+                  "25",
+                  "0"
+                ],
+                "82": [
+                  "26",
+                  "0"
+                ],
+                "83": [
+                  "27",
+                  "0"
+                ],
+                "84": [
+                  "28",
+                  "1"
+                ],
+                "85": [
+                  "29",
+                  "1"
+                ],
+                "86": [
+                  "30",
+                  "1"
+                ],
+                "87": [
+                  "31",
+                  "1"
+                ],
+                "88": [
+                  "32",
+                  "1"
+                ],
+                "89": [
+                  "33",
+                  "1"
+                ],
+                "90": [
+                  "34",
+                  "1"
+                ],
+                "91": [
+                  "35",
+                  "1"
+                ],
+                "92": [
+                  "36",
+                  "1"
+                ],
+                "93": [
+                  "37",
+                  "1"
+                ],
+                "94": [
+                  "38",
+                  "1"
+                ],
+                "95": [
+                  "39",
+                  "1"
+                ],
+                "96": [
+                  "40",
+                  "1"
+                ],
+                "97": [
+                  "41",
+                  "1"
+                ],
+                "98": [
+                  "42",
+                  "1"
+                ],
+                "99": [
+                  "43",
+                  "1"
+                ],
+                "100": [
+                  "44",
+                  "1"
+                ],
+                "101": [
+                  "45",
+                  "1"
+                ],
+                "102": [
+                  "46",
+                  "1"
+                ],
+                "103": [
+                  "47",
+                  "1"
+                ],
+                "104": [
+                  "48",
+                  "1"
+                ],
+                "105": [
+                  "49",
+                  "1"
+                ],
+                "106": [
+                  "50",
+                  "1"
+                ],
+                "107": [
+                  "51",
+                  "1"
+                ],
+                "108": [
+                  "52",
+                  "1"
+                ],
+                "109": [
+                  "53",
+                  "1"
+                ],
+                "110": [
+                  "54",
+                  "1"
+                ],
+                "111": [
+                  "55",
+                  "1"
+                ]
+              },
+              "loadavg": "1.13 0.73 0.52 2/2180 3049655",
+              "affinity_design": "Four concurrent single-thread runs on distinct physical cores; two J/S pairs",
+              "historical_block": "E7 single historical run is retained separately from this contemporaneous repeat block"
+            },
+            "loadavg_before": "1.13 0.73 0.52 3/2184 3049659",
+            "loadavg_after": "6.21 6.23 5.31 8/2179 3076564"
+          },
+          "time_reference": {
+            "origin": "Original E7 planning origin",
+            "completion_source": "Exported report timestamp"
+          }
+        }
+      },
+      "comparison": {
+        "S_minus_J_completion_seconds": -54590.0,
+        "J_reduction_vs_S_percent": -1.0107076879325687,
+        "J_minus_S_solver_wall_seconds": 96.75099999999998,
+        "same_snapshot": true,
+        "same_parameters": true,
+        "same_initial_sequence_signature": true,
+        "same_initial_geometry_signature": true
+      }
+    }
+  },
+  "contemporaneous_endpoint_ranges": {
+    "J_VND": {
+      "minimum": 5446758.0,
+      "median": 5451257.0,
+      "maximum": 5455756.0
+    },
+    "S_VND": {
+      "minimum": 5401166.0,
+      "median": 5402584.5,
+      "maximum": 5404003.0
+    }
+  },
+  "contemporaneous_paired_differences_seconds": [
+    -42755.0,
+    -54590.0
+  ],
+  "summary_script_sha256": "7d422c10f09ccae26e70cbb544e434da78f25ed1bf8867d2b346258f9fc2c5c5",
+  "historical_E7_reference": {
+    "methods": {
+      "J_VND": {
+        "batch_order": 1,
+        "complete": true,
+        "exit_code": 0,
+        "snapshot_content_sha256": "74f0e946d8abc9379ab3348475cf116112ce1dc974c288077dd6e06622e85004",
+        "parameters": {
+          "cold_ready_backfill_limit": 24,
+          "early_task_bias_days": 70,
+          "experimental_overrides": true,
+          "initial_beam_width": 8,
+          "max_rail_repair_iterations": 256,
+          "max_restart_attempts": 3,
+          "rolling_completion_ratio": 0.5,
+          "solve_seed": 42,
+          "solver_threads": 1,
+          "time_limit_seconds": 30,
+          "top_k": 8,
+          "top_k_prime": 24,
+          "warm_ready_backfill_limit": 8,
+          "warm_start_time_limit_seconds": 12
+        },
+        "completion_offset_seconds": 5448089.0,
+        "milestone_completion_offsets_seconds": [
+          5415603.0,
+          5448089.0
+        ],
+        "round_count": 349,
+        "event_record_count": 369,
+        "accepted_solve_rounds": 349,
+        "attempt_count": 909,
+        "feasible_attempt_count": 349,
+        "trace_call_count": 976,
+        "trace_feasible_count": 349,
+        "trace_failed_count": 627,
+        "solver_wall_seconds": 2534.236,
+        "candidate_decode_executions": 28047,
+        "field_decode_calls": 1434760,
+        "rail_redecode_calls": 1388366,
+        "tracked_feasible_decodes": 15240,
+        "tracked_failed_decodes": 3504,
+        "tracked_geometry_changes": 6205,
+        "geometry_adoption_rounds": 41,
+        "task_count_all_reported_batches": 592,
+        "field_validation_accepted": true,
+        "avoidable_global_idle_count": 0,
+        "first_feasible_input_sha256": "9f0dad1d43971f4028625ab0f19bf6b0d31beba831ad3108bb6f60542f2023f4",
+        "initial_sequence_signature": "d52f9ed691ff47a496b2da409ff75eb61056aed3ce78b15d0ba81aa84838088d",
+        "initial_geometry_signature": "f1dab34bcadbbf3894403a315932418ae7531e84322666bfb1d5c2b9409d3be8",
+        "workload_profile": {
+          "pool_task_count": {
+            "minimum": 1,
+            "median": 1,
+            "maximum": 24
+          },
+          "locked_block_count": {
+            "minimum": 0,
+            "median": 45,
+            "maximum": 63
+          },
+          "singleton_pool_calls": 187,
+          "multiple_task_pool_calls": 162,
+          "tandem_positive_calls": 56
+        },
+        "audit": {
+          "accepted": 349,
+          "decoder_failures": 627,
+          "invalid_feasible_outputs": 0,
+          "document_version": "e7-declared-scope-audit/1.1.0"
+        },
+        "artifact_sha256": {
+          "report.json": "1830aa86236f5c7f264a534d601e9ec000aa86070c32093042425a7e30222e7a",
+          "trace.jsonl": "cb30014fc6fe46ced96f2b9c85914ea7243532b124ccd38ed18b53b4db19b31e",
+          "audit.json": "c3575ccc12337cdb6e225f636fd2104c2f2d5b3ac35ea8ff550647abc03026d5",
+          "checkpoint.json": "9c51136058950d32019b8bf26d6d6167a054e7f265c803a4a419825396849aef"
+        }
+      },
+      "S_VND": {
+        "batch_order": 1,
+        "complete": true,
+        "exit_code": 0,
+        "snapshot_content_sha256": "74f0e946d8abc9379ab3348475cf116112ce1dc974c288077dd6e06622e85004",
+        "parameters": {
+          "cold_ready_backfill_limit": 24,
+          "early_task_bias_days": 70,
+          "experimental_overrides": true,
+          "initial_beam_width": 8,
+          "max_rail_repair_iterations": 256,
+          "max_restart_attempts": 3,
+          "rolling_completion_ratio": 0.5,
+          "solve_seed": 42,
+          "solver_threads": 1,
+          "time_limit_seconds": 30,
+          "top_k": 8,
+          "top_k_prime": 24,
+          "warm_ready_backfill_limit": 8,
+          "warm_start_time_limit_seconds": 12
+        },
+        "completion_offset_seconds": 5530327.0,
+        "milestone_completion_offsets_seconds": [
+          5425127.0,
+          5530327.0
+        ],
+        "round_count": 394,
+        "event_record_count": 417,
+        "accepted_solve_rounds": 394,
+        "attempt_count": 779,
+        "feasible_attempt_count": 394,
+        "trace_call_count": 779,
+        "trace_feasible_count": 394,
+        "trace_failed_count": 385,
+        "solver_wall_seconds": 2341.922,
+        "candidate_decode_executions": 26138,
+        "field_decode_calls": 1451187,
+        "rail_redecode_calls": 1407188,
+        "tracked_feasible_decodes": 15180,
+        "tracked_failed_decodes": 3143,
+        "tracked_geometry_changes": 0,
+        "geometry_adoption_rounds": 0,
+        "task_count_all_reported_batches": 588,
+        "field_validation_accepted": true,
+        "avoidable_global_idle_count": 0,
+        "first_feasible_input_sha256": "c6a75abbe0721254780e45529b0eec4ff8cd32af5e7d4a5f6ab62272dd9c65bd",
+        "initial_sequence_signature": "d52f9ed691ff47a496b2da409ff75eb61056aed3ce78b15d0ba81aa84838088d",
+        "initial_geometry_signature": "f1dab34bcadbbf3894403a315932418ae7531e84322666bfb1d5c2b9409d3be8",
+        "workload_profile": {
+          "pool_task_count": {
+            "minimum": 1,
+            "median": 1.0,
+            "maximum": 24
+          },
+          "locked_block_count": {
+            "minimum": 0,
+            "median": 44.0,
+            "maximum": 59
+          },
+          "singleton_pool_calls": 267,
+          "multiple_task_pool_calls": 127,
+          "tandem_positive_calls": 55
+        },
+        "audit": {
+          "accepted": 394,
+          "decoder_failures": 385,
+          "invalid_feasible_outputs": 0,
+          "document_version": "e7-declared-scope-audit/1.1.0"
+        },
+        "artifact_sha256": {
+          "report.json": "d9822eab50d6e22828b1e1b8fdb797aafe081e40616b3e706fc2afe07fd108ab",
+          "trace.jsonl": "e31c97e6afd26d76ce113a0c2dee2f3d3c407bebbe6568695ccb4ce4b14983bd",
+          "audit.json": "f22b25ad1e54c4568a8748eddb0872bf8afb8a5213e32236b240ae279e347e47",
+          "checkpoint.json": "152c528a892d4d84015435f6924ed105c4e3365f856512a655d86f7beae6602a"
+        }
+      }
+    },
+    "comparison": {
+      "S_minus_J_completion_seconds": 82238.0,
+      "J_reduction_vs_S_percent": 1.487036842486891,
+      "J_minus_S_solver_wall_seconds": 192.31399999999985,
+      "same_snapshot": true,
+      "same_parameters": true,
+      "same_initial_sequence_signature": true,
+      "same_initial_geometry_signature": true
+    },
+    "relation_to_new_block": "Original historical measurements retained and displayed separately"
+  },
+  "same_historical_snapshot_and_parameters": true
+}

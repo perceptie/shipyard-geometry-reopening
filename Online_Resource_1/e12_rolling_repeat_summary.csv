@@ -1,0 +1,7 @@
+block,repeat,method,batch_order,completion_offset_seconds,solver_wall_seconds,process_elapsed_seconds,round_count,trace_feasible_count,trace_failed_count,geometry_adoption_rounds,pool_min,pool_median,pool_max,locked_min,locked_median,locked_max,tandem_positive_calls,checks_accepted
+historical_E7,original,J_VND,1,5448089.0,2534.236,,349,349,627,41,1,1,24,0,45,63,56,349
+historical_E7,original,S_VND,1,5530327.0,2341.922,,394,394,385,0,1,1.0,24,0,44.0,59,55,394
+contemporaneous,repeat-2,J_VND,1,5446758.0,1653.361,1782.9993780516088,358,358,606,31,1,1.0,24,0,44.0,62,51,358
+contemporaneous,repeat-2,S_VND,1,5404003.0,1594.592,1729.0527779087424,365,365,786,0,1,1,24,0,46,63,53,365
+contemporaneous,repeat-3,J_VND,1,5455756.0,1667.595,1795.4305982999504,357,357,522,32,1,1,24,0,44,62,51,357
+contemporaneous,repeat-3,S_VND,1,5401166.0,1570.844,1692.9588132295758,357,357,781,0,1,1,24,0,46,63,53,357

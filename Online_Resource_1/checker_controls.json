@@ -1,0 +1,92 @@
+{
+  "document_version": "e8-plan-level-micro-references/1.0.0",
+  "case_count": 10,
+  "passed_count": 10,
+  "cases": [
+    {
+      "case": "positive_ordinary",
+      "required_issues": [],
+      "observed_issues": [],
+      "passed": true
+    },
+    {
+      "case": "positive_motion_history",
+      "required_issues": [],
+      "observed_issues": [],
+      "passed": true
+    },
+    {
+      "case": "positive_scatter",
+      "required_issues": [],
+      "observed_issues": [],
+      "passed": true
+    },
+    {
+      "case": "positive_tandem_equal",
+      "required_issues": [],
+      "observed_issues": [],
+      "passed": true
+    },
+    {
+      "case": "positive_tandem_unequal_wait",
+      "required_issues": [],
+      "observed_issues": [],
+      "passed": true
+    },
+    {
+      "case": "negative_deleted_motion",
+      "required_issues": [
+        "task_motion_coverage"
+      ],
+      "observed_issues": [
+        "phase_count",
+        "task_motion_coverage"
+      ],
+      "passed": true
+    },
+    {
+      "case": "negative_early_release",
+      "required_issues": [
+        "field_interval"
+      ],
+      "observed_issues": [
+        "field_interval"
+      ],
+      "passed": true
+    },
+    {
+      "case": "negative_wrong_tandem_hold",
+      "required_issues": [
+        "tandem_phase_binding"
+      ],
+      "observed_issues": [
+        "phase_synchronization",
+        "tandem_phase_binding",
+        "task_motion_coverage"
+      ],
+      "passed": true
+    },
+    {
+      "case": "negative_positive_calendar",
+      "required_issues": [
+        "positive_calendar"
+      ],
+      "observed_issues": [
+        "positive_calendar"
+      ],
+      "passed": true
+    },
+    {
+      "case": "negative_external_dependency",
+      "required_issues": [
+        "dependency"
+      ],
+      "observed_issues": [
+        "dependency"
+      ],
+      "passed": true
+    }
+  ],
+  "scope": "checker acceptance and fault-detection references; not optimization instances or global-optimality evidence",
+  "source_sha256": "64809c064f82192e447f506f1cdc4e87e9d2d5e6edfdc8828f660b79b94fe84a"
+}
