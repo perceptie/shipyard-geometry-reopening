@@ -12,6 +12,8 @@
 
 This package releases de-identified numeric evidence for the industrial case. Terminal-case task, block, crane, and region aliases are local to each case; times are relative to its decision epoch. Original customer identifiers, coordinates, absolute paths, commands, and host names are not included.
 
+The released reproduction package uses the MIT License; see `LICENSE`. This licence covers the public package files and grants no rights to the proprietary industrial solver or customer source data.
+
 ## Files
 
 - `e10_state_outcomes.csv`: all 144 planned J/S pairs, the common-initialization gate components, final five-field stored cost keys (compatibility plus the four formal objective levels), solve modes, invocation caps and counts, audit flags, and the signed current-batch pool makespan difference. Historical field names retain `current_batch_makespan`; this quantity covers only current-batch tasks in the current solve pool, not the entire rolling batch.
