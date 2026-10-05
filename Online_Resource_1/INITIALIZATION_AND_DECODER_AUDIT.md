@@ -39,4 +39,24 @@ Rail repair selects the earliest adjacent-crane conflict using stable identifier
 
 The historical gate compares source/configuration, accepted mode/cap, complete sequences/assignment/tandem binding, and block/region rectangle signatures. Rectangle signatures omit occupancy times and explicit rotation; non-square dimensions identify the permitted orientation, and square footprints generate only one orientation (overlay:132–148; `field_layout.cpp:148–165`).
 
+## Execution and provenance details retained from the main text
+
+E7 and E10 use the same frozen formal revision and byte-identical solver, rolling-controller, method-selection, instrumentation-state, and warm-start sources, but different executable builds. E10 adds graph and target context to post-solve trace export for independent objective recomputation; the inspected changes do not alter search or controller rules. Export occurs outside the invocation deadline but contributes to outer wall time. The executable/source hashes and budget derivation are retained in this package; the rolling case remains a separate single-trajectory comparison.
+
+Every run has a planned record and a final content-addressed record binding its checkpoint, journal prefix, warm-start input, executable, configuration, output, and verification results. The provenance includes content hashes and pre/post records but no external immutable timestamp. These records identify the retained artifacts; they are not an independent external certification of when a run occurred.
+
+## Waiting-time conventions and candidate filtering
+
+In the frozen formal revision used by E10 (`5ecc07be32a2358e96748939f5083f614d0c0c96`), `task_time_decoder.cpp:427–454,484–525,728–763` applies task-start lower bounds, non-task yields, and operating-window shifts before an ordinary task's three consecutive phases. Rail-repair wait-direction updates raise these lower bounds and re-decode. A yield can therefore postpone the task start without adding an internal waiting phase to its duration.
+
+For tandem tasks, `task_time_decoder.cpp:551–616,644–690` synchronizes the start and uses the maximum empty travel and maximum loaded travel of the pair. The faster crane's explicit pickup and destination waits are within those synchronized phases. Yard occupancy ends at the common loaded-movement start, computed by `field_aware_decoder.cpp:101–105` as start plus empty-motion duration plus basic lift duration. The manuscript's duration and occupancy equations need no separate waiting term.
+
+Beam construction discards failed decodes (`initial_solution.cpp:520–527`), checks coverage and objective validity, and then deduplicates successful candidates using complete sequence signatures before retaining the best eight (`initial_solution.cpp:647–657`). Rejection by this bounded procedure is a decode failure, not a proof of mathematical infeasibility. The 2026-10-05 check read only these frozen implementation functions; it launched no solver run and changed no source.
+
+## Terminal-case task labels and the displayed crane window
+
+All labels below are case local. In b3-r006, tasks T1–T8 map to blocks B2, B3, B6, B4, B5, B1, B5, B3; in b3-r071 they map to B2, B3, B1, B4, B1, B7, B6, B5. These mappings are directly stored in the released terminal records. The changed blocks B2, B4, and B6 in b3-r006 correspond to T1, T4, and T3, respectively.
+
+Across all 12 case–repeat–method terminal plans, C3 has no assigned task. Its only retained non-task movement in b3-r006 precedes the decision epoch, and b3-r071 has no such C3 movement. C3 is omitted from the displayed non-negative-time task timelines for this reason; it remains part of the shared-rail physical model. Region-assignment panels are schematic and do not display actual block coordinates or orientation changes.
+
 Passing the gate establishes equality of these **recorded components**. Equality of initial timing, motion and Cost is an implementation-based inference under common effective inputs and the completed single-thread decoding rules. Initial timing, motion, repaired bounds and Cost were not independently hashed or retrospectively reconstructed. The review found no additional concrete mismatch, but cannot certify unrecorded historical outputs. The gate also does not equalize construction time, remaining VND time, or candidate count.

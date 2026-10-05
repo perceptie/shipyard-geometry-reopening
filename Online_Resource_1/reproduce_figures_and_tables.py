@@ -150,6 +150,12 @@ def draw_repeats(states: list[str], matrix: np.ndarray) -> plt.Figure:
         ax.imshow(subset, aspect="auto", cmap=cmap, norm=norm, interpolation="nearest")
         ax.set_yticks(range(3), ["Rep. 1", "Rep. 2", "Rep. 3"])
         ax.set_xticks(range(len(columns)), [states[i].split("-r")[1] for i in columns], rotation=90)
+        # Bold labels identify states with the same non-tied outcome in all
+        # three eligible repetitions, while preserving every state column.
+        for label, values in zip(ax.get_xticklabels(), subset.T, strict=True):
+            if np.all(np.isfinite(values)) and (np.all(values == 1) or np.all(values == -1)):
+                label.set_fontweight("bold")
+                label.set_fontsize(9.2)
         ax.tick_params(axis="both", length=0, pad=4)
         ax.set_xticks(np.arange(-0.5, len(columns), 1), minor=True)
         ax.set_yticks(np.arange(-0.5, 3, 1), minor=True)
@@ -177,12 +183,14 @@ def draw_repeats(states: list[str], matrix: np.ndarray) -> plt.Figure:
 
 def draw_activity(matrices: list[np.ndarray]) -> plt.Figure:
     vmax = max(matrix.max() for matrix in matrices)
-    fig, axes = plt.subplots(1, 2, figsize=(6.85, 2.6), layout="constrained")
+    if any(int(matrix.sum()) != 142 for matrix in matrices):
+        raise ValueError("Each activity panel must retain all 142 eligible pairs")
+    fig, axes = plt.subplots(1, 2, figsize=(6.85, 3.05), layout="constrained")
     # Counts use a neutral sequential scale, separate from J/S outcome colours.
     cmap = mpl.colors.LinearSegmentedColormap.from_list("counts", ["#F4F5F6", "#4B5563"])
     for index, (ax, matrix, title) in enumerate(zip(axes, matrices,
             ("Feasible geometry variation", "Final geometry adoption"), strict=True)):
-        ax.imshow(matrix, cmap=cmap, vmin=0, vmax=vmax, aspect="auto")
+        image = ax.imshow(matrix, cmap=cmap, vmin=0, vmax=vmax, aspect="auto")
         ax.set_xticks(range(3), ["S better", "Tie", "J better"])
         ax.set_yticks(range(2), ["No", "Yes"])
         ax.set_xlabel("One-step cost outcome")
@@ -199,6 +207,11 @@ def draw_activity(matrices: list[np.ndarray]) -> plt.Figure:
                 value = matrix[row_index, column_index]
                 ax.text(column_index, row_index, str(value), ha="center", va="center",
                         color="white" if value > 0.55 * vmax else "#20242A", fontsize=12)
+    colorbar = fig.colorbar(image, ax=axes, location="bottom", shrink=0.62,
+                           fraction=0.075, pad=0.16, aspect=28,
+                           ticks=[0, 31, 62, 93, int(vmax)])
+    colorbar.set_label("Eligible-pair count (shared scale)", fontsize=8.8)
+    colorbar.ax.tick_params(labelsize=8.5, length=2)
     return fig
 
 def draw_rolling(e7: dict, repeats: dict, condition: dict) -> plt.Figure:
@@ -210,13 +223,13 @@ def draw_rolling(e7: dict, repeats: dict, condition: dict) -> plt.Figure:
         assert abs(reference["solver_wall_seconds"] -
                    e7["methods"][method]["solver_wall_time_milliseconds"]["total"] / 1000) < 1e-9
     blocks = [
-        ("E7 original · batch 1", e7["methods"], ("LRP", "J_VND", "S_VND"), 0.0),
+        ("E7 · batch 1", e7["methods"], ("LRP", "J_VND", "S_VND"), 0.0),
         ("E12 A · batch 1", repeats["repetitions"]["repeat-2"]["methods"], ("J_VND", "S_VND"), 2.75),
         ("E12 B · batch 1", repeats["repetitions"]["repeat-3"]["methods"], ("J_VND", "S_VND"), 4.85),
-        ("LRP boundary · batch 2", condition["repetitions"]["repeat-1"]["methods"], ("J_VND", "S_VND"), 6.95),
+        ("Batch 2 · LRP boundary", condition["repetitions"]["repeat-1"]["methods"], ("J_VND", "S_VND"), 6.95),
     ]
     fig, axes = plt.subplots(1, 2, figsize=(6.85, 4.65))
-    fig.subplots_adjust(left=0.10, right=0.98, top=0.90, bottom=0.185, wspace=0.50)
+    fig.subplots_adjust(left=0.10, right=0.98, top=0.90, bottom=0.125, wspace=0.50)
     positions, labels, label_colors = [], [], []
     for heading, records, methods, header_y in blocks:
         delta = records["S_VND"]["completion_offset_seconds"] - records["J_VND"]["completion_offset_seconds"]
@@ -224,15 +237,13 @@ def draw_rolling(e7: dict, repeats: dict, condition: dict) -> plt.Figure:
         wall = {method: records[method].get("solver_wall_seconds", 0) for method in methods}
         if heading.startswith("E7"):
             wall = {method: records[method]["solver_wall_time_milliseconds"]["total"] / 1000 for method in methods}
-        wall_winner = "J_VND" if wall["J_VND"] < wall["S_VND"] else "S_VND"
         for index, ax in enumerate(axes):
             ax.text(0.0, header_y, heading, transform=ax.get_yaxis_transform(),
                     ha="left", va="center", fontsize=8.8, fontweight="bold")
-            comparison = (f"{winner[0]} earlier {abs(delta)/3600:.2f} h" if index == 0
-                          else f"{wall_winner[0]} lower than {'S' if wall_winner == 'J_VND' else 'J'}")
-            ax.text(1.0, header_y, comparison, transform=ax.get_yaxis_transform(),
-                    ha="right", va="center", fontsize=8.8,
-                    color=COLORS[winner if index == 0 else wall_winner])
+            if index == 0:
+                ax.text(1.0, header_y, f"{winner[0]} earlier {abs(delta)/3600:.2f} h",
+                        transform=ax.get_yaxis_transform(), ha="right", va="center",
+                        fontsize=8.8, color=COLORS[winner])
         for offset, method in enumerate(methods):
             y = header_y + 0.65 + offset * 0.70
             days = records[method]["completion_offset_seconds"] / 86400
@@ -249,7 +260,7 @@ def draw_rolling(e7: dict, repeats: dict, condition: dict) -> plt.Figure:
                              textcoords="offset points", va="center", fontsize=8.8)
     axes[0].set_xlim(56.0, 67.5)
     axes[0].set_xticks([58, 60, 62, 64, 66])
-    axes[0].set_xlabel("Batch completion (days)\nfrom each block's common origin")
+    axes[0].set_xlabel("Batch completion time (days)")
     axes[1].set_xlim(0, 54)
     axes[1].set_xticks([0, 15, 30, 45])
     axes[1].set_xlabel("Solver wall time (min)")
@@ -263,7 +274,6 @@ def draw_rolling(e7: dict, repeats: dict, condition: dict) -> plt.Figure:
         for y in (2.50, 4.60, 6.70):
             ax.axhline(y, color="#D8DBDF", linewidth=0.65)
         panel(ax, f"({chr(97 + index)})")
-    fig.text(0.01, 0.022, "Separate execution blocks; batch 2 starts at the same retained LRP boundary for J and S.", fontsize=8.8)
     return fig
 
 
@@ -508,7 +518,9 @@ def diagnostic_table_and_checks() -> None:
     with (ROOT / "e11_state_statistics.csv").open(newline="") as stream:
         released = {r["state"]: r for r in csv.DictReader(stream)}
     lines = [r"\begin{tabular}{lrrrr}", r"\toprule",
-             r"State & J/tie/S outcomes & Executed decodes J/S & Layout elapsed s J/S & Decoder success both/J/S \\",
+             r"& Outcomes across repeats & \multicolumn{2}{c}{Median per run} & Probe-record counts across repeats \\",
+             r"\cmidrule(lr){3-4}",
+             r"State & J/tie/S & Executed decodes J/S & Layout elapsed (s) J/S & Decoder success both/J/S \\",
              r"\midrule"]
     states = []
     for state in data["protocol"]["states"]:
@@ -552,7 +564,7 @@ def rolling_repeat_table_and_checks() -> None:
                   for label, key in (("E12 A", "repeat-2"), ("E12 B", "repeat-3")))
     differences = []
     lines = [r"\begin{tabular}{lrrrrrr}", r"\toprule",
-             r"Block & Completion s J/S & S-minus-J h & Solver wall s J/S & Rounds J/S & Adoption J/S & Calls/failed J/S \\",
+             r"Policy & Completion (s) & Solver wall (s) & Rounds & Total calls & Failed calls & Adoptions \\",
              r"\midrule"]
     for label, block in blocks:
         j, s = (block["methods"][m] for m in ("J_VND", "S_VND"))
@@ -568,13 +580,17 @@ def rolling_repeat_table_and_checks() -> None:
         delta = s["completion_offset_seconds"] - j["completion_offset_seconds"]
         if label != "E7 original":
             differences.append(delta)
-        values = [f"{j['completion_offset_seconds']:.0f}/{s['completion_offset_seconds']:.0f}",
-                  f"{delta / 3600:.2f}",
-                  f"{j['solver_wall_seconds']:.3f}/{s['solver_wall_seconds']:.3f}",
-                  f"{j['round_count']}/{s['round_count']}",
-                  f"{j['geometry_adoption_rounds']}/{s['geometry_adoption_rounds']}",
-                  f"{j['trace_call_count']}/{j['trace_failed_count']}, {s['trace_call_count']}/{s['trace_failed_count']}"]
-        lines.append(label + " & " + " & ".join(values) + r" \\")
+        if lines[-1] != r"\midrule":
+            lines.append(r"\addlinespace")
+        lines.append(r"\multicolumn{7}{l}{\textit{" + label
+                     + f": S-minus-J = {delta / 3600:.2f} h" + r"}} \\")
+        for policy, run in (("J-VND", j), ("S-VND", s)):
+            assert run["trace_call_count"] == run["trace_feasible_count"] + run["trace_failed_count"]
+            values = [f"{run['completion_offset_seconds']:.0f}",
+                      f"{run['solver_wall_seconds']:.3f}",
+                      str(run["round_count"]), str(run["trace_call_count"]),
+                      str(run["trace_failed_count"]), str(run["geometry_adoption_rounds"])]
+            lines.append(policy + " & " + " & ".join(values) + r" \\")
     assert differences == data["contemporaneous_paired_differences_seconds"]
     lines.extend([r"\bottomrule", r"\end{tabular}", ""])
     (OUT / "table_rolling_repeats.tex").write_text("\n".join(lines))

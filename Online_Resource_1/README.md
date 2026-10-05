@@ -10,6 +10,8 @@
 **Funding:** No specific funding was received for this work.  
 **Competing interests:** The authors declare no relevant competing interests.
 
+**Edition:** 2026-10-05 Minor wording and layout revision. The algorithm, released numerical data, experimental protocols, and reported results are unchanged. Figure and table presentation follows the revised manuscript; descriptive reproduction filenames remain stable.
+
 This package releases de-identified numeric evidence for the industrial case. Terminal-case task, block, crane, and region aliases are local to each case; times are relative to its decision epoch. Original customer identifiers, coordinates, absolute paths, commands, and host names are not included.
 
 The released reproduction package uses the MIT License; see `LICENSE`. This licence covers the public package files and grants no rights to the proprietary industrial solver or customer source data.
@@ -24,7 +26,7 @@ The released reproduction package uses the MIT License; see `LICENSE`. This lice
 - `e10_aggregate.json`: the predeclared three-repeat aggregate over 48 correlated states; the internal records have no external immutable registration timestamp.
 - `e9_state_outcomes.csv` and `e9_e10_comparison.json`: the earlier single execution and its explicitly auxiliary comparison with E10.
 - `development_budget_aggregate.json`: predetermined development states under research invocation caps of 3, 6, and 12 seconds, including sample counts, timing, and pairwise outcome counts.
-- `development_budget_common_subset.json`: the same four predetermined states at all three caps, 36 method records, recomputed Figure 3 statistics, and the original group mappings. Separate caps can reach different initial plans; these medians do not identify a fixed-initialization budget effect.
+- `development_budget_common_subset.json`: the same four predetermined states at all three caps, 36 method records, recomputed Figure 7 statistics, and the original group mappings. Separate caps can reach different initial plans; these medians do not identify a fixed-initialization budget effect. The stable generated basename remains `fig3_budget_sensitivity`.
 - `e7_runtime_and_version_evidence.json`: retained E7 invocation caps and attempts, source/build hashes, and the E7/E10 version relationship, freshly inspected on 2026-10-01 without solver reruns.
 - `INITIALIZATION_AND_DECODER_AUDIT.md`: effective inputs, nested decode rules, cache and deadline semantics, and the distinction between recorded-component equality and source-supported inference about unrecorded initial timing/motion/Cost.
 - `terminal_case_evidence.json`: case-local final task/motion/occupancy summaries for stable positive b3-r006 and negative b3-r071, with source trace hashes. Complete initial schedules and Cost were not retained.
@@ -68,7 +70,20 @@ All generated files are written under `reproduced/` beside the scripts:
 | `terminal_case_checks.json` | Checks of the six retained positive/negative case pairs and agreement with the released paired CSV. |
 | `synthetic_example_checks.json` | One legal case and nine deliberate invalid controls: `case_count: 10`, `passed_count: 10`. |
 | `table_e10.tex`, `table_rolling.tex`, `table_e11.tex`, `table_rolling_repeats.tex`, `table_condition.tex` | Recomputed numeric contents of all five result tables, including the E11/E12 additions. |
-| `fig3_budget_sensitivity`, `fig4_repeat_outcomes`, `fig5_activity_adoption_cross`, `fig6_rolling_endpoints`, `fig7_terminal_cases`, `fig8_physical_constraints` | Each basename is generated in PDF and SVG. The publication numbering follows the final manuscript. |
+| `fig3_budget_sensitivity`, `fig4_repeat_outcomes`, `fig5_activity_adoption_cross`, `fig6_rolling_endpoints`, `fig7_terminal_cases`, `fig8_physical_constraints` | Each stable basename is generated in PDF and SVG. Its numeric prefix is a historical filename, not the revised publication number; see the mapping below. |
+
+Publication numbering in the 2026-10-05 manuscript is:
+
+| Publication figure | Subject | Released output or companion-source asset |
+|---|---|---|
+| 1 | Physical constraints | `fig8_physical_constraints` |
+| 2 | Controller coupling | `fig1_coupling` (companion manuscript source only) |
+| 3 | Eligibility-aware evaluation | `fig2_evaluation` (companion manuscript source only) |
+| 4 | Repeated paired outcomes | `fig4_repeat_outcomes` |
+| 5 | Variation/adoption cross-tabulation | `fig5_activity_adoption_cross` |
+| 6 | Terminal-case plans | `fig7_terminal_cases` |
+| 7 | Development-budget context | `fig3_budget_sensitivity` |
+| 8 | Complete rolling comparisons | `fig6_rolling_endpoints` |
 
 The development plot uses the same four states at every cap (median accepted improvements 2.5, 4.0, and 5.5); the original mixed-size aggregates remain available. The repeat plot uses two batch panels with J/S/dot/cross symbols. The rolling overview compares four labelled blocks: original E7, E12 first-batch A, E12 first-batch B, and the E12 second-batch condition, showing completion and recorded solver wall time separately. Geometry-adoption counts concern rounds whose final layout differs from that round's own initialization. The terminal-case and physical illustrations are generated from their released records/model specification; the other conceptual publication PDFs are supplied in the companion manuscript source package.
 

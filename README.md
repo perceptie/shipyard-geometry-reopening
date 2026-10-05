@@ -9,6 +9,8 @@
 
 The public release contains de-identified evaluation aggregates, case-local terminal-plan records, figure/table reproduction scripts, and an editable synthetic model example. The companion package is placed in `Online_Resource_1/`; its README describes each released file and the expected outputs. Customer source data, private industrial solver code, and restricted full execution records are excluded.
 
+The 2026-10-05 Minor revision updates figure labels, common count scales, terminal-case detail views, and grouped result-table headers. It preserves all 22 released JSON/CSV numerical records and their provenance. Stable reproduction filenames are retained; the supplement README maps them to the revised manuscript figure numbers.
+
 ## Reproduce the released results
 
 The tested plotting environment is Python 3.12.14, Matplotlib 3.11.2, and NumPy 2.5.3. From the repository root:

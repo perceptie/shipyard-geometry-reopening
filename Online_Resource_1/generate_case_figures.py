@@ -105,9 +105,13 @@ def _positive_membership(ax, case: dict):
                     sorted(b for b in changed if j[b]["region"] == region), color=BLUE)
     _arrow(ax, (0.47, 2.14), (1.62, 1.76), color=BLUE)
     _arrow(ax, (1.63, 2.14), (0.48, 1.76), color=BLUE)
-    ax.text(0, 0.54, "B2: R1 → R4\nB4: R4 → R1\nB6: changes within R1",
+    task_by_block = {row["block"]: row["task"] for row in _record(case, 1, "J_VND")["final_tasks"]
+                     if row["block"] in changed}
+    if task_by_block != {"B2": "T1", "B4": "T4", "B6": "T3"}:
+        raise ValueError("Changed-block/task mapping differs from retained evidence")
+    ax.text(0, 0.54, "B2 (T1): R1 → R4\nB4 (T4): R4 → R1\nB6 (T3): changes within R1",
             fontsize=9.3, linespacing=1.35, va="top")
-    _title(ax, "(a) Changed placements")
+    _title(ax, "(a) Changed region assignments")
 
 
 def _negative_membership(ax, case: dict):
@@ -124,11 +128,10 @@ def _negative_membership(ax, case: dict):
                     sorted(b for b in j if j[b]["region"] == region))
     ax.text(0, 0.52, "B1 is already committed.\nFinal positions and orientations\nmatch in all three repeats.",
             fontsize=9.2, linespacing=1.3, va="top")
-    _title(ax, "(c) Unchanged placements")
+    _title(ax, "(c) Unchanged region assignments")
 
 
-def _timeline(ax, rows: list[tuple[str, dict, str, bool]], xmax: float,
-              *, annotation: bool = False):
+def _timeline(ax, rows: list[tuple[str, dict, str, bool]], xmax: float):
     """Task intervals are proportional to their exact retained times."""
     barheight = 0.60
     for y, (label, record, crane, joint) in enumerate(reversed(rows)):
@@ -155,18 +158,62 @@ def _timeline(ax, rows: list[tuple[str, dict, str, bool]], xmax: float,
     ax.set_axisbelow(True)
     ax.grid(axis="x", color="#E5E7EB", linewidth=0.6)
     ax.spines["left"].set_visible(False)
-    if annotation:
-        s = rows[-1][1]
-        motions = [m for m in s["non_task_motions"] if m["crane"] == "C2" and m["start_seconds"] >= 0]
-        if len(motions) != 1:
-            raise ValueError("Positive-case C2 movement annotation requires one retained motion")
-        motion = motions[0]
-        midpoint = (motion["start_seconds"] + motion["end_seconds"])/2000
-        ax.annotate(f"C2 rail-yield: {_number(motion['duration_seconds'])} s",
-                    xy=(midpoint, -0.34), xytext=(34.5, 0.54),
-                    arrowprops={"arrowstyle": "->", "color": GRAY, "linewidth": 0.8},
-                    fontsize=9, ha="center", va="center", annotation_clip=False,
-                    bbox={"facecolor": "white", "edgecolor": "none", "pad": 0.8})
+
+
+def _positive_details(motion_ax, endpoint_ax, j: dict, s: dict):
+    """Two explicitly local windows preserve the full timeline's scale."""
+    motions = [m for m in s["non_task_motions"] if m["crane"] == "C2" and m["start_seconds"] >= 0]
+    if len(motions) != 1:
+        raise ValueError("Positive-case C2 movement detail requires one retained motion")
+    motion = motions[0]
+    start, end = motion["start_seconds"]/1000, motion["end_seconds"]/1000
+    motion_ax.set_xlim(start-0.35, start+1.00)
+    for task in s["final_tasks"]:
+        if "C2" not in task["cranes"]:
+            continue
+        task_start, task_end = task["start_seconds"]/1000, task["end_seconds"]/1000
+        motion_ax.add_patch(Rectangle((task_start, -0.19), task_end-task_start, 0.38,
+                                     facecolor="white", edgecolor=ORANGE, linewidth=0.85))
+        visible_start = max(task_start, start-0.35)
+        visible_end = min(task_end, start+1.00)
+        if visible_end > visible_start:
+            motion_ax.text((visible_start+visible_end)/2, 0, task["task"], ha="center",
+                           va="center", color=ORANGE, fontsize=8.5)
+    motion_ax.plot([start, end], [-0.35, -0.35], color=GRAY, linewidth=2.1, solid_capstyle="butt")
+    motion_ax.annotate(f"{_number(motion['duration_seconds'])} s",
+                       xy=((start+end)/2, -0.35), xytext=(start+0.50, 0.54),
+                       arrowprops={"arrowstyle": "->", "color": GRAY, "linewidth": 0.75},
+                       ha="center", va="center", fontsize=9)
+    motion_ax.set_ylim(-0.55, 0.87)
+    motion_ax.set_xticks([41.2, 41.8, 42.4])
+    motion_ax.set_title("S C2 motion detail", loc="left", pad=4, fontsize=9, fontweight="bold")
+
+    jend, send = [record["cost_relative_seconds"]["current_batch_makespan"]/1000 for record in (j, s)]
+    endpoint_ax.set_xlim(jend-0.26, send+0.15)
+    for y, record, joint in ((1, j, True), (0, s, False)):
+        task = next(task for task in record["final_tasks"] if task["task"] == "T3")
+        task_start, task_end = task["start_seconds"]/1000, task["end_seconds"]/1000
+        color = BLUE if joint else ORANGE
+        endpoint_ax.add_patch(Rectangle((task_start, y-0.20), task_end-task_start, 0.40,
+                                       facecolor=color if joint else "white", edgecolor=color,
+                                       linewidth=0.85))
+        endpoint_ax.plot(task_end, y, marker="|", markersize=10, color=color, markeredgewidth=1.0)
+    endpoint_ax.plot([jend, send], [1.57, 1.57], color=INK, linewidth=0.75)
+    for endpoint in (jend, send):
+        endpoint_ax.plot([endpoint, endpoint], [1.40, 1.74], color=INK, linewidth=0.75)
+    endpoint_ax.text((jend+send)/2, 1.89, f"Δ = {(send-jend)*1000:.3f} s",
+                     fontsize=9, ha="center", va="bottom")
+    endpoint_ax.set_ylim(-0.40, 2.28)
+    endpoint_ax.set_yticks([0, 1], ["S", "J"])
+    endpoint_ax.set_xticks([55.4, 55.6, 55.8])
+    endpoint_ax.set_title("Completion endpoints", loc="left", pad=4, fontsize=9, fontweight="bold")
+    for ax in (motion_ax, endpoint_ax):
+        ax.set_xlabel("Model time (10³ s)", fontsize=8.5, labelpad=3)
+        ax.tick_params(axis="both", labelsize=8.3, length=2)
+        ax.spines["left"].set_visible(False)
+        ax.grid(axis="x", color="#E5E7EB", linewidth=0.5)
+        ax.set_axisbelow(True)
+    motion_ax.set_yticks([])
 
 
 def draw_terminal_cases(data: dict) -> plt.Figure:
@@ -190,15 +237,19 @@ def draw_terminal_cases(data: dict) -> plt.Figure:
     if _record(negative, 2, "S_VND")["final_tasks"] != ns1["final_tasks"]:
         raise ValueError("Negative S-VND repetitions 1 and 2 differ")
 
-    fig = plt.figure(figsize=(6.85, 6.15))
-    gs = fig.add_gridspec(2, 2, width_ratios=(1.45, 3.6), height_ratios=(1, 1.25),
-                          left=0.01, right=0.99, top=0.88, bottom=0.145,
-                          wspace=0.28, hspace=0.60)
-    pa, pb, pc, pd = [fig.add_subplot(gs[row, col]) for row, col in ((0,0), (0,1), (1,0), (1,1))]
+    fig = plt.figure(figsize=(6.85, 6.30))
+    gs = fig.add_gridspec(3, 2, width_ratios=(1.45, 3.6), height_ratios=(1, 0.70, 1.35),
+                          left=0.01, right=0.99, top=0.915, bottom=0.095,
+                          wspace=0.30, hspace=0.64)
+    pa, pb = fig.add_subplot(gs[0:2, 0]), fig.add_subplot(gs[0, 1])
+    pc, pd = fig.add_subplot(gs[2, 0]), fig.add_subplot(gs[2, 1])
+    details = gs[1, 1].subgridspec(1, 2, wspace=0.44)
+    motion_ax, endpoint_ax = [fig.add_subplot(details[0, column]) for column in (0, 1)]
     _positive_membership(pa, positive)
     _negative_membership(pc, negative)
     _timeline(pb, [("J C1", pj, "C1", True), ("J C2", pj, "C2", True),
-                   ("S C1", ps, "C1", False), ("S C2", ps, "C2", False)], 60, annotation=True)
+                   ("S C1", ps, "C1", False), ("S C2", ps, "C2", False)], 60)
+    _positive_details(motion_ax, endpoint_ax, pj, ps)
     _timeline(pd, [("J C1", nj, "C1", True), ("J C2", nj, "C2", True),
                    ("S(1,2) C1", ns1, "C1", False), ("S(1,2) C2", ns1, "C2", False),
                    ("S(3) C1", ns3, "C1", False), ("S(3) C2", ns3, "C2", False)], 66)
@@ -210,17 +261,13 @@ def draw_terminal_cases(data: dict) -> plt.Figure:
             transform=pb.transAxes, fontsize=9.1, va="bottom")
     pd.text(0, 1.025, f"J: {_number(jn)} s   S(1,2): {_number(sn1)} s   S(3): {_number(sn3)} s",
             transform=pd.transAxes, fontsize=9.1, va="bottom")
-    fig.text(0.01, 0.985, "E10 terminal cases: region membership and retained C1/C2 task intervals", fontsize=10,
-             fontweight="bold", va="top")
-    fig.text(0.01, 0.037, "Region panels are schematic; task, block and resource aliases are local to each case.", fontsize=9)
-    fig.text(0.01, 0.013, "Bars contain empty travel, handling and loaded travel; short gray lines mark retained non-task motions.", fontsize=9)
     return fig
 
 
 def draw_physical_constraints() -> plt.Figure:
-    fig = plt.figure(figsize=(6.85, 3.85))
-    left = fig.add_axes([0.01, 0.16, 0.47, 0.76])
-    right = fig.add_axes([0.54, 0.16, 0.45, 0.76])
+    fig = plt.figure(figsize=(6.85, 3.55))
+    left = fig.add_axes([0.01, 0.09, 0.47, 0.83])
+    right = fig.add_axes([0.54, 0.09, 0.45, 0.83])
     for ax in (left, right):
         ax.set(xlim=(0, 3.15), ylim=(0, 3.15))
         ax.axis("off")
@@ -233,7 +280,7 @@ def draw_physical_constraints() -> plt.Figure:
     for x, label in ((0.46, "C1"), (1.5, "C2"), (2.53, "C3")):
         left.add_patch(Rectangle((x-0.15, 2.59), 0.3, 0.25, facecolor="white", edgecolor=GRAY, linewidth=1))
         left.text(x, 2.99, label, fontsize=9.5, ha="center")
-    left.text(1.54, 2.36, "Fixed rail order: C1 ≤ C2 ≤ C3", fontsize=9.3, ha="center")
+    left.text(1.54, 2.36, "Fixed left-to-right order: C1 → C2 → C3", fontsize=9.3, ha="center")
     left.add_patch(Rectangle((0.18, 0.61), 2.75, 1.46, facecolor=PALE, edgecolor=LINE, linewidth=0.9))
     left.text(0.28, 1.97, "Yard region", fontsize=9.3, va="top", fontweight="bold")
     left.add_patch(Rectangle((0.4, 0.83), 0.82, 0.63, facecolor="#E5E7EB", edgecolor=GRAY,
@@ -270,7 +317,6 @@ def draw_physical_constraints() -> plt.Figure:
     right.text(3.02, 0.88, "Time", ha="right", fontsize=9)
     right.text(0.03, 0.59, "Travel depends on chosen pickup/drop geometry.\nParallel X/Y motion uses the longer travel time.\nTandem cranes synchronize each phase.",
                fontsize=9.1, linespacing=1.35, va="top")
-    fig.text(0.01, 0.038, "Model illustration, not to scale. A batch boundary does not clear yard occupancy.", fontsize=9)
     return fig
 
 
