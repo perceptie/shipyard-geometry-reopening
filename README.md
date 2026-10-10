@@ -9,6 +9,8 @@
 
 The public release contains de-identified evaluation aggregates, case-local terminal-plan records, figure/table reproduction scripts, and an editable synthetic model example. The companion package is placed in `Online_Resource_1/`; its README describes each released file and the expected outputs. Customer source data, private industrial solver code, and restricted full execution records are excluded.
 
+**2026-10-10 edition:** this edition extends commit `5c53f27` with the revised E11 mechanism figure, de-identified derived direct-decoder records, the complete comparison protocol, and saved-record selective-reopening opportunities. The additions are documented in [Online Resource 1](Online_Resource_1/README.md). The industrial decoder and original geometric records remain restricted.
+
 The 2026-10-05 Minor revision updates figure labels, common count scales, terminal-case detail views, and grouped result-table headers. It preserves all 22 released JSON/CSV numerical records and their provenance. Stable reproduction filenames are retained; the supplement README maps them to the revised manuscript figure numbers.
 
 ## Reproduce the released results
@@ -28,6 +30,6 @@ The validation scripts use only the Python standard library. Plotting uses Arial
 
 ## Authors and licence
 
-Both authors have completed review of the manuscript text, figures, analyses, released code, and AI-assistance disclosure. OpenAI Codex assisted manuscript editing and plotting/example code preparation. No specific funding was received for this work, and the authors declare no relevant competing interests.
+Both authors confirmed their review of the earlier manuscript release. The 2026-10-10 revision adds analyses and materials for their final review before submission. OpenAI Codex assisted manuscript editing, research instrumentation, analysis, plotting, and example code preparation. No specific funding was received for this work, and the authors declare no relevant competing interests.
 
 This public package is released under the [MIT License](LICENSE), copyright 2026 Zixi Wang and Weimin Wu. The licence applies to the files released in this repository; it grants no rights to private industrial solver code or customer source data.

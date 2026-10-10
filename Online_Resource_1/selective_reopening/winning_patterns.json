@@ -1,0 +1,234 @@
+[
+  {
+    "state": "b2_r096",
+    "case_id": "D02",
+    "mutable_blocks": 3,
+    "best_mask": 5,
+    "open_blocks": [
+      "u1",
+      "u3"
+    ],
+    "all_best_middle_masks": [
+      5
+    ],
+    "four_objective_fields": [
+      "projected_completion_us",
+      "current_batch_makespan_us",
+      "total_completion_us",
+      "pool_value_us"
+    ],
+    "empty_objective_us": [
+      10246082454827,
+      7579626454827,
+      60181195638616,
+      7579626454827
+    ],
+    "full_objective_us": [
+      10246082454827,
+      7579626454827,
+      60186385638616,
+      7579626454827
+    ],
+    "best_middle_objective_us": [
+      10246082454827,
+      7579606454827,
+      60184853638616,
+      7579606454827
+    ],
+    "simple_objectives_us": {
+      "J_VND": [
+        10246082454827,
+        7579626454827,
+        60186385638616,
+        7579626454827
+      ],
+      "S_VND": [
+        10246082454827,
+        7579626454827,
+        60181195638616,
+        7579626454827
+      ],
+      "J_REFERENCE_SEED": [
+        10246082454827,
+        7579626454827,
+        60186385638616,
+        7579626454827
+      ],
+      "J_FIELD128": [
+        10246082454827,
+        7579626454827,
+        60186385638616,
+        7579626454827
+      ],
+      "J_RAIL512": [
+        10246082454827,
+        7579626454827,
+        60186385638616,
+        7579626454827
+      ]
+    },
+    "empty_geometry_sha256": "546f9759c57e74b6868cd79cf9804df2cc81b32ea5bffa69eb8df36fca6e7ee9",
+    "full_geometry_sha256": "684dfe629123b05e52e011dcac8696ed0d541ae74afc826d4aabe2028a69041a",
+    "middle_geometry_sha256": "4e3abee6a9eea85928620c931f18917579abe51c5b451588d5c73e31782f6571",
+    "historical_locked_records": 39,
+    "historical_noncurrent_records": 35,
+    "effect_vs_best_mask_endpoint_s": 20.0
+  },
+  {
+    "state": "b3_r006",
+    "case_id": "D03",
+    "mutable_blocks": 3,
+    "best_mask": 3,
+    "open_blocks": [
+      "u1",
+      "u2"
+    ],
+    "all_best_middle_masks": [
+      3
+    ],
+    "four_objective_fields": [
+      "projected_completion_us",
+      "current_batch_makespan_us",
+      "total_completion_us",
+      "pool_value_us"
+    ],
+    "empty_objective_us": [
+      15155034509685,
+      10894845779552,
+      86867353617214,
+      10894845779552
+    ],
+    "full_objective_us": [
+      15155034509685,
+      10895158700486,
+      86859252112592,
+      10895158700486
+    ],
+    "best_middle_objective_us": [
+      15155034509685,
+      10880989836440,
+      86828181057745,
+      10880989836440
+    ],
+    "simple_objectives_us": {
+      "J_VND": [
+        15155034509685,
+        10895158700486,
+        86859252112592,
+        10895158700486
+      ],
+      "S_VND": [
+        15155034509685,
+        10894845779552,
+        86867353617214,
+        10894845779552
+      ],
+      "J_REFERENCE_SEED": [
+        15155034509685,
+        10895158700486,
+        86859252112592,
+        10895158700486
+      ],
+      "J_FIELD128": [
+        15155034509685,
+        10895158700486,
+        86859252112592,
+        10895158700486
+      ],
+      "J_RAIL512": [
+        15155034509685,
+        10895158700486,
+        86859252112592,
+        10895158700486
+      ]
+    },
+    "empty_geometry_sha256": "eef2e7a7938bbdb0bf1f26a84e3ac2484245aa73a5db4b8db83f708bb6259c2d",
+    "full_geometry_sha256": "a36989635760fa35ea0cda7c11b4ec3855ac536a4dcbe16a5e646575fc6faaad",
+    "middle_geometry_sha256": "b41211ab3d6b8df9f51f50bffb7f9b2a43136bcc1e1618b321c0d7cb38203aff",
+    "historical_locked_records": 43,
+    "historical_noncurrent_records": 40,
+    "effect_vs_best_mask_endpoint_s": 13855.943112
+  },
+  {
+    "state": "b3_r071",
+    "case_id": "D04",
+    "mutable_blocks": 6,
+    "best_mask": 34,
+    "open_blocks": [
+      "u2",
+      "u6"
+    ],
+    "all_best_middle_masks": [
+      34,
+      35,
+      38,
+      39,
+      50,
+      51,
+      54,
+      55
+    ],
+    "four_objective_fields": [
+      "projected_completion_us",
+      "current_batch_makespan_us",
+      "total_completion_us",
+      "pool_value_us"
+    ],
+    "empty_objective_us": [
+      15278636001946,
+      11683159001946,
+      93258664015568,
+      11683159001946
+    ],
+    "full_objective_us": [
+      15278636001946,
+      11675797001946,
+      93237301015568,
+      11675797001946
+    ],
+    "best_middle_objective_us": [
+      15278636001946,
+      11675552001946,
+      93236549015568,
+      11675552001946
+    ],
+    "simple_objectives_us": {
+      "J_VND": [
+        15278636001946,
+        11675797001946,
+        93237301015568,
+        11675797001946
+      ],
+      "S_VND": [
+        15278636001946,
+        11683159001946,
+        93258664015568,
+        11683159001946
+      ],
+      "J_REFERENCE_SEED": [
+        15278636001946,
+        11675797001946,
+        93237301015568,
+        11675797001946
+      ],
+      "J_FIELD128": [
+        15278636001946,
+        11675797001946,
+        93237301015568,
+        11675797001946
+      ],
+      "J_RAIL512": [
+        15278636001946,
+        11675797001946,
+        93237301015568,
+        11675797001946
+      ]
+    },
+    "empty_geometry_sha256": "749a75e73ce33a916e7120ed176809fa512e671cf45c741a3cf9874d15f53a43",
+    "full_geometry_sha256": "5b6f1a8a3433146c0ba9bd29c4bda31c0192dc8cf3e930c07e25a7995901a33b",
+    "middle_geometry_sha256": "5f14985913b00d95d0b29a14e8c9f94e265f5d607b3431f9d4a35a8f1d2e32fa",
+    "historical_locked_records": 38,
+    "historical_noncurrent_records": 37,
+    "effect_vs_best_mask_endpoint_s": 245.0
+  }
+]

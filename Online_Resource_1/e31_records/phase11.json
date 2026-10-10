@@ -1,0 +1,293 @@
+{
+  "probe": "decoder-only-synthetic-locked-history-boundary",
+  "regions": {
+    "a": [
+      0,
+      22000000,
+      0,
+      22000000
+    ],
+    "b": [
+      53024480,
+      75024480,
+      0,
+      22000000
+    ]
+  },
+  "history": {
+    "id": "probe-history-occupancy-a",
+    "region_id": "probe-region-a",
+    "active_from_us": 0,
+    "active_until_us": 192000000
+  },
+  "timing": {
+    "a_release_us": 192000000,
+    "safety_gap_x": 2000000,
+    "safety_gap_y": 2000000
+  },
+  "runs": [
+    {
+      "variant": "delay_0",
+      "method": "free_layout",
+      "feasible": true,
+      "iterations": 2,
+      "makespan_us": 852000000,
+      "diagnostic": null,
+      "occupancies": [
+        {
+          "grand_block_id": "probe-history-occupancy-a",
+          "region_id": "probe-region-a",
+          "actual_rect": {
+            "min_x": 1000000,
+            "max_x": 21000000,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 0,
+            "max_x": 22000000,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 0,
+          "active_until_us": 192000000,
+          "locked": true
+        },
+        {
+          "grand_block_id": "probe-grand-block-b",
+          "region_id": "probe-region-b",
+          "actual_rect": {
+            "min_x": 54024480,
+            "max_x": 74024480,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 53024480,
+            "max_x": 75024480,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 0,
+          "active_until_us": 557000000,
+          "locked": false
+        }
+      ]
+    },
+    {
+      "variant": "delay_191999999",
+      "method": "free_layout",
+      "feasible": true,
+      "iterations": 2,
+      "makespan_us": 1043999999,
+      "diagnostic": null,
+      "occupancies": [
+        {
+          "grand_block_id": "probe-history-occupancy-a",
+          "region_id": "probe-region-a",
+          "actual_rect": {
+            "min_x": 1000000,
+            "max_x": 21000000,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 0,
+            "max_x": 22000000,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 0,
+          "active_until_us": 192000000,
+          "locked": true
+        },
+        {
+          "grand_block_id": "probe-grand-block-b",
+          "region_id": "probe-region-b",
+          "actual_rect": {
+            "min_x": 54024480,
+            "max_x": 74024480,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 53024480,
+            "max_x": 75024480,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 191999999,
+          "active_until_us": 748999999,
+          "locked": false
+        }
+      ]
+    },
+    {
+      "variant": "delay_192000000",
+      "method": "free_layout",
+      "feasible": true,
+      "iterations": 1,
+      "makespan_us": 1066000000,
+      "diagnostic": null,
+      "occupancies": [
+        {
+          "grand_block_id": "probe-history-occupancy-a",
+          "region_id": "probe-region-a",
+          "actual_rect": {
+            "min_x": 1000000,
+            "max_x": 21000000,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 0,
+            "max_x": 22000000,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 0,
+          "active_until_us": 192000000,
+          "locked": true
+        },
+        {
+          "grand_block_id": "probe-grand-block-b",
+          "region_id": "probe-region-a",
+          "actual_rect": {
+            "min_x": 1000000,
+            "max_x": 21000000,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 0,
+            "max_x": 22000000,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 192000000,
+          "active_until_us": 505000000,
+          "locked": false
+        }
+      ]
+    },
+    {
+      "variant": "delay_192000001",
+      "method": "free_layout",
+      "feasible": true,
+      "iterations": 1,
+      "makespan_us": 1066000001,
+      "diagnostic": null,
+      "occupancies": [
+        {
+          "grand_block_id": "probe-history-occupancy-a",
+          "region_id": "probe-region-a",
+          "actual_rect": {
+            "min_x": 1000000,
+            "max_x": 21000000,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 0,
+            "max_x": 22000000,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 0,
+          "active_until_us": 192000000,
+          "locked": true
+        },
+        {
+          "grand_block_id": "probe-grand-block-b",
+          "region_id": "probe-region-a",
+          "actual_rect": {
+            "min_x": 1000000,
+            "max_x": 21000000,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 0,
+            "max_x": 22000000,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 192000001,
+          "active_until_us": 505000001,
+          "locked": false
+        }
+      ]
+    },
+    {
+      "variant": "delay_600000000",
+      "method": "free_layout",
+      "feasible": true,
+      "iterations": 1,
+      "makespan_us": 1474000000,
+      "diagnostic": null,
+      "occupancies": [
+        {
+          "grand_block_id": "probe-history-occupancy-a",
+          "region_id": "probe-region-a",
+          "actual_rect": {
+            "min_x": 1000000,
+            "max_x": 21000000,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 0,
+            "max_x": 22000000,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 0,
+          "active_until_us": 192000000,
+          "locked": true
+        },
+        {
+          "grand_block_id": "probe-grand-block-b",
+          "region_id": "probe-region-a",
+          "actual_rect": {
+            "min_x": 1000000,
+            "max_x": 21000000,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 0,
+            "max_x": 22000000,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 600000000,
+          "active_until_us": 913000000,
+          "locked": false
+        }
+      ]
+    }
+  ],
+  "presentation_transform": {
+    "scope": "retained decoder outputs, not a decoder rerun",
+    "coordinate_frame": "phase-local translated frame in integer micrometres",
+    "geometry_properties_preserved": [
+      "rectangle size",
+      "containment",
+      "overlap",
+      "relative placement differences"
+    ],
+    "recorded_times_unchanged": true,
+    "formal_region_ids_replaced_by_aliases": true,
+    "source_json_sha256": "a4238eab2ce5db2fa0e2bd9372af28a9f7e2a5b4d9b58ea22d5ea213dee62546"
+  }
+}

@@ -1,0 +1,1687 @@
+{
+  "version": "p02-selective-reopening-witness-validation/1.0.0",
+  "scope": "saved plans only; existing E10/E11 declared-constraint, geometry-phase, motion-continuity, endpoint and four-cost checks",
+  "not_checked": [
+    "decoder rerun",
+    "controller commit/replan transitions",
+    "complete physical crane bodies",
+    "field safety certification"
+  ],
+  "counts": {
+    "plan_records_checked": 72,
+    "failed_plan_records": 0,
+    "winning_middle_records_checked": 9,
+    "endpoint_checks": 576,
+    "endpoint_failures": 0,
+    "declared_failed_records": 0,
+    "geometry_phases_failed_records": 0,
+    "full_cost_failed_records": 0,
+    "motion_continuity_failed_records": 0
+  },
+  "checks_passed": true,
+  "input_sha256": "5ec1c0a6006970e0626df5fb47f48a7462907056a03c298f04dfea4a95acd6de",
+  "checker_sha256": {
+    "e11": "7aa3e5fe9c36b160d6188feeda0b7cbfaec8f134acc0f88bc1476b6a614c30a7",
+    "declared": "5967b4c5be3170db50933e35b2f972c7d0aa9098a2b171fcbb0b09d3b9f283ff",
+    "cost": "4818e9c75c7613adbbb49a3afd0e77a8564150cb9aa94b0aad2f3b5dee805532",
+    "motion": "343243d7d57cc08f7f6c68ba81ed95dbc689b0f41cbd4e5761309d1dd70d86e2"
+  },
+  "rows": [
+    {
+      "witness_id": "W01",
+      "state": "b2_r096",
+      "method": "best_middle",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579606454827,
+        "current_batch_total_completion_time": 60184853638616,
+        "value": 7579606454827
+      }
+    },
+    {
+      "witness_id": "W01",
+      "state": "b2_r096",
+      "method": "mask_empty",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60181195638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W01",
+      "state": "b2_r096",
+      "method": "mask_full",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60186385638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W01",
+      "state": "b2_r096",
+      "method": "J_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60186385638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W01",
+      "state": "b2_r096",
+      "method": "S_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60181195638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W01",
+      "state": "b2_r096",
+      "method": "J_REFERENCE_SEED",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60186385638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W01",
+      "state": "b2_r096",
+      "method": "J_FIELD128",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60186385638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W01",
+      "state": "b2_r096",
+      "method": "J_RAIL512",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60186385638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W02",
+      "state": "b3_r006",
+      "method": "best_middle",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10880989836440,
+        "current_batch_total_completion_time": 86828181057745,
+        "value": 10880989836440
+      }
+    },
+    {
+      "witness_id": "W02",
+      "state": "b3_r006",
+      "method": "mask_empty",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10894845779552,
+        "current_batch_total_completion_time": 86867353617214,
+        "value": 10894845779552
+      }
+    },
+    {
+      "witness_id": "W02",
+      "state": "b3_r006",
+      "method": "mask_full",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10895158700486,
+        "current_batch_total_completion_time": 86859252112592,
+        "value": 10895158700486
+      }
+    },
+    {
+      "witness_id": "W02",
+      "state": "b3_r006",
+      "method": "J_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10895158700486,
+        "current_batch_total_completion_time": 86859252112592,
+        "value": 10895158700486
+      }
+    },
+    {
+      "witness_id": "W02",
+      "state": "b3_r006",
+      "method": "S_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10894845779552,
+        "current_batch_total_completion_time": 86867353617214,
+        "value": 10894845779552
+      }
+    },
+    {
+      "witness_id": "W02",
+      "state": "b3_r006",
+      "method": "J_REFERENCE_SEED",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10895158700486,
+        "current_batch_total_completion_time": 86859252112592,
+        "value": 10895158700486
+      }
+    },
+    {
+      "witness_id": "W02",
+      "state": "b3_r006",
+      "method": "J_FIELD128",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10895158700486,
+        "current_batch_total_completion_time": 86859252112592,
+        "value": 10895158700486
+      }
+    },
+    {
+      "witness_id": "W02",
+      "state": "b3_r006",
+      "method": "J_RAIL512",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10895158700486,
+        "current_batch_total_completion_time": 86859252112592,
+        "value": 10895158700486
+      }
+    },
+    {
+      "witness_id": "W03",
+      "state": "b3_r071",
+      "method": "best_middle",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675552001946,
+        "current_batch_total_completion_time": 93236549015568,
+        "value": 11675552001946
+      }
+    },
+    {
+      "witness_id": "W03",
+      "state": "b3_r071",
+      "method": "mask_empty",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11683159001946,
+        "current_batch_total_completion_time": 93258664015568,
+        "value": 11683159001946
+      }
+    },
+    {
+      "witness_id": "W03",
+      "state": "b3_r071",
+      "method": "mask_full",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675797001946,
+        "current_batch_total_completion_time": 93237301015568,
+        "value": 11675797001946
+      }
+    },
+    {
+      "witness_id": "W03",
+      "state": "b3_r071",
+      "method": "J_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675797001946,
+        "current_batch_total_completion_time": 93237301015568,
+        "value": 11675797001946
+      }
+    },
+    {
+      "witness_id": "W03",
+      "state": "b3_r071",
+      "method": "S_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11683159001946,
+        "current_batch_total_completion_time": 93258664015568,
+        "value": 11683159001946
+      }
+    },
+    {
+      "witness_id": "W03",
+      "state": "b3_r071",
+      "method": "J_REFERENCE_SEED",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675797001946,
+        "current_batch_total_completion_time": 93237301015568,
+        "value": 11675797001946
+      }
+    },
+    {
+      "witness_id": "W03",
+      "state": "b3_r071",
+      "method": "J_FIELD128",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675797001946,
+        "current_batch_total_completion_time": 93237301015568,
+        "value": 11675797001946
+      }
+    },
+    {
+      "witness_id": "W03",
+      "state": "b3_r071",
+      "method": "J_RAIL512",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675797001946,
+        "current_batch_total_completion_time": 93237301015568,
+        "value": 11675797001946
+      }
+    },
+    {
+      "witness_id": "W04",
+      "state": "b2_r096",
+      "method": "best_middle",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579606454827,
+        "current_batch_total_completion_time": 60184853638616,
+        "value": 7579606454827
+      }
+    },
+    {
+      "witness_id": "W04",
+      "state": "b2_r096",
+      "method": "mask_empty",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60181195638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W04",
+      "state": "b2_r096",
+      "method": "mask_full",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60186385638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W04",
+      "state": "b2_r096",
+      "method": "J_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60186385638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W04",
+      "state": "b2_r096",
+      "method": "S_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60181195638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W04",
+      "state": "b2_r096",
+      "method": "J_REFERENCE_SEED",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60186385638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W04",
+      "state": "b2_r096",
+      "method": "J_FIELD128",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60186385638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W04",
+      "state": "b2_r096",
+      "method": "J_RAIL512",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60186385638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W05",
+      "state": "b3_r006",
+      "method": "best_middle",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10880989836440,
+        "current_batch_total_completion_time": 86828181057745,
+        "value": 10880989836440
+      }
+    },
+    {
+      "witness_id": "W05",
+      "state": "b3_r006",
+      "method": "mask_empty",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10894845779552,
+        "current_batch_total_completion_time": 86867353617214,
+        "value": 10894845779552
+      }
+    },
+    {
+      "witness_id": "W05",
+      "state": "b3_r006",
+      "method": "mask_full",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10895158700486,
+        "current_batch_total_completion_time": 86859252112592,
+        "value": 10895158700486
+      }
+    },
+    {
+      "witness_id": "W05",
+      "state": "b3_r006",
+      "method": "J_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10895158700486,
+        "current_batch_total_completion_time": 86859252112592,
+        "value": 10895158700486
+      }
+    },
+    {
+      "witness_id": "W05",
+      "state": "b3_r006",
+      "method": "S_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10894845779552,
+        "current_batch_total_completion_time": 86867353617214,
+        "value": 10894845779552
+      }
+    },
+    {
+      "witness_id": "W05",
+      "state": "b3_r006",
+      "method": "J_REFERENCE_SEED",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10895158700486,
+        "current_batch_total_completion_time": 86859252112592,
+        "value": 10895158700486
+      }
+    },
+    {
+      "witness_id": "W05",
+      "state": "b3_r006",
+      "method": "J_FIELD128",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10895158700486,
+        "current_batch_total_completion_time": 86859252112592,
+        "value": 10895158700486
+      }
+    },
+    {
+      "witness_id": "W05",
+      "state": "b3_r006",
+      "method": "J_RAIL512",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10895158700486,
+        "current_batch_total_completion_time": 86859252112592,
+        "value": 10895158700486
+      }
+    },
+    {
+      "witness_id": "W06",
+      "state": "b3_r071",
+      "method": "best_middle",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675552001946,
+        "current_batch_total_completion_time": 93236549015568,
+        "value": 11675552001946
+      }
+    },
+    {
+      "witness_id": "W06",
+      "state": "b3_r071",
+      "method": "mask_empty",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11683159001946,
+        "current_batch_total_completion_time": 93258664015568,
+        "value": 11683159001946
+      }
+    },
+    {
+      "witness_id": "W06",
+      "state": "b3_r071",
+      "method": "mask_full",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675797001946,
+        "current_batch_total_completion_time": 93237301015568,
+        "value": 11675797001946
+      }
+    },
+    {
+      "witness_id": "W06",
+      "state": "b3_r071",
+      "method": "J_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675797001946,
+        "current_batch_total_completion_time": 93237301015568,
+        "value": 11675797001946
+      }
+    },
+    {
+      "witness_id": "W06",
+      "state": "b3_r071",
+      "method": "S_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11683159001946,
+        "current_batch_total_completion_time": 93258664015568,
+        "value": 11683159001946
+      }
+    },
+    {
+      "witness_id": "W06",
+      "state": "b3_r071",
+      "method": "J_REFERENCE_SEED",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675797001946,
+        "current_batch_total_completion_time": 93237301015568,
+        "value": 11675797001946
+      }
+    },
+    {
+      "witness_id": "W06",
+      "state": "b3_r071",
+      "method": "J_FIELD128",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675797001946,
+        "current_batch_total_completion_time": 93237301015568,
+        "value": 11675797001946
+      }
+    },
+    {
+      "witness_id": "W06",
+      "state": "b3_r071",
+      "method": "J_RAIL512",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675797001946,
+        "current_batch_total_completion_time": 93237301015568,
+        "value": 11675797001946
+      }
+    },
+    {
+      "witness_id": "W07",
+      "state": "b2_r096",
+      "method": "best_middle",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579606454827,
+        "current_batch_total_completion_time": 60184853638616,
+        "value": 7579606454827
+      }
+    },
+    {
+      "witness_id": "W07",
+      "state": "b2_r096",
+      "method": "mask_empty",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60181195638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W07",
+      "state": "b2_r096",
+      "method": "mask_full",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60186385638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W07",
+      "state": "b2_r096",
+      "method": "J_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60186385638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W07",
+      "state": "b2_r096",
+      "method": "S_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60181195638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W07",
+      "state": "b2_r096",
+      "method": "J_REFERENCE_SEED",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60186385638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W07",
+      "state": "b2_r096",
+      "method": "J_FIELD128",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60186385638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W07",
+      "state": "b2_r096",
+      "method": "J_RAIL512",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 10246082454827,
+        "current_batch_makespan": 7579626454827,
+        "current_batch_total_completion_time": 60186385638616,
+        "value": 7579626454827
+      }
+    },
+    {
+      "witness_id": "W08",
+      "state": "b3_r006",
+      "method": "best_middle",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10880989836440,
+        "current_batch_total_completion_time": 86828181057745,
+        "value": 10880989836440
+      }
+    },
+    {
+      "witness_id": "W08",
+      "state": "b3_r006",
+      "method": "mask_empty",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10894845779552,
+        "current_batch_total_completion_time": 86867353617214,
+        "value": 10894845779552
+      }
+    },
+    {
+      "witness_id": "W08",
+      "state": "b3_r006",
+      "method": "mask_full",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10895158700486,
+        "current_batch_total_completion_time": 86859252112592,
+        "value": 10895158700486
+      }
+    },
+    {
+      "witness_id": "W08",
+      "state": "b3_r006",
+      "method": "J_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10895158700486,
+        "current_batch_total_completion_time": 86859252112592,
+        "value": 10895158700486
+      }
+    },
+    {
+      "witness_id": "W08",
+      "state": "b3_r006",
+      "method": "S_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10894845779552,
+        "current_batch_total_completion_time": 86867353617214,
+        "value": 10894845779552
+      }
+    },
+    {
+      "witness_id": "W08",
+      "state": "b3_r006",
+      "method": "J_REFERENCE_SEED",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10895158700486,
+        "current_batch_total_completion_time": 86859252112592,
+        "value": 10895158700486
+      }
+    },
+    {
+      "witness_id": "W08",
+      "state": "b3_r006",
+      "method": "J_FIELD128",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10895158700486,
+        "current_batch_total_completion_time": 86859252112592,
+        "value": 10895158700486
+      }
+    },
+    {
+      "witness_id": "W08",
+      "state": "b3_r006",
+      "method": "J_RAIL512",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15155034509685,
+        "current_batch_makespan": 10895158700486,
+        "current_batch_total_completion_time": 86859252112592,
+        "value": 10895158700486
+      }
+    },
+    {
+      "witness_id": "W09",
+      "state": "b3_r071",
+      "method": "best_middle",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675552001946,
+        "current_batch_total_completion_time": 93236549015568,
+        "value": 11675552001946
+      }
+    },
+    {
+      "witness_id": "W09",
+      "state": "b3_r071",
+      "method": "mask_empty",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11683159001946,
+        "current_batch_total_completion_time": 93258664015568,
+        "value": 11683159001946
+      }
+    },
+    {
+      "witness_id": "W09",
+      "state": "b3_r071",
+      "method": "mask_full",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675797001946,
+        "current_batch_total_completion_time": 93237301015568,
+        "value": 11675797001946
+      }
+    },
+    {
+      "witness_id": "W09",
+      "state": "b3_r071",
+      "method": "J_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675797001946,
+        "current_batch_total_completion_time": 93237301015568,
+        "value": 11675797001946
+      }
+    },
+    {
+      "witness_id": "W09",
+      "state": "b3_r071",
+      "method": "S_VND",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11683159001946,
+        "current_batch_total_completion_time": 93258664015568,
+        "value": 11683159001946
+      }
+    },
+    {
+      "witness_id": "W09",
+      "state": "b3_r071",
+      "method": "J_REFERENCE_SEED",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675797001946,
+        "current_batch_total_completion_time": 93237301015568,
+        "value": 11675797001946
+      }
+    },
+    {
+      "witness_id": "W09",
+      "state": "b3_r071",
+      "method": "J_FIELD128",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675797001946,
+        "current_batch_total_completion_time": 93237301015568,
+        "value": 11675797001946
+      }
+    },
+    {
+      "witness_id": "W09",
+      "state": "b3_r071",
+      "method": "J_RAIL512",
+      "passed": true,
+      "issues": {
+        "declared": [],
+        "geometry_phases": [],
+        "full_cost": [],
+        "motion_continuity": []
+      },
+      "endpoints": {
+        "endpoint_checks": 8,
+        "endpoint_failures": 0
+      },
+      "projection_matches_saved": true,
+      "cost_recomputed": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11675797001946,
+        "current_batch_total_completion_time": 93237301015568,
+        "value": 11675797001946
+      }
+    }
+  ]
+}

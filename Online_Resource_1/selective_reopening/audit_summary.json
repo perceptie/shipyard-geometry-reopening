@@ -1,0 +1,80 @@
+{
+  "version": "p02-selective-reopening-reanalysis/1.0.0",
+  "source_files": 15,
+  "source_sha256_unique": 15,
+  "distinct_states": 5,
+  "execution_labels": [
+    "selected5_r1/repeat_1",
+    "selected5_r2/repeat_1",
+    "selected5_r2/repeat_2"
+  ],
+  "units": "state execution, candidate execution and mask record are distinct; none are independent industrial instances",
+  "counts": {
+    "candidate_execution_groups": 510,
+    "intervention_rows": 2550,
+    "mask_sequence_execution_groups": 90,
+    "mask_rows": 1656,
+    "successful_mask_rows": 570,
+    "old_scalar_strict_winner_rows": 30,
+    "strict_lex_winner_rows_vs_vanilla_J_and_S": 30,
+    "strict_middle_candidate_groups_vs_mask_endpoints": 9,
+    "strict_middle_candidate_groups_vs_all_simple": 9
+  },
+  "geometry_check_denominators": {
+    "unique_block_records": 570,
+    "scheduled_geometry_complete": 570,
+    "mask_scope_valid": 570,
+    "policy_fixed_geometry_retained": 570,
+    "input_locked_geometry_retained": 570,
+    "historical_noncurrent_record_immutable": 570,
+    "containment": 570,
+    "actual_inside_reserved": 570,
+    "ordered_activity_intervals": 570,
+    "no_halfopen_spacetime_overlap": 570,
+    "reported_task_and_layout_success": 570
+  },
+  "geometry_check_failures": {
+    "unique_block_records": 0,
+    "scheduled_geometry_complete": 0,
+    "mask_scope_valid": 0,
+    "policy_fixed_geometry_retained": 0,
+    "input_locked_geometry_retained": 0,
+    "historical_noncurrent_record_immutable": 0,
+    "containment": 0,
+    "actual_inside_reserved": 0,
+    "ordered_activity_intervals": 0,
+    "no_halfopen_spacetime_overlap": 0,
+    "reported_task_and_layout_success": 0
+  },
+  "fallback_primary_counts": {
+    "('J_VND', True, None)": 327,
+    "('S_VND', True, None)": 357,
+    "('J_VND', False, False)": 153,
+    "('S_VND', False, False)": 153,
+    "('J_VND', False, True)": 30
+  },
+  "strict_middle_effect_seconds_vs_mask_endpoints": [
+    20.0,
+    20.0,
+    20.0,
+    245.0,
+    245.0,
+    245.0,
+    13855.943112,
+    13855.943112,
+    13855.943112
+  ],
+  "method_scope": "saved complete CandidateDecoder results; no new decoder or search execution",
+  "validator_scope": "Initial audit: independent saved-geometry containment, overlap, masks and lock checks. Subsequent witness_validation.json reports declared-constraint, geometry-phase, motion-continuity, endpoint and four-cost checks of 72 restricted saved plans. Neither check regenerates decoder outputs; the public CSV script does not replay restricted plans.",
+  "comparator": "valid, projected-objective-presence, projection, current-batch makespan, total completion, pool value; matches 5ecc07be search_pool_cost.cpp lines 34-57",
+  "selection": "common incumbent plus first eight deterministic candidates per neighborhood stratum, declared before J/S labels",
+  "mask_selection": "first six predeclared sequences; all 2^|U| masks when |U|<=8; input-locked geometry is never opened",
+  "old_stop_gate": "not a valid objective-equivalence test; it only compared feasible booleans",
+  "input_minimal_sha256": "5901efe145b551f79e655615b21e71e4d323d25c3f90a30d8fd92a550d98a336",
+  "subsequent_witness_validation": {
+    "file": "witness_validation.json",
+    "plan_records_checked": 72,
+    "failed_plan_records": 0,
+    "scope": "saved plans only; existing E10/E11 declared-constraint, geometry-phase, motion-continuity, endpoint and four-cost checks"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "schema": "e11-mechanism-figure-input/1.0",
+  "provenance": {
+    "sources": [
+      {
+        "path": "manuscript/supplement/e11_common_initial_diagnostics.json",
+        "sha256": "3d5997ceef3ba9c6d2d10ed89cafbdb71cc0da04d2744681ffd98df4f5f298c4"
+      },
+      {
+        "path": "manuscript/supplement/e11_pair_statistics.csv",
+        "sha256": "b109f8084c407c5eae8daada2dfb98578de516e68add06709f984b01458764b1"
+      },
+      {
+        "path": "manuscript/supplement/e11_state_statistics.csv",
+        "sha256": "c2f5c0182ab999bf6e7596c23b957cc8d47669654990c7fcd8b36a4151cd8180"
+      }
+    ],
+    "repeat_order": [
+      1,
+      2,
+      3
+    ],
+    "improvement_budget_seconds": 12,
+    "fixed_probe_wall_clock_stop": false,
+    "field_iteration_limit": 64,
+    "rail_iteration_limit": 256,
+    "aggregate_unit": "probe signatures deduplicated within each state-repeat"
+  },
+  "states": [
+    {
+      "state": "b2-r096",
+      "J_repeat_executions": [
+        343,
+        323,
+        331
+      ],
+      "S_repeat_executions": [
+        462,
+        457,
+        449
+      ],
+      "J_median_executions": 331,
+      "S_median_executions": 457,
+      "repeat_outcomes": [
+        "J_win",
+        "J_win",
+        "J_win"
+      ],
+      "sequence_records": 122,
+      "both": 122,
+      "J_only": 0,
+      "S_only": 0,
+      "neither": 0
+    },
+    {
+      "state": "b3-r006",
+      "J_repeat_executions": [
+        118,
+        118,
+        109
+      ],
+      "S_repeat_executions": [
+        79,
+        75,
+        76
+      ],
+      "J_median_executions": 118,
+      "S_median_executions": 76,
+      "repeat_outcomes": [
+        "S_win",
+        "S_win",
+        "S_win"
+      ],
+      "sequence_records": 57,
+      "both": 33,
+      "J_only": 6,
+      "S_only": 18,
+      "neither": 0
+    },
+    {
+      "state": "b3-r071",
+      "J_repeat_executions": [
+        73,
+        66,
+        67
+      ],
+      "S_repeat_executions": [
+        155,
+        154,
+        142
+      ],
+      "J_median_executions": 67,
+      "S_median_executions": 154,
+      "repeat_outcomes": [
+        "S_win",
+        "S_win",
+        "S_win"
+      ],
+      "sequence_records": 33,
+      "both": 30,
+      "J_only": 0,
+      "S_only": 3,
+      "neither": 0
+    },
+    {
+      "state": "b2-r056",
+      "J_repeat_executions": [
+        139,
+        140,
+        139
+      ],
+      "S_repeat_executions": [
+        145,
+        140,
+        141
+      ],
+      "J_median_executions": 139,
+      "S_median_executions": 141,
+      "repeat_outcomes": [
+        "tie",
+        "tie",
+        "tie"
+      ],
+      "sequence_records": 24,
+      "both": 24,
+      "J_only": 0,
+      "S_only": 0,
+      "neither": 0
+    },
+    {
+      "state": "b3-r121",
+      "J_repeat_executions": [
+        151,
+        135,
+        152
+      ],
+      "S_repeat_executions": [
+        169,
+        173,
+        169
+      ],
+      "J_median_executions": 151,
+      "S_median_executions": 169,
+      "repeat_outcomes": [
+        "J_win",
+        "S_win",
+        "J_win"
+      ],
+      "sequence_records": 46,
+      "both": 41,
+      "J_only": 2,
+      "S_only": 3,
+      "neither": 0
+    }
+  ]
+}

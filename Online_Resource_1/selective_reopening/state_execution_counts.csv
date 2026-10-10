@@ -1,0 +1,16 @@
+case_id,state,execution,candidate_groups,mask_sequences,mask_rows
+D01,b2_r056,selected5_r1/repeat_1,37,6,24
+D02,b2_r096,selected5_r1/repeat_1,30,6,48
+D03,b3_r006,selected5_r1/repeat_1,33,6,48
+D04,b3_r071,selected5_r1/repeat_1,32,6,384
+D05,b3_r121,selected5_r1/repeat_1,38,6,48
+D06,b2_r056,selected5_r2/repeat_1,37,6,24
+D07,b2_r096,selected5_r2/repeat_1,30,6,48
+D08,b3_r006,selected5_r2/repeat_1,33,6,48
+D09,b3_r071,selected5_r2/repeat_1,32,6,384
+D10,b3_r121,selected5_r2/repeat_1,38,6,48
+D11,b2_r056,selected5_r2/repeat_2,37,6,24
+D12,b2_r096,selected5_r2/repeat_2,30,6,48
+D13,b3_r006,selected5_r2/repeat_2,33,6,48
+D14,b3_r071,selected5_r2/repeat_2,32,6,384
+D15,b3_r121,selected5_r2/repeat_2,38,6,48

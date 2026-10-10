@@ -1,0 +1,308 @@
+{
+  "probe": "decoder-only-synthetic-external-entry-boundary",
+  "regions": {
+    "a": [
+      0,
+      22000000,
+      0,
+      22000000
+    ],
+    "b": [
+      53024480,
+      75024480,
+      0,
+      22000000
+    ]
+  },
+  "external_entry_id": "probe-external-entry-b",
+  "history": {
+    "id": "probe-history-occupancy-a",
+    "active_from_us": 0,
+    "active_until_us": 192000000
+  },
+  "timing": {
+    "a_release_us": 192000000,
+    "carry_work_period_us": 313000000,
+    "safety_gap_x": 2000000,
+    "safety_gap_y": 2000000
+  },
+  "runs": [
+    {
+      "variant": "delay_0",
+      "method": "free_layout",
+      "feasible": true,
+      "iterations": 2,
+      "makespan_us": 756000000,
+      "diagnostic": null,
+      "occupancies": [
+        {
+          "grand_block_id": "probe-history-occupancy-a",
+          "region_id": "probe-region-a",
+          "actual_rect": {
+            "min_x": 1000000,
+            "max_x": 21000000,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 0,
+            "max_x": 22000000,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 0,
+          "active_until_us": 192000000,
+          "locked": true
+        },
+        {
+          "grand_block_id": "probe-grand-block-b",
+          "region_id": "probe-region-b",
+          "actual_rect": {
+            "min_x": 54024480,
+            "max_x": 74024480,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 53024480,
+            "max_x": 75024480,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 0,
+          "active_until_us": 461000000,
+          "locked": false
+        }
+      ]
+    },
+    {
+      "variant": "delay_191999999",
+      "method": "free_layout",
+      "feasible": true,
+      "iterations": 2,
+      "makespan_us": 947999999,
+      "diagnostic": null,
+      "occupancies": [
+        {
+          "grand_block_id": "probe-history-occupancy-a",
+          "region_id": "probe-region-a",
+          "actual_rect": {
+            "min_x": 1000000,
+            "max_x": 21000000,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 0,
+            "max_x": 22000000,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 0,
+          "active_until_us": 192000000,
+          "locked": true
+        },
+        {
+          "grand_block_id": "probe-grand-block-b",
+          "region_id": "probe-region-b",
+          "actual_rect": {
+            "min_x": 54024480,
+            "max_x": 74024480,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 53024480,
+            "max_x": 75024480,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 191999999,
+          "active_until_us": 652999999,
+          "locked": false
+        }
+      ]
+    },
+    {
+      "variant": "delay_192000000",
+      "method": "free_layout",
+      "feasible": true,
+      "iterations": 1,
+      "makespan_us": 1374000000,
+      "diagnostic": null,
+      "occupancies": [
+        {
+          "grand_block_id": "probe-history-occupancy-a",
+          "region_id": "probe-region-a",
+          "actual_rect": {
+            "min_x": 1000000,
+            "max_x": 21000000,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 0,
+            "max_x": 22000000,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 0,
+          "active_until_us": 192000000,
+          "locked": true
+        },
+        {
+          "grand_block_id": "probe-grand-block-b",
+          "region_id": "probe-region-a",
+          "actual_rect": {
+            "min_x": 1000000,
+            "max_x": 21000000,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 0,
+            "max_x": 22000000,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 192000000,
+          "active_until_us": 813000000,
+          "locked": false
+        }
+      ]
+    },
+    {
+      "variant": "delay_192000001",
+      "method": "free_layout",
+      "feasible": true,
+      "iterations": 1,
+      "makespan_us": 1374000001,
+      "diagnostic": null,
+      "occupancies": [
+        {
+          "grand_block_id": "probe-history-occupancy-a",
+          "region_id": "probe-region-a",
+          "actual_rect": {
+            "min_x": 1000000,
+            "max_x": 21000000,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 0,
+            "max_x": 22000000,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 0,
+          "active_until_us": 192000000,
+          "locked": true
+        },
+        {
+          "grand_block_id": "probe-grand-block-b",
+          "region_id": "probe-region-a",
+          "actual_rect": {
+            "min_x": 1000000,
+            "max_x": 21000000,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 0,
+            "max_x": 22000000,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 192000001,
+          "active_until_us": 813000001,
+          "locked": false
+        }
+      ]
+    },
+    {
+      "variant": "delay_600000000",
+      "method": "free_layout",
+      "feasible": true,
+      "iterations": 1,
+      "makespan_us": 1782000000,
+      "diagnostic": null,
+      "occupancies": [
+        {
+          "grand_block_id": "probe-history-occupancy-a",
+          "region_id": "probe-region-a",
+          "actual_rect": {
+            "min_x": 1000000,
+            "max_x": 21000000,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 0,
+            "max_x": 22000000,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 0,
+          "active_until_us": 192000000,
+          "locked": true
+        },
+        {
+          "grand_block_id": "probe-grand-block-b",
+          "region_id": "probe-region-a",
+          "actual_rect": {
+            "min_x": 1000000,
+            "max_x": 21000000,
+            "min_y": 1000000,
+            "max_y": 21000000
+          },
+          "occupied_rect": {
+            "min_x": 0,
+            "max_x": 22000000,
+            "min_y": 0,
+            "max_y": 22000000
+          },
+          "rotation": "degrees_0",
+          "active_from_us": 600000000,
+          "active_until_us": 1221000000,
+          "locked": false
+        }
+      ]
+    },
+    {
+      "variant": "missing_external_timing",
+      "method": "missing_external_control",
+      "feasible": false,
+      "iterations": 0,
+      "makespan_us": 0,
+      "diagnostic": {
+        "code": "FIELD_DECODE_INPUT_INVALID",
+        "grand_block_id": "probe-grand-block-b",
+        "task_id": "probe-external-entry-b",
+        "message": "entry task is neither scheduled nor externally completed"
+      },
+      "occupancies": []
+    }
+  ],
+  "presentation_transform": {
+    "scope": "retained decoder outputs, not a decoder rerun",
+    "coordinate_frame": "phase-local translated frame in integer micrometres",
+    "geometry_properties_preserved": [
+      "rectangle size",
+      "containment",
+      "overlap",
+      "relative placement differences"
+    ],
+    "recorded_times_unchanged": true,
+    "formal_region_ids_replaced_by_aliases": true,
+    "source_json_sha256": "e79eb5d5a5668e517e5ca0f655a35ef640b863c222cc68e86f4f24ecb88fb3f0"
+  }
+}
