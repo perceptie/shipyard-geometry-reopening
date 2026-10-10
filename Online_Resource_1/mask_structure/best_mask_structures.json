@@ -1,0 +1,2072 @@
+[
+  {
+    "case_id": "D01",
+    "state": "b2-r056",
+    "candidate_id": "D01-C001",
+    "mutable_blocks": 2,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "best_count": 4,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10200417454827,
+      6891566645718,
+      54530065165744,
+      6891566645718
+    ],
+    "best_geometry_signatures": [
+      "97209f7f95e06fb98feb151a94d4a9b0e10575729b852b048280248e2eafe14e"
+    ]
+  },
+  {
+    "case_id": "D01",
+    "state": "b2-r056",
+    "candidate_id": "D01-C003",
+    "mutable_blocks": 2,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "best_count": 4,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10200417454827,
+      6901514144706,
+      54530542660684,
+      6901514144706
+    ],
+    "best_geometry_signatures": [
+      "97209f7f95e06fb98feb151a94d4a9b0e10575729b852b048280248e2eafe14e"
+    ]
+  },
+  {
+    "case_id": "D01",
+    "state": "b2-r056",
+    "candidate_id": "D01-C005",
+    "mutable_blocks": 2,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "best_count": 4,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10200417454827,
+      6891566645718,
+      54487142165744,
+      6891566645718
+    ],
+    "best_geometry_signatures": [
+      "97209f7f95e06fb98feb151a94d4a9b0e10575729b852b048280248e2eafe14e"
+    ]
+  },
+  {
+    "case_id": "D01",
+    "state": "b2-r056",
+    "candidate_id": "D01-C006",
+    "mutable_blocks": 2,
+    "best_masks": [
+      0,
+      1,
+      2
+    ],
+    "best_count": 3,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2"
+    ],
+    "all_combinations_of_varying_bits_optimal": false,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10200417454827,
+      6901630144706,
+      54518078660684,
+      6901630144706
+    ],
+    "best_geometry_signatures": [
+      "97209f7f95e06fb98feb151a94d4a9b0e10575729b852b048280248e2eafe14e"
+    ]
+  },
+  {
+    "case_id": "D02",
+    "state": "b2-r096",
+    "candidate_id": "D02-C001",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "best_count": 6,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": false,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10246082454827,
+      7579626454827,
+      60194392638616,
+      7579626454827
+    ],
+    "best_geometry_signatures": [
+      "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6"
+    ]
+  },
+  {
+    "case_id": "D02",
+    "state": "b2-r096",
+    "candidate_id": "D02-C003",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10246082454827,
+      7579633454827,
+      60195866638616,
+      7579633454827
+    ],
+    "best_geometry_signatures": [
+      "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6"
+    ]
+  },
+  {
+    "case_id": "D02",
+    "state": "b2-r096",
+    "candidate_id": "D02-C004",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10246082454827,
+      7564850454827,
+      60087637638616,
+      7564850454827
+    ],
+    "best_geometry_signatures": [
+      "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6"
+    ]
+  },
+  {
+    "case_id": "D02",
+    "state": "b2-r096",
+    "candidate_id": "D02-C005",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10246082454827,
+      7579633454827,
+      60200899638616,
+      7579633454827
+    ],
+    "best_geometry_signatures": [
+      "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6"
+    ]
+  },
+  {
+    "case_id": "D02",
+    "state": "b2-r096",
+    "candidate_id": "D02-C006",
+    "mutable_blocks": 3,
+    "best_masks": [
+      5
+    ],
+    "best_count": 1,
+    "common_open": [
+      "u1",
+      "u3"
+    ],
+    "common_closed": [
+      "u2"
+    ],
+    "varying_among_best": [],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 2,
+    "minimum_cardinality_masks": [
+      5
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10246082454827,
+      7579606454827,
+      60184853638616,
+      7579606454827
+    ],
+    "best_geometry_signatures": [
+      "0a1a6b0a8b6ba86dd1353e69012e31b44eaafe7f98f1d8fef63cbd88315d1284"
+    ]
+  },
+  {
+    "case_id": "D03",
+    "state": "b3-r006",
+    "candidate_id": "D03-C001",
+    "mutable_blocks": 3,
+    "best_masks": [
+      3
+    ],
+    "best_count": 1,
+    "common_open": [
+      "u1",
+      "u2"
+    ],
+    "common_closed": [
+      "u3"
+    ],
+    "varying_among_best": [],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 2,
+    "minimum_cardinality_masks": [
+      3
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15155034509685,
+      10880989836440,
+      86828181057745,
+      10880989836440
+    ],
+    "best_geometry_signatures": [
+      "00625495b29145968474b8bf32605fca6e0241960e1295330a4904f51e64c838"
+    ]
+  },
+  {
+    "case_id": "D03",
+    "state": "b3-r006",
+    "candidate_id": "D03-C002",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6
+    ],
+    "best_count": 6,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": false,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15180224509685,
+      10872447334163,
+      86839106409795,
+      10872447334163
+    ],
+    "best_geometry_signatures": [
+      "291ea88da00d0c832454da828825a4c277cf18688d94306aed503997e7a430ec"
+    ]
+  },
+  {
+    "case_id": "D03",
+    "state": "b3-r006",
+    "candidate_id": "D03-C004",
+    "mutable_blocks": 3,
+    "best_masks": [
+      7
+    ],
+    "best_count": 1,
+    "common_open": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "common_closed": [],
+    "varying_among_best": [],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 3,
+    "minimum_cardinality_masks": [
+      7
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15164836509685,
+      10867635509685,
+      86731995077480,
+      10867635509685
+    ],
+    "best_geometry_signatures": [
+      "5a7fd22be2bd2d6f2f6974936f4b988ceedf1eb996d578d7fa3fbf5b09c39b3a"
+    ]
+  },
+  {
+    "case_id": "D03",
+    "state": "b3-r006",
+    "candidate_id": "D03-C005",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15164911886000,
+      10867710886000,
+      86728664206425,
+      10867710886000
+    ],
+    "best_geometry_signatures": [
+      "291ea88da00d0c832454da828825a4c277cf18688d94306aed503997e7a430ec"
+    ]
+  },
+  {
+    "case_id": "D03",
+    "state": "b3-r006",
+    "candidate_id": "D03-C006",
+    "mutable_blocks": 3,
+    "best_masks": [
+      7
+    ],
+    "best_count": 1,
+    "common_open": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "common_closed": [],
+    "varying_among_best": [],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 3,
+    "minimum_cardinality_masks": [
+      7
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15164836509685,
+      10867635509685,
+      86731995077480,
+      10867635509685
+    ],
+    "best_geometry_signatures": [
+      "5a7fd22be2bd2d6f2f6974936f4b988ceedf1eb996d578d7fa3fbf5b09c39b3a"
+    ]
+  },
+  {
+    "case_id": "D04",
+    "state": "b3-r071",
+    "candidate_id": "D04-C006",
+    "mutable_blocks": 6,
+    "best_masks": [
+      34,
+      35,
+      38,
+      39,
+      50,
+      51,
+      54,
+      55
+    ],
+    "best_count": 8,
+    "common_open": [
+      "u2",
+      "u6"
+    ],
+    "common_closed": [
+      "u4"
+    ],
+    "varying_among_best": [
+      "u1",
+      "u3",
+      "u5"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 2,
+    "minimum_cardinality_masks": [
+      34
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15278636001946,
+      11675552001946,
+      93236549015568,
+      11675552001946
+    ],
+    "best_geometry_signatures": [
+      "ea9896ccd9c7f4720e84c03dfea9a8884b9973753a816bc354a3b809156696af"
+    ]
+  },
+  {
+    "case_id": "D05",
+    "state": "b3-r121",
+    "candidate_id": "D05-C001",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15575794001946,
+      12414685001946,
+      99002894015568,
+      12414685001946
+    ],
+    "best_geometry_signatures": [
+      "e3a4962ddcfdc79bc925bab897c578c5ab591770193f61529dda2403cad87767"
+    ]
+  },
+  {
+    "case_id": "D05",
+    "state": "b3-r121",
+    "candidate_id": "D05-C002",
+    "mutable_blocks": 3,
+    "best_masks": [
+      6,
+      7
+    ],
+    "best_count": 2,
+    "common_open": [
+      "u2",
+      "u3"
+    ],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 2,
+    "minimum_cardinality_masks": [
+      6
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15571758001946,
+      12415548001946,
+      98976185015568,
+      12415548001946
+    ],
+    "best_geometry_signatures": [
+      "fe67c767846a3824294317b3b6784a318a09b6785f2706f3457892901eb9123b"
+    ]
+  },
+  {
+    "case_id": "D05",
+    "state": "b3-r121",
+    "candidate_id": "D05-C003",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15571758001946,
+      12415547001946,
+      98990580015568,
+      12415547001946
+    ],
+    "best_geometry_signatures": [
+      "e3a4962ddcfdc79bc925bab897c578c5ab591770193f61529dda2403cad87767"
+    ]
+  },
+  {
+    "case_id": "D05",
+    "state": "b3-r121",
+    "candidate_id": "D05-C004",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15571758001946,
+      12414684001946,
+      99022022015568,
+      12414684001946
+    ],
+    "best_geometry_signatures": [
+      "e3a4962ddcfdc79bc925bab897c578c5ab591770193f61529dda2403cad87767"
+    ]
+  },
+  {
+    "case_id": "D06",
+    "state": "b2-r056",
+    "candidate_id": "D06-C001",
+    "mutable_blocks": 2,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "best_count": 4,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10200417454827,
+      6891566645718,
+      54530065165744,
+      6891566645718
+    ],
+    "best_geometry_signatures": [
+      "97209f7f95e06fb98feb151a94d4a9b0e10575729b852b048280248e2eafe14e"
+    ]
+  },
+  {
+    "case_id": "D06",
+    "state": "b2-r056",
+    "candidate_id": "D06-C003",
+    "mutable_blocks": 2,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "best_count": 4,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10200417454827,
+      6901514144706,
+      54530542660684,
+      6901514144706
+    ],
+    "best_geometry_signatures": [
+      "97209f7f95e06fb98feb151a94d4a9b0e10575729b852b048280248e2eafe14e"
+    ]
+  },
+  {
+    "case_id": "D06",
+    "state": "b2-r056",
+    "candidate_id": "D06-C005",
+    "mutable_blocks": 2,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "best_count": 4,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10200417454827,
+      6891566645718,
+      54487142165744,
+      6891566645718
+    ],
+    "best_geometry_signatures": [
+      "97209f7f95e06fb98feb151a94d4a9b0e10575729b852b048280248e2eafe14e"
+    ]
+  },
+  {
+    "case_id": "D06",
+    "state": "b2-r056",
+    "candidate_id": "D06-C006",
+    "mutable_blocks": 2,
+    "best_masks": [
+      0,
+      1,
+      2
+    ],
+    "best_count": 3,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2"
+    ],
+    "all_combinations_of_varying_bits_optimal": false,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10200417454827,
+      6901630144706,
+      54518078660684,
+      6901630144706
+    ],
+    "best_geometry_signatures": [
+      "97209f7f95e06fb98feb151a94d4a9b0e10575729b852b048280248e2eafe14e"
+    ]
+  },
+  {
+    "case_id": "D07",
+    "state": "b2-r096",
+    "candidate_id": "D07-C001",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "best_count": 6,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": false,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10246082454827,
+      7579626454827,
+      60194392638616,
+      7579626454827
+    ],
+    "best_geometry_signatures": [
+      "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6"
+    ]
+  },
+  {
+    "case_id": "D07",
+    "state": "b2-r096",
+    "candidate_id": "D07-C003",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10246082454827,
+      7579633454827,
+      60195866638616,
+      7579633454827
+    ],
+    "best_geometry_signatures": [
+      "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6"
+    ]
+  },
+  {
+    "case_id": "D07",
+    "state": "b2-r096",
+    "candidate_id": "D07-C004",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10246082454827,
+      7564850454827,
+      60087637638616,
+      7564850454827
+    ],
+    "best_geometry_signatures": [
+      "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6"
+    ]
+  },
+  {
+    "case_id": "D07",
+    "state": "b2-r096",
+    "candidate_id": "D07-C005",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10246082454827,
+      7579633454827,
+      60200899638616,
+      7579633454827
+    ],
+    "best_geometry_signatures": [
+      "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6"
+    ]
+  },
+  {
+    "case_id": "D07",
+    "state": "b2-r096",
+    "candidate_id": "D07-C006",
+    "mutable_blocks": 3,
+    "best_masks": [
+      5
+    ],
+    "best_count": 1,
+    "common_open": [
+      "u1",
+      "u3"
+    ],
+    "common_closed": [
+      "u2"
+    ],
+    "varying_among_best": [],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 2,
+    "minimum_cardinality_masks": [
+      5
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10246082454827,
+      7579606454827,
+      60184853638616,
+      7579606454827
+    ],
+    "best_geometry_signatures": [
+      "0a1a6b0a8b6ba86dd1353e69012e31b44eaafe7f98f1d8fef63cbd88315d1284"
+    ]
+  },
+  {
+    "case_id": "D08",
+    "state": "b3-r006",
+    "candidate_id": "D08-C001",
+    "mutable_blocks": 3,
+    "best_masks": [
+      3
+    ],
+    "best_count": 1,
+    "common_open": [
+      "u1",
+      "u2"
+    ],
+    "common_closed": [
+      "u3"
+    ],
+    "varying_among_best": [],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 2,
+    "minimum_cardinality_masks": [
+      3
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15155034509685,
+      10880989836440,
+      86828181057745,
+      10880989836440
+    ],
+    "best_geometry_signatures": [
+      "00625495b29145968474b8bf32605fca6e0241960e1295330a4904f51e64c838"
+    ]
+  },
+  {
+    "case_id": "D08",
+    "state": "b3-r006",
+    "candidate_id": "D08-C002",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6
+    ],
+    "best_count": 6,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": false,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15180224509685,
+      10872447334163,
+      86839106409795,
+      10872447334163
+    ],
+    "best_geometry_signatures": [
+      "291ea88da00d0c832454da828825a4c277cf18688d94306aed503997e7a430ec"
+    ]
+  },
+  {
+    "case_id": "D08",
+    "state": "b3-r006",
+    "candidate_id": "D08-C004",
+    "mutable_blocks": 3,
+    "best_masks": [
+      7
+    ],
+    "best_count": 1,
+    "common_open": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "common_closed": [],
+    "varying_among_best": [],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 3,
+    "minimum_cardinality_masks": [
+      7
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15164836509685,
+      10867635509685,
+      86731995077480,
+      10867635509685
+    ],
+    "best_geometry_signatures": [
+      "5a7fd22be2bd2d6f2f6974936f4b988ceedf1eb996d578d7fa3fbf5b09c39b3a"
+    ]
+  },
+  {
+    "case_id": "D08",
+    "state": "b3-r006",
+    "candidate_id": "D08-C005",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15164911886000,
+      10867710886000,
+      86728664206425,
+      10867710886000
+    ],
+    "best_geometry_signatures": [
+      "291ea88da00d0c832454da828825a4c277cf18688d94306aed503997e7a430ec"
+    ]
+  },
+  {
+    "case_id": "D08",
+    "state": "b3-r006",
+    "candidate_id": "D08-C006",
+    "mutable_blocks": 3,
+    "best_masks": [
+      7
+    ],
+    "best_count": 1,
+    "common_open": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "common_closed": [],
+    "varying_among_best": [],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 3,
+    "minimum_cardinality_masks": [
+      7
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15164836509685,
+      10867635509685,
+      86731995077480,
+      10867635509685
+    ],
+    "best_geometry_signatures": [
+      "5a7fd22be2bd2d6f2f6974936f4b988ceedf1eb996d578d7fa3fbf5b09c39b3a"
+    ]
+  },
+  {
+    "case_id": "D09",
+    "state": "b3-r071",
+    "candidate_id": "D09-C006",
+    "mutable_blocks": 6,
+    "best_masks": [
+      34,
+      35,
+      38,
+      39,
+      50,
+      51,
+      54,
+      55
+    ],
+    "best_count": 8,
+    "common_open": [
+      "u2",
+      "u6"
+    ],
+    "common_closed": [
+      "u4"
+    ],
+    "varying_among_best": [
+      "u1",
+      "u3",
+      "u5"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 2,
+    "minimum_cardinality_masks": [
+      34
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15278636001946,
+      11675552001946,
+      93236549015568,
+      11675552001946
+    ],
+    "best_geometry_signatures": [
+      "ea9896ccd9c7f4720e84c03dfea9a8884b9973753a816bc354a3b809156696af"
+    ]
+  },
+  {
+    "case_id": "D10",
+    "state": "b3-r121",
+    "candidate_id": "D10-C001",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15575794001946,
+      12414685001946,
+      99002894015568,
+      12414685001946
+    ],
+    "best_geometry_signatures": [
+      "e3a4962ddcfdc79bc925bab897c578c5ab591770193f61529dda2403cad87767"
+    ]
+  },
+  {
+    "case_id": "D10",
+    "state": "b3-r121",
+    "candidate_id": "D10-C002",
+    "mutable_blocks": 3,
+    "best_masks": [
+      6,
+      7
+    ],
+    "best_count": 2,
+    "common_open": [
+      "u2",
+      "u3"
+    ],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 2,
+    "minimum_cardinality_masks": [
+      6
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15571758001946,
+      12415548001946,
+      98976185015568,
+      12415548001946
+    ],
+    "best_geometry_signatures": [
+      "fe67c767846a3824294317b3b6784a318a09b6785f2706f3457892901eb9123b"
+    ]
+  },
+  {
+    "case_id": "D10",
+    "state": "b3-r121",
+    "candidate_id": "D10-C003",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15571758001946,
+      12415547001946,
+      98990580015568,
+      12415547001946
+    ],
+    "best_geometry_signatures": [
+      "e3a4962ddcfdc79bc925bab897c578c5ab591770193f61529dda2403cad87767"
+    ]
+  },
+  {
+    "case_id": "D10",
+    "state": "b3-r121",
+    "candidate_id": "D10-C004",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15571758001946,
+      12414684001946,
+      99022022015568,
+      12414684001946
+    ],
+    "best_geometry_signatures": [
+      "e3a4962ddcfdc79bc925bab897c578c5ab591770193f61529dda2403cad87767"
+    ]
+  },
+  {
+    "case_id": "D11",
+    "state": "b2-r056",
+    "candidate_id": "D11-C001",
+    "mutable_blocks": 2,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "best_count": 4,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10200417454827,
+      6891566645718,
+      54530065165744,
+      6891566645718
+    ],
+    "best_geometry_signatures": [
+      "97209f7f95e06fb98feb151a94d4a9b0e10575729b852b048280248e2eafe14e"
+    ]
+  },
+  {
+    "case_id": "D11",
+    "state": "b2-r056",
+    "candidate_id": "D11-C003",
+    "mutable_blocks": 2,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "best_count": 4,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10200417454827,
+      6901514144706,
+      54530542660684,
+      6901514144706
+    ],
+    "best_geometry_signatures": [
+      "97209f7f95e06fb98feb151a94d4a9b0e10575729b852b048280248e2eafe14e"
+    ]
+  },
+  {
+    "case_id": "D11",
+    "state": "b2-r056",
+    "candidate_id": "D11-C005",
+    "mutable_blocks": 2,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "best_count": 4,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10200417454827,
+      6891566645718,
+      54487142165744,
+      6891566645718
+    ],
+    "best_geometry_signatures": [
+      "97209f7f95e06fb98feb151a94d4a9b0e10575729b852b048280248e2eafe14e"
+    ]
+  },
+  {
+    "case_id": "D11",
+    "state": "b2-r056",
+    "candidate_id": "D11-C006",
+    "mutable_blocks": 2,
+    "best_masks": [
+      0,
+      1,
+      2
+    ],
+    "best_count": 3,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2"
+    ],
+    "all_combinations_of_varying_bits_optimal": false,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10200417454827,
+      6901630144706,
+      54518078660684,
+      6901630144706
+    ],
+    "best_geometry_signatures": [
+      "97209f7f95e06fb98feb151a94d4a9b0e10575729b852b048280248e2eafe14e"
+    ]
+  },
+  {
+    "case_id": "D12",
+    "state": "b2-r096",
+    "candidate_id": "D12-C001",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "best_count": 6,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": false,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10246082454827,
+      7579626454827,
+      60194392638616,
+      7579626454827
+    ],
+    "best_geometry_signatures": [
+      "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6"
+    ]
+  },
+  {
+    "case_id": "D12",
+    "state": "b2-r096",
+    "candidate_id": "D12-C003",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10246082454827,
+      7579633454827,
+      60195866638616,
+      7579633454827
+    ],
+    "best_geometry_signatures": [
+      "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6"
+    ]
+  },
+  {
+    "case_id": "D12",
+    "state": "b2-r096",
+    "candidate_id": "D12-C004",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10246082454827,
+      7564850454827,
+      60087637638616,
+      7564850454827
+    ],
+    "best_geometry_signatures": [
+      "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6"
+    ]
+  },
+  {
+    "case_id": "D12",
+    "state": "b2-r096",
+    "candidate_id": "D12-C005",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10246082454827,
+      7579633454827,
+      60200899638616,
+      7579633454827
+    ],
+    "best_geometry_signatures": [
+      "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6"
+    ]
+  },
+  {
+    "case_id": "D12",
+    "state": "b2-r096",
+    "candidate_id": "D12-C006",
+    "mutable_blocks": 3,
+    "best_masks": [
+      5
+    ],
+    "best_count": 1,
+    "common_open": [
+      "u1",
+      "u3"
+    ],
+    "common_closed": [
+      "u2"
+    ],
+    "varying_among_best": [],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 2,
+    "minimum_cardinality_masks": [
+      5
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10246082454827,
+      7579606454827,
+      60184853638616,
+      7579606454827
+    ],
+    "best_geometry_signatures": [
+      "0a1a6b0a8b6ba86dd1353e69012e31b44eaafe7f98f1d8fef63cbd88315d1284"
+    ]
+  },
+  {
+    "case_id": "D13",
+    "state": "b3-r006",
+    "candidate_id": "D13-C001",
+    "mutable_blocks": 3,
+    "best_masks": [
+      3
+    ],
+    "best_count": 1,
+    "common_open": [
+      "u1",
+      "u2"
+    ],
+    "common_closed": [
+      "u3"
+    ],
+    "varying_among_best": [],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 2,
+    "minimum_cardinality_masks": [
+      3
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15155034509685,
+      10880989836440,
+      86828181057745,
+      10880989836440
+    ],
+    "best_geometry_signatures": [
+      "00625495b29145968474b8bf32605fca6e0241960e1295330a4904f51e64c838"
+    ]
+  },
+  {
+    "case_id": "D13",
+    "state": "b3-r006",
+    "candidate_id": "D13-C002",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6
+    ],
+    "best_count": 6,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": false,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15180224509685,
+      10872447334163,
+      86839106409795,
+      10872447334163
+    ],
+    "best_geometry_signatures": [
+      "291ea88da00d0c832454da828825a4c277cf18688d94306aed503997e7a430ec"
+    ]
+  },
+  {
+    "case_id": "D13",
+    "state": "b3-r006",
+    "candidate_id": "D13-C004",
+    "mutable_blocks": 3,
+    "best_masks": [
+      7
+    ],
+    "best_count": 1,
+    "common_open": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "common_closed": [],
+    "varying_among_best": [],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 3,
+    "minimum_cardinality_masks": [
+      7
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15164836509685,
+      10867635509685,
+      86731995077480,
+      10867635509685
+    ],
+    "best_geometry_signatures": [
+      "5a7fd22be2bd2d6f2f6974936f4b988ceedf1eb996d578d7fa3fbf5b09c39b3a"
+    ]
+  },
+  {
+    "case_id": "D13",
+    "state": "b3-r006",
+    "candidate_id": "D13-C005",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15164911886000,
+      10867710886000,
+      86728664206425,
+      10867710886000
+    ],
+    "best_geometry_signatures": [
+      "291ea88da00d0c832454da828825a4c277cf18688d94306aed503997e7a430ec"
+    ]
+  },
+  {
+    "case_id": "D13",
+    "state": "b3-r006",
+    "candidate_id": "D13-C006",
+    "mutable_blocks": 3,
+    "best_masks": [
+      7
+    ],
+    "best_count": 1,
+    "common_open": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "common_closed": [],
+    "varying_among_best": [],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 3,
+    "minimum_cardinality_masks": [
+      7
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15164836509685,
+      10867635509685,
+      86731995077480,
+      10867635509685
+    ],
+    "best_geometry_signatures": [
+      "5a7fd22be2bd2d6f2f6974936f4b988ceedf1eb996d578d7fa3fbf5b09c39b3a"
+    ]
+  },
+  {
+    "case_id": "D14",
+    "state": "b3-r071",
+    "candidate_id": "D14-C006",
+    "mutable_blocks": 6,
+    "best_masks": [
+      34,
+      35,
+      38,
+      39,
+      50,
+      51,
+      54,
+      55
+    ],
+    "best_count": 8,
+    "common_open": [
+      "u2",
+      "u6"
+    ],
+    "common_closed": [
+      "u4"
+    ],
+    "varying_among_best": [
+      "u1",
+      "u3",
+      "u5"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 2,
+    "minimum_cardinality_masks": [
+      34
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15278636001946,
+      11675552001946,
+      93236549015568,
+      11675552001946
+    ],
+    "best_geometry_signatures": [
+      "ea9896ccd9c7f4720e84c03dfea9a8884b9973753a816bc354a3b809156696af"
+    ]
+  },
+  {
+    "case_id": "D15",
+    "state": "b3-r121",
+    "candidate_id": "D15-C001",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15575794001946,
+      12414685001946,
+      99002894015568,
+      12414685001946
+    ],
+    "best_geometry_signatures": [
+      "e3a4962ddcfdc79bc925bab897c578c5ab591770193f61529dda2403cad87767"
+    ]
+  },
+  {
+    "case_id": "D15",
+    "state": "b3-r121",
+    "candidate_id": "D15-C002",
+    "mutable_blocks": 3,
+    "best_masks": [
+      6,
+      7
+    ],
+    "best_count": 2,
+    "common_open": [
+      "u2",
+      "u3"
+    ],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 2,
+    "minimum_cardinality_masks": [
+      6
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15571758001946,
+      12415548001946,
+      98976185015568,
+      12415548001946
+    ],
+    "best_geometry_signatures": [
+      "fe67c767846a3824294317b3b6784a318a09b6785f2706f3457892901eb9123b"
+    ]
+  },
+  {
+    "case_id": "D15",
+    "state": "b3-r121",
+    "candidate_id": "D15-C003",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15571758001946,
+      12415547001946,
+      98990580015568,
+      12415547001946
+    ],
+    "best_geometry_signatures": [
+      "e3a4962ddcfdc79bc925bab897c578c5ab591770193f61529dda2403cad87767"
+    ]
+  },
+  {
+    "case_id": "D15",
+    "state": "b3-r121",
+    "candidate_id": "D15-C004",
+    "mutable_blocks": 3,
+    "best_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "best_count": 8,
+    "common_open": [],
+    "common_closed": [],
+    "varying_among_best": [
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 0,
+    "minimum_cardinality_masks": [
+      0
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15571758001946,
+      12414684001946,
+      99022022015568,
+      12414684001946
+    ],
+    "best_geometry_signatures": [
+      "e3a4962ddcfdc79bc925bab897c578c5ab591770193f61529dda2403cad87767"
+    ]
+  }
+]

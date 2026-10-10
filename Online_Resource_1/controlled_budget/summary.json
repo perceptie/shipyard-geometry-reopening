@@ -1,0 +1,315 @@
+{
+  "version": "e32-controlled-budget-summary/1.0",
+  "scope": "four states of same industrial model; same complete initial object within state; only improvement budget changes; no selector or rolling run",
+  "checks_passed": true,
+  "counts": {
+    "plans_checked": 52,
+    "endpoint_checks": 429,
+    "endpoint_failures": 0
+  },
+  "search_phases": 48,
+  "states": [
+    {
+      "state": "b2-r051",
+      "construction_microseconds": 462582,
+      "remainder_microseconds": 11537418,
+      "common_initial_sha256": "a5da10294b373779746d793980736bda1982b04501c4bcd789a534e6bd33fae4",
+      "initial_cost": {
+        "projected_current_batch_completion": 10200417454827,
+        "current_batch_makespan": 6788925645718,
+        "current_batch_total_completion_time": 53829735165744,
+        "value": 6788925645718
+      },
+      "raw_sha256": "0cb8c4ede458214c4e142b6dfd3ec947cad5e4184605fac4d4a524c6569b21f5"
+    },
+    {
+      "state": "b3-r006",
+      "construction_microseconds": 3696652,
+      "remainder_microseconds": 8303348,
+      "common_initial_sha256": "f045cff7f90cc55209557c8505ffbc6d16a773ee31e1954c177ac6b4b9b35777",
+      "initial_cost": {
+        "projected_current_batch_completion": 15164911886000,
+        "current_batch_makespan": 10867710886000,
+        "current_batch_total_completion_time": 86728664206425,
+        "value": 10867710886000
+      },
+      "raw_sha256": "eace6696467b30801f4a8441b3238a706e3780c0ab525118e0cbdea07de4677c"
+    },
+    {
+      "state": "b3-r031",
+      "construction_microseconds": 18130,
+      "remainder_microseconds": 11981870,
+      "common_initial_sha256": "90dc1637338743761c2e1ae655e29dd9df5767ff5823e869673ec0d74f2040ec",
+      "initial_cost": {
+        "projected_current_batch_completion": 15247445920420,
+        "current_batch_makespan": 11282821920420,
+        "current_batch_total_completion_time": 89909626363360,
+        "value": 11282821920420
+      },
+      "raw_sha256": "3eab2481789a550f0eae10ff553f9e01e78d5b4644ad141a10776fac2b27be02"
+    },
+    {
+      "state": "b3-r071",
+      "construction_microseconds": 2898011,
+      "remainder_microseconds": 9101989,
+      "common_initial_sha256": "b68f67c1589fe5ad2985b6e4de982fc7540f3f68fbb1955ec1ccae886b33479f",
+      "initial_cost": {
+        "projected_current_batch_completion": 15278636001946,
+        "current_batch_makespan": 11667610001946,
+        "current_batch_total_completion_time": 93196751015568,
+        "value": 11667610001946
+      },
+      "raw_sha256": "b1446aac17305d81b8a238a2e409ae65d68a90e95f825576b9b03cb12e89821c"
+    }
+  ],
+  "comparisons": [
+    {
+      "state": "b2-r051",
+      "budget": "remainder",
+      "pairs": [
+        {
+          "repeat": 1,
+          "winner": "tie",
+          "first_difference": null,
+          "S_minus_J_seconds": 0,
+          "J_executions": 220,
+          "S_executions": 185
+        },
+        {
+          "repeat": 2,
+          "winner": "tie",
+          "first_difference": null,
+          "S_minus_J_seconds": 0,
+          "J_executions": 212,
+          "S_executions": 185
+        },
+        {
+          "repeat": 3,
+          "winner": "tie",
+          "first_difference": null,
+          "S_minus_J_seconds": 0,
+          "J_executions": 212,
+          "S_executions": 186
+        }
+      ]
+    },
+    {
+      "state": "b2-r051",
+      "budget": "full",
+      "pairs": [
+        {
+          "repeat": 1,
+          "winner": "tie",
+          "first_difference": null,
+          "S_minus_J_seconds": 0,
+          "J_executions": 214,
+          "S_executions": 210
+        },
+        {
+          "repeat": 2,
+          "winner": "tie",
+          "first_difference": null,
+          "S_minus_J_seconds": 0,
+          "J_executions": 215,
+          "S_executions": 202
+        },
+        {
+          "repeat": 3,
+          "winner": "tie",
+          "first_difference": null,
+          "S_minus_J_seconds": 0,
+          "J_executions": 215,
+          "S_executions": 199
+        }
+      ]
+    },
+    {
+      "state": "b3-r006",
+      "budget": "remainder",
+      "pairs": [
+        {
+          "repeat": 1,
+          "winner": "J",
+          "first_difference": "current_batch_makespan",
+          "S_minus_J_seconds": 233.326755,
+          "J_executions": 80,
+          "S_executions": 62
+        },
+        {
+          "repeat": 2,
+          "winner": "J",
+          "first_difference": "current_batch_makespan",
+          "S_minus_J_seconds": 233.326755,
+          "J_executions": 79,
+          "S_executions": 61
+        },
+        {
+          "repeat": 3,
+          "winner": "J",
+          "first_difference": "current_batch_makespan",
+          "S_minus_J_seconds": 233.326755,
+          "J_executions": 79,
+          "S_executions": 61
+        }
+      ]
+    },
+    {
+      "state": "b3-r006",
+      "budget": "full",
+      "pairs": [
+        {
+          "repeat": 1,
+          "winner": "S",
+          "first_difference": "current_batch_makespan",
+          "S_minus_J_seconds": -519.0,
+          "J_executions": 109,
+          "S_executions": 76
+        },
+        {
+          "repeat": 2,
+          "winner": "S",
+          "first_difference": "current_batch_makespan",
+          "S_minus_J_seconds": -519.0,
+          "J_executions": 99,
+          "S_executions": 74
+        },
+        {
+          "repeat": 3,
+          "winner": "S",
+          "first_difference": "current_batch_makespan",
+          "S_minus_J_seconds": -519.0,
+          "J_executions": 99,
+          "S_executions": 74
+        }
+      ]
+    },
+    {
+      "state": "b3-r031",
+      "budget": "remainder",
+      "pairs": [
+        {
+          "repeat": 1,
+          "winner": "tie",
+          "first_difference": null,
+          "S_minus_J_seconds": 0,
+          "J_executions": 157,
+          "S_executions": 152
+        },
+        {
+          "repeat": 2,
+          "winner": "tie",
+          "first_difference": null,
+          "S_minus_J_seconds": 0,
+          "J_executions": 153,
+          "S_executions": 142
+        },
+        {
+          "repeat": 3,
+          "winner": "tie",
+          "first_difference": null,
+          "S_minus_J_seconds": 0,
+          "J_executions": 154,
+          "S_executions": 142
+        }
+      ]
+    },
+    {
+      "state": "b3-r031",
+      "budget": "full",
+      "pairs": [
+        {
+          "repeat": 1,
+          "winner": "tie",
+          "first_difference": null,
+          "S_minus_J_seconds": 0,
+          "J_executions": 154,
+          "S_executions": 142
+        },
+        {
+          "repeat": 2,
+          "winner": "tie",
+          "first_difference": null,
+          "S_minus_J_seconds": 0,
+          "J_executions": 145,
+          "S_executions": 140
+        },
+        {
+          "repeat": 3,
+          "winner": "tie",
+          "first_difference": null,
+          "S_minus_J_seconds": 0,
+          "J_executions": 154,
+          "S_executions": 142
+        }
+      ]
+    },
+    {
+      "state": "b3-r071",
+      "budget": "remainder",
+      "pairs": [
+        {
+          "repeat": 1,
+          "winner": "S",
+          "first_difference": "current_batch_makespan",
+          "S_minus_J_seconds": -6419.0,
+          "J_executions": 37,
+          "S_executions": 108
+        },
+        {
+          "repeat": 2,
+          "winner": "S",
+          "first_difference": "current_batch_makespan",
+          "S_minus_J_seconds": -6419.0,
+          "J_executions": 36,
+          "S_executions": 94
+        },
+        {
+          "repeat": 3,
+          "winner": "S",
+          "first_difference": "current_batch_makespan",
+          "S_minus_J_seconds": -6419.0,
+          "J_executions": 36,
+          "S_executions": 94
+        }
+      ]
+    },
+    {
+      "state": "b3-r071",
+      "budget": "full",
+      "pairs": [
+        {
+          "repeat": 1,
+          "winner": "S",
+          "first_difference": "current_batch_makespan",
+          "S_minus_J_seconds": -950.0,
+          "J_executions": 63,
+          "S_executions": 140
+        },
+        {
+          "repeat": 2,
+          "winner": "S",
+          "first_difference": "current_batch_makespan",
+          "S_minus_J_seconds": -950.0,
+          "J_executions": 61,
+          "S_executions": 133
+        },
+        {
+          "repeat": 3,
+          "winner": "S",
+          "first_difference": "current_batch_total_completion_time",
+          "S_minus_J_seconds": -417.0,
+          "J_executions": 60,
+          "S_executions": 114
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "checker_sha256": {
+    "declared": "5967b4c5be3170db50933e35b2f972c7d0aa9098a2b171fcbb0b09d3b9f283ff",
+    "motion": "343243d7d57cc08f7f6c68ba81ed95dbc689b0f41cbd4e5761309d1dd70d86e2",
+    "cost": "4818e9c75c7613adbbb49a3afd0e77a8564150cb9aa94b0aad2f3b5dee805532",
+    "e11": "7aa3e5fe9c36b160d6188feeda0b7cbfaec8f134acc0f88bc1476b6a614c30a7"
+  },
+  "manifest_sha256": "57c4c644bf3ee1dcb0171903b22267aad28c64958bc66eb81904607276f91529"
+}

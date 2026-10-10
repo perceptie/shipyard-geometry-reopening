@@ -94,9 +94,27 @@ Publication numbering in the 2026-10-10 revised manuscript is:
 | 5 | Variation/adoption cross-tabulation | `fig5_activity_adoption_cross` |
 | 6 | Terminal-case plans | `fig7_terminal_cases` |
 | 7 | E11 repeat counts and common-sequence decoding | `figures/generate_e11_mechanism.py`, `figures/e11_mechanism_input.json` |
-| 8 | Complete rolling comparisons | `fig6_rolling_endpoints` |
+| 8 | Reopening masks and comparison levels | `figures/generate_mask_structure.py`, `figures/mask_structure_input.json` |
+| 9 | Controlled improvement budget | `figures/generate_budget_effect.py`, `figures/budget_effect_input.json` |
+| 10 | Complete rolling comparisons | `fig6_rolling_endpoints` |
 
-The development-budget plot `fig3_budget_sensitivity` remains supplemental configuration context.
+The development-budget plot `fig3_budget_sensitivity` remains supplemental configuration context. It differs from the new fixed-initialization controlled-budget experiment.
+
+## Additions of 2026-10-11
+
+- [Mask structure](mask_structure/README.md): full-objective comparisons at candidate, six-candidate set, wider saved set, and common-reference levels; all masks and one-bit effects retained.
+- [Terminal-plan accounting](witness_mechanisms/README.md): relative task phases, finishing-resource chains, geometry displacement, point-centre separation and historical-release reuse slack. These are derived terminal records, not repair-trial causal traces.
+- [Controlled budget](controlled_budget/README.md): two development/two input-selected states, identical complete initial plan per state, fresh caches, core12, two improvement allowances and three repetitions.
+
+From this directory, the new standard-library checks are:
+
+    python3 mask_structure/recompute.py --output reproduced/mask_structure
+    python3 witness_mechanisms/check_records.py --output reproduced/witness_checks.json
+    python3 controlled_budget/check_records.py --output reproduced/controlled_budget_checks.json
+    python3 figures/generate_mask_structure.py --output-dir reproduced
+    python3 figures/generate_budget_effect.py --output-dir reproduced
+
+The two figure scripts use `rsvg-convert` and embed fonts in the PDF. All earlier numeric records remain available. Regeneration of industrial decoded plans requires restricted source and inputs; public scripts recompute the released records and event curves.
 
 The development plot uses the same four states at every cap (median accepted improvements 2.5, 4.0, and 5.5); the original mixed-size aggregates remain available. The repeat plot uses two batch panels with J/S/dot/cross symbols. The rolling overview compares four labelled blocks: original E7, E12 first-batch A, E12 first-batch B, and the E12 second-batch condition, showing completion and recorded solver wall time separately. Geometry-adoption counts concern rounds whose final layout differs from that round's own initialization. The terminal-case and physical illustrations are generated from their released records/model specification; the other conceptual publication PDFs are supplied in the companion manuscript source package.
 
@@ -144,7 +162,7 @@ python3 check_synthetic_controller_example.py edited_example.json --skip-control
 
 The example checks model semantics: precedence/dwell, crane qualifications and synchronized tandem binding, footprint containment, persistent half-open occupancy, placement-derived pickup/drop attachment, travel phases, and continuous piecewise-linear rail X-order. It illustrates the supplied plan rather than constructing a plan with Beam/VND; algorithmic search and the industrial comparison are documented by the separate protocols and E10/E11/E12 records.
 
-Plotting and example code was revised with OpenAI Codex assistance. Both authors have reviewed the manuscript text, figures, analyses, code, and AI-assistance disclosure. E10 contains 48 serially correlated states from one LRP source trajectory with three wall-clock repeats. The rolling results are model-internal production-controller outcomes.
+Plotting, instrumentation, and analysis code were revised with OpenAI Codex assistance. Both authors confirmed review of the earlier manuscript release. The additions of 2026-10-10 and 2026-10-11 are supplied for their final review before submission; earlier approval is not treated as approval of these additions. E10 contains 48 serially correlated states from one LRP source trajectory with three wall-clock repeats. The rolling results are model-internal production-controller outcomes.
 
 The internal `build_supplement.py` used to export these files is deliberately excluded from the public zip because it requires restricted trace and audit inputs that cannot be redistributed. It is an aggregate exporter, not a self-contained raw-data generator. The released reproduction script is self-contained with respect to the released numeric files.
 

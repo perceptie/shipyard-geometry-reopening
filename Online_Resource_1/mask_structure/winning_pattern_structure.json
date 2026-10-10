@@ -1,0 +1,6778 @@
+[
+  {
+    "case_id": "D02",
+    "state": "b2-r096",
+    "candidate_id": "D02-C006",
+    "mutable_blocks": 3,
+    "best_masks": [
+      5
+    ],
+    "best_count": 1,
+    "common_open": [
+      "u1",
+      "u3"
+    ],
+    "common_closed": [
+      "u2"
+    ],
+    "varying_among_best": [],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 2,
+    "minimum_cardinality_masks": [
+      5
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      10246082454827,
+      7579606454827,
+      60184853638616,
+      7579606454827
+    ],
+    "best_geometry_signatures": [
+      "0a1a6b0a8b6ba86dd1353e69012e31b44eaafe7f98f1d8fef63cbd88315d1284"
+    ],
+    "endpoint": {
+      "candidate_id": "D02-C006",
+      "mode": "MASK",
+      "mask": 0,
+      "success": true,
+      "objective_us": [
+        10246082454827,
+        7579626454827,
+        60181195638616,
+        7579626454827
+      ],
+      "geometry_sha256": "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6"
+    },
+    "best": {
+      "candidate_id": "D02-C006",
+      "mode": "MASK",
+      "mask": 5,
+      "success": true,
+      "objective_us": [
+        10246082454827,
+        7579606454827,
+        60184853638616,
+        7579606454827
+      ],
+      "geometry_sha256": "0a1a6b0a8b6ba86dd1353e69012e31b44eaafe7f98f1d8fef63cbd88315d1284"
+    },
+    "reference": {
+      "candidate_id": null,
+      "mode": null,
+      "mask": null,
+      "success": true,
+      "objective_us": [
+        10246082454827,
+        7579626454827,
+        60195794638616,
+        7579626454827
+      ],
+      "geometry_sha256": null
+    },
+    "delta_vs_own_endpoint_us": [
+      0,
+      -20000000,
+      3658000000,
+      -20000000
+    ],
+    "delta_vs_reference_us": [
+      0,
+      -20000000,
+      -10941000000,
+      -20000000
+    ],
+    "mask_results": [
+      {
+        "success": true,
+        "objective_us": [
+          10246082454827,
+          7579626454827,
+          60181195638616,
+          7579626454827
+        ],
+        "geometry_sha256": "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 1,
+        "elapsed_us": 2307,
+        "mask": 0,
+        "open_count": 0,
+        "candidate_id": "D02-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          10246082454827,
+          7579626454827,
+          60181195638616,
+          7579626454827
+        ],
+        "geometry_sha256": "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 1,
+        "elapsed_us": 2337,
+        "mask": 1,
+        "open_count": 1,
+        "candidate_id": "D02-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          10246082454827,
+          7579626454827,
+          60181195638616,
+          7579626454827
+        ],
+        "geometry_sha256": "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 1,
+        "elapsed_us": 2363,
+        "mask": 2,
+        "open_count": 1,
+        "candidate_id": "D02-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          10246082454827,
+          7579626454827,
+          60181195638616,
+          7579626454827
+        ],
+        "geometry_sha256": "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 1,
+        "elapsed_us": 2519,
+        "mask": 3,
+        "open_count": 2,
+        "candidate_id": "D02-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          10246082454827,
+          7579626454827,
+          60181195638616,
+          7579626454827
+        ],
+        "geometry_sha256": "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 1,
+        "elapsed_us": 2414,
+        "mask": 4,
+        "open_count": 1,
+        "candidate_id": "D02-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          10246082454827,
+          7579606454827,
+          60184853638616,
+          7579606454827
+        ],
+        "geometry_sha256": "0a1a6b0a8b6ba86dd1353e69012e31b44eaafe7f98f1d8fef63cbd88315d1284",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 1,
+        "elapsed_us": 3180,
+        "mask": 5,
+        "open_count": 2,
+        "candidate_id": "D02-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          10246082454827,
+          7579626454827,
+          60186385638616,
+          7579626454827
+        ],
+        "geometry_sha256": "2859babba9b0ff3496105f406d386b7e1251653c4e3b685ec20a3421548f8278",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 4078,
+        "mask": 6,
+        "open_count": 2,
+        "candidate_id": "D02-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          10246082454827,
+          7579626454827,
+          60186385638616,
+          7579626454827
+        ],
+        "geometry_sha256": "2859babba9b0ff3496105f406d386b7e1251653c4e3b685ec20a3421548f8278",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 4206,
+        "mask": 7,
+        "open_count": 3,
+        "candidate_id": "D02-C006",
+        "mode": "MASK"
+      }
+    ],
+    "case_comparison": {
+      "case_id": "D02",
+      "state": "b2-r096",
+      "execution": "selected5_r1/repeat_1",
+      "all_candidates": 30,
+      "mask_candidates": 6,
+      "reference_candidate_id": "D02-C021",
+      "reference_in_mask_candidates": false,
+      "reference": {
+        "candidate_id": null,
+        "mode": null,
+        "mask": null,
+        "success": true,
+        "objective_us": [
+          10246082454827,
+          7579626454827,
+          60195794638616,
+          7579626454827
+        ],
+        "geometry_sha256": null
+      },
+      "six_candidate_endpoint_best": {
+        "candidate_id": "D02-C004",
+        "mode": "MASK",
+        "mask": 0,
+        "success": true,
+        "objective_us": [
+          10246082454827,
+          7564850454827,
+          60087637638616,
+          7564850454827
+        ],
+        "geometry_sha256": "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6"
+      },
+      "six_candidate_mask_best": {
+        "candidate_id": "D02-C004",
+        "mode": "MASK",
+        "mask": 0,
+        "success": true,
+        "objective_us": [
+          10246082454827,
+          7564850454827,
+          60087637638616,
+          7564850454827
+        ],
+        "geometry_sha256": "164f5abc9a6c77b7651a52899fb8f43d3a3cfc5b9c44aec962d50af99343fcf6"
+      },
+      "all_candidate_endpoint_best": {
+        "candidate_id": "D02-C009",
+        "mode": "J_VND",
+        "mask": null,
+        "success": true,
+        "objective_us": [
+          10246082454827,
+          7564149454827,
+          60083968638616,
+          7564149454827
+        ],
+        "geometry_sha256": "2859babba9b0ff3496105f406d386b7e1251653c4e3b685ec20a3421548f8278"
+      },
+      "all_candidate_simple_best": {
+        "candidate_id": "D02-C009",
+        "mode": "J_VND",
+        "mask": null,
+        "success": true,
+        "objective_us": [
+          10246082454827,
+          7564149454827,
+          60083968638616,
+          7564149454827
+        ],
+        "geometry_sha256": "2859babba9b0ff3496105f406d386b7e1251653c4e3b685ec20a3421548f8278"
+      },
+      "mask_vs_six_endpoint": "tie",
+      "mask_vs_all_endpoint": "worse",
+      "mask_vs_all_simple": "worse",
+      "mask_vs_reference": "better",
+      "mask_vs_all_simple_and_reference": "worse",
+      "mask_delta_vs_six_endpoint_us": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mask_delta_vs_all_endpoint_us": [
+        0,
+        701000000,
+        3669000000,
+        701000000
+      ],
+      "mask_delta_vs_all_simple_us": [
+        0,
+        701000000,
+        3669000000,
+        701000000
+      ],
+      "mask_delta_vs_reference_us": [
+        0,
+        -14776000000,
+        -108157000000,
+        -14776000000
+      ]
+    },
+    "one_bit_edges": [
+      {
+        "case_id": "D02",
+        "state": "b2-r096",
+        "candidate_id": "D02-C006",
+        "from_mask": 0,
+        "to_mask": 1,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 1,
+        "to_rail_iterations": 1
+      },
+      {
+        "case_id": "D02",
+        "state": "b2-r096",
+        "candidate_id": "D02-C006",
+        "from_mask": 0,
+        "to_mask": 2,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 1,
+        "to_rail_iterations": 1
+      },
+      {
+        "case_id": "D02",
+        "state": "b2-r096",
+        "candidate_id": "D02-C006",
+        "from_mask": 0,
+        "to_mask": 4,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 1,
+        "to_rail_iterations": 1
+      },
+      {
+        "case_id": "D02",
+        "state": "b2-r096",
+        "candidate_id": "D02-C006",
+        "from_mask": 1,
+        "to_mask": 3,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 1,
+        "to_rail_iterations": 1
+      },
+      {
+        "case_id": "D02",
+        "state": "b2-r096",
+        "candidate_id": "D02-C006",
+        "from_mask": 1,
+        "to_mask": 5,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -20000000,
+          3658000000,
+          -20000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 1,
+        "to_rail_iterations": 1
+      },
+      {
+        "case_id": "D02",
+        "state": "b2-r096",
+        "candidate_id": "D02-C006",
+        "from_mask": 2,
+        "to_mask": 3,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 1,
+        "to_rail_iterations": 1
+      },
+      {
+        "case_id": "D02",
+        "state": "b2-r096",
+        "candidate_id": "D02-C006",
+        "from_mask": 2,
+        "to_mask": 6,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "worse",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          0,
+          5190000000,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 1,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D02",
+        "state": "b2-r096",
+        "candidate_id": "D02-C006",
+        "from_mask": 3,
+        "to_mask": 7,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "worse",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          0,
+          5190000000,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 1,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D02",
+        "state": "b2-r096",
+        "candidate_id": "D02-C006",
+        "from_mask": 4,
+        "to_mask": 5,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -20000000,
+          3658000000,
+          -20000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 1,
+        "to_rail_iterations": 1
+      },
+      {
+        "case_id": "D02",
+        "state": "b2-r096",
+        "candidate_id": "D02-C006",
+        "from_mask": 4,
+        "to_mask": 6,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "worse",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          0,
+          5190000000,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 1,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D02",
+        "state": "b2-r096",
+        "candidate_id": "D02-C006",
+        "from_mask": 5,
+        "to_mask": 7,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "worse",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          20000000,
+          1532000000,
+          20000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 1,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D02",
+        "state": "b2-r096",
+        "candidate_id": "D02-C006",
+        "from_mask": 6,
+        "to_mask": 7,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      }
+    ]
+  },
+  {
+    "case_id": "D03",
+    "state": "b3-r006",
+    "candidate_id": "D03-C001",
+    "mutable_blocks": 3,
+    "best_masks": [
+      3
+    ],
+    "best_count": 1,
+    "common_open": [
+      "u1",
+      "u2"
+    ],
+    "common_closed": [
+      "u3"
+    ],
+    "varying_among_best": [],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 2,
+    "minimum_cardinality_masks": [
+      3
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15155034509685,
+      10880989836440,
+      86828181057745,
+      10880989836440
+    ],
+    "best_geometry_signatures": [
+      "00625495b29145968474b8bf32605fca6e0241960e1295330a4904f51e64c838"
+    ],
+    "endpoint": {
+      "candidate_id": "D03-C001",
+      "mode": "MASK",
+      "mask": 0,
+      "success": true,
+      "objective_us": [
+        15155034509685,
+        10894845779552,
+        86867353617214,
+        10894845779552
+      ],
+      "geometry_sha256": "291ea88da00d0c832454da828825a4c277cf18688d94306aed503997e7a430ec"
+    },
+    "best": {
+      "candidate_id": "D03-C001",
+      "mode": "MASK",
+      "mask": 3,
+      "success": true,
+      "objective_us": [
+        15155034509685,
+        10880989836440,
+        86828181057745,
+        10880989836440
+      ],
+      "geometry_sha256": "00625495b29145968474b8bf32605fca6e0241960e1295330a4904f51e64c838"
+    },
+    "reference": {
+      "candidate_id": null,
+      "mode": null,
+      "mask": null,
+      "success": true,
+      "objective_us": [
+        15164911886000,
+        10867710886000,
+        86728664206425,
+        10867710886000
+      ],
+      "geometry_sha256": null
+    },
+    "delta_vs_own_endpoint_us": [
+      0,
+      -13855943112,
+      -39172559469,
+      -13855943112
+    ],
+    "delta_vs_reference_us": [
+      -9877376315,
+      13278950440,
+      99516851320,
+      13278950440
+    ],
+    "mask_results": [
+      {
+        "success": true,
+        "objective_us": [
+          15155034509685,
+          10894845779552,
+          86867353617214,
+          10894845779552
+        ],
+        "geometry_sha256": "291ea88da00d0c832454da828825a4c277cf18688d94306aed503997e7a430ec",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 10,
+        "elapsed_us": 17787,
+        "mask": 0,
+        "open_count": 0,
+        "candidate_id": "D03-C001",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15155034509685,
+          10894845779552,
+          86867353617214,
+          10894845779552
+        ],
+        "geometry_sha256": "291ea88da00d0c832454da828825a4c277cf18688d94306aed503997e7a430ec",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 10,
+        "elapsed_us": 18375,
+        "mask": 1,
+        "open_count": 1,
+        "candidate_id": "D03-C001",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15155034509685,
+          10894845779552,
+          86867353617214,
+          10894845779552
+        ],
+        "geometry_sha256": "291ea88da00d0c832454da828825a4c277cf18688d94306aed503997e7a430ec",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 10,
+        "elapsed_us": 18471,
+        "mask": 2,
+        "open_count": 1,
+        "candidate_id": "D03-C001",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15155034509685,
+          10880989836440,
+          86828181057745,
+          10880989836440
+        ],
+        "geometry_sha256": "00625495b29145968474b8bf32605fca6e0241960e1295330a4904f51e64c838",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 8,
+        "elapsed_us": 17343,
+        "mask": 3,
+        "open_count": 2,
+        "candidate_id": "D03-C001",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15155034509685,
+          10894845779552,
+          86867353617214,
+          10894845779552
+        ],
+        "geometry_sha256": "291ea88da00d0c832454da828825a4c277cf18688d94306aed503997e7a430ec",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 10,
+        "elapsed_us": 18461,
+        "mask": 4,
+        "open_count": 1,
+        "candidate_id": "D03-C001",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15155034509685,
+          10894845779552,
+          86867353617214,
+          10894845779552
+        ],
+        "geometry_sha256": "291ea88da00d0c832454da828825a4c277cf18688d94306aed503997e7a430ec",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 10,
+        "elapsed_us": 19055,
+        "mask": 5,
+        "open_count": 2,
+        "candidate_id": "D03-C001",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15155034509685,
+          10894845779552,
+          86867353617214,
+          10894845779552
+        ],
+        "geometry_sha256": "291ea88da00d0c832454da828825a4c277cf18688d94306aed503997e7a430ec",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 10,
+        "elapsed_us": 19182,
+        "mask": 6,
+        "open_count": 2,
+        "candidate_id": "D03-C001",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15155034509685,
+          10895158700486,
+          86859252112592,
+          10895158700486
+        ],
+        "geometry_sha256": "5a7fd22be2bd2d6f2f6974936f4b988ceedf1eb996d578d7fa3fbf5b09c39b3a",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 5,
+        "elapsed_us": 10216,
+        "mask": 7,
+        "open_count": 3,
+        "candidate_id": "D03-C001",
+        "mode": "MASK"
+      }
+    ],
+    "case_comparison": {
+      "case_id": "D03",
+      "state": "b3-r006",
+      "execution": "selected5_r1/repeat_1",
+      "all_candidates": 33,
+      "mask_candidates": 6,
+      "reference_candidate_id": "D03-C005",
+      "reference_in_mask_candidates": true,
+      "reference": {
+        "candidate_id": null,
+        "mode": null,
+        "mask": null,
+        "success": true,
+        "objective_us": [
+          15164911886000,
+          10867710886000,
+          86728664206425,
+          10867710886000
+        ],
+        "geometry_sha256": null
+      },
+      "six_candidate_endpoint_best": {
+        "candidate_id": "D03-C001",
+        "mode": "MASK",
+        "mask": 0,
+        "success": true,
+        "objective_us": [
+          15155034509685,
+          10894845779552,
+          86867353617214,
+          10894845779552
+        ],
+        "geometry_sha256": "291ea88da00d0c832454da828825a4c277cf18688d94306aed503997e7a430ec"
+      },
+      "six_candidate_mask_best": {
+        "candidate_id": "D03-C001",
+        "mode": "MASK",
+        "mask": 3,
+        "success": true,
+        "objective_us": [
+          15155034509685,
+          10880989836440,
+          86828181057745,
+          10880989836440
+        ],
+        "geometry_sha256": "00625495b29145968474b8bf32605fca6e0241960e1295330a4904f51e64c838"
+      },
+      "all_candidate_endpoint_best": {
+        "candidate_id": "D03-C028",
+        "mode": "S_VND",
+        "mask": null,
+        "success": true,
+        "objective_us": [
+          15155034509685,
+          10894293155867,
+          86861401875104,
+          10894293155867
+        ],
+        "geometry_sha256": "291ea88da00d0c832454da828825a4c277cf18688d94306aed503997e7a430ec"
+      },
+      "all_candidate_simple_best": {
+        "candidate_id": "D03-C028",
+        "mode": "S_VND",
+        "mask": null,
+        "success": true,
+        "objective_us": [
+          15155034509685,
+          10894293155867,
+          86861401875104,
+          10894293155867
+        ],
+        "geometry_sha256": "291ea88da00d0c832454da828825a4c277cf18688d94306aed503997e7a430ec"
+      },
+      "mask_vs_six_endpoint": "better",
+      "mask_vs_all_endpoint": "better",
+      "mask_vs_all_simple": "better",
+      "mask_vs_reference": "better",
+      "mask_vs_all_simple_and_reference": "better",
+      "mask_delta_vs_six_endpoint_us": [
+        0,
+        -13855943112,
+        -39172559469,
+        -13855943112
+      ],
+      "mask_delta_vs_all_endpoint_us": [
+        0,
+        -13303319427,
+        -33220817359,
+        -13303319427
+      ],
+      "mask_delta_vs_all_simple_us": [
+        0,
+        -13303319427,
+        -33220817359,
+        -13303319427
+      ],
+      "mask_delta_vs_reference_us": [
+        -9877376315,
+        13278950440,
+        99516851320,
+        13278950440
+      ]
+    },
+    "one_bit_edges": [
+      {
+        "case_id": "D03",
+        "state": "b3-r006",
+        "candidate_id": "D03-C001",
+        "from_mask": 0,
+        "to_mask": 1,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 10,
+        "to_rail_iterations": 10
+      },
+      {
+        "case_id": "D03",
+        "state": "b3-r006",
+        "candidate_id": "D03-C001",
+        "from_mask": 0,
+        "to_mask": 2,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 10,
+        "to_rail_iterations": 10
+      },
+      {
+        "case_id": "D03",
+        "state": "b3-r006",
+        "candidate_id": "D03-C001",
+        "from_mask": 0,
+        "to_mask": 4,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 10,
+        "to_rail_iterations": 10
+      },
+      {
+        "case_id": "D03",
+        "state": "b3-r006",
+        "candidate_id": "D03-C001",
+        "from_mask": 1,
+        "to_mask": 3,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -13855943112,
+          -39172559469,
+          -13855943112
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 10,
+        "to_rail_iterations": 8
+      },
+      {
+        "case_id": "D03",
+        "state": "b3-r006",
+        "candidate_id": "D03-C001",
+        "from_mask": 1,
+        "to_mask": 5,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 10,
+        "to_rail_iterations": 10
+      },
+      {
+        "case_id": "D03",
+        "state": "b3-r006",
+        "candidate_id": "D03-C001",
+        "from_mask": 2,
+        "to_mask": 3,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -13855943112,
+          -39172559469,
+          -13855943112
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 10,
+        "to_rail_iterations": 8
+      },
+      {
+        "case_id": "D03",
+        "state": "b3-r006",
+        "candidate_id": "D03-C001",
+        "from_mask": 2,
+        "to_mask": 6,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 10,
+        "to_rail_iterations": 10
+      },
+      {
+        "case_id": "D03",
+        "state": "b3-r006",
+        "candidate_id": "D03-C001",
+        "from_mask": 3,
+        "to_mask": 7,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "worse",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          14168864046,
+          31071054847,
+          14168864046
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 8,
+        "to_rail_iterations": 5
+      },
+      {
+        "case_id": "D03",
+        "state": "b3-r006",
+        "candidate_id": "D03-C001",
+        "from_mask": 4,
+        "to_mask": 5,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 10,
+        "to_rail_iterations": 10
+      },
+      {
+        "case_id": "D03",
+        "state": "b3-r006",
+        "candidate_id": "D03-C001",
+        "from_mask": 4,
+        "to_mask": 6,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 10,
+        "to_rail_iterations": 10
+      },
+      {
+        "case_id": "D03",
+        "state": "b3-r006",
+        "candidate_id": "D03-C001",
+        "from_mask": 5,
+        "to_mask": 7,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "worse",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          312920934,
+          -8101504622,
+          312920934
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 10,
+        "to_rail_iterations": 5
+      },
+      {
+        "case_id": "D03",
+        "state": "b3-r006",
+        "candidate_id": "D03-C001",
+        "from_mask": 6,
+        "to_mask": 7,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "worse",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          312920934,
+          -8101504622,
+          312920934
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 10,
+        "to_rail_iterations": 5
+      }
+    ]
+  },
+  {
+    "case_id": "D04",
+    "state": "b3-r071",
+    "candidate_id": "D04-C006",
+    "mutable_blocks": 6,
+    "best_masks": [
+      34,
+      35,
+      38,
+      39,
+      50,
+      51,
+      54,
+      55
+    ],
+    "best_count": 8,
+    "common_open": [
+      "u2",
+      "u6"
+    ],
+    "common_closed": [
+      "u4"
+    ],
+    "varying_among_best": [
+      "u1",
+      "u3",
+      "u5"
+    ],
+    "all_combinations_of_varying_bits_optimal": true,
+    "minimum_cardinality": 2,
+    "minimum_cardinality_masks": [
+      34
+    ],
+    "unique_minimum_cardinality": true,
+    "best_objective_us": [
+      15278636001946,
+      11675552001946,
+      93236549015568,
+      11675552001946
+    ],
+    "best_geometry_signatures": [
+      "ea9896ccd9c7f4720e84c03dfea9a8884b9973753a816bc354a3b809156696af"
+    ],
+    "endpoint": {
+      "candidate_id": "D04-C006",
+      "mode": "MASK",
+      "mask": 63,
+      "success": true,
+      "objective_us": [
+        15278636001946,
+        11675797001946,
+        93237301015568,
+        11675797001946
+      ],
+      "geometry_sha256": "8e472df920578609e8c69f960ff333f4d567f1232376cd74b724645bf8c671d7"
+    },
+    "best": {
+      "candidate_id": "D04-C006",
+      "mode": "MASK",
+      "mask": 34,
+      "success": true,
+      "objective_us": [
+        15278636001946,
+        11675552001946,
+        93236549015568,
+        11675552001946
+      ],
+      "geometry_sha256": "ea9896ccd9c7f4720e84c03dfea9a8884b9973753a816bc354a3b809156696af"
+    },
+    "reference": {
+      "candidate_id": null,
+      "mode": null,
+      "mask": null,
+      "success": true,
+      "objective_us": [
+        15278636001946,
+        11667610001946,
+        93196751015568,
+        11667610001946
+      ],
+      "geometry_sha256": null
+    },
+    "delta_vs_own_endpoint_us": [
+      0,
+      -245000000,
+      -752000000,
+      -245000000
+    ],
+    "delta_vs_reference_us": [
+      0,
+      7942000000,
+      39798000000,
+      7942000000
+    ],
+    "mask_results": [
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 5727,
+        "mask": 0,
+        "open_count": 0,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 6419,
+        "mask": 1,
+        "open_count": 1,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 6722,
+        "mask": 2,
+        "open_count": 1,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 7108,
+        "mask": 3,
+        "open_count": 2,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 7077,
+        "mask": 4,
+        "open_count": 1,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 7372,
+        "mask": 5,
+        "open_count": 2,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 7514,
+        "mask": 6,
+        "open_count": 2,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 7823,
+        "mask": 7,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 7825,
+        "mask": 8,
+        "open_count": 1,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 8080,
+        "mask": 9,
+        "open_count": 2,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11682795001946,
+          93257947015568,
+          11682795001946
+        ],
+        "geometry_sha256": "464a7de71bfbf03ef845c52ad55da54eb1ffb9e190bbe65a2164020a83e922c4",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 8382,
+        "mask": 10,
+        "open_count": 2,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11682795001946,
+          93257947015568,
+          11682795001946
+        ],
+        "geometry_sha256": "464a7de71bfbf03ef845c52ad55da54eb1ffb9e190bbe65a2164020a83e922c4",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 9071,
+        "mask": 11,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 8017,
+        "mask": 12,
+        "open_count": 2,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 8096,
+        "mask": 13,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11682795001946,
+          93257947015568,
+          11682795001946
+        ],
+        "geometry_sha256": "464a7de71bfbf03ef845c52ad55da54eb1ffb9e190bbe65a2164020a83e922c4",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 8890,
+        "mask": 14,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11682795001946,
+          93257947015568,
+          11682795001946
+        ],
+        "geometry_sha256": "464a7de71bfbf03ef845c52ad55da54eb1ffb9e190bbe65a2164020a83e922c4",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 9051,
+        "mask": 15,
+        "open_count": 4,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 7801,
+        "mask": 16,
+        "open_count": 1,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 7938,
+        "mask": 17,
+        "open_count": 2,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 8060,
+        "mask": 18,
+        "open_count": 2,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 8223,
+        "mask": 19,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 8525,
+        "mask": 20,
+        "open_count": 2,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 8943,
+        "mask": 21,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 8988,
+        "mask": 22,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 9379,
+        "mask": 23,
+        "open_count": 4,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 8232,
+        "mask": 24,
+        "open_count": 2,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 8475,
+        "mask": 25,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11682795001946,
+          93257947015568,
+          11682795001946
+        ],
+        "geometry_sha256": "464a7de71bfbf03ef845c52ad55da54eb1ffb9e190bbe65a2164020a83e922c4",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 11424,
+        "mask": 26,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11682795001946,
+          93257947015568,
+          11682795001946
+        ],
+        "geometry_sha256": "464a7de71bfbf03ef845c52ad55da54eb1ffb9e190bbe65a2164020a83e922c4",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 9649,
+        "mask": 27,
+        "open_count": 4,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 9260,
+        "mask": 28,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 9672,
+        "mask": 29,
+        "open_count": 4,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11682795001946,
+          93257947015568,
+          11682795001946
+        ],
+        "geometry_sha256": "464a7de71bfbf03ef845c52ad55da54eb1ffb9e190bbe65a2164020a83e922c4",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 10886,
+        "mask": 30,
+        "open_count": 4,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11682795001946,
+          93257947015568,
+          11682795001946
+        ],
+        "geometry_sha256": "464a7de71bfbf03ef845c52ad55da54eb1ffb9e190bbe65a2164020a83e922c4",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 11150,
+        "mask": 31,
+        "open_count": 5,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 8448,
+        "mask": 32,
+        "open_count": 1,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 8609,
+        "mask": 33,
+        "open_count": 2,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675552001946,
+          93236549015568,
+          11675552001946
+        ],
+        "geometry_sha256": "ea9896ccd9c7f4720e84c03dfea9a8884b9973753a816bc354a3b809156696af",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 8473,
+        "mask": 34,
+        "open_count": 2,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675552001946,
+          93236549015568,
+          11675552001946
+        ],
+        "geometry_sha256": "ea9896ccd9c7f4720e84c03dfea9a8884b9973753a816bc354a3b809156696af",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 8868,
+        "mask": 35,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 8756,
+        "mask": 36,
+        "open_count": 2,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 9031,
+        "mask": 37,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675552001946,
+          93236549015568,
+          11675552001946
+        ],
+        "geometry_sha256": "ea9896ccd9c7f4720e84c03dfea9a8884b9973753a816bc354a3b809156696af",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 9077,
+        "mask": 38,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675552001946,
+          93236549015568,
+          11675552001946
+        ],
+        "geometry_sha256": "ea9896ccd9c7f4720e84c03dfea9a8884b9973753a816bc354a3b809156696af",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 9517,
+        "mask": 39,
+        "open_count": 4,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 8937,
+        "mask": 40,
+        "open_count": 2,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 9126,
+        "mask": 41,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675797001946,
+          93237301015568,
+          11675797001946
+        ],
+        "geometry_sha256": "8e472df920578609e8c69f960ff333f4d567f1232376cd74b724645bf8c671d7",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 9321,
+        "mask": 42,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675797001946,
+          93237301015568,
+          11675797001946
+        ],
+        "geometry_sha256": "8e472df920578609e8c69f960ff333f4d567f1232376cd74b724645bf8c671d7",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 10071,
+        "mask": 43,
+        "open_count": 4,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 9748,
+        "mask": 44,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 9930,
+        "mask": 45,
+        "open_count": 4,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675797001946,
+          93237301015568,
+          11675797001946
+        ],
+        "geometry_sha256": "8e472df920578609e8c69f960ff333f4d567f1232376cd74b724645bf8c671d7",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 10168,
+        "mask": 46,
+        "open_count": 4,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675797001946,
+          93237301015568,
+          11675797001946
+        ],
+        "geometry_sha256": "8e472df920578609e8c69f960ff333f4d567f1232376cd74b724645bf8c671d7",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 10785,
+        "mask": 47,
+        "open_count": 5,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 9749,
+        "mask": 48,
+        "open_count": 2,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 9505,
+        "mask": 49,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675552001946,
+          93236549015568,
+          11675552001946
+        ],
+        "geometry_sha256": "ea9896ccd9c7f4720e84c03dfea9a8884b9973753a816bc354a3b809156696af",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 9578,
+        "mask": 50,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675552001946,
+          93236549015568,
+          11675552001946
+        ],
+        "geometry_sha256": "ea9896ccd9c7f4720e84c03dfea9a8884b9973753a816bc354a3b809156696af",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 10021,
+        "mask": 51,
+        "open_count": 4,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 10250,
+        "mask": 52,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 10692,
+        "mask": 53,
+        "open_count": 4,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675552001946,
+          93236549015568,
+          11675552001946
+        ],
+        "geometry_sha256": "ea9896ccd9c7f4720e84c03dfea9a8884b9973753a816bc354a3b809156696af",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 11011,
+        "mask": 54,
+        "open_count": 4,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675552001946,
+          93236549015568,
+          11675552001946
+        ],
+        "geometry_sha256": "ea9896ccd9c7f4720e84c03dfea9a8884b9973753a816bc354a3b809156696af",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 11731,
+        "mask": 55,
+        "open_count": 5,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 9796,
+        "mask": 56,
+        "open_count": 3,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 9999,
+        "mask": 57,
+        "open_count": 4,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675797001946,
+          93237301015568,
+          11675797001946
+        ],
+        "geometry_sha256": "8e472df920578609e8c69f960ff333f4d567f1232376cd74b724645bf8c671d7",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 10296,
+        "mask": 58,
+        "open_count": 4,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675797001946,
+          93237301015568,
+          11675797001946
+        ],
+        "geometry_sha256": "8e472df920578609e8c69f960ff333f4d567f1232376cd74b724645bf8c671d7",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 10686,
+        "mask": 59,
+        "open_count": 5,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 10926,
+        "mask": 60,
+        "open_count": 4,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11683159001946,
+          93258664015568,
+          11683159001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 3,
+        "elapsed_us": 11595,
+        "mask": 61,
+        "open_count": 5,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675797001946,
+          93237301015568,
+          11675797001946
+        ],
+        "geometry_sha256": "8e472df920578609e8c69f960ff333f4d567f1232376cd74b724645bf8c671d7",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 12292,
+        "mask": 62,
+        "open_count": 5,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      },
+      {
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675797001946,
+          93237301015568,
+          11675797001946
+        ],
+        "geometry_sha256": "8e472df920578609e8c69f960ff333f4d567f1232376cd74b724645bf8c671d7",
+        "diagnostic": "",
+        "field_iterations": 1,
+        "rail_repair_iterations": 2,
+        "elapsed_us": 12975,
+        "mask": 63,
+        "open_count": 6,
+        "candidate_id": "D04-C006",
+        "mode": "MASK"
+      }
+    ],
+    "case_comparison": {
+      "case_id": "D04",
+      "state": "b3-r071",
+      "execution": "selected5_r1/repeat_1",
+      "all_candidates": 32,
+      "mask_candidates": 6,
+      "reference_candidate_id": "D04-C027",
+      "reference_in_mask_candidates": false,
+      "reference": {
+        "candidate_id": null,
+        "mode": null,
+        "mask": null,
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11667610001946,
+          93196751015568,
+          11667610001946
+        ],
+        "geometry_sha256": null
+      },
+      "six_candidate_endpoint_best": {
+        "candidate_id": "D04-C006",
+        "mode": "MASK",
+        "mask": 63,
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675797001946,
+          93237301015568,
+          11675797001946
+        ],
+        "geometry_sha256": "8e472df920578609e8c69f960ff333f4d567f1232376cd74b724645bf8c671d7"
+      },
+      "six_candidate_mask_best": {
+        "candidate_id": "D04-C006",
+        "mode": "MASK",
+        "mask": 34,
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11675552001946,
+          93236549015568,
+          11675552001946
+        ],
+        "geometry_sha256": "ea9896ccd9c7f4720e84c03dfea9a8884b9973753a816bc354a3b809156696af"
+      },
+      "all_candidate_endpoint_best": {
+        "candidate_id": "D04-C007",
+        "mode": "S_VND",
+        "mask": null,
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11667610001946,
+          93196398015568,
+          11667610001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8"
+      },
+      "all_candidate_simple_best": {
+        "candidate_id": "D04-C007",
+        "mode": "S_VND",
+        "mask": null,
+        "success": true,
+        "objective_us": [
+          15278636001946,
+          11667610001946,
+          93196398015568,
+          11667610001946
+        ],
+        "geometry_sha256": "94c888cca1dd2208996d535a19a2517ab200f028257eb94392d668f6e56aacb8"
+      },
+      "mask_vs_six_endpoint": "better",
+      "mask_vs_all_endpoint": "worse",
+      "mask_vs_all_simple": "worse",
+      "mask_vs_reference": "worse",
+      "mask_vs_all_simple_and_reference": "worse",
+      "mask_delta_vs_six_endpoint_us": [
+        0,
+        -245000000,
+        -752000000,
+        -245000000
+      ],
+      "mask_delta_vs_all_endpoint_us": [
+        0,
+        7942000000,
+        40151000000,
+        7942000000
+      ],
+      "mask_delta_vs_all_simple_us": [
+        0,
+        7942000000,
+        40151000000,
+        7942000000
+      ],
+      "mask_delta_vs_reference_us": [
+        0,
+        7942000000,
+        39798000000,
+        7942000000
+      ]
+    },
+    "one_bit_edges": [
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 0,
+        "to_mask": 1,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 0,
+        "to_mask": 2,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 0,
+        "to_mask": 4,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 0,
+        "to_mask": 8,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 0,
+        "to_mask": 16,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 0,
+        "to_mask": 32,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 1,
+        "to_mask": 3,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 1,
+        "to_mask": 5,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 1,
+        "to_mask": 9,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 1,
+        "to_mask": 17,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 1,
+        "to_mask": 33,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 2,
+        "to_mask": 3,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 2,
+        "to_mask": 6,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 2,
+        "to_mask": 10,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -364000000,
+          -717000000,
+          -364000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 2,
+        "to_mask": 18,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 2,
+        "to_mask": 34,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7607000000,
+          -22115000000,
+          -7607000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 3,
+        "to_mask": 7,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 3,
+        "to_mask": 11,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -364000000,
+          -717000000,
+          -364000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 3,
+        "to_mask": 19,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 3,
+        "to_mask": 35,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7607000000,
+          -22115000000,
+          -7607000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 4,
+        "to_mask": 5,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 4,
+        "to_mask": 6,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 4,
+        "to_mask": 12,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 4,
+        "to_mask": 20,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 4,
+        "to_mask": 36,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 5,
+        "to_mask": 7,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 5,
+        "to_mask": 13,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 5,
+        "to_mask": 21,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 5,
+        "to_mask": 37,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 6,
+        "to_mask": 7,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 6,
+        "to_mask": 14,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -364000000,
+          -717000000,
+          -364000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 6,
+        "to_mask": 22,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 6,
+        "to_mask": 38,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7607000000,
+          -22115000000,
+          -7607000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 7,
+        "to_mask": 15,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -364000000,
+          -717000000,
+          -364000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 7,
+        "to_mask": 23,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 7,
+        "to_mask": 39,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7607000000,
+          -22115000000,
+          -7607000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 8,
+        "to_mask": 9,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 8,
+        "to_mask": 10,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -364000000,
+          -717000000,
+          -364000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 8,
+        "to_mask": 12,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 8,
+        "to_mask": 24,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 8,
+        "to_mask": 40,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 9,
+        "to_mask": 11,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -364000000,
+          -717000000,
+          -364000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 9,
+        "to_mask": 13,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 9,
+        "to_mask": 25,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 9,
+        "to_mask": 41,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 10,
+        "to_mask": 11,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 10,
+        "to_mask": 14,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 10,
+        "to_mask": 26,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 10,
+        "to_mask": 42,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -6998000000,
+          -20646000000,
+          -6998000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 11,
+        "to_mask": 15,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 11,
+        "to_mask": 27,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 11,
+        "to_mask": 43,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -6998000000,
+          -20646000000,
+          -6998000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 12,
+        "to_mask": 13,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 12,
+        "to_mask": 14,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -364000000,
+          -717000000,
+          -364000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 12,
+        "to_mask": 28,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 12,
+        "to_mask": 44,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 13,
+        "to_mask": 15,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -364000000,
+          -717000000,
+          -364000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 13,
+        "to_mask": 29,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 13,
+        "to_mask": 45,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 14,
+        "to_mask": 15,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 14,
+        "to_mask": 30,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 14,
+        "to_mask": 46,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -6998000000,
+          -20646000000,
+          -6998000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 15,
+        "to_mask": 31,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 15,
+        "to_mask": 47,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -6998000000,
+          -20646000000,
+          -6998000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 16,
+        "to_mask": 17,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 16,
+        "to_mask": 18,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 16,
+        "to_mask": 20,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 16,
+        "to_mask": 24,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 16,
+        "to_mask": 48,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 17,
+        "to_mask": 19,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 17,
+        "to_mask": 21,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 17,
+        "to_mask": 25,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 17,
+        "to_mask": 49,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 18,
+        "to_mask": 19,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 18,
+        "to_mask": 22,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 18,
+        "to_mask": 26,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -364000000,
+          -717000000,
+          -364000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 18,
+        "to_mask": 50,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7607000000,
+          -22115000000,
+          -7607000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 19,
+        "to_mask": 23,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 19,
+        "to_mask": 27,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -364000000,
+          -717000000,
+          -364000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 19,
+        "to_mask": 51,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7607000000,
+          -22115000000,
+          -7607000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 20,
+        "to_mask": 21,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 20,
+        "to_mask": 22,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 20,
+        "to_mask": 28,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 20,
+        "to_mask": 52,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 21,
+        "to_mask": 23,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 21,
+        "to_mask": 29,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 21,
+        "to_mask": 53,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 22,
+        "to_mask": 23,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 22,
+        "to_mask": 30,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -364000000,
+          -717000000,
+          -364000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 22,
+        "to_mask": 54,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7607000000,
+          -22115000000,
+          -7607000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 23,
+        "to_mask": 31,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -364000000,
+          -717000000,
+          -364000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 23,
+        "to_mask": 55,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7607000000,
+          -22115000000,
+          -7607000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 24,
+        "to_mask": 25,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 24,
+        "to_mask": 26,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -364000000,
+          -717000000,
+          -364000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 24,
+        "to_mask": 28,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 24,
+        "to_mask": 56,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 25,
+        "to_mask": 27,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -364000000,
+          -717000000,
+          -364000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 25,
+        "to_mask": 29,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 25,
+        "to_mask": 57,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 26,
+        "to_mask": 27,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 26,
+        "to_mask": 30,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 26,
+        "to_mask": 58,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -6998000000,
+          -20646000000,
+          -6998000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 27,
+        "to_mask": 31,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 27,
+        "to_mask": 59,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -6998000000,
+          -20646000000,
+          -6998000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 28,
+        "to_mask": 29,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 28,
+        "to_mask": 30,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -364000000,
+          -717000000,
+          -364000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 28,
+        "to_mask": 60,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 29,
+        "to_mask": 31,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -364000000,
+          -717000000,
+          -364000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 29,
+        "to_mask": 61,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 30,
+        "to_mask": 31,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 30,
+        "to_mask": 62,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -6998000000,
+          -20646000000,
+          -6998000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 31,
+        "to_mask": 63,
+        "opened_block": "u6",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -6998000000,
+          -20646000000,
+          -6998000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 32,
+        "to_mask": 33,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 32,
+        "to_mask": 34,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7607000000,
+          -22115000000,
+          -7607000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 32,
+        "to_mask": 36,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 32,
+        "to_mask": 40,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 32,
+        "to_mask": 48,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 33,
+        "to_mask": 35,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7607000000,
+          -22115000000,
+          -7607000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 33,
+        "to_mask": 37,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 33,
+        "to_mask": 41,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 33,
+        "to_mask": 49,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 34,
+        "to_mask": 35,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 34,
+        "to_mask": 38,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 34,
+        "to_mask": 42,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "worse",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          245000000,
+          752000000,
+          245000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 34,
+        "to_mask": 50,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 35,
+        "to_mask": 39,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 35,
+        "to_mask": 43,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "worse",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          245000000,
+          752000000,
+          245000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 35,
+        "to_mask": 51,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 36,
+        "to_mask": 37,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 36,
+        "to_mask": 38,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7607000000,
+          -22115000000,
+          -7607000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 36,
+        "to_mask": 44,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 36,
+        "to_mask": 52,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 37,
+        "to_mask": 39,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7607000000,
+          -22115000000,
+          -7607000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 37,
+        "to_mask": 45,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 37,
+        "to_mask": 53,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 38,
+        "to_mask": 39,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 38,
+        "to_mask": 46,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "worse",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          245000000,
+          752000000,
+          245000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 38,
+        "to_mask": 54,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 39,
+        "to_mask": 47,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "worse",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          245000000,
+          752000000,
+          245000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 39,
+        "to_mask": 55,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 40,
+        "to_mask": 41,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 40,
+        "to_mask": 42,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7362000000,
+          -21363000000,
+          -7362000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 40,
+        "to_mask": 44,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 40,
+        "to_mask": 56,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 41,
+        "to_mask": 43,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7362000000,
+          -21363000000,
+          -7362000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 41,
+        "to_mask": 45,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 41,
+        "to_mask": 57,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 42,
+        "to_mask": 43,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 42,
+        "to_mask": 46,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 42,
+        "to_mask": 58,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 43,
+        "to_mask": 47,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 43,
+        "to_mask": 59,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 44,
+        "to_mask": 45,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 44,
+        "to_mask": 46,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7362000000,
+          -21363000000,
+          -7362000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 44,
+        "to_mask": 60,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 45,
+        "to_mask": 47,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7362000000,
+          -21363000000,
+          -7362000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 45,
+        "to_mask": 61,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 46,
+        "to_mask": 47,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 46,
+        "to_mask": 62,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 47,
+        "to_mask": 63,
+        "opened_block": "u5",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 48,
+        "to_mask": 49,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 48,
+        "to_mask": 50,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7607000000,
+          -22115000000,
+          -7607000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 48,
+        "to_mask": 52,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 48,
+        "to_mask": 56,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 49,
+        "to_mask": 51,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7607000000,
+          -22115000000,
+          -7607000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 49,
+        "to_mask": 53,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 49,
+        "to_mask": 57,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 50,
+        "to_mask": 51,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 50,
+        "to_mask": 54,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 50,
+        "to_mask": 58,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "worse",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          245000000,
+          752000000,
+          245000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 51,
+        "to_mask": 55,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 51,
+        "to_mask": 59,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "worse",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          245000000,
+          752000000,
+          245000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 52,
+        "to_mask": 53,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 52,
+        "to_mask": 54,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7607000000,
+          -22115000000,
+          -7607000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 52,
+        "to_mask": 60,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 53,
+        "to_mask": 55,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7607000000,
+          -22115000000,
+          -7607000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 53,
+        "to_mask": 61,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 54,
+        "to_mask": 55,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 54,
+        "to_mask": 62,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "worse",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          245000000,
+          752000000,
+          245000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 55,
+        "to_mask": 63,
+        "opened_block": "u4",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "worse",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          245000000,
+          752000000,
+          245000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 56,
+        "to_mask": 57,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 56,
+        "to_mask": 58,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7362000000,
+          -21363000000,
+          -7362000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 56,
+        "to_mask": 60,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 57,
+        "to_mask": 59,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7362000000,
+          -21363000000,
+          -7362000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 57,
+        "to_mask": 61,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 58,
+        "to_mask": 59,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 58,
+        "to_mask": 62,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 59,
+        "to_mask": 63,
+        "opened_block": "u3",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 60,
+        "to_mask": 61,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 3
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 60,
+        "to_mask": 62,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7362000000,
+          -21363000000,
+          -7362000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 61,
+        "to_mask": 63,
+        "opened_block": "u2",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "better",
+        "geometry_changed": true,
+        "objective_delta_us": [
+          0,
+          -7362000000,
+          -21363000000,
+          -7362000000
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 3,
+        "to_rail_iterations": 2
+      },
+      {
+        "case_id": "D04",
+        "state": "b3-r071",
+        "candidate_id": "D04-C006",
+        "from_mask": 62,
+        "to_mask": 63,
+        "opened_block": "u1",
+        "from_success": true,
+        "to_success": true,
+        "objective_relation": "tie",
+        "geometry_changed": false,
+        "objective_delta_us": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "from_field_iterations": 1,
+        "to_field_iterations": 1,
+        "from_rail_iterations": 2,
+        "to_rail_iterations": 2
+      }
+    ]
+  }
+]

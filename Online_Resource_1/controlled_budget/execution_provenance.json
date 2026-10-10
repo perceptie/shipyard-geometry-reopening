@@ -1,0 +1,156 @@
+{
+  "states": [
+    "b3-r006",
+    "b3-r071",
+    "b2-r051",
+    "b3-r031"
+  ],
+  "repeats": 3,
+  "protocol_sha256": "0b8abfb60aa0bd10157091d49e4420f693cb589ac333aeec5aaf95e76ce81134",
+  "source_sha256": {
+    "src/CMakeLists.txt": "9b85fb75334b59e26c2c6b40a7f968f6f6705d4d51c6c05d1d05dad677111738",
+    "src/common_initial_diagnostics.hpp": "54f42de682192871aa0ee98ebdbab0f1735fcdd9f6b901f7254cf76c3e2c1fd0",
+    "src/field_aware_decoder.cpp": "828ceb776ddef321aac7d588f076278d56a9c00bff8bef938e04e3120cd71d02",
+    "src/formal_solver_engine.cpp": "737546db52950af6a2d0533503b6c1c0bfdd68e121113e61dce8ae7cd571e033",
+    "src/research_diagnostic_clock.hpp": "1c109908df391e89038d1111454b08e9b38039d7db799bec00b23898ebbcb48d",
+    "src/research_method.hpp": "7f6c9e0212dfb8f88b46cd30d06c90df07ecce3faa6bd9f1e12221ed172a5602",
+    "src/research_metrics.hpp": "0ef8880257880e5750832881a8e49271470e0ea4931334a14b87604c6083b338",
+    "src/research_trace.hpp": "be4c5e65f718bc5377cf1c75bf0d70237d2d94b1997037b4d8129a817056c624",
+    "src/research_warm_start_state.hpp": "5ca9a41c4c7fed8ac8a45f9e436935ecb6035050d9aff6494840ca2bdd4ffd10",
+    "src/rolling_main.cpp": "e2acd16c6a8ebc3c36cddf24b41047af8ca4978582766c9a35b04a8741cf2a1c",
+    "src/test_method.cpp": "d5cdfa1c2a6311ef5e686ce917c9033f7b10a86dfc1adbb91d578d21f370d1fe"
+  },
+  "runner_sha256": "baee004c2f309ef8e92fe208e9976d716cf931fa9216d5b357b7cdd10f85f553",
+  "binary_sha256": "76c2d345e2e77b70cf96836276dcc26ddc28b43906b31c127d697de10d8c93c4",
+  "started_unix": 1791648969.0764892,
+  "cpu_affinity": [
+    12
+  ],
+  "platform": "Linux-6.11.0-26-generic-x86_64-with-glibc2.39",
+  "construction_measurement": "after input adaptation through checked complete incumbent and cost; excludes prior failed calls, adaptation, copying and outer controller overhead",
+  "source_role": "source_sha256 identifies actual instrumented run overlay, distinct from the earlier source_baseline",
+  "runs": [
+    {
+      "state": "b2-r051",
+      "cpu_affinity": [
+        12
+      ],
+      "input_sha256": {
+        "run-provenance.planned.json": "8c6a9a0cd43b5db8350461893ab6974e12ecdc2398fc000389d09b06574296d0",
+        "prefix/checkpoint.json": "13d1fdaf467d8a46268cacf19efd1506809f39d97ef9734b67602f90d866132e",
+        "prefix/checkpoint.json.journal": "9c27efaecb510ae7522139e9b610eeb4b935657c31ec86ab7d2c936fd6ae46b8",
+        "warm-input.json": "8ebe0c6abe9ce22f335b188b2e5d0b46918ee84016d1beabd757a35a1c652470"
+      },
+      "start_unix": 1791649229.8229046,
+      "exit_code": 2,
+      "wall_seconds": 144.25209136120975,
+      "expected_round_stop": true,
+      "output_sha256": {
+        "trace.jsonl": "9e82bea03d42226b7a3a416da37c0a33768a3c9723b8877c7aa676e9e8510887",
+        "stderr.log": "47f732b11cccf0481e15efa8a2989e94c2940a8a5b12a017a38a0ada554fcd25",
+        "diagnostics.jsonl": "0cb8c4ede458214c4e142b6dfd3ec947cad5e4184605fac4d4a524c6569b21f5",
+        "checkpoint.json": "488c7b628c74e0a87ba551f73f58b5db0018f92ca0202259dde82ac09967993c",
+        "run-provenance.planned.json": "b9b74be8a7d73d3f363097ce49294bf4206221463cb635bae5466b85822b9011",
+        "diagnostics.jsonl.progress": "50a9616923770f3e81ca113fd68987382757e493cee5ab6f1770aa559f154a11",
+        "warm-output.json.batch-2-round-51": "3d4f3ad55063051244f2dfd90a79b7b31d2b5eabd79f1ec4c2ac48edba74b3ee",
+        "warm-output.json": "3d4f3ad55063051244f2dfd90a79b7b31d2b5eabd79f1ec4c2ac48edba74b3ee",
+        "warm-input.json": "8ebe0c6abe9ce22f335b188b2e5d0b46918ee84016d1beabd757a35a1c652470",
+        "checkpoint.json.journal": "ba47a1eeff70d9e2f738701a79bee085af086c199abfdc6569c208edcf371247",
+        "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "loadavg_before": "13.14 8.29 5.93 10/2675 3517121\n",
+      "loadavg_after": "11.32 9.84 6.88 5/2488 3526184\n"
+    },
+    {
+      "state": "b3-r006",
+      "cpu_affinity": [
+        12
+      ],
+      "input_sha256": {
+        "run-provenance.planned.json": "41790f448b22e3c7859fdb4480104926c736058f96618688bd951662a3edd123",
+        "prefix/checkpoint.json": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+        "prefix/checkpoint.json.journal": "63e4b7849f534c21e71201bb2db8352aed15429c3d6b0f8e161c9f180dd4863e",
+        "warm-input.json": "5e7a737c5c4ffa57f3f4939f278f42beef5ad4bd33b1add5cfd606b574fa8c90"
+      },
+      "start_unix": 1791648969.0880816,
+      "exit_code": 2,
+      "wall_seconds": 127.91125010885298,
+      "expected_round_stop": true,
+      "output_sha256": {
+        "trace.jsonl": "9ac51a2c821f644de550c18f55562e6879fbdb6fade9ead6d7f9834a19a5c79c",
+        "stderr.log": "47f732b11cccf0481e15efa8a2989e94c2940a8a5b12a017a38a0ada554fcd25",
+        "diagnostics.jsonl": "eace6696467b30801f4a8441b3238a706e3780c0ab525118e0cbdea07de4677c",
+        "checkpoint.json": "f2f6025566bc4e33615dff502b2d7b0df4bd43b04f7b52ac8d91cf0c893128bf",
+        "run-provenance.planned.json": "3e140cce9e1248b472e97dcf8bf3ebd14c2be0e9fc7eb89d554736870238fac5",
+        "diagnostics.jsonl.progress": "ee0435f8291ec2d82955c226b432d16a89ec6413fc26119065819af842dff451",
+        "warm-output.json": "564d066b5cd348ac1d2e40d8e2689268f3dd18af8edd6154391b35a21b1b13e4",
+        "warm-input.json": "5e7a737c5c4ffa57f3f4939f278f42beef5ad4bd33b1add5cfd606b574fa8c90",
+        "checkpoint.json.journal": "23c58d3f7900435d6d6163e6d3dab1421ddeb25c3bd18068717418e5d4807d58",
+        "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warm-output.json.batch-3-round-6": "564d066b5cd348ac1d2e40d8e2689268f3dd18af8edd6154391b35a21b1b13e4"
+      },
+      "loadavg_before": "4.10 4.49 4.47 4/2442 3501328\n",
+      "loadavg_after": "6.71 5.11 4.69 9/2649 3507692\n"
+    },
+    {
+      "state": "b3-r031",
+      "cpu_affinity": [
+        12
+      ],
+      "input_sha256": {
+        "run-provenance.planned.json": "7afca21beccffe64c0fa17ece29693d52fe3b00ddfe071b247b9a42478a42930",
+        "prefix/checkpoint.json": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+        "prefix/checkpoint.json.journal": "06d2aefd13d7366893ce08161e2ebb1c8f289281e16f485aa4690aae741f457a"
+      },
+      "start_unix": 1791649374.22306,
+      "exit_code": 2,
+      "wall_seconds": 170.6336392443627,
+      "expected_round_stop": true,
+      "output_sha256": {
+        "trace.jsonl": "596bdb89ddcaa031d0516f95961d59ed35e12b425b790070613544b0af7f0ee6",
+        "stderr.log": "47f732b11cccf0481e15efa8a2989e94c2940a8a5b12a017a38a0ada554fcd25",
+        "diagnostics.jsonl": "3eab2481789a550f0eae10ff553f9e01e78d5b4644ad141a10776fac2b27be02",
+        "checkpoint.json": "8791e9948124ed50dded5fe12e7b03703c99a392b98e9dded5bcc47f906a2e30",
+        "run-provenance.planned.json": "cb993d3ec1508a90ad3e0d260344badeb34d2a8b6761dbb126d57ce6e14aedfe",
+        "warm-output.json.batch-3-round-31": "0b167fedcc0ec70c908a86fea7ce5fed629d067e0b326811d99f3577306e6555",
+        "diagnostics.jsonl.progress": "f79036ddda36d01a7ae598cdb70d4f18f86e28baf78d730eba5f166145cfc32e",
+        "warm-output.json": "0b167fedcc0ec70c908a86fea7ce5fed629d067e0b326811d99f3577306e6555",
+        "checkpoint.json.journal": "166edc20bc6feca98d6b3c9aee1df7a6863e39c059a76646c72f6218e0c5ac54",
+        "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "loadavg_before": "11.32 9.84 6.88 6/2491 3526187\n",
+      "loadavg_after": "8.00 9.53 7.29 4/2459 3535573\n"
+    },
+    {
+      "state": "b3-r071",
+      "cpu_affinity": [
+        12
+      ],
+      "input_sha256": {
+        "run-provenance.planned.json": "87c582cc2cc68fdca692c5bb03aff0c111be4623a5028147dd20a4cb001c6fcd",
+        "prefix/checkpoint.json": "55ff4c2742cba44d4f2ddc70fc5bb757a5d63f41a9e38af73370d6f07a296c5e",
+        "prefix/checkpoint.json.journal": "6afa82528d36036c7d8a7157a26e5815a9fbcd406f23e591513981070730afcc",
+        "warm-input.json": "93666f06dd7506c5e369d378c31b9aff51e5f9646029257ba9e1a7f66a4f8fb9"
+      },
+      "start_unix": 1791649097.100412,
+      "exit_code": 2,
+      "wall_seconds": 132.6307077612728,
+      "expected_round_stop": true,
+      "output_sha256": {
+        "trace.jsonl": "335e13b2366817e81367bb42bc46d719c55afef0ddaa00ff9440221aa79ed9ee",
+        "warm-output.json.batch-3-round-71": "194635d8b8e31d7e82e6cf886e4fe3c50537d3258640111f9c114a1f1ac9f7cb",
+        "stderr.log": "47f732b11cccf0481e15efa8a2989e94c2940a8a5b12a017a38a0ada554fcd25",
+        "diagnostics.jsonl": "b1446aac17305d81b8a238a2e409ae65d68a90e95f825576b9b03cb12e89821c",
+        "checkpoint.json": "2be6d2bbec1b7fcd4c3e14fbfd63d74ca2085745982c39678debdf2a65195c56",
+        "run-provenance.planned.json": "2f893367b6e4984d483b0a8caac141f826848b406c22dccb59142044c43136de",
+        "diagnostics.jsonl.progress": "a5dfde6d3303e7ce065f4669d34e9db32ceb1ecdcdf00b3a87446c8995fba15c",
+        "warm-output.json": "194635d8b8e31d7e82e6cf886e4fe3c50537d3258640111f9c114a1f1ac9f7cb",
+        "warm-input.json": "93666f06dd7506c5e369d378c31b9aff51e5f9646029257ba9e1a7f66a4f8fb9",
+        "checkpoint.json.journal": "edf34a0ea8b1b1cf234a28d670ef2c379c0f673625c12cd3453f5bc3e1da70db",
+        "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "loadavg_before": "6.71 5.11 4.69 7/2643 3507692\n",
+      "loadavg_after": "13.14 8.29 5.93 23/2678 3517120\n"
+    }
+  ]
+}

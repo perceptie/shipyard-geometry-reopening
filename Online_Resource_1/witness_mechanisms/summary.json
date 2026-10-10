@@ -1,0 +1,19 @@
+{
+  "schema": "p02-witness-mechanisms/1.0.0",
+  "source_sha256": "5ec1c0a6006970e0626df5fb47f48a7462907056a03c298f04dfea4a95acd6de",
+  "analysis": "saved terminal plans; no solver rerun and no repair-step causal trace",
+  "source_witnesses": 9,
+  "plan_records": 72,
+  "all_calendar_horizon_intersection_counts_zero": true,
+  "plans_with_zero_minimum_adjacent_crane_gap": 72,
+  "plans_with_current_request_spatial_reuse": 24,
+  "global_minimum_reuse_slack_s": 19330.834494,
+  "critical_chain_accounting_closes": true,
+  "limits": [
+    "Intertask gaps include all non-task intervals and are not labelled as causal rail waits.",
+    "Final minimum-start constraints and iteration counts do not record rejected repair trials.",
+    "Rail gaps use point-centre x trajectories and declared stationary holds, not crane body separation.",
+    "Release slack describes saved occupancies, not performance after conservative redecoding.",
+    "Witnesses are selected same-candidate successes, not random independent cases."
+  ]
+}
