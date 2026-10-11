@@ -141,7 +141,10 @@ def build(data):
     for budget,x0,x1,title in coords:
         panel=[p for p in phases if p['budget']==budget]
         cap=float(panel[0]['budget_seconds'])
-        xmax=max([cap]+[float(p['elapsed_seconds']) for p in panel])
+        # Use one 0--12 s horizontal scale so the two budget policies can be
+        # compared at the same x coordinate. The shorter budget ends at its
+        # measured stop while the axis remains comparable to the full budget.
+        xmax=12.0
         xx=lambda value:x0+value/max(xmax,1e-9)*(x1-x0)
         out.append(text(x0-40,43,title,9,weight='700'))
         for tick in ticks:
@@ -198,7 +201,7 @@ def build(data):
     for i,state in enumerate(STATES):
         y=267+i*16
         out.append(text(7,y,state,8.8))
-        out.append(text(91,y,'Development' if i<2 else 'Holdout',8.5))
+        out.append(text(91,y,'Development' if i<2 else 'Input-selected',8.5))
         out.append(text(172,y,f"{initial[state]['remainder_microseconds']/1e6:.3f}",8.5,anchor='middle'))
         for budget,cx in [('remainder',282),('full',400)]:
             pairs=next(x['pairs'] for x in data['summary']['comparisons'] if x['state']==state and x['budget']==budget)
