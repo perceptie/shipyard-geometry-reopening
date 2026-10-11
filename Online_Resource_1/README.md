@@ -47,6 +47,7 @@ The released reproduction package uses the MIT License; see `LICENSE`. This lice
 - `e11_pair_statistics.csv` and `e11_state_statistics.csv`: per-pair and three-repeat per-state summaries for the common-plan diagnostics.
 - `e12_rolling_repeat_summary.json` and `.csv`: the original E7 J/S reference and two new complete first-batch J/S pairs, including parameters, source/output hashes, completion, solver wall time, validation results, and encountered pool/occupancy/tandem profiles.
 - `e12_condition_transfer_summary.json` and `.csv`: one complete second-batch J/S comparison from a shared completed LRP first-batch checkpoint, with exact relative checkpoint times and a common boundary fingerprint.
+- `controlled_budget/opportunity_match.json`: measured E32 improvement-search times at which retained incumbents first match the offline b3-r006 intermediate-mask witness under the full objective; this excludes mask-discovery time and outer-controller overhead.
 - `generate_case_figures.py`: editable source for the terminal-case timeline/region schematic and physical-constraint illustration. Region membership is schematic; customer coordinates are not released.
 - `synthetic_controller_example.json`: entirely synthetic four-task, two-block, three-crane inputs and a hand-constructed plan with complete piecewise-linear trajectories.
 - `check_synthetic_controller_example.py`: standard-library-only executable checks of one legal synthetic plan and nine fault controls, with optional JSON report output.

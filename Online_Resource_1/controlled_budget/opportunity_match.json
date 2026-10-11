@@ -1,0 +1,193 @@
+{
+  "schema": "p02-opportunity-match-public/1.0",
+  "generated_at": "2026-10-11",
+  "purpose": "De-identified summary of retained-incumbent match times against the b3-r006 W02 offline mask witness.",
+  "target_objective_us": [
+    15155034509685,
+    10880989836440,
+    86828181057745,
+    10880989836440
+  ],
+  "objective_order": [
+    "projected_current_batch_completion",
+    "current_batch_makespan",
+    "current_batch_total_completion_time",
+    "pool_value"
+  ],
+  "alignment": {
+    "same_common_initial_plan_sha256": true,
+    "request_hash_direct_match": false,
+    "request_compatibility": "state label and exact common initial plan identity; no direct E32 request hash field"
+  },
+  "match_time_unit": "seconds from the measured E32 improvement-search start; accepted incumbent updates only",
+  "rows": [
+    {
+      "method": "J_VND",
+      "budget_condition": "full",
+      "budget_seconds": 12.0,
+      "repeat": 1,
+      "t_match_seconds": 1.96472,
+      "objective_us_at_match": [
+        15155034509685,
+        10875985509685,
+        86906051077480,
+        10875985509685
+      ]
+    },
+    {
+      "method": "J_VND",
+      "budget_condition": "full",
+      "budget_seconds": 12.0,
+      "repeat": 2,
+      "t_match_seconds": 2.009851,
+      "objective_us_at_match": [
+        15155034509685,
+        10875985509685,
+        86906051077480,
+        10875985509685
+      ]
+    },
+    {
+      "method": "J_VND",
+      "budget_condition": "full",
+      "budget_seconds": 12.0,
+      "repeat": 3,
+      "t_match_seconds": 2.070819,
+      "objective_us_at_match": [
+        15155034509685,
+        10875985509685,
+        86906051077480,
+        10875985509685
+      ]
+    },
+    {
+      "method": "J_VND",
+      "budget_condition": "remainder",
+      "budget_seconds": 8.303348,
+      "repeat": 1,
+      "t_match_seconds": 1.898913,
+      "objective_us_at_match": [
+        15155034509685,
+        10875985509685,
+        86906051077480,
+        10875985509685
+      ]
+    },
+    {
+      "method": "J_VND",
+      "budget_condition": "remainder",
+      "budget_seconds": 8.303348,
+      "repeat": 2,
+      "t_match_seconds": 2.025881,
+      "objective_us_at_match": [
+        15155034509685,
+        10875985509685,
+        86906051077480,
+        10875985509685
+      ]
+    },
+    {
+      "method": "J_VND",
+      "budget_condition": "remainder",
+      "budget_seconds": 8.303348,
+      "repeat": 3,
+      "t_match_seconds": 2.051344,
+      "objective_us_at_match": [
+        15155034509685,
+        10875985509685,
+        86906051077480,
+        10875985509685
+      ]
+    },
+    {
+      "method": "S_VND",
+      "budget_condition": "full",
+      "budget_seconds": 12.0,
+      "repeat": 1,
+      "t_match_seconds": 4.076921,
+      "objective_us_at_match": [
+        15155034509685,
+        10876166836440,
+        86893000038010,
+        10876166836440
+      ]
+    },
+    {
+      "method": "S_VND",
+      "budget_condition": "full",
+      "budget_seconds": 12.0,
+      "repeat": 2,
+      "t_match_seconds": 4.290813,
+      "objective_us_at_match": [
+        15155034509685,
+        10876166836440,
+        86893000038010,
+        10876166836440
+      ]
+    },
+    {
+      "method": "S_VND",
+      "budget_condition": "full",
+      "budget_seconds": 12.0,
+      "repeat": 3,
+      "t_match_seconds": 4.329278,
+      "objective_us_at_match": [
+        15155034509685,
+        10876166836440,
+        86893000038010,
+        10876166836440
+      ]
+    },
+    {
+      "method": "S_VND",
+      "budget_condition": "remainder",
+      "budget_seconds": 8.303348,
+      "repeat": 1,
+      "t_match_seconds": 4.031758,
+      "objective_us_at_match": [
+        15155034509685,
+        10876166836440,
+        86893000038010,
+        10876166836440
+      ]
+    },
+    {
+      "method": "S_VND",
+      "budget_condition": "remainder",
+      "budget_seconds": 8.303348,
+      "repeat": 2,
+      "t_match_seconds": 4.320028,
+      "objective_us_at_match": [
+        15155034509685,
+        10876166836440,
+        86893000038010,
+        10876166836440
+      ]
+    },
+    {
+      "method": "S_VND",
+      "budget_condition": "remainder",
+      "budget_seconds": 8.303348,
+      "repeat": 3,
+      "t_match_seconds": 4.330688,
+      "objective_us_at_match": [
+        15155034509685,
+        10876166836440,
+        86893000038010,
+        10876166836440
+      ]
+    }
+  ],
+  "summary": {
+    "all_12_match": true,
+    "min_t_match_seconds": 1.898913,
+    "max_t_match_seconds": 4.330688,
+    "offline_mask_discovery_time_available": false,
+    "online_controller_gain_claim_supported": false
+  },
+  "limitations": [
+    "This does not measure the offline mask search or its discovery cost.",
+    "It does not compare full controller wall-clock response time.",
+    "It only shows when retained E32 incumbents reached the mask witness objective under the aligned b3-r006 common initial plan."
+  ]
+}

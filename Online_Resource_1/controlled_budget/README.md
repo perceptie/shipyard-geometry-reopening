@@ -19,3 +19,6 @@ Run:
 At b3-r006, the 8.303348-s allowance favours J by 233.326755 s in all repeats; 12 s favours S by 519 s in all repeats. S's decisive final improvements occur at 11.304651–11.790254 s. At b3-r071 S wins under both allowances; the last 12-s repeat wins at objective tier three, not tier two. Both input-selected states tie under both allowances; their construction segments leave small budget differences. Same candidate-generation rules do not imply identical visited candidate sets or prefix-equivalent timed searches.
 
 Figure reproduction is in `../figures/generate_budget_effect.py`. Curves use actual step events, match first objective before displaying the second, and explicitly use a local 0–1000 s excess window. Complete earlier events remain in the CSV. No confidence intervals or interpolated budget sweep are implied.
+
+
+- `opportunity_match.json` reports when the retained E32 improvement timelines first reached or exceeded the b3-r006 offline mask witness under the complete four-level objective. It excludes mask-discovery time and outer-controller overhead; it is not an online selective-reopening result.
