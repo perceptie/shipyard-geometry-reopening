@@ -106,7 +106,7 @@ The development-budget plot `fig3_budget_sensitivity` remains supplemental confi
 - [Terminal-plan accounting](witness_mechanisms/README.md): relative task phases, finishing-resource chains, geometry displacement, point-centre separation and historical-release reuse slack. These are derived terminal records, not repair-trial causal traces.
 - [Controlled budget](controlled_budget/README.md): two development/two input-selected states, identical complete initial plan per state, fresh caches, core12, two improvement allowances and three repetitions.
 - [Cross-experiment alignment](cross_experiment_alignment.json): the b3-r006 intermediate-mask witness aligned by complete-initial-plan identity with E32 timed VND terminals. The wider-pool mask gain is reported as an offline probe-pool comparison, not as an online controller gain.
-- [Positive-spacing scope](witness_mechanisms/positive_spacing_scope.json): the existing checkpoints are bound to the zero-separation policy. A trial with altered separation fails checkpoint binding; no positive-spacing performance claim is released, and a valid comparison would require a matched rerun from an earlier checkpoint.
+- [Positive-spacing scope](witness_mechanisms/positive_spacing_scope.json): existing E31/E32 checkpoints are bound to the zero-separation policy, so an altered-separation overlay is rejected before simulation. [E33](witness_mechanisms/e33_positive_spacing_first_round.json) records a separate fresh batch-1 first-round formal-decoder probe at 0 m and synthetic 1 m separation. It is a bounded sensitivity observation, not a complete rollout, historical later-state re-decode, field-safety result, or equipment threshold.
 
 From this directory, the new standard-library checks are:
 

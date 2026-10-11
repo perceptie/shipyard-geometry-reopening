@@ -1,0 +1,264 @@
+{
+  "schema": "p02-e33-summary/1.1",
+  "scope": "fresh batch-1 first-round full formal rolling decoder; not complete batch rollout",
+  "records": [
+    {
+      "run": "pos1_j",
+      "trace_sha256": "0e84fcb0c9aa9446c8a84a76bbb1532229c7d2253c193f72411c37529d038dc7",
+      "trace_count": 4,
+      "feasible_records": 2,
+      "exit_code": 2,
+      "audit_accepted": 2,
+      "audit_invalid_feasible_outputs": 0,
+      "separation_request_um": 1000000,
+      "separation_request_m": 1.0,
+      "method": "J_VND",
+      "feasible_label": "spatial_rail_seed_retry",
+      "objective": {
+        "current_batch_makespan": 102097000000,
+        "current_batch_total_completion_time": 1303879000000,
+        "projected_current_batch_completion": 4417311000000,
+        "valid": true,
+        "value": 102097000000
+      },
+      "makespan_us": 102097000000,
+      "candidate_decode_executions": 176,
+      "field_decode_calls": 1407,
+      "rail_redecode_calls": 1055,
+      "final_geometry_changed": true,
+      "task_count": 24,
+      "occupancy_count": 24,
+      "min_spacing": {
+        "min_gap_um": 1000000.0,
+        "min_gap_m": 1.0,
+        "where": [
+          "crane-6f07e8bc80942987066463ec6b7f284491c2e2547eedd3c831e66d3f22a39ef1",
+          "crane-bde95a0eda65a16afd39fd9f2f11487886e4ba7fe97e006526066a3cf1bcbf82",
+          61394000000
+        ],
+        "pairs": [
+          {
+            "left": "crane-6f07e8bc80942987066463ec6b7f284491c2e2547eedd3c831e66d3f22a39ef1",
+            "right": "crane-bde95a0eda65a16afd39fd9f2f11487886e4ba7fe97e006526066a3cf1bcbf82",
+            "min_gap_um": 1000000.0,
+            "time_us": 61394000000
+          },
+          {
+            "left": "crane-bde95a0eda65a16afd39fd9f2f11487886e4ba7fe97e006526066a3cf1bcbf82",
+            "right": "crane-f3cf9a104948201c46f3d605121398297593263bf108e8ec89e9bc239316a18a",
+            "min_gap_um": 102830320.0,
+            "time_us": 957000000
+          }
+        ]
+      },
+      "positive_minus_zero_makespan_us": 617000000,
+      "positive_minus_zero_candidate_decode_executions": -845,
+      "positive_minus_zero_field_decode_calls": -6714,
+      "positive_minus_zero_rail_redecode_calls": -5024,
+      "positive_minus_zero_current_batch_total_completion_time": 2021000000,
+      "positive_minus_zero_projected_current_batch_completion": 3000000
+    },
+    {
+      "run": "pos1_s",
+      "trace_sha256": "038d3c18728dd1cbccea32867d6532ef4bdd21a512afd7f3d72f7406d4c9d094",
+      "trace_count": 4,
+      "feasible_records": 2,
+      "exit_code": 2,
+      "audit_accepted": 2,
+      "audit_invalid_feasible_outputs": 0,
+      "separation_request_um": 1000000,
+      "separation_request_m": 1.0,
+      "method": "S_VND",
+      "feasible_label": "spatial_rail_seed_retry",
+      "objective": {
+        "current_batch_makespan": 103469000000,
+        "current_batch_total_completion_time": 1294971000000,
+        "projected_current_batch_completion": 4417144000000,
+        "valid": true,
+        "value": 103469000000
+      },
+      "makespan_us": 103469000000,
+      "candidate_decode_executions": 1062,
+      "field_decode_calls": 11249,
+      "rail_redecode_calls": 9140,
+      "final_geometry_changed": false,
+      "task_count": 24,
+      "occupancy_count": 24,
+      "min_spacing": {
+        "min_gap_um": 1000000.0,
+        "min_gap_m": 1.0,
+        "where": [
+          "crane-6f07e8bc80942987066463ec6b7f284491c2e2547eedd3c831e66d3f22a39ef1",
+          "crane-bde95a0eda65a16afd39fd9f2f11487886e4ba7fe97e006526066a3cf1bcbf82",
+          59596000000
+        ],
+        "pairs": [
+          {
+            "left": "crane-6f07e8bc80942987066463ec6b7f284491c2e2547eedd3c831e66d3f22a39ef1",
+            "right": "crane-bde95a0eda65a16afd39fd9f2f11487886e4ba7fe97e006526066a3cf1bcbf82",
+            "min_gap_um": 1000000.0,
+            "time_us": 59596000000
+          },
+          {
+            "left": "crane-bde95a0eda65a16afd39fd9f2f11487886e4ba7fe97e006526066a3cf1bcbf82",
+            "right": "crane-f3cf9a104948201c46f3d605121398297593263bf108e8ec89e9bc239316a18a",
+            "min_gap_um": 104692430.0,
+            "time_us": 950000000
+          }
+        ]
+      },
+      "positive_minus_zero_makespan_us": 3000000,
+      "positive_minus_zero_candidate_decode_executions": 20,
+      "positive_minus_zero_field_decode_calls": 152,
+      "positive_minus_zero_rail_redecode_calls": 111,
+      "positive_minus_zero_current_batch_total_completion_time": 72000000,
+      "positive_minus_zero_projected_current_batch_completion": 3000000
+    },
+    {
+      "run": "zero_j",
+      "trace_sha256": "deea7ddb47f51674872152145a962fc7af40c7a937f7d4ff174404426850edee",
+      "trace_count": 2,
+      "feasible_records": 1,
+      "exit_code": 2,
+      "audit_accepted": 1,
+      "audit_invalid_feasible_outputs": 0,
+      "separation_request_um": 0,
+      "separation_request_m": 0.0,
+      "method": "J_VND",
+      "feasible_label": "spatial_rail_seed_retry",
+      "objective": {
+        "current_batch_makespan": 101480000000,
+        "current_batch_total_completion_time": 1301858000000,
+        "projected_current_batch_completion": 4417308000000,
+        "valid": true,
+        "value": 101480000000
+      },
+      "makespan_us": 101480000000,
+      "candidate_decode_executions": 1021,
+      "field_decode_calls": 8121,
+      "rail_redecode_calls": 6079,
+      "final_geometry_changed": true,
+      "task_count": 24,
+      "occupancy_count": 24,
+      "min_spacing": {
+        "min_gap_um": 0.0,
+        "min_gap_m": 0.0,
+        "where": [
+          "crane-6f07e8bc80942987066463ec6b7f284491c2e2547eedd3c831e66d3f22a39ef1",
+          "crane-bde95a0eda65a16afd39fd9f2f11487886e4ba7fe97e006526066a3cf1bcbf82",
+          69779000000
+        ],
+        "pairs": [
+          {
+            "left": "crane-6f07e8bc80942987066463ec6b7f284491c2e2547eedd3c831e66d3f22a39ef1",
+            "right": "crane-bde95a0eda65a16afd39fd9f2f11487886e4ba7fe97e006526066a3cf1bcbf82",
+            "min_gap_um": 0.0,
+            "time_us": 69779000000
+          },
+          {
+            "left": "crane-bde95a0eda65a16afd39fd9f2f11487886e4ba7fe97e006526066a3cf1bcbf82",
+            "right": "crane-f3cf9a104948201c46f3d605121398297593263bf108e8ec89e9bc239316a18a",
+            "min_gap_um": 110858200.0,
+            "time_us": 933000000
+          }
+        ]
+      }
+    },
+    {
+      "run": "zero_s",
+      "trace_sha256": "4dfa3ec5db7d13192fc3483a5e00389f0d02fd8f7eafe769b0c548ce55ede678",
+      "trace_count": 4,
+      "feasible_records": 2,
+      "exit_code": 2,
+      "audit_accepted": 2,
+      "audit_invalid_feasible_outputs": 0,
+      "separation_request_um": 0,
+      "separation_request_m": 0.0,
+      "method": "S_VND",
+      "feasible_label": "spatial_rail_seed_retry",
+      "objective": {
+        "current_batch_makespan": 103466000000,
+        "current_batch_total_completion_time": 1294899000000,
+        "projected_current_batch_completion": 4417141000000,
+        "valid": true,
+        "value": 103466000000
+      },
+      "makespan_us": 103466000000,
+      "candidate_decode_executions": 1042,
+      "field_decode_calls": 11097,
+      "rail_redecode_calls": 9029,
+      "final_geometry_changed": false,
+      "task_count": 24,
+      "occupancy_count": 24,
+      "min_spacing": {
+        "min_gap_um": 0.0,
+        "min_gap_m": 0.0,
+        "where": [
+          "crane-6f07e8bc80942987066463ec6b7f284491c2e2547eedd3c831e66d3f22a39ef1",
+          "crane-bde95a0eda65a16afd39fd9f2f11487886e4ba7fe97e006526066a3cf1bcbf82",
+          59593000000
+        ],
+        "pairs": [
+          {
+            "left": "crane-6f07e8bc80942987066463ec6b7f284491c2e2547eedd3c831e66d3f22a39ef1",
+            "right": "crane-bde95a0eda65a16afd39fd9f2f11487886e4ba7fe97e006526066a3cf1bcbf82",
+            "min_gap_um": 0.0,
+            "time_us": 59593000000
+          },
+          {
+            "left": "crane-bde95a0eda65a16afd39fd9f2f11487886e4ba7fe97e006526066a3cf1bcbf82",
+            "right": "crane-f3cf9a104948201c46f3d605121398297593263bf108e8ec89e9bc239316a18a",
+            "min_gap_um": 105692430.0,
+            "time_us": 947000000
+          }
+        ]
+      }
+    }
+  ],
+  "matched_comparisons": {
+    "j": {
+      "zero": {
+        "current_batch_makespan": 101480000000,
+        "current_batch_total_completion_time": 1301858000000,
+        "projected_current_batch_completion": 4417308000000,
+        "valid": true,
+        "value": 101480000000
+      },
+      "positive_1m": {
+        "current_batch_makespan": 102097000000,
+        "current_batch_total_completion_time": 1303879000000,
+        "projected_current_batch_completion": 4417311000000,
+        "valid": true,
+        "value": 102097000000
+      },
+      "positive_minus_zero_makespan": 617.0,
+      "positive_minus_zero_projected_completion": 3.0
+    },
+    "s": {
+      "zero": {
+        "current_batch_makespan": 103466000000,
+        "current_batch_total_completion_time": 1294899000000,
+        "projected_current_batch_completion": 4417141000000,
+        "valid": true,
+        "value": 103466000000
+      },
+      "positive_1m": {
+        "current_batch_makespan": 103469000000,
+        "current_batch_total_completion_time": 1294971000000,
+        "projected_current_batch_completion": 4417144000000,
+        "valid": true,
+        "value": 103469000000
+      },
+      "positive_minus_zero_makespan": 3.0,
+      "positive_minus_zero_projected_completion": 3.0
+    }
+  },
+  "interpretation": {
+    "all_feasible_records_pass_declared_trace_audit": true,
+    "exit_2_meaning": "expected max-rounds=1 termination; each run contains at least one feasible formal decoder record; it is not a decode failure.",
+    "positive_value_m": 1.0,
+    "positive_value_status": "synthetic sensitivity scenario, not equipment safety threshold",
+    "full_rail_decoder": "The E32 rolling executable and its shared-rail repair path were used; no local partial decoder substituted.",
+    "scope_limit": "No b3-r006/b3-r071 later-state re-decode or mask-specific E33 result was attempted; these fresh batch-1 records only establish provenance-preserving first-round sensitivity."
+  }
+}

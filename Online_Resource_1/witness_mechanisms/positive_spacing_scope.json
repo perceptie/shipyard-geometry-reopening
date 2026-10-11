@@ -1,6 +1,6 @@
 {
-  "status": "not_redecoded",
-  "purpose": "Document the scope of the positive-crane-separation sensitivity check.",
+  "status": "fresh_first_round_probe_completed; aligned_old_checkpoint_not_redecoded",
+  "purpose": "Document the scope and provenance boundary of the positive-crane-separation sensitivity checks.",
   "configured_zero_separation_m": 0.0,
   "observed_zero_separation_exposure": {
     "mask_witness_plans": 72,
@@ -14,6 +14,15 @@
     "error_code": "CONTINUOUS_ROLLING_SIMULATION_FAILED",
     "message": "rolling checkpoint does not match this run"
   },
-  "interpretation": "The available rolling checkpoints are bound to zero-separation policy and provenance. Editing a checkpoint or its hash would fabricate history. A valid positive-separation comparison requires a matched rerun from an earlier checkpoint; this is a new scenario, not a relabelled sensitivity result.",
-  "claim_boundary": "The released records do not certify crane-body clearance or robustness of policy rankings under positive separation."
+  "fresh_first_round_probe": {
+    "record": "witness_mechanisms/e33_positive_spacing_first_round.json",
+    "scope": "Fresh batch-1 first-round formal rolling decoder under matched zero/1-m synthetic separation settings.",
+    "methods": ["J_VND", "S_VND"],
+    "accepted_feasible_record_counts": {"zero_J": 1, "positive_1m_J": 2, "zero_S": 2, "positive_1m_S": 2},
+    "minimum_observed_gap_m": {"zero": 0.0, "positive_1m": 1.0},
+    "projected_completion_delta_positive_minus_zero_s": {"J": 3.0, "S": 3.0},
+    "scope_boundary": "This is not a complete batch rollout, not a b3-r006/b3-r071 later-state re-decode, and not a field-safety threshold."
+  },
+  "interpretation": "The available rolling checkpoints are bound to zero-separation policy and provenance. Editing a checkpoint or its hash would fabricate history. A fresh first-round probe can test decoder sensitivity without relabelling the historical trajectory; it cannot establish full-rolling robustness.",
+  "claim_boundary": "The released records do not certify crane-body clearance, complete-rolling policy robustness under positive separation, or an equipment safety threshold."
 }
