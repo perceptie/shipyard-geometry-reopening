@@ -10,7 +10,7 @@
 **Funding:** No specific funding was received for this work.  
 **Competing interests:** The authors declare no relevant competing interests.
 
-**Edition:** 2026-10-05 Minor wording and layout revision. The algorithm, released numerical data, experimental protocols, and reported results are unchanged. Figure and table presentation follows the revised manuscript; descriptive reproduction filenames remain stable.
+**Edition:** 2026-10-11 scope-aligned revision. The released numerical data and experimental protocols are preserved; the added records document cross-experiment comparison scope and do not claim an online selective-reopening benefit. Figure and table presentation follows the revised manuscript; descriptive reproduction filenames remain stable.
 
 **Additions, 2026-10-10:** the preceding edition describes the preserved base release. This edition adds the revised E11 Figure 7, retained direct-decoder derived records, a saved-record intermediate-mask analysis, and the [executable comparison protocol](COMPARISON_PROTOCOL.md). These additions preserve the original industrial records and involve no new solver/search executions.
 
@@ -105,6 +105,8 @@ The development-budget plot `fig3_budget_sensitivity` remains supplemental confi
 - [Mask structure](mask_structure/README.md): full-objective comparisons at candidate, six-candidate set, wider saved set, and common-reference levels; all masks and one-bit effects retained.
 - [Terminal-plan accounting](witness_mechanisms/README.md): relative task phases, finishing-resource chains, geometry displacement, point-centre separation and historical-release reuse slack. These are derived terminal records, not repair-trial causal traces.
 - [Controlled budget](controlled_budget/README.md): two development/two input-selected states, identical complete initial plan per state, fresh caches, core12, two improvement allowances and three repetitions.
+- [Cross-experiment alignment](cross_experiment_alignment.json): the b3-r006 intermediate-mask witness aligned by complete-initial-plan identity with E32 timed VND terminals. The wider-pool mask gain is reported as an offline probe-pool comparison, not as an online controller gain.
+- [Positive-spacing scope](witness_mechanisms/positive_spacing_scope.json): the existing checkpoints are bound to the zero-separation policy. A trial with altered separation fails checkpoint binding; no positive-spacing performance claim is released, and a valid comparison would require a matched rerun from an earlier checkpoint.
 
 From this directory, the new standard-library checks are:
 

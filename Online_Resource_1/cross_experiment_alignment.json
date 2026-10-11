@@ -1,0 +1,29 @@
+{
+  "version": "cross-experiment-alignment/1.0",
+  "scope": "Aligned de-identified comparison for the b3-r006 mask witness and E32 timed VND terminals",
+  "identity": {
+    "mask_case": "D03",
+    "mask_candidate": "D03-C001",
+    "mask_witness": "W02",
+    "state": "b3-r006",
+    "reference_plan_sha256": "f045cff7f90cc55209557c8505ffbc6d16a773ee31e1954c177ac6b4b9b35777",
+    "e32_common_initial_sha256": "f045cff7f90cc55209557c8505ffbc6d16a773ee31e1954c177ac6b4b9b35777",
+    "request_compatibility": "Supported by the shared state identity and exact complete-initial-plan identity; the public E32 record does not expose an independent request hash."
+  },
+  "common_projected_completion_us": 15155034509685,
+  "current_batch_pool_completion_s": {
+    "intermediate_mask_offline_witness": 10880989.83644,
+    "e32_j_vnd_remainder_8.303348_s": 10875933.510685,
+    "e32_j_vnd_full_12_s": 10875933.510685,
+    "e32_s_vnd_remainder_8.303348_s": 10876166.83644,
+    "e32_s_vnd_full_12_s": 10875414.509685
+  },
+  "tier2_reduction_vs_intermediate_mask_s": {
+    "e32_j_vnd_remainder_8.303348_s": 5056.326755,
+    "e32_j_vnd_full_12_s": 5056.326755,
+    "e32_s_vnd_remainder_8.303348_s": 4823.0,
+    "e32_s_vnd_full_12_s": 5575.326755
+  },
+  "interpretation": "The 13303.319427 s wider-pool gain is relative to the retained 30-38-candidate/five-intervention probe pool. It is not a gain over the aligned timed VND terminal outputs and does not establish an online selective-reopening benefit.",
+  "reproducibility": "Values are converted from the released integer-microsecond objective records; no industrial solver replay is implied."
+}

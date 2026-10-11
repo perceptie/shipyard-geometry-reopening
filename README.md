@@ -9,7 +9,7 @@
 
 The public release contains de-identified evaluation aggregates, case-local terminal-plan records, figure/table reproduction scripts, and an editable synthetic model example. The companion package is placed in `Online_Resource_1/`; its README describes each released file and the expected outputs. Customer source data, private industrial solver code, and restricted full execution records are excluded.
 
-**2026-10-11 edition:** this edition extends `23601b3` with candidate-set/reference comparisons, optimal-mask structure, terminal-chain accounting, physical-exposure records, and a new four-state controlled improvement-budget experiment. All 48 budget phases and 369 strict-improvement events are released as de-identified records. See [Online Resource 1](Online_Resource_1/README.md) for the distinct recomputation and restricted-regeneration scopes.
+**2026-10-11 edition:** this edition extends the prior release with candidate-set/reference comparisons, optimal-mask structure, terminal-chain accounting, physical-exposure records, a four-state controlled improvement-budget experiment, and an aligned comparison of the offline mask witness with timed VND terminals. All 48 budget phases and 369 strict-improvement events are released as de-identified records. See [Online Resource 1](Online_Resource_1/README.md) for the distinct recomputation and restricted-regeneration scopes.
 
 The 2026-10-10 edition extended `5c53f27` with the revised E11 mechanism figure, direct-decoder records, comparison protocol, and saved-record selective-reopening opportunities. These records are preserved. The industrial decoder and original geometric records remain restricted.
 

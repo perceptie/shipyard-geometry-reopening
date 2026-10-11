@@ -1,0 +1,19 @@
+{
+  "status": "not_redecoded",
+  "purpose": "Document the scope of the positive-crane-separation sensitivity check.",
+  "configured_zero_separation_m": 0.0,
+  "observed_zero_separation_exposure": {
+    "mask_witness_plans": 72,
+    "plans_reaching_zero_adjacent_crane_x_separation": 72,
+    "positive_duration_contact_cases": ["b3-r006", "b3-r071"],
+    "historical_release_reuse_records": 24,
+    "current_request_carry_release_records": 0
+  },
+  "blocked_attempt": {
+    "trial_separation_m": 5.0,
+    "error_code": "CONTINUOUS_ROLLING_SIMULATION_FAILED",
+    "message": "rolling checkpoint does not match this run"
+  },
+  "interpretation": "The available rolling checkpoints are bound to zero-separation policy and provenance. Editing a checkpoint or its hash would fabricate history. A valid positive-separation comparison requires a matched rerun from an earlier checkpoint; this is a new scenario, not a relabelled sensitivity result.",
+  "claim_boundary": "The released records do not certify crane-body clearance or robustness of policy rankings under positive separation."
+}

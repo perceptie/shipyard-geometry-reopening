@@ -20,8 +20,10 @@ import subprocess
 HERE = Path(__file__).resolve().parent
 W = 160 * 72 / 25.4
 H = 438
-BLUE = '#0072B2'
-ORANGE = '#B54A00'
+# These colors describe mask status, not the manuscript's J/S policy colors.
+# Shape and legend text carry the same distinction for readers without color.
+BLUE = '#5B6770'       # key block retained
+ORANGE = '#009E73'     # key block eligible for reconstruction
 DARK = '#20242A'
 MID = '#444A51'
 GRID = '#DDE2E6'
@@ -86,7 +88,7 @@ def build(data):
              outcome='Another candidate already improves the six-candidate best.'),
         dict(x0=281,x1=441,titlex=236,lo=-15500,hi=2000,ticks=[0,-5000,-10000,-15000],key=2,
              title='(b) b3-r006 · D03-C001',besttext='Best: open u1, u2; retain u3',
-             outcome='Improvement survives the wider saved candidate pool.'),
+             outcome='Wider-pool gain is offline; aligned E32 terminal is lower.'),
     ]
     for row,cfg in zip(rows[:2], configs):
         x0,x1 = cfg['x0'],cfg['x1']
@@ -116,7 +118,7 @@ def build(data):
             out.append(txt(cfg['titlex'],211,f'Six-candidate endpoint is {difference:,.0f} s earlier.',8.5,color=MID))
         else:
             difference=-row['case_comparison']['mask_delta_vs_all_simple_us'][1]/1e6
-            out.append(txt(cfg['titlex'],211,f'Wider-pool improvement: {difference:,.3f} s.',8.5,color=MID))
+            out.append(txt(cfg['titlex'],211,f'{difference:,.3f} s over saved pool only; E32 terminal lower.',8.5,color=MID))
     out.extend([line(4,223,W-4,223),txt(4,240,'(c) b3-r071 · D04-C006: all 64 masks',9.5,weight='700'),
                 txt(4,254,'Four observed outcome rows (equal spacing, not a linear vertical scale).',8.5,color=MID)])
     row=rows[2]
@@ -149,7 +151,7 @@ def build(data):
         out.append(txt(x0+(x1-x0)*count/6,367,count,8.5,anchor='middle'))
     out.extend([txt((x0+x1)/2,381,'Number of blocks eligible for reconstruction, |R|',9,anchor='middle'),
                 txt(4,398,'Eight best masks: open u2, u6; retain u4; u1, u3, u5 may vary.',9,weight='700'),
-                txt(4,411,'245 s better in the six-candidate set; a wider-pool endpoint is better.',8.5,color=MID),
+                txt(4,411,'245 s better in the six-candidate set; the wider-pool gain is offline.',8.5,color=MID),
                 mark(7,430,False),txt(15,433,'Key block retained: u2 in (a), u3 in (b), u4 in (c)',8.5),
                 mark(292,430,True),txt(301,433,'Key block eligible for reconstruction',8.5),'</svg>'])
     return '\n'.join(out)+'\n'
