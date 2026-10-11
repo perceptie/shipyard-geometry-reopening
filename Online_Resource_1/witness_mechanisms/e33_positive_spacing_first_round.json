@@ -216,6 +216,7 @@
       "method": "J_VND",
       "input_hash": null,
       "input_hash_excluding_sequences": null,
+      "input_hash_excluding_sequences_and_spacing": null,
       "sequence_hash": null,
       "initial_sequence_signature": "",
       "minimum_separation_x": null,
@@ -241,6 +242,7 @@
       "method": "J_VND",
       "input_hash": "253a9f290843e34d890280a3455ad09f5decb7ad391b372cb94eaf98524cd9d4",
       "input_hash_excluding_sequences": "0eb13f864763bd1e00e39087a829e78b1d8d3b2a6e37456f4db7ac5431585797",
+      "input_hash_excluding_sequences_and_spacing": "39dbefcfcd314d29f796d20cda9dd475d4bdc39ed8afc0523be7ffbf3135192a",
       "sequence_hash": "e7616f28340952374280e3874ac9bf9e9b327b87fa3b45e4b4706922a441a04d",
       "initial_sequence_signature": "task-b31117f7b8be93e80863de10f10826c664940a80ef089dc60625139d43309e9c",
       "minimum_separation_x": 1000000,
@@ -272,6 +274,7 @@
       "method": "J_VND",
       "input_hash": null,
       "input_hash_excluding_sequences": null,
+      "input_hash_excluding_sequences_and_spacing": null,
       "sequence_hash": null,
       "initial_sequence_signature": "",
       "minimum_separation_x": null,
@@ -297,6 +300,7 @@
       "method": "J_VND",
       "input_hash": "845e74d4c9a5980067a19ecc20014fff99101562d490240451ddd802ac2b894f",
       "input_hash_excluding_sequences": "0eb13f864763bd1e00e39087a829e78b1d8d3b2a6e37456f4db7ac5431585797",
+      "input_hash_excluding_sequences_and_spacing": "39dbefcfcd314d29f796d20cda9dd475d4bdc39ed8afc0523be7ffbf3135192a",
       "sequence_hash": "88bdd25626c9f0ff28221ceef0c5f624c55afb11c33805c408a12612f024e4ed",
       "initial_sequence_signature": "task-b31117f7b8be93e80863de10f10826c664940a80ef089dc60625139d43309e9c",
       "minimum_separation_x": 1000000,
@@ -328,6 +332,7 @@
       "method": "S_VND",
       "input_hash": null,
       "input_hash_excluding_sequences": null,
+      "input_hash_excluding_sequences_and_spacing": null,
       "sequence_hash": null,
       "initial_sequence_signature": "",
       "minimum_separation_x": null,
@@ -353,6 +358,7 @@
       "method": "S_VND",
       "input_hash": "614fb2633d369dc54bc5f790037c3c74cbe002d1e9203427b06c499cd57d5798",
       "input_hash_excluding_sequences": "0eb13f864763bd1e00e39087a829e78b1d8d3b2a6e37456f4db7ac5431585797",
+      "input_hash_excluding_sequences_and_spacing": "39dbefcfcd314d29f796d20cda9dd475d4bdc39ed8afc0523be7ffbf3135192a",
       "sequence_hash": "facdd26a52741d4616c5c775547747f47a8bdd387d6f39d99913f97855738b45",
       "initial_sequence_signature": "task-b31117f7b8be93e80863de10f10826c664940a80ef089dc60625139d43309e9c",
       "minimum_separation_x": 1000000,
@@ -384,6 +390,7 @@
       "method": "S_VND",
       "input_hash": null,
       "input_hash_excluding_sequences": null,
+      "input_hash_excluding_sequences_and_spacing": null,
       "sequence_hash": null,
       "initial_sequence_signature": "",
       "minimum_separation_x": null,
@@ -409,6 +416,7 @@
       "method": "S_VND",
       "input_hash": "614fb2633d369dc54bc5f790037c3c74cbe002d1e9203427b06c499cd57d5798",
       "input_hash_excluding_sequences": "0eb13f864763bd1e00e39087a829e78b1d8d3b2a6e37456f4db7ac5431585797",
+      "input_hash_excluding_sequences_and_spacing": "39dbefcfcd314d29f796d20cda9dd475d4bdc39ed8afc0523be7ffbf3135192a",
       "sequence_hash": "facdd26a52741d4616c5c775547747f47a8bdd387d6f39d99913f97855738b45",
       "initial_sequence_signature": "task-b31117f7b8be93e80863de10f10826c664940a80ef089dc60625139d43309e9c",
       "minimum_separation_x": 1000000,
@@ -440,6 +448,7 @@
       "method": "J_VND",
       "input_hash": null,
       "input_hash_excluding_sequences": null,
+      "input_hash_excluding_sequences_and_spacing": null,
       "sequence_hash": null,
       "initial_sequence_signature": "",
       "minimum_separation_x": null,
@@ -465,6 +474,7 @@
       "method": "J_VND",
       "input_hash": "b38012761a954f66597798f0dc61b600ecca7e22f326cc55fab7eef7a931f24f",
       "input_hash_excluding_sequences": "41c1b3e924991dcf0e65c22aeab6ebeda8ac3fdfb2b4a0bc6f1ab037292762e2",
+      "input_hash_excluding_sequences_and_spacing": "39dbefcfcd314d29f796d20cda9dd475d4bdc39ed8afc0523be7ffbf3135192a",
       "sequence_hash": "e7616f28340952374280e3874ac9bf9e9b327b87fa3b45e4b4706922a441a04d",
       "initial_sequence_signature": "task-b31117f7b8be93e80863de10f10826c664940a80ef089dc60625139d43309e9c",
       "minimum_separation_x": 0,
@@ -496,6 +506,7 @@
       "method": "S_VND",
       "input_hash": null,
       "input_hash_excluding_sequences": null,
+      "input_hash_excluding_sequences_and_spacing": null,
       "sequence_hash": null,
       "initial_sequence_signature": "",
       "minimum_separation_x": null,
@@ -521,6 +532,7 @@
       "method": "S_VND",
       "input_hash": "a12bf8ee24bb8c6d89b5cbb6c5d5b41b332a654a3a3a47dd6f2aaac97376ffbf",
       "input_hash_excluding_sequences": "41c1b3e924991dcf0e65c22aeab6ebeda8ac3fdfb2b4a0bc6f1ab037292762e2",
+      "input_hash_excluding_sequences_and_spacing": "39dbefcfcd314d29f796d20cda9dd475d4bdc39ed8afc0523be7ffbf3135192a",
       "sequence_hash": "3054ee7a34d6c664697b02bd662e223a36e5dd047c32e5aec947982135a7633d",
       "initial_sequence_signature": "task-b31117f7b8be93e80863de10f10826c664940a80ef089dc60625139d43309e9c",
       "minimum_separation_x": 0,
@@ -552,6 +564,7 @@
       "method": "S_VND",
       "input_hash": null,
       "input_hash_excluding_sequences": null,
+      "input_hash_excluding_sequences_and_spacing": null,
       "sequence_hash": null,
       "initial_sequence_signature": "",
       "minimum_separation_x": null,
@@ -577,6 +590,7 @@
       "method": "S_VND",
       "input_hash": "15175926bf8b6a6f470ed7d986d374a98aac22bbd8382fe0681831a0a9639862",
       "input_hash_excluding_sequences": "41c1b3e924991dcf0e65c22aeab6ebeda8ac3fdfb2b4a0bc6f1ab037292762e2",
+      "input_hash_excluding_sequences_and_spacing": "39dbefcfcd314d29f796d20cda9dd475d4bdc39ed8afc0523be7ffbf3135192a",
       "sequence_hash": "facdd26a52741d4616c5c775547747f47a8bdd387d6f39d99913f97855738b45",
       "initial_sequence_signature": "task-b31117f7b8be93e80863de10f10826c664940a80ef089dc60625139d43309e9c",
       "minimum_separation_x": 0,
@@ -631,9 +645,9 @@
         "projected_current_batch_completion": 3.0
       },
       "interpretation": "same final decoded sequence and same batch-1 request fields apart from minimum separation; compare as a conditional decoder sensitivity, not a committed batch or complete-policy effect.",
-      "request_fields_excluding_sequence_equal": false,
-      "zero_input_hash_excluding_sequences": "41c1b3e924991dcf0e65c22aeab6ebeda8ac3fdfb2b4a0bc6f1ab037292762e2",
-      "positive_1m_input_hash_excluding_sequences": "0eb13f864763bd1e00e39087a829e78b1d8d3b2a6e37456f4db7ac5431585797"
+      "request_fields_excluding_sequence_and_spacing_equal": true,
+      "zero_input_hash_excluding_sequence_and_spacing": "39dbefcfcd314d29f796d20cda9dd475d4bdc39ed8afc0523be7ffbf3135192a",
+      "positive_1m_input_hash_excluding_sequence_and_spacing": "39dbefcfcd314d29f796d20cda9dd475d4bdc39ed8afc0523be7ffbf3135192a"
     },
     {
       "method": "S_VND",
@@ -668,9 +682,9 @@
         "projected_current_batch_completion": 3.0
       },
       "interpretation": "same final decoded sequence and same batch-1 request fields apart from minimum separation; compare as a conditional decoder sensitivity, not a committed batch or complete-policy effect.",
-      "request_fields_excluding_sequence_equal": false,
-      "zero_input_hash_excluding_sequences": "41c1b3e924991dcf0e65c22aeab6ebeda8ac3fdfb2b4a0bc6f1ab037292762e2",
-      "positive_1m_input_hash_excluding_sequences": "0eb13f864763bd1e00e39087a829e78b1d8d3b2a6e37456f4db7ac5431585797"
+      "request_fields_excluding_sequence_and_spacing_equal": true,
+      "zero_input_hash_excluding_sequence_and_spacing": "39dbefcfcd314d29f796d20cda9dd475d4bdc39ed8afc0523be7ffbf3135192a",
+      "positive_1m_input_hash_excluding_sequence_and_spacing": "39dbefcfcd314d29f796d20cda9dd475d4bdc39ed8afc0523be7ffbf3135192a"
     },
     {
       "method": "S_VND",
@@ -705,9 +719,9 @@
         "projected_current_batch_completion": 3.0
       },
       "interpretation": "same final decoded sequence and same batch-1 request fields apart from minimum separation; compare as a conditional decoder sensitivity, not a committed batch or complete-policy effect.",
-      "request_fields_excluding_sequence_equal": false,
-      "zero_input_hash_excluding_sequences": "41c1b3e924991dcf0e65c22aeab6ebeda8ac3fdfb2b4a0bc6f1ab037292762e2",
-      "positive_1m_input_hash_excluding_sequences": "0eb13f864763bd1e00e39087a829e78b1d8d3b2a6e37456f4db7ac5431585797"
+      "request_fields_excluding_sequence_and_spacing_equal": true,
+      "zero_input_hash_excluding_sequence_and_spacing": "39dbefcfcd314d29f796d20cda9dd475d4bdc39ed8afc0523be7ffbf3135192a",
+      "positive_1m_input_hash_excluding_sequence_and_spacing": "39dbefcfcd314d29f796d20cda9dd475d4bdc39ed8afc0523be7ffbf3135192a"
     }
   ],
   "interpretation": {
